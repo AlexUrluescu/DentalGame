@@ -1,0 +1,602 @@
+{
+  "metadata": {
+    "title": "Odontoterapie - Capitolul 1",
+    "subtitle": "Țesuturile Dure Dentare - Structură, Implicații Clinice",
+    "author": "Prof. dr. Dana Bodnar - UMF Carol Davila București",
+    "totalQuestions": 60
+  },
+  "categories": [
+    {
+      "id": "smalt",
+      "name": "Smaltul Dentar",
+      "icon": "🦷",
+      "color": "#4FC3F7"
+    },
+    {
+      "id": "dentina",
+      "name": "Dentina",
+      "icon": "🔬",
+      "color": "#FFB74D"
+    },
+    {
+      "id": "cement",
+      "name": "Cementul",
+      "icon": "🧱",
+      "color": "#81C784"
+    },
+    {
+      "id": "complex_pulpo_dentinar",
+      "name": "Complexul Pulpo-Dentinar",
+      "icon": "❤️",
+      "color": "#E57373"
+    },
+    {
+      "id": "reparatie",
+      "name": "Reparația Pulpo-Dentinară",
+      "icon": "🔧",
+      "color": "#BA68C8"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "category": "smalt",
+      "difficulty": "medium",
+      "question": "Din ce strat embrionar derivă structura minerală a smaltului dentar?",
+      "options": [
+        "Mezenchimul papilei dentare",
+        "Ectodermul epiteliului oral",
+        "Endodermul arcului branhial",
+        "Mezodermul sacului dentar"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Smaltul are origine epitelială (ectodermică), fiind produs de ameloblaste, diferențiate din epiteliul oral. Restul țesuturilor dure derivă din mezenchim."
+    },
+    {
+      "id": 2,
+      "category": "smalt",
+      "difficulty": "hard",
+      "question": "Până la ce procentaje variază grosimea smaltului la nivelul coletului incisivilor laterali și cuspizilor molarilor?",
+      "options": [
+        "0,2 mm / 2 mm",
+        "0,5 mm / 3 mm",
+        "0,2 mm / 3 mm",
+        "1,0 mm / 2,5 mm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Grosimea variază între 0,2 mm la coletul incisivilor laterali și 2,5 - 3 mm la nivelul cuspizilor molarilor."
+    },
+    {
+      "id": 3,
+      "category": "smalt",
+      "difficulty": "medium",
+      "question": "În ce proporție smaltul este acoperit de cement la nivelul joncțiunii smalț-cement?",
+      "options": [
+        "5 - 10%",
+        "30 - 35%",
+        "60 - 65%",
+        "80 - 85%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "În 60-65% din cazuri cementul acoperă smaltul. În 30% din cazuri contactul este cap la cap („butt joint”), iar în 5-10% smaltul și cementul nu se ating."
+    },
+    {
+      "id": 4,
+      "category": "smalt",
+      "difficulty": "hard",
+      "question": "Prin ce se caracterizează componenta anorganică a smaltului uman matur?",
+      "options": [
+        "95% hidroxiapatită și 5% fluorapatită",
+        "90% carbonați și 10% fosfați calcici",
+        "95-98% compuși minerali din volum",
+        "80-85% cristale așezate în prisme"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Substanțele minerale reprezintă 95-98% din volum (hidroxiapatită 90%, fluorapatită 3%)."
+    },
+    {
+      "id": 5,
+      "category": "smalt",
+      "difficulty": "hard",
+      "question": "Ce descriu striațiile paralele Retzius?",
+      "options": [
+        "Joncțiunea cemento-amelară",
+        "Traiectul oblic al canaliculelor",
+        "Secționarea optică a prismelor",
+        "Depunerea ciclică a matricei"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Striile lui Retzius reprezintă liniile de creștere prin depunerea ciclică a matricei smalțului, nu un fenomen pur optic (cum sunt striile Hunter-Schreger)."
+    },
+    {
+      "id": 6,
+      "category": "smalt",
+      "difficulty": "medium",
+      "question": "Ce defecte de structură determină formarea perikymatiilor?",
+      "options": [
+        "Ondularea regulată a prismelor în zona cervicală",
+        "Joncțiunea striilor Retzius cu suprafața amelară",
+        "Lipsa de calcificare a substanței interprismatice",
+        "Depunerea de smalt noduros la nivelul cuspizilor"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Perikymatiile sunt șanțuri circulare paralele ce apar la suprafața smaltului unde se termină striile lui Retzius."
+    },
+    {
+      "id": 7,
+      "category": "smalt",
+      "difficulty": "hard",
+      "question": "Cum se definește smalțul nodos?",
+      "options": [
+        "Prisme cu traseu rectiliniu la joncțiunea amelo-dentinară",
+        "Zona de maximă rezistență la atacul acid bacterian",
+        "Fascicule cu traiect neregulat ce se întrepătrund",
+        "Smalt aprismatic de la suprafața dintelui erupt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Smalțul nodos constă în fascicule de prisme cu traiect neregulat (sinuos) care se întrepătrund în apropierea dentinei, oferind rezistență la presiuni masticatorii."
+    },
+    {
+      "id": 8,
+      "category": "smalt",
+      "difficulty": "medium",
+      "question": "Dintr-o perspectivă structurală, câte straturi distincte prezintă smalțul?",
+      "options": [
+        "Două: prismatic și aprismatic",
+        "Trei: intern, mijlociu și extern",
+        "Trei: intern aprismatic, prismatic, extern aprismatic",
+        "Patru: incluzând zona smalțului nodos"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Smaltul are un strat intern aprismatic, corpul prismatic (prisme + substanță interprismatică) și stratul extern aprismatic."
+    },
+    {
+      "id": 9,
+      "category": "smalt",
+      "difficulty": "medium",
+      "question": "Ce procent din greutate reprezintă apa în smalțul matur?",
+      "options": [
+        "Aproximativ 1%",
+        "Între 3,6 - 4%",
+        "Aproximativ 11%",
+        "Peste 20%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Apa reprezintă 3,6-4% din volum, dar constituie aproximativ 11% din greutatea smalțului."
+    },
+    {
+      "id": 10,
+      "category": "dentina",
+      "difficulty": "medium",
+      "question": "Ce diferențiază duritatea dentinei comparativ cu alte țesuturi dure?",
+      "options": [
+        "Este egală cu 7 pe scara Mohs",
+        "Este inferioară țesutului osos",
+        "Este mai mică de 1,6 ori față de smalț",
+        "Are o valoare de 3 pe scara Mohs"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dentina are duritate 5 pe scara Mohs, fiind mai mare ca a osului, dar de 1,6 ori mai mică decât a smalțului (duritate 5-8)."
+    },
+    {
+      "id": 11,
+      "category": "dentina",
+      "difficulty": "hard",
+      "question": "Care este proporția componentelor în compoziția chimică a dentinei?",
+      "options": [
+        "70% anorganic, 20% organic, 10% apă",
+        "67% anorganic, 20% organic, 13% apă",
+        "50% anorganic, 35% organic, 15% apă",
+        "95% anorganic, 1% organic, 4% apă"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dentina conține în medie 67% substanță minerală, 20% substanță organică și 13% apă."
+    },
+    {
+      "id": 12,
+      "category": "dentina",
+      "difficulty": "hard",
+      "question": "Ce proteina necolagenică specifică se gasește în matricea organică a dentinei?",
+      "options": [
+        "Colagen tip III",
+        "Keratina dentinară",
+        "Fibronectina serică",
+        "Osteocalcina redusă"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Fracțiunea proteică insolubilă (10%) este reprezentată de keratina dentinară, cu rol în inițierea mineralizării."
+    },
+    {
+      "id": 13,
+      "category": "dentina",
+      "difficulty": "medium",
+      "question": "Ce particularitate prezintă mantaua dentinară față de restul dentinei?",
+      "options": [
+        "Conține exclusiv dentină intertubulară",
+        "Are canalicule drepte nedeservite de fluide",
+        "Este complet amorfă și hipermineralizată",
+        "Nu conține canalicule dentinare vizibile"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Mantaua dentinară este depusă de odontoblaști nepolarizați inițial, are 7-30 μm grosime, și nu conține canalicule dentinare vizibile."
+    },
+    {
+      "id": 14,
+      "category": "dentina",
+      "difficulty": "hard",
+      "question": "Pe parcursul traiectului lor, unde prezintă canaliculele dentinare un curs rectiliniu?",
+      "options": [
+        "Pe toată lungimea zonei coronare superficiale",
+        "La nivelul dentinei radiculare profunde",
+        "În 1/3 apicală și în dreptul coarnelor pulpare",
+        "La zona joncțiunii smalț-dentină exclusiv"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Traiectul canaliculelor este curb, în formă de S, cu excepția 1/3 apicale a rădăcinii și a dentinei din dreptul coarnelor pulpare unde este rectiliniu."
+    },
+    {
+      "id": 15,
+      "category": "dentina",
+      "difficulty": "medium",
+      "question": "Ce tip de dentină circumscrie procesele odontoblastice?",
+      "options": [
+        "Dentina secundară",
+        "Dentina pericanaliculară (peritubulară)",
+        "Dentina intercanaliculară",
+        "Predentina necalcificată"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dentina pericanaliculară delimitează peretele canalicular, este puternic mineralizată și circumscrie procesul odontoblastic."
+    },
+    {
+      "id": 16,
+      "category": "dentina",
+      "difficulty": "hard",
+      "question": "Prin ce se caracterizează dentina peritubulară comparativ cu cea intertubulară?",
+      "options": [
+        "Conține mai puțin magneziu și carbonați",
+        "Are o mineralizare mai slabă în zona centrală",
+        "Este dispusă între cele două linii Ebner",
+        "Prezintă cristale de apatită mai fine și dense"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Dentina peritubulară conține cristale mai fine de hidroxiapatită orientate de-a lungul tubulilor, fiind mai mineralizată și mai bogată în magneziu și carbonați."
+    },
+    {
+      "id": 17,
+      "category": "dentina",
+      "difficulty": "medium",
+      "question": "Ce reprezintă predentina din punct de vedere compozițional?",
+      "options": [
+        "Dentină complet mineralizată de tip intertubular",
+        "Matrice alcătuită 97% din colagen de tip V",
+        "Strat superficial de dentină de reparație",
+        "Zonă hipercalcificată a marginii pulpare"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Predentina este dentina încă nemineralizată (matrice precursoare), compusă în proporție de 97% din colagen de tip V."
+    },
+    {
+      "id": 18,
+      "category": "dentina",
+      "difficulty": "hard",
+      "question": "Cum evoluează numărul tubulilor dentinari pe măsură ce ne apropiem de pulpă?",
+      "options": [
+        "Scade proporțional cu lărgirea lumenului",
+        "Rămâne constant, variază doar diametrul",
+        "Crește, la fel și volumul global pe secțiune",
+        "Scade cu un raport de 4/1 față de periferie"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sensul convergenței tubulilor spre pulpă face ca densitatea lor (numărul per mm²) să fie mai mare spre pulpă (profund) decât periferic, crescând și volumul."
+    },
+    {
+      "id": 19,
+      "category": "dentina",
+      "difficulty": "hard",
+      "question": "Ce concentrație de tubuli dentinari pe mm² se estimează la nivelul dentinei radiculare?",
+      "options": [
+        "42.000 tubuli/mm²",
+        "20.000 tubuli/mm²",
+        "65.000 tubuli/mm²",
+        "8.000 tubuli/mm²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Densitatea ajunge la 8.000 canalicule/mm² în dentina radiculară, comparativ cu 42.000 la nivelul coletului."
+    },
+    {
+      "id": 20,
+      "category": "cement",
+      "difficulty": "medium",
+      "question": "Cu ce componentă dentară se continuă fiziologic cementul?",
+      "options": [
+        "Cu osul alveolar adiacent",
+        "Cu dentina prin manta dentinară",
+        "Cu ligamentele desmodontale",
+        "Nu se continuă direct cu niciuna"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Cementul este legat intim prin fibrele de colagen extrinseci calcificate de ligamentele desmodontale (parodonțiu)."
+    },
+    {
+      "id": 21,
+      "category": "cement",
+      "difficulty": "hard",
+      "question": "Comparativ cu smalțul și dentina, duritatea cementului radicular este:",
+      "options": [
+        "Mai redusă de 2,4 ori fță de smalț",
+        "Egală cu 4,2 pe scara Mohs",
+        "Mai ridicată cu 10% față de dentină",
+        "Egală cu cea a dentinei secundare"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Duritatea cementului este mai redusă de 2,4 ori decât a smalțului și de 1,4 ori mai mică decât a dentinei."
+    },
+    {
+      "id": 22,
+      "category": "cement",
+      "difficulty": "hard",
+      "question": "Ce procent din matricea organică a cementului este reprezentat de colagen de tip III?",
+      "options": [
+        "Aproximativ 90%",
+        "Aproximativ 5%",
+        "Nu conține colagen tip III",
+        "Aproximativ 25%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Matricea organică a cementului are 90% colagen de tip I și doar 5% colagen de tip III alături de alte fibre."
+    },
+    {
+      "id": 23,
+      "category": "cement",
+      "difficulty": "medium",
+      "question": "Ce caracteristică structurală lipseste din cementul radicular normal?",
+      "options": [
+        "Fibrele de reticulină",
+        "Cristalele de hidroxiapatită",
+        "Rețeaua vasculară și inervația",
+        "Celulele (cementoblaste, cementocite)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Spre deosebire de osul alveolar cu care seamănă embriologic, cementul radicular este avascular și neinervat."
+    },
+    {
+      "id": 24,
+      "category": "cement",
+      "difficulty": "medium",
+      "question": "Care este principala funcție mecanică a cementului?",
+      "options": [
+        "Scut de uzură la masticație acută",
+        "Substrat de ancorare pentru fibrele parodontale",
+        "Generarea presiunii de erupție activă",
+        "Blocarea microinfiltrațiilor bacteriene"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Fixează dintele în alveolă conferind substrat pentru ligamentele dento-alveolare și compensează prin apoziție atriția ocluzală."
+    },
+    {
+      "id": 25,
+      "category": "cement",
+      "difficulty": "hard",
+      "question": "Ce tip de cement se depune pe suprafața radiculară înainte de erupția dintelui pe arcadă?",
+      "options": [
+        "Cementul celular scuamos",
+        "Cementul de reparație acut",
+        "Cementul primar acelular",
+        "Cementul secundar celular"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Cementul primar este format înaintea erupției (acelular), iar după ce dintele atinge planul de ocluzie începe depunerea cementului celular (secundar)."
+    },
+    {
+      "id": 26,
+      "category": "complex_pulpo_dentinar",
+      "difficulty": "medium",
+      "question": "Din ce structură embriologică provine pulpa dentară?",
+      "options": [
+        "Ectodermul epiteliului bucal",
+        "Mezenchimul sacului folicular",
+        "Papila dentară mezenchimală",
+        "Celulele crestei neurale strict"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Pulpa dentară este un țesut conjunctiv lax ce derivă din papila dentară mezenchimală (care la rândul ei are contribuții din crestele neurale)."
+    },
+    {
+      "id": 27,
+      "category": "complex_pulpo_dentinar",
+      "difficulty": "hard",
+      "question": "Ce tip de inervație se regăsește majoritar în interiorul canaliculelor dentinare?",
+      "options": [
+        "Fibre simpatice motorii T2-T4",
+        "Terminații nervoase mielinice groase (A beta)",
+        "Receptorii tactili Ruffini în treimea internă",
+        "Terminații amielinice provenite din plexul Raschkow"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Canaliculele conțin, pe lângă prelungirea odontoblastică și fluid, terminații nervoase amielinice din plexul marginal Raschkow."
+    },
+    {
+      "id": 28,
+      "category": "complex_pulpo_dentinar",
+      "difficulty": "hard",
+      "question": "Cum se caracterizează funcțional inervația și circulația complexului pulpo-dentinar?",
+      "options": [
+        "Circulație terminală și volum incompresibil limitat",
+        "Anastomoze abundente periapicale",
+        "Inervație parasimpatică bogată cu vase de calibru mare",
+        "Rezistență crescută la staza venoasă post-inflamatorie"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Pulpa dentară are o circulație de tip terminal și este adăpostită într-o cavitate cu pereți duri inextensibili, favorizând rapid ischemia în caz de inflamație (limitare mecanică)."
+    },
+    {
+      "id": 29,
+      "category": "reparatie",
+      "difficulty": "medium",
+      "question": "Cum se diferențiază dentina de reacție de dentina de reparație din punct de vedere celular?",
+      "options": [
+        "Cea de reactie este produsă de fibroblaști",
+        "Odontoblaștii inițiali produc dentina de reacție",
+        "Cea de reparație conține doar capilare",
+        "Ambele sunt secretate de macrofage activate"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dentina de reacție este sintetizată de odontoblaștii maturi supraviețuitori; dentina de reparație este secretată de celule nou diferențiate (similar odontoblaștilor) după necroza celor inițiali."
+    },
+    {
+      "id": 30,
+      "category": "reparatie",
+      "difficulty": "hard",
+      "question": "Ce factor specific acționează ca semnal molecular în formarea dentinei terțiare?",
+      "options": [
+        "Citokina proinflamatoare IL-1",
+        "Factorii de transformare a creșterii β (TGFβ)",
+        "Amelogenina serică difuzabilă",
+        "Colagenaza matrixială secretată bazal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mecanismele moleculare de neoformare dentinară implică deblocarea unor factori de creștere endogeni fosilizați în matrice, precumpănitor TGFβ."
+    },
+    {
+      "id": 31,
+      "category": "smalt",
+      "difficulty": "medium",
+      "question": "Ce proprietate fizică permite vizualizarea radiologică distinctă a smalțului?",
+      "options": [
+        "Nivelul redus al absorbției de raze X",
+        "Densitatea mare de apă intercristalină",
+        "Radioopacitatea superioară țesutului osos și dentinei",
+        "Absența colagenului din structura sa matricială"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Din cauza gradului său înalt de mineralizare, smalțul este cel mai radioopac țesut, apărând alb, distinct de dentină, pulpă și os."
+    },
+    {
+      "id": 32,
+      "category": "smalt",
+      "difficulty": "hard",
+      "question": "Care este efectul înlocuirii locale a hidroxiapatitei cu fluorapatită la nivelul smalțului?",
+      "options": [
+        "Creșterea diametrului prismelor de 4 la 10 μm",
+        "Scăderea durității Mohs raportată la smalțul tânăr",
+        "Creșterea radiotransparenței în treimea cervicală",
+        "Ameliorarea rezistenței la solubilizare în mediu acid"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Fluorapatita este net mai rezistentă la acizi organici (mai puțin solubilă) și stabilizează cristalul."
+    },
+    {
+      "id": 33,
+      "category": "dentina",
+      "difficulty": "hard",
+      "question": "Când se consideră clinic că freza a pătruns dincolo de joncțiunea smalț-dentină?",
+      "options": [
+        "Când scade percepția durității și apare colorația gălbuie",
+        "La dispariția translucidității și a sângerării punctiforme",
+        "În momentul vizualizării unui praf alb cretos în cavitate",
+        "Dacă jetul de aer rece provoacă vasoconstricție pulpară"
+      ],
+      "correctAnswer": 0,
+      "explanation": "În momentul contactului dintelui cu freza, atingerea dentinei schimbă senzația tactilă (scade rezistența) și modifică nuanța spre mat-gălbui, apărând frecvent durerea."
+    },
+    {
+      "id": 34,
+      "category": "dentina",
+      "difficulty": "hard",
+      "question": "Ce modificare suferă raportul calciu/fosfor din compoziția dentinară odată cu înaintarea în vârstă?",
+      "options": [
+        "Se menține rigid la valoarea 3/1",
+        "Crește rapid în perioada dentiției mixte",
+        "Devine mai mic după vârsta de 30 de ani",
+        "Rămâne constant pe toată durata de retenție"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Raportul nativ Calciu/Fosfor în dentină este aproximativ 2/1, dar tinde să se modifice, crescând până la circa 30 ani și scăzând ulterior pe măsura îmbătrânirii dintelui."
+    },
+    {
+      "id": 35,
+      "category": "cement",
+      "difficulty": "medium",
+      "question": "Pe ce fond apare fiziologic procesul de rezorbție cementară extinsă?",
+      "options": [
+        "În bruxismul nocturn intens nereabilitat",
+        "Secundar utilizării periajului cu pastă abrazivă",
+        "În perioada de rizaliză a erupției permanente",
+        "Pe fondul unui consum ridicat de alimente citrice"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Doar rizaliza (resorbția radiculară a dintelui temporar) permite fiziologic și acompaniat de erupția dintelui permanent, o rezorbție a cementului extinsă."
+    },
+    {
+      "id": 36,
+      "category": "cement",
+      "difficulty": "hard",
+      "question": "La care grupe dentare se depistează cel mai frecvent fenomenul de hipercementoză?",
+      "options": [
+        "Grupul frontal maxilar exclusiv",
+        "Premolarii superiori și caninii inferiori",
+        "Molarii mandibulari și premolarii de pe ambele arcade",
+        "Toți dinții, indiferent de arcadă,"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Hipercementoza afectează mai frecvent molarii și premolarii inferiori (de 4-5 ori mai frecvent la mandibulă)."
+    },
+    {
+      "id": 37,
+      "category": "complex_pulpo_dentinar",
+      "difficulty": "medium",
+      "question": "Elementul considerat axul structural și de vitalitate ce unifică dentina și pulpa asimilându-le histofiziologic este:",
+      "options": [
+        "Capilarul pulpar periferic",
+        "Odontoblastul (corpul și prelungirea)",
+        "Fibra de reticulină Von Korff",
+        "Terminația simpatică vasomotorie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Datorită orientării corpului celular în pulpă și prelungirii sale în canaliculul dentinar, odontoblastul este argumentul complexului biologic unitar."
+    },
+    {
+      "id": 38,
+      "category": "complex_pulpo_dentinar",
+      "difficulty": "hard",
+      "question": "Până la ce nivel pătrunde, histologic, prelungirea odontoblastică (fibra Tomes) vizibilă în smalț?",
+      "options": [
+        "Nu perforează bariera smalț-dentină niciodată",
+        "Doar în regiunea coletului subiacent ariei retentive",
+        "Traversează joncțiunea și intră incipient în smalț (fusuri)",
+        "Formează o rețea de reticulină printre ameloblaști"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Ocazional, capetele terminate ale unor tubuli pot penetra joncțiunea smalț-dentină intrând un scurt traiect în smalț formând fusuri amelodentinare (spindles)."
+    },
+    {
+      "id": 39,
+      "category": "reparatie",
+      "difficulty": "hard",
+      "question": "Dentina de reacție tip 'tractus mort' sau sclerotică se formează inițial prin:",
+      "options": [
+        "Apoziție masivă de matrice necalcificabilă în camera pulpară",
+        "Depunere de minerale pe pereții interni ai canaliculelor",
+        "Eliminarea prelungirii odontoblastice și înlocuirea cu colagen III",
+        "Fuzionarea striilor Retzius sub influența inflamației"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Tractul sclerotic apare ca adaptare blândă; se acumulează minerale pe pereții tubulari interni depuse de fibere până la colmatarea completă a lumenului tubulilor și blocarea invaziei microbiene."
+    },
+    {
+      "id": 40,
+      "category": "reparatie",
+      "difficulty": "medium",
+      "question": "În context iatrogen, ce determină grosimea minimă a stratului de pulporotecție față de stratul de dentină preparat?",
+      "options": [
+        "Lățimea camerei pulpare raportată clinic",
+        "Distanța de difuziune (grosimea de dentină indemnă rămasă)",
+        "Tipul de acid fosforic utilizat pentru un debridament",
+        "Numărul de cuspizi funcționali neafectați"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Profunzimea cavității este factor major: din distanța de difuziune derivată depinde calitatea dentinei tertiare depuse. O lărgime mai mică va facilita depunerea masivă."
+    }
+  ]
+}
