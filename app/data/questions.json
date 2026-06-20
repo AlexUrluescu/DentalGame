@@ -30,6 +30,36 @@
       "name": "Parazitoze",
       "icon": "🐛",
       "color": "#8B5E3C"
+    },
+    {
+      "id": "infectii_virale",
+      "name": "Infecții Virale",
+      "icon": "",
+      "color": ""
+    },
+    {
+      "id": "md_alergice_acnee",
+      "name": "MD: Alergice - Acnee",
+      "icon": "",
+      "color": ""
+    },
+    {
+      "id": "boli_transmitere_sexuala",
+      "name": "Boli cu Transmitere Sexuală",
+      "icon": "",
+      "color": ""
+    },
+    {
+      "id": "tumori_benigne_premaligne",
+      "name": "Tumori benigne și premaligne",
+      "icon": "",
+      "color": ""
+    },
+    {
+      "id": "tumori_maligne",
+      "name": "Tumori maligne",
+      "icon": "",
+      "color": ""
     }
   ],
   "questions": [
@@ -1250,6 +1280,1490 @@
     ],
     "correctAnswer": 0,
     "explanation": "Lindanul acționează pe parazitul adult și nu are efect ovocid, necesitând repetare după o săptămână. Permetrina sau Malathionul sunt ovocide, fiind suficientă de obicei o singură aplicație."
+  },
+  {
+    "id": 88,
+    "category": "infectii_virale",
+    "difficulty": "easy",
+    "question": "Care este subtipul de virus Herpes simplex responsabil în proporție de 80-90% pentru infecțiile cu localizare orofacială?",
+    "options": [
+      "Virusul Herpes simplex tip 1 (HSV-1)",
+      "Virusul Herpes simplex tip 2 (HSV-2)",
+      "Virusul Varicelo-zosterian (VZV)",
+      "Virusul Papiloma Uman (HPV)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Conform cursului, Herpes simplex tip 1 (HSV-1) produce infecția orofacială în 80-90% din cazuri, în timp ce HSV-2 este responsabil predominant (70-90%) de infecția urogenitală."
+  },
+  {
+    "id": 89,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Cum se caracterizează clinic primoinfecția cu Herpes simplex comparativ cu perioadele de reactivare?",
+    "options": [
+      "Primoinfecția este complet asimptomatică, iar reactivările sunt severe",
+      "Primoinfecția prezintă manifestări clinice pronunțate, în timp ce la persoanele infectate anterior reactivările pot fi chiar subclinice",
+      "Evoluează exclusiv cu cicatrici definitive",
+      "Apare sub forma unei erupții bilaterale generalizate"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Primoinfecția cu Herpes simplex se caracterizează prin manifestări clinice pronunțate (ex. gingivo-stomatită herpetică la copii, limfadenopatie). Ulterior, pot exista perioade de reactivare simptomatică sau chiar asimptomatică/subclinică."
+  },
+  {
+    "id": 90,
+    "category": "infectii_virale",
+    "difficulty": "easy",
+    "question": "Care este elementul clinic caracteristic al infecției cu Herpes simplex?",
+    "options": [
+      "Bule hemoragice izolate",
+      "Vezicule grupate pe un fond eritematos",
+      "Papule conopidiforme gigante",
+      "Plăci alopecice și scuame furfuracee"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Atât primoinfecția, cât și reactivarea cu Herpes simplex se manifestă clinic prin vezicule grupate pe un fond eritematos."
+  },
+  {
+    "id": 91,
+    "category": "infectii_virale",
+    "difficulty": "hard",
+    "question": "Ce complicație severă a infecției cu Herpes simplex poate apărea la pacienții atopici?",
+    "options": [
+      "Angina Ludwig",
+      "Eczema herpeticum",
+      "Zona zoster oftalmică",
+      "Erizipelul bulos generalizat"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Eczema herpeticum este o complicație ce apare la pacienții atopici (ca primoinfecție sau recurență) și constă într-o erupție herpetică diseminată, însoțită de febră și stare generală alterată."
+  },
+  {
+    "id": 92,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Când este indicată profilaxia recurențelor infecției cu Herpes simplex (de exemplu, cu Aciclovir 400-800 mg/zi timp de 6 luni)?",
+    "options": [
+      "După prima infecție la toți pacienții",
+      "Dacă leziunile apar exclusiv pe buze",
+      "La mai mult de 6 recurențe pe an",
+      "Dacă pacientul prezintă dureri nevralgice reziduale"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Profilaxia recurențelor se recomandă atunci când pacientul prezintă mai mult de 6 recurențe pe an."
+  },
+  {
+    "id": 93,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care este mecanismul patogenic prin care apare Zona zoster?",
+    "options": [
+      "Reactivarea virusului varicelo-zosterian (VZV) latent în ganglionii senzitivi, după o infecție primară (varicela)",
+      "Infecția primară cu Herpes simplex tip 2",
+      "Contactul direct cu o tulpină mutantă de HPV oncogenic",
+      "Suprainfecția bacteriană a nervilor periferici"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Zona zoster apare prin reactivarea virusului varicelo-zosterian, care a rămas latent în ganglionii senzitivi după infecția primară (varicela)."
+  },
+  {
+    "id": 94,
+    "category": "infectii_virale",
+    "difficulty": "easy",
+    "question": "Care este dispoziția clinică tipică a erupției în Zona zoster?",
+    "options": [
+      "Erupție diseminată pe întreg tegumentul",
+      "Erupție bilaterală și simetrică",
+      "Erupție unilaterală, în bandă, dermatomerică",
+      "Erupție localizată exclusiv pe mucoasa bucală"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Zona zoster se caracterizează printr-o erupție unilaterală, în bandă, care respectă traseul unui nerv (distribuție dermatomerică)."
+  },
+  {
+    "id": 95,
+    "category": "infectii_virale",
+    "difficulty": "hard",
+    "question": "Care sunt opțiunile terapeutice indicate în terapia durerii pentru pacienții cu Zona zoster?",
+    "options": [
+      "Aciclovir și Valaciclovir doze mari",
+      "Gabapentin 300-900 mg/zi, analgezice topice și sistemice",
+      "Corticoizi sistemici și antihistaminice exclusiv",
+      "Imunizare prin vaccin (Zostavax)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pentru tratamentul durerii din Zona zoster se utilizează Gabapentin (300-900 mg/zi), alături de analgezice topice și sistemice. Aciclovirul și vaccinul au rol antiviral, respectiv profilactic, nu analgezic per se."
+  },
+  {
+    "id": 96,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele tulpini ale virusului papiloma uman (HPV) sunt asociate cu un risc oncogenic înalt?",
+    "options": [
+      "Tipurile 1, 2, 3 și 4",
+      "Doar tipurile 80 și 90",
+      "Tipurile 6, 11, 16, 18, 31, 33",
+      "Toate cele peste 150 de subtipuri cunoscute"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tulpinile HPV 6, 11, 16, 18, 31 și 33 sunt menționate ca având un risc oncogenic înalt."
+  },
+  {
+    "id": 97,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele substanțe reprezintă opțiuni terapeutice specifice adresate zonei genitale pentru veruci (condiloame acuminate)?",
+    "options": [
+      "Podofilina/Podofilotoxina, Imiquimod 5% (Aldara) și extractul de ceai verde (Veregen)",
+      "Aciclovir cremă și loțiuni cu antibiotice",
+      "Unguent cu sulf 10%",
+      "Acid salicilic 40% în aplicare directă pe mucoasă"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tratamentele topice destinate verucilor ano-genitale menționate în curs includ Podofilina/podofilotoxina (Condyline), Imiquimod 5% (Aldara) și extractul de ceai verde (Veregen)."
+  },
+  {
+    "id": 98,
+    "category": "infectii_virale",
+    "difficulty": "easy",
+    "question": "Cum se prezintă clinic verucile vulgare de la nivel cutanat?",
+    "options": [
+      "Bule mari sub tensiune cu lichid serocitrin",
+      "Vezicule perlate liniare intens pruriginoase",
+      "Papule mici, bine delimitate, de culoarea pielii, cu suprafața inițial netedă care devine hiperkeratozică",
+      "Plăci eritemato-edematoase lucioase cu aspect de coajă de portocală"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Verucile vulgare sunt descrise ca papule mici, bine delimitate, de culoarea pielii, unice sau confluente, cu o suprafață netedă ce devine ulterior hiperkeratozică."
+  },
+  {
+    "id": 99,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care sunt principalele căi de transmitere pentru virusul Herpes simplex?",
+    "options": [
+      "Cale digestivă exclusiv, prin apă contaminată",
+      "Contact cu un fluid ce conține particule virale (salivă), contact direct cu o leziune activă sau picături respiratorii",
+      "Mușcături de insecte",
+      "Prin intermediul lenjeriei de pat infestate"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transmiterea se realizează prin contact cu un fluid ce conține particule virale (salivă), contact direct cu o leziune activă sau prin picături respiratorii. De asemenea, persoanele cu reactivare subclinică (asimptomatice) pot transmite virusul."
+  },
+  {
+    "id": 100,
+    "category": "infectii_virale",
+    "difficulty": "easy",
+    "question": "Care este perioada de incubație tipică a primoinfecției cu Herpes simplex după contactul infectant?",
+    "options": [
+      "3-4 săptămâni",
+      "1-2 luni",
+      "3-7 zile",
+      "Peste 6 luni"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Simptomatologia primoinfecției cu Herpes simplex apare la 3-7 zile după contactul infectant."
+  },
+  {
+    "id": 101,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele reprezintă forme clinice specifice ale primoinfecției cu Herpes simplex?",
+    "options": [
+      "Gingivo-stomatită herpetică și kerato-conjunctivită herpetică",
+      "Angina Ludwig și celulita periorbitală",
+      "Zona zoster oftalmică",
+      "Scabia incognita"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Formele clinice ale primoinfecției includ: gingivo-stomatita herpetică, kerato-conjunctivita herpetică, herpesul cutanat primar, herpesul genital și formele severe de herpes."
+  },
+  {
+    "id": 102,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Cum se desfășoară vindecarea eroziunilor apărute în primoinfecția herpetică?",
+    "options": [
+      "Se vindecă greu, lăsând obligatoriu cicatrici cheloidiene",
+      "Se vindecă rapid în 1-2 zile fără tratament",
+      "Vindecarea se produce după 1-4 săptămâni, fără cicatrici",
+      "Evoluează spre gangrenă localizată"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Eroziunile din cavitatea bucală sau zona genitală apărute în primoinfecție se vindecă după 1-4 săptămâni, fără a lăsa cicatrici."
+  },
+  {
+    "id": 103,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care dintre următorii factori este considerat un trigger (factor precipitant) pentru reactivarea virusului Herpes simplex?",
+    "options": [
+      "Consumul excesiv de glucide",
+      "Expunerea la raze UV, febra, menstruația și stresul fizic/psihoemoțional",
+      "Purtarea de încălțăminte strâmtă",
+      "Scăderea brutală a temperaturii ambientale"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Printre factorii precipitanți se numără: expunerea UV, febra, menstruația, iritația locală/mecanică, stresul fizic sau psihoemoțional, manoperele estetice la nivelul feței și factori imunosupresori."
+  },
+  {
+    "id": 104,
+    "category": "infectii_virale",
+    "difficulty": "hard",
+    "question": "Conform schemei terapeutice pentru episoadele active de Herpes simplex, care este doza corectă și durata tratamentului cu Aciclovir sistemic?",
+    "options": [
+      "Aciclovir 1 g/zi (200 mg x 5/zi) timp de 1 săptămână",
+      "Aciclovir 800 mg x 5/zi timp de 10 zile",
+      "Aciclovir 400 mg/zi timp de 6 luni",
+      "Aciclovir 50 mg/zi în doză unică"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pentru episodul eruptiv de Herpes simplex se administrează Aciclovir 1 g/zi (fracționat 200 mg x 5) timp de 1 săptămână. Doza de 800mgx5 este pentru Zona zoster, iar cea de 400-800 mg/zi (6 luni) este profilaxia recurențelor."
+  },
+  {
+    "id": 105,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Ce factori favorizează reactivarea virusului varicelo-zosterian și dezvoltarea manifestării clinice de Zona zoster?",
+    "options": [
+      "Tratamentele antibiotice prelungite împotriva fungilor",
+      "Expunerea ocazională la frig",
+      "Intervențiile chirurgicale, imunosupresia (TBC, HIV/SIDA, neoplazii) și vârsta înaintată",
+      "Igiena precară în colectivități de copii"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Reactivarea virală în Zona zoster se face sub acțiunea unor factori trigger, cum ar fi intervențiile chirurgicale, imunosupresia (TBC, HIV/SIDA, neoplazii) și vârsta înaintată (incidența crește cu vârsta)."
+  },
+  {
+    "id": 106,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care este timpul mediu de evoluție a erupției în Zona zoster și ce sechele pigmentare pot rămâne după vindecare?",
+    "options": [
+      "3-4 zile, cu vindecare fără nicio urmă",
+      "10-14 zile, cu vindecare urmată de macule hipo/hiper-pigmentate",
+      "1-2 luni, cu atrofie musculară severă",
+      "24-48 ore, urmată de alopecie definitivă"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Evoluția erupției este de 10-14 zile, cu plăci eritematoase, vezicule, eroziuni și cruste, vindecarea realizându-se frecvent cu macule hipo sau hiper-pigmentate."
+  },
+  {
+    "id": 107,
+    "category": "infectii_virale",
+    "difficulty": "hard",
+    "question": "În ce situație Zona zoster prezintă manifestări veziculare la nivelul cavității bucale (palat dur, maxilă, limbă, mandibulă) sau la ochi?",
+    "options": [
+      "La afectarea ramurilor nervului facial",
+      "La afectarea ramurilor 2, 3 ale nervului trigemen (pentru mucoasa bucală) și a ramurii oftalmice (pentru ochi)",
+      "Când există o coinfectare cu Herpes simplex tip 1",
+      "Când virusul se extinde hematogen în stadii terminale"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Afectarea ochiului apare prin implicarea ramurii oftalmice a nervului trigemen, iar manifestările la nivelul cavității bucale apar prin afectarea ramurilor 2 și 3 ale aceluiași nerv."
+  },
+  {
+    "id": 108,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Când trebuie inițiat, în mod optim, tratamentul antiviral sistemic în cazul Zonei zoster?",
+    "options": [
+      "În primele 24-48 de ore de la debut",
+      "Doar după faza de formare a crustelor",
+      "La exact 7 zile de la apariția primelor vezicule",
+      "Doar în caz de durere severă prelungită (după 2 săptămâni)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tratamentul antiviral sistemic pentru Zona zoster (Aciclovir, Valaciclovir, Brivudină) trebuie inițiat precoce, în primele 24-48 de ore."
+  },
+  {
+    "id": 109,
+    "category": "infectii_virale",
+    "difficulty": "hard",
+    "question": "Care este doza recomandată pentru Valaciclovir sistemic în tratamentul Zonei zoster?",
+    "options": [
+      "1 g/zi timp de 5 zile",
+      "1 g x 3/zi timp de 7 zile",
+      "400 mg/zi timp de 6 luni",
+      "800 mg x 5/zi timp de 10 zile"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pentru Zona zoster, Valaciclovirul se administrează în doză de 1 g x 3/zi timp de 7 zile. Doza de 1g/zi 5 zile este pentru episodul de Herpes simplex. Doza de 800 mg x 5 este specifică Aciclovirului în Zona zoster."
+  },
+  {
+    "id": 110,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Ce opțiuni de vaccinare sunt menționate în curs pentru prevenția infecției / reactivării cu virusul varicelo-zosterian?",
+    "options": [
+      "Cervarix și Gardasil",
+      "Zostavax și Shingrix",
+      "Vaccinurile anti-rotavirus",
+      "Nu există opțiuni de imunizare pentru VZV"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pentru prevenția Zonei zoster, imunizarea se face prin vaccinurile Zostavax și Shingrix."
+  },
+  {
+    "id": 111,
+    "category": "infectii_virale",
+    "difficulty": "easy",
+    "question": "În care decadă de viață se înregistrează cea mai mare incidență a infecțiilor cu virusurile papiloma umane (HPV)?",
+    "options": [
+      "În prima decadă (0-10 ani)",
+      "În decada a 2-a de viață",
+      "La pacienții geriatrici (peste 70 de ani)",
+      "La naștere (congenital)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Conform materialului, HPV are o incidență crescută în decada a 2-a de viață, alături de o infectivitate mare."
+  },
+  {
+    "id": 112,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care este aspectul clinic tipic al condiloamelor acuminate (veruci ano-genitale)?",
+    "options": [
+      "Vezicule perlate cu dispoziție interdigitală",
+      "Papule cu aspect conopidiform (agregate, elevate) sau plane",
+      "Noduli post-scabioși intens pruriginoși",
+      "Plăci alopecice non-inflamatorii"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Verucile ano-genitale se prezintă clinic ca papule cu aspect conopidiform (agregate, elevate) sau plane, apărând atât la femei, cât și la bărbați."
+  },
+  {
+    "id": 113,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Care este compoziția keratoliticelor topice (ex. Duofilm) recomandate pentru tratamentul verucilor non-genitale?",
+    "options": [
+      "Acid hialuronic și vitamina C",
+      "Acid salicilic + acid lactic",
+      "Podofilotoxină",
+      "Imiquimod 5%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tratamentul keratolitic pentru veruci (Duofilm) conține acid salicilic și acid lactic. Podofilotoxina și Imiquimod-ul sunt rezervate în principal zonei genitale."
+  },
+  {
+    "id": 114,
+    "category": "infectii_virale",
+    "difficulty": "medium",
+    "question": "Împotriva câtor tulpini oncogene și non-oncogene protejează vaccinul Gardasil 9?",
+    "options": [
+      "2 tulpini",
+      "4 tulpini",
+      "9 tulpini",
+      "Toate cele peste 150 de subtipuri cunoscute"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Așa cum îi sugerează și numele, Gardasil 9 este un vaccin dezvoltat împotriva a 9 tulpini HPV."
+  },
+  {
+    "id": 115,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Care sunt cei trei factori patogenici principali implicați în apariția acneei?",
+    "options": [
+      "Hiperkeratoza la nivelul ductului folicular, producția de sebum în exces și Propionibacterium acnes",
+      "Infecția cu Helicobacter pylori, expunerea la raze UV și hipersensibilitatea de tip I",
+      "Atopia, deficitul de IgE și prezența parazitului Demodex folliculorum",
+      "Hiperplazia glandelor sudoripare, stresul emoțional și infecția cu Staphylococcus aureus"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Conform cursului, acneea este cauzată de 1. Hiperkeratoză la nivelul ductului folicular, 2. Producție de sebum în exces și 3. Propionibacterium acnes (+ factori inflamatori)."
+  },
+  {
+    "id": 116,
+    "category": "md_alergice_acnee",
+    "difficulty": "easy",
+    "question": "Cum sunt definite comedoanele deschise (punctele negre) din acnee?",
+    "options": [
+      "Papule eritematoase de consistență fermă",
+      "Acumulare de polimorfonucleare (conținut purulent galben)",
+      "Leziuni de retenție de 1-3 mm, cauzate de acumularea de sebum oxidat",
+      "Microchiste de culoarea pielii sau albe"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Comedoanele deschise (punctele negre) sunt leziuni de retenție de 1-3 mm care apar prin acumularea de sebum oxidat."
+  },
+  {
+    "id": 117,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele substanțe face parte din tratamentul topic recomandat pentru acnee?",
+    "options": [
+      "Inhibitorii de calcineurină",
+      "Corticosteroizii topici",
+      "Acidul azelaic, Peroxidul de benzoil și Retinoizii",
+      "Antihistaminicele topice"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Terapia topică pentru acnee include retinoizi, peroxid de benzoil, acid azelaic și antibiotice topice."
+  },
+  {
+    "id": 118,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Care dintre următorii agenți patogeni este asociat cu patogeneza rozaceei?",
+    "options": [
+      "Propionibacterium acnes",
+      "Demodex folliculorum și Helicobacter pylori",
+      "Virusul Herpes simplex",
+      "Sarcoptes scabiae"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Patogeneza rozaceei include predispoziția genetică, asocierea cu afecțiuni digestive (infecția cu Helicobacter pylori) și parazitul Demodex folliculorum."
+  },
+  {
+    "id": 119,
+    "category": "md_alergice_acnee",
+    "difficulty": "hard",
+    "question": "Ce leziune dermatologică este în mod specific ABSENTĂ în stadiul II (faza papulo-pustuloasă) al rozaceei, ajutând la diagnosticul diferențial cu acneea?",
+    "options": [
+      "Eritemul",
+      "Pustulele",
+      "Comedoanele",
+      "Papulele"
+    ],
+    "correctAnswer": 2,
+    "explanation": "În stadiul II al rozaceei (faza papulo-pustuloasă) apar papule și pustule mici, sterile, dar NU există comedoane."
+  },
+  {
+    "id": 120,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Cum se manifestă clinic stadiul III (faza fimatoasă) al rozaceei?",
+    "options": [
+      "Prin eritem tranzitor și teleangiectazii",
+      "Prin apariția de vezicule și cruste melicerice",
+      "Prin hiperplazie și fibroză a glandelor sebacee, în special la nivelul nasului (rinofimă)",
+      "Prin ulcerații profunde la nivelul obrajilor"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Stadiul III al rozaceei se caracterizează prin faza fimatoasă, implicând hiperplazie și fibroză a glandelor sebacee de la nivelul feței, tipic ducând la rinofimă (la nivelul nasului)."
+  },
+  {
+    "id": 121,
+    "category": "md_alergice_acnee",
+    "difficulty": "easy",
+    "question": "Ce simptom subiectiv este prezent și caracteristic în dermatite (eczeme)?",
+    "options": [
+      "Durerea severă",
+      "Pruritul",
+      "Anestezia locală",
+      "Senzația de constricție"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dermatitele (eczemele) sunt caracterizate de eritem și inflamație, iar pruritul este întotdeauna prezent."
+  },
+  {
+    "id": 122,
+    "category": "md_alergice_acnee",
+    "difficulty": "hard",
+    "question": "Care este evoluția clinică corectă a unei eczeme în funcție de stadiile sale (acut, subacut, cronic)?",
+    "options": [
+      "Acut: eritem+scuame -> Subacut: lichenificație -> Cronic: eritem+vezicule",
+      "Acut: eritem+vezicule -> Subacut: eritem+cruste, scuame -> Cronic: eritem+scuame, lichenificație",
+      "Acut: lichenificație -> Subacut: vezicule -> Cronic: cruste",
+      "Acut: pustule -> Subacut: comedoane -> Cronic: rinofimă"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Stadiile dermatitelor: Acut (eritem+vezicule), Subacut (eritem+cruste, scuame) și Cronic (eritem+scuame, lichenificație)."
+  },
+  {
+    "id": 123,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Prin ce se caracterizează dermatita iritativă de contact comparativ cu cea alergică?",
+    "options": [
+      "Apare doar la persoanele cu o predispoziție genetică rară",
+      "Apare la distanță de locul contactului cu substanța",
+      "Este mediată de hipersensibilitatea de tip I",
+      "Apare la majoritatea persoanelor expuse, severitatea fiind dată de concentrația substanței și durata expunerii"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dermatita iritativă de contact este cea mai frecventă, apare la locul de contact la majoritatea persoanelor expuse, iar severitatea este strict dependentă de concentrația substanței și durata expunerii."
+  },
+  {
+    "id": 124,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Care este mecanismul imunologic care stă la baza dermatitei alergice de contact?",
+    "options": [
+      "Hipersensibilitate de tip I (IgE mediată)",
+      "Hipersensibilitate de tip II (citotoxică)",
+      "Hipersensibilitate de tip III (complexe imune)",
+      "Hipersensibilitate de tip IV (întârziată, mediată celular)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dermatita alergică de contact este un proces imunologic complex reprezentat de hipersensibilitatea de tip IV (întârziată), durând de obicei 2-3 zile până la apariția leziunilor."
+  },
+  {
+    "id": 125,
+    "category": "md_alergice_acnee",
+    "difficulty": "easy",
+    "question": "Care este regula corectă de aplicare a cremelor emoliente în îngrijirea pacienților cu dermatite?",
+    "options": [
+      "Se aplică exclusiv pe pielea complet uscată, la câteva ore după baie",
+      "Se aplică imediat după baie, însă nu se pun imediat după substanțele de tratament",
+      "Se aplică doar o dată pe săptămână pentru a evita ocluzia porilor",
+      "Se amestecă obligatoriu cu dermatocorticoizi înainte de fiecare aplicare"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Emolientele trebuie aplicate imediat după baie, reaplicate ori de câte ori este necesar, însă nu se pun imediat după substanțele de tratament."
+  },
+  {
+    "id": 126,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Cu ce alte afecțiuni se asociază frecvent dermatita atopică în cadrul istoricului personal sau familial (triada atopică)?",
+    "options": [
+      "Psoriazis și artrită reumatoidă",
+      "Astm bronșic și rinită alergică",
+      "Rozacee și acnee severă",
+      "Diabet zaharat și obezitate"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dermatita atopică are istoric familial pozitiv și se asociază cu istoricul personal de astm, rinită alergică și/sau eczemă."
+  },
+  {
+    "id": 127,
+    "category": "md_alergice_acnee",
+    "difficulty": "hard",
+    "question": "Cum diferă topografia leziunilor de dermatită atopică la copii comparativ cu adulții?",
+    "options": [
+      "La copii pe suprafețele flexorii, iar la adulți pe suprafețele extensorii",
+      "La copii pe față și suprafețe extensorii, iar la adulți în zonele flexorii (cu lichenificare)",
+      "La ambii apare exclusiv la nivelul scalpului și feței",
+      "La copii apare doar perianal, iar la adulți pe trunchi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Clinic, în dermatita atopică leziunile sunt localizate pe față și suprafețele extensorii la copii, și în zonele flexorii la adulți (însoțite frecvent de lichenificare)."
+  },
+  {
+    "id": 128,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Care sunt agenții microbieni specific menționați ca declanșatori ai proceselor imune în patogeneza dermatitei atopice?",
+    "options": [
+      "Virusul Herpes simplex",
+      "Stafilococul auriu și toxinele produse de acesta",
+      "Streptococul beta-hemolitic de grup A",
+      "Fungii din genul Microsporum"
+    ],
+    "correctAnswer": 1,
+    "explanation": "În patogeneza dermatitei atopice sunt implicate procese imune declanșate de Stafilococul auriu și toxinele sale, alături de anomalii ale barierei cutanate și dezechilibre Th1/Th2."
+  },
+  {
+    "id": 129,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Care este topografia caracteristică a leziunilor în dermatita seboreică?",
+    "options": [
+      "Zonele palmare și plantare",
+      "Zonele extensoare ale membrelor",
+      "Zonele seboreice: scalp, șanț nazo-genian, glabelar",
+      "Exclusiv zona inghinală"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dermatita seboreică afectează predominant zonele seboreice: scalpul, șanțul nazo-genian și zona glabelară."
+  },
+  {
+    "id": 130,
+    "category": "md_alergice_acnee",
+    "difficulty": "easy",
+    "question": "Care este clasa de medicamente topice utilizată ca bază de tratament la adulții cu dermatită seboreică?",
+    "options": [
+      "Antimicoticele (ex. ketoconazol, climbazol, clotrimazol)",
+      "Retinoizii",
+      "Antibioticele locale (ex. neomicina)",
+      "Astringentele puternice"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tratamentul dermatitei seboreice la adulți folosește produse pe bază de antimicotice sub formă de șampoane (ketoconazol, sulfură de seleniu) sau creme (clotrimazol, bifonazol)."
+  },
+  {
+    "id": 131,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Conform tabelului reacțiilor de hipersensibilitate, în cât timp apare manifestarea clinică (urticarie, angioedem) în cazul hipersensibilității de tip I?",
+    "options": [
+      "Instantaneu, sub 1 minut",
+      "15 - 30 minute",
+      "Câteva ore",
+      "2 - 3 zile"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hipersensibilitatea de tip I (mediată de IgE și histamină) apare în 15-30 de minute și se manifestă prin urticarie și angioedem."
+  },
+  {
+    "id": 132,
+    "category": "md_alergice_acnee",
+    "difficulty": "easy",
+    "question": "Cum se prezintă clinic urticaria acută?",
+    "options": [
+      "Plăci eritemato-edematoase, bine delimitate, pruriginoase, diseminate, care dispar în <24 ore",
+      "Eroziuni profunde acoperite de cruste hemoragice, persistente săptămâni",
+      "Papule foliculare hiperkeratozice nedureroase",
+      "Vezicule în buchet cu dispoziție dermatomerică"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Urticaria acută se caracterizează prin plăci eritemato-edematoase, bine delimitate, pruriginoase, de formă variată, care au o durată a leziunii individuale sub 24 de ore."
+  },
+  {
+    "id": 133,
+    "category": "md_alergice_acnee",
+    "difficulty": "hard",
+    "question": "Care este tratamentul de primă linie obligatoriu în cazul unui pacient cu angioedem important sau anafilaxie?",
+    "options": [
+      "Antihistaminice orale din generația a 2-a exclusiv",
+      "Corticosteroizi topici aplicați la nivelul edemului",
+      "Epinefrină (adrenalină) administrată subcutanat sau intramuscular",
+      "Comprese reci și repaus la pat"
+    ],
+    "correctAnswer": 2,
+    "explanation": "În caz de angioedem important sau anafilaxie, tratamentul salvator este Epinefrina (adrenalina) sc sau im."
+  },
+  {
+    "id": 134,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Cum se definește purpura în contextul vasculitelor?",
+    "options": [
+      "Un edem subcutanat localizat care lasă godeu la presiune",
+      "Eritem care NU dispare la digitopresiune",
+      "O rețea venoasă vizibilă, dilatată (teleangiectazii)",
+      "O leziune de tip comedon închis suprainfectată"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Purpura reprezintă extravazarea sângelui în tegument secundară inflamației vasculare și este definită clinic ca eritem care NU dispare la digitopresiune."
+  },
+  {
+    "id": 135,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Ce mecanism imunologic stă la baza apariției vasculitelor (prototipul de vase mici)?",
+    "options": [
+      "Reacție de hipersensibilitate de tip I (mediată IgE)",
+      "Apoptoza directă a keratinocitelor",
+      "O reacție imunologică de tip antigen-anticorp (hipersensibilitate tip III - complexe imune)",
+      "Hipersensibilitate celulară întârziată (tip IV)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Vasculitele apar printr-o reacție imunologică de tip antigen-anticorp, încadrându-se în hipersensibilitatea de tip III (complexe imune)."
+  },
+  {
+    "id": 136,
+    "category": "md_alergice_acnee",
+    "difficulty": "easy",
+    "question": "Care este cea mai frecventă manifestare clinică a reacțiilor cutanate postmedicamentoase?",
+    "options": [
+      "Sindromul Stevens-Johnson",
+      "Necroliza epidermică toxică",
+      "Erupțiile exantematoase",
+      "Alopecia acută difuză"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Erupțiile exantematoase reprezintă cea mai frecventă manifestare a reacțiilor cutanate postmedicamentoase."
+  },
+  {
+    "id": 137,
+    "category": "md_alergice_acnee",
+    "difficulty": "medium",
+    "question": "Cum debutează și se extinde erupția exantematoasă postmedicamentoasă?",
+    "options": [
+      "Debutează pe palme și plante și se extinde spre trunchi",
+      "Debutează exclusiv pe mucoasa bucală",
+      "Debutează pe trunchi, cu extindere periferică, simetrică și este intens pruriginoasă",
+      "Apare unilateral de-a lungul unui dermatomer"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Erupția exantematoasă debutează pe trunchi, cu extindere periferică, simetrică, și este caracterizată printr-un prurit intens."
+  },
+  {
+    "id": 138,
+    "category": "md_alergice_acnee",
+    "difficulty": "hard",
+    "question": "Ce caracterizează Sindromul Stevens-Johnson și Necroliza epidermică toxică, ca forme severe de reacții postmedicamentoase?",
+    "options": [
+      "Sunt leziuni benigne care dispar rapid la întreruperea medicamentului",
+      "Se caracterizează prin eritem, decolare a epidermului, leziuni buloase extinse și leziuni mucoase extinse, fiind amenințătoare de viață",
+      "Produc hiperkeratoză severă cu formare de cicatrici cheloidiene masive",
+      "Sunt manifestări cutanate strict localizate la nivelul feței și gâtului"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Aceste forme severe și amenințătoare de viață se prezintă cu eritem, decolare a epidermului, leziuni buloase și mucoase extinse."
+  },
+  {
+    "id": 139,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Care sunt caracteristicile morfologice și de rezistență ale agentului patogen al sifilisului (Treponema pallidum)?",
+    "options": [
+      "Bacil gram-negativ, extrem de rezistent la variațiile de temperatură",
+      "Bacterie sferică (coc), imobilă, rezistentă la uscăciune",
+      "Formă spiralată cu 6-14 spire, dimensiuni de 6-20 µm, mobilitate crescută, dar distrusă de temperatura ambientală",
+      "Parazit intracelular obligatoriu, rezistent în mediul extern săptămâni întregi"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Agentul patogen al sifilisului, Treponema pallidum, are formă spiralată cu 6-14 spire, dimensiuni de 6-20 µm, mobilitate crescută și este distrus ușor de temperatura ambientală."
+  },
+  {
+    "id": 140,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "easy",
+    "question": "Cum se împarte sifilisul dobândit în funcție de stadializarea infecției (vechimea acesteia)?",
+    "options": [
+      "Sifilis precoce și sifilis congenital",
+      "Sifilis recent (primar, secundar, latent recent) și Sifilis tardiv (latent tardiv, terțiar)",
+      "Sifilis parenchimatos și meningovascular",
+      "Sifilis simptomatic și asimptomatic"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sifilisul dobândit se împarte în Sifilis recent (primar, secundar, latent recent) și Sifilis tardiv (latent tardiv, terțiar)."
+  },
+  {
+    "id": 141,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Care este aspectul clinic caracteristic al șancrului sifilitic din sifilisul primar?",
+    "options": [
+      "Vezicule multiple dureroase pe bază eritematoasă",
+      "Ulcerație neregulată, profundă, purulentă și foarte dureroasă",
+      "Eroziune/leziune ulcerativă bine delimitată, rotund-ovalară, cu suprafață netedă lucioasă (lăcuită), indurată la palpare și asimptomatică",
+      "Placă eritemato-scuamoasă, intens pruriginoasă, fără indurație"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Șancrul sifilitic este tipic asimptomatic (nedureros), indurat la palpare, rotund-ovalar, bine delimitat, cu suprafață netedă și lucioasă (aspect lăcuit)."
+  },
+  {
+    "id": 142,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "hard",
+    "question": "Care este evoluția naturală a șancrului sifilitic în absența oricărui tratament?",
+    "options": [
+      "Se cronicizează și se transformă în gomă sifilitică",
+      "Se extinde și determină necroză tisulară masivă",
+      "Rămâne staționar pe toată durata stadiului primar și secundar",
+      "Se epitelizează spontan, fără cicatrice, în 4-6 săptămâni, deși indurația poate persista 2-3 luni"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Șancrul sifilitic se vindecă (epitelizează) fără cicatrice în 4-6 săptămâni chiar și în absența tratamentului etiologic."
+  },
+  {
+    "id": 143,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Cum se prezintă adenopatia regională asociată șancrului în sifilisul primar?",
+    "options": [
+      "Dureroasă, fluctuantă, cu tendință la fistulizare",
+      "Frecvent bilaterală, poliganglionară, nedureroasă, dură, cu ganglioni mobili (rezolutivă)",
+      "Unilaterală, reprezentată de un singur ganglion mărit masiv, dureros",
+      "Absentă în stadiul primar, apare doar în stadiul secundar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Adenopatia regională în sifilisul primar este frecvent bilaterală (ex. inghinală), poliganglionară, nedureroasă, de consistență dură, cu ganglioni mobili."
+  },
+  {
+    "id": 144,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "La aproximativ cât timp de la producerea infecției debutează manifestările sifilisului secundar (când boala devine sistemică)?",
+    "options": [
+      "3-5 zile",
+      "3 săptămâni",
+      "Aproximativ 2 luni",
+      "1-2 ani"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Manifestările din perioada secundară, când treponemele trec în curentul sanguin și boala devine sistemică, încep după aproximativ două luni de la producerea infecției."
+  },
+  {
+    "id": 145,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "easy",
+    "question": "Care este prima erupție cutanată care apare în stadiul secundar al sifilisului?",
+    "options": [
+      "Sifilidele papulo-hipertrofice (condiloma lata)",
+      "Sifilidele pigmentare (colierul Venerei)",
+      "Sifilidele eritematoase (rozeolele sifilitice)",
+      "Sifilidele ulceroase"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sifilidele eritematoase (rozeolele sifilitice) reprezintă prima erupție apărută în stadiul secundar, caracterizată prin pete roz, nepruriginoase, ce dispar la digitopresiune."
+  },
+  {
+    "id": 146,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "hard",
+    "question": "Ce element semiologic este caracteristic pentru sifilidele papuloase/papulo-scuamoase din sifilisul secundar?",
+    "options": [
+      "O veziculă perlată localizată central",
+      "Un halou de depigmentare periferică",
+      "Gulerașul Biett (o scuamă care se detașează central, dar rămâne aderentă la periferie)",
+      "O crustă melicerică aderentă"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sifilidele papuloase și papulo-scuamoase prezintă caracteristic \"gulerașul Biett\" – o scuamă detașată central și aderentă periferic."
+  },
+  {
+    "id": 147,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Ce denumire poartă sifilidele papulo-hipertrofice localizate genital, perigenital sau axilar?",
+    "options": [
+      "Condiloame acuminate",
+      "Condiloma lata",
+      "Molluscum contagiosum",
+      "Tuberculi sifilitici"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sifilidele papulo-hipertrofice, prezente în zonele cu fricțiune și umezeală (genital, perigenital), sunt denumite condiloma lata."
+  },
+  {
+    "id": 148,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Care este mecanismul patogenic principal responsabil de apariția leziunilor din sifilisul terțiar?",
+    "options": [
+      "Reacție de hipersensibilitate tip I mediata IgE",
+      "Răspuns granulomatos determinat de o reacție imună tip IV și un proces de vasculită ce generează leziuni necrotice",
+      "Invazia directă masivă a sângelui circulant de către spirochete (spirochetemie)",
+      "Suprainfecția bacteriană a leziunilor din stadiul secundar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "În sifilisul terțiar, răspunsul organismului este unul granulomatos (imunitate tip IV), iar leziunile sunt determinate de un proces de vasculită care duce la necroză."
+  },
+  {
+    "id": 149,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "hard",
+    "question": "Care sunt stadiile evolutive succesive prin care trece goma sifilitică în sifilisul terțiar?",
+    "options": [
+      "Veziculă -> Pustulă -> Eroziune -> Vindecare spontană",
+      "Maculă eritematoasă -> Edem -> Veziculizare -> Crustă",
+      "Cruditate (nodozitate dură) -> Ramolire (fluctuență) -> Ulcerație (fistulizare centrală) -> Cicatrizare",
+      "Placă alopecică -> Hiperkeratoză -> Fisură -> Ulcerație"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Goma sifilitică trece prin stadiile: cruditate (nodozitate dură), ramolire (devine roșie-violacee, fluctuantă), ulcerație (fistulizează central, elimină țesut necrotic) și ulterior epitelizare prin cicatrice."
+  },
+  {
+    "id": 150,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "hard",
+    "question": "Ce structuri sunt afectate în mod caracteristic în \"tabesul dorsal\", o formă de neurosifilis parenchimatos?",
+    "options": [
+      "Cortexul cerebral frontal, determinând paralizie generală",
+      "Coloanele posterioare din măduva spinării și rădăcinile dorsale, determinând ataxie locomotorie și dureri fulgurante",
+      "Nervul facial periferic exclusiv",
+      "Meningele și vasele cerebrale, determinând manifestări ischemice și meningită acută"
+    ],
+    "correctAnswer": 1,
+    "explanation": "În tabesul dorsal sunt afectate coloanele posterioare din măduva spinării și rădăcinile dorsale, manifestându-se prin ataxie locomotorie progresivă, dureri fulgurante, absența reflexelor tendinoase și mal perforant plantar."
+  },
+  {
+    "id": 151,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Ce reprezintă Semnul Argyll-Robertson apărut în neurosifilis?",
+    "options": [
+      "Absența reflexelor tendinoase la membrele inferioare",
+      "Ulcerația peretelui palatului dur",
+      "Anizocorie cu pierderea reflexului pupilar la lumină, cu păstrarea acomodării",
+      "Paralizia nervului trigemen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Semnul Argyll-Robertson este o manifestare oculară a neurosifilisului caracterizată prin anizocorie și pierderea reflexului pupilar la lumină."
+  },
+  {
+    "id": 152,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Care este pragul de timp (vechimea infecției) care separă Sifilisul latent recent de Sifilisul latent tardiv?",
+    "options": [
+      "6 luni",
+      "1 an",
+      "2 ani",
+      "5 ani"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sifilisul latent se împarte în recent (vechime sub 2 ani) și tardiv (vechime peste 2 ani). Această distincție influențează durata tratamentului."
+  },
+  {
+    "id": 153,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele afirmații descrie corect testul VDRL în diagnosticul sifilisului?",
+    "options": [
+      "Este un test de confirmare absolut specific pentru Treponema pallidum",
+      "Este un test de screening, de floculare, nespecific (folosește antigen cardiolipinic) ce poate da reacții fals pozitive, dar este util cantitativ pentru urmărirea tratamentului",
+      "Este pozitiv doar în sifilisul congenital",
+      "Depistează prezența directă a spirochetelor prin microscopie în câmp întunecat"
+    ],
+    "correctAnswer": 1,
+    "explanation": "VDRL este un test serologic de screening (nespecific, Ag cardiolipina), poate genera rezultate fals pozitive, dar varianta sa cantitativă (ex: titru 1:16) este esențială pentru evaluarea răspunsului la tratament."
+  },
+  {
+    "id": 154,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "hard",
+    "question": "Care este tratamentul de primă linie recomandat pentru Sifilisul primar și secundar, conform protocolului din curs?",
+    "options": [
+      "Benzatin Penicilină 2 doze a 2.400.000 UI intramuscular, administrate la interval de o săptămână",
+      "Penicilină cristalină 20.000.000 UI intravenos zilnic timp de 14 zile",
+      "Doxiciclină 200 mg/zi timp de 5 zile",
+      "Benzatin Penicilină o singură doză unică de 1.200.000 UI"
+    ],
+    "correctAnswer": 0,
+    "explanation": "În sifilisul primar, secundar și latent recent, tratamentul standard constă în administrarea a 2 doze de Benzatin Penicilină de 2.400.000 UI i.m., la interval de o săptămână."
+  },
+  {
+    "id": 155,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "hard",
+    "question": "Cum se modifică schema de tratament pentru pacientul cu Sifilis latent tardiv față de cel recent?",
+    "options": [
+      "Se folosește o altă clasă de antibiotice (macrolide)",
+      "Se administrează o doză unică masivă de penicilină cristalină",
+      "Se administrează 3 doze de Benzatin Penicilină 2,4 mil. UI i.m., la interval de o săptămână",
+      "Se recomandă exclusiv monitorizare clinică fără tratament"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pentru sifilisul latent tardiv (vechime > 2 ani), tratamentul necesită o durată mai lungă: 3 doze de Benzatin Penicilină de 2,4 mil. UI, i.m., spațiate la câte o săptămână."
+  },
+  {
+    "id": 156,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "easy",
+    "question": "Care este simptomatologia clasică a gonoreei (uretritei gonococice) la bărbat?",
+    "options": [
+      "Ulcerație nedureroasă la nivelul penisului",
+      "Disurie severă și secreție purulentă galben-verzuie, apărute la 2-6 zile după contactul neprotejat",
+      "Vezicule multiple pruriginoase grupate în buchet",
+      "Erupție exantematoasă pe întreg corpul"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gonoreea acută la bărbat se manifestă prin disurie și o secreție purulentă, abundentă, galben-verzuie, care debutează la 2-6 zile de la expunere."
+  },
+  {
+    "id": 157,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "De ce constituie infecția gonococică (gonoreea) un pericol tăcut semnificativ la femei?",
+    "options": [
+      "Deoarece infecția se vindecă spontan mereu, dar generează o imunitate exagerată",
+      "Pentru că 50% dintre cazuri sunt asimptomatice, dar infecția poate ascende, cauzând boală inflamatorie pelvină și infertilitate",
+      "Pentru că determină automat neurosifilis",
+      "Deoarece afectează doar femeile în post-menopauză"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La femei, 50% din cazurile de gonoree sunt asimptomatice. Ascensiunea bacteriei către endometru și salpinge poate produce sindrom inflamator pelvin și infertilitate."
+  },
+  {
+    "id": 158,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "hard",
+    "question": "Care este schema de tratament recomandată în curs pentru gonoree?",
+    "options": [
+      "Benzatin Penicilină 2,4 milioane UI i.m. doză unică",
+      "Ceftriaxonă 1g IM + Azitromicină 2g",
+      "Aciclovir 400 mg de 5 ori pe zi",
+      "Metronidazol 500 mg de 2 ori pe zi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Protocolul menționat în document pentru tratamentul gonoreei este asocierea de Ceftriaxonă 1g IM cu Azitromicină 2g."
+  },
+  {
+    "id": 159,
+    "category": "boli_transmitere_sexuala",
+    "difficulty": "medium",
+    "question": "Ce agenți patogeni pot cauza uretrită la bărbat și cervicită la femeie, putând fi tratați eficient cu Doxiciclină sau Azitromicină?",
+    "options": [
+      "Treponema pallidum și virusul Herpes simplex",
+      "Chlamydia trachomatis și specii de Mycoplasma/Ureaplasma",
+      "Papilomavirusul Uman (HPV)",
+      "Trichomonas vaginalis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Alte boli cu transmitere sexuală non-gonococice includ infecțiile cu Chlamydia trachomatis, Mycoplasma hominis și Ureaplasma urealyticum. Tratamentul lor de elecție implică Doxiciclină (7 zile) sau Azitromicină (doză unică de 1g)."
+  },
+  {
+    "id": 160,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "medium",
+    "question": "Care este aspectul clinic tipic și evoluția keratozei seboreice?",
+    "options": [
+      "Papule ulcerate, cu evoluție rapidă spre carcinom bazocelular",
+      "Papule bine delimitate, netede sau verucoase, cu evoluție benignă dar care devin mai numeroase și intens pigmentate în timp",
+      "Plăci eritemato-edematoase tranzitorii, intens pruriginoase",
+      "Leziuni în dom, roșii-violacee, cu evoluție limitată spontan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Keratoza seboreică se prezintă ca papule bine delimitate (netede sau verucoase, de culoare gălbuie, brună sau culoarea pielii) cu evoluție cronică, benignă, devenind mai numeroase și mai intens pigmentate în timp."
+  },
+  {
+    "id": 161,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "easy",
+    "question": "Unde se localizează cel mai frecvent keratozele seboreice?",
+    "options": [
+      "Strict la nivelul palmelor și plantelor",
+      "Trunchi, față (regiunile seboreice), gât, abdomen, pliuri axilare și inghinale, fețele extensorii ale antebrațelor",
+      "Exclusiv la nivelul mucoasei bucale",
+      "La nivelul unghiilor și patului unghial"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Topografia tipică pentru keratoza seboreică include trunchiul, fața, gâtul, abdomenul, pliurile și fețele extensorii ale antebrațelor."
+  },
+  {
+    "id": 162,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "medium",
+    "question": "Ce opțiuni terapeutice sunt recomandate pentru tratamentul keratozelor seboreice?",
+    "options": [
+      "Chimioterapie sistemică și radioterapie",
+      "Crioterapie, electrocoagulare superficială, chiuretare, fotocoagulare Laser, dermabraziune",
+      "Corticoterapie sistemică în doze mari",
+      "Nu se tratează niciodată, fiind interzisă manipularea lor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metodele distructive superficiale precum crioterapia, electrocoagularea, chiuretarea, tratamentul laser și dermabraziunea sunt folosite pentru îndepărtarea keratozelor seboreice."
+  },
+  {
+    "id": 163,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "hard",
+    "question": "Cum se desfășoară etapele de evoluție naturală ale hemangioamelor apărute la naștere sau imediat după?",
+    "options": [
+      "Cresc continuu pe tot parcursul vieții adultului",
+      "Fază de creștere lentă până la 10 ani, urmată de involuție la pubertate",
+      "Fază de creștere rapidă post-natală (între 3 și 9 luni), urmată de o fază involutivă (între 2 și 10 ani)",
+      "Regresează complet în primele 2 săptămâni de viață"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hemangioamele au o evoluție tipică: o fază de creștere rapidă postnatală (lunile 3-9), urmată de o fază involutivă ce se întinde între 2 și 10 ani."
+  },
+  {
+    "id": 164,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "easy",
+    "question": "Care este atitudinea terapeutică recomandată în majoritatea cazurilor (70%) de hemangioame necomplicate?",
+    "options": [
+      "Excizie chirurgicală de urgență în prima lună de viață",
+      "Atitudine conservativă (urmărire), deoarece prezintă regresie spontană",
+      "Aplicare de chimioterapice topice (5-Fluorouracil)",
+      "Amputarea zonei afectate dacă este la nivelul extremităților"
+    ],
+    "correctAnswer": 1,
+    "explanation": "În 70% din cazuri, hemangioamele prezintă regresie spontană, motiv pentru care se adoptă o atitudine conservativă."
+  },
+  {
+    "id": 165,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "medium",
+    "question": "Ce tratament sistemic poate fi utilizat pentru formele severe de hemangioame ce necesită intervenție?",
+    "options": [
+      "Antihistaminice și antileucotriene",
+      "Corticoterapie și beta-blocante",
+      "Antibiotice din clasa macrolidelor",
+      "Antivirale (Aciclovir)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pentru cazurile care nu pot fi lăsate în observație, terapia sistemică include corticoterapia și beta-blocantele."
+  },
+  {
+    "id": 166,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "easy",
+    "question": "Cum se prezintă clinic angioamele senile (Cherry angioma) și când debutează de obicei?",
+    "options": [
+      "Plăci ulcerate pe față; debutează la naștere",
+      "Leziuni în dom, roșii-violacee, multiple pe trunchi; debutează după 30 de ani",
+      "Macule hiperpigmentate gigantice; debutează la pubertate",
+      "Papule keratotice pe buza inferioară; debutează la vârstnici"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cherry angioma (cea mai frecventă proliferare capilară) se prezintă ca leziuni în dom, roșii-violacee de câțiva milimetri, apar pe trunchi și debutează de regulă după vârsta de 30 de ani."
+  },
+  {
+    "id": 167,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "medium",
+    "question": "Cum sunt clasificați nevii melanocitari congenitali și care categorie asociază cel mai mare risc de transformare malignă?",
+    "options": [
+      "Superficiali și profunzi; cei profunzi au risc malign",
+      "Mici (<1,5 cm), mijlocii (1,5-20 cm) și giganți (>20 cm); cei giganți au risc crescut de transformare malignă",
+      "Eritematoși și pigmentari; cei eritematoși au risc crescut",
+      "Unici și multipli; cei unici se malignizează întotdeauna"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nevii melanocitari congenitali sunt împărțiți în mici, mijlocii și giganți. Nevii giganți prezintă un risc crescut de transformare malignă, necesitând urmărire atentă."
+  },
+  {
+    "id": 168,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "medium",
+    "question": "Care este recomandarea medicală corectă în ceea ce privește nevii melanocitari dobândiți comuni?",
+    "options": [
+      "Excizia profilactică a tuturor nevilor apăruți până la vârsta de 20 de ani",
+      "Supraveghere pe toată viața, examinare clinică și dermatoscopică; nu se recomandă excizia profilactică",
+      "Cauterizarea lor imediat ce devin vizibili",
+      "Tratarea lor cu retinoizi topici"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nevii melanocitari dobândiți necesită supraveghere toată viața (clinic și dermatoscopic). Excizia profilactică de rutină nu este recomandată."
+  },
+  {
+    "id": 169,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "easy",
+    "question": "În supravegherea nevilor melanocitari atipici se folosește regula ABCDE. Ce semnifică litera „D”?",
+    "options": [
+      "Durere",
+      "Densitate",
+      "Diametru > 6 mm",
+      "Decolorare"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Regula ABCDE înseamnă: Asimetrie, Border (margine), Colour (culoare), Diameter (diametru > 6 mm) și Elevation/Evolution (elevație/evoluție)."
+  },
+  {
+    "id": 170,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "medium",
+    "question": "Care este profilul tipic al pacientului cu risc de a dezvolta keratoze actinice?",
+    "options": [
+      "Copil cu istoric de atopie severă",
+      "Femeie tânără, fototip închis, fără expunere la soare",
+      "Bărbat de vârstă medie, fototip deschis, cu expunere cronică la soare",
+      "Vârstnic cu infecții bacteriene recurente"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Keratozele actinice apar predominant la bărbați (M>F) de vârstă medie, cu fototip deschis, care au un istoric de expunere cronică la soare."
+  },
+  {
+    "id": 171,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "medium",
+    "question": "Cum se prezintă clinic o keratoză actinică?",
+    "options": [
+      "Nodul purulent și dureros la nivel inghinal",
+      "Leziune rotund-ovalară, eritematoasă sau brun-deschisă, acoperită de o scuamă hiperkeratozică aderentă, de obicei <1 cm",
+      "Veziculă ombilicată central localizată pe trunchi",
+      "Placă albicioasă la nivelul orofaringelui"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Clinic, keratozele actinice sunt leziuni eritematoase sau brun-deschise, acoperite de o scuamă hiperkeratozică aderentă, dispuse pe zonele fotoexpuse."
+  },
+  {
+    "id": 172,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "hard",
+    "question": "Deși dispar rar spontan, ce risc malign de transformare prezintă keratozele actinice?",
+    "options": [
+      "Risc de 50% de a dezvolta melanom malign",
+      "Risc de 1% de a dezvolta carcinom scuamos",
+      "Risc de a dezvolta limfom cutanat cu celule T",
+      "Nu prezintă absolut niciun risc de malignizare"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Evoluția keratozelor actinice comportă un risc de 1% de transformare în carcinom scuamos, fiind considerate leziuni cutanate premaligne."
+  },
+  {
+    "id": 173,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "medium",
+    "question": "Care sunt agenții topici destructivi folosiți în tratamentul keratozelor actinice (pe lângă crioterapie și laser)?",
+    "options": [
+      "Corticosteroizi potenți",
+      "Antibiotice topice (Neomicină, Bacitracină)",
+      "Imiquimod și 5-Fluorouracil",
+      "Aciclovir și Penciclovir"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Măsurile distructive locale pentru keratozele actinice includ crioterapia, laserul, precum și aplicarea topică de Imiquimod sau 5-Fluorouracil (alături de retinoizi topici)."
+  },
+  {
+    "id": 174,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "easy",
+    "question": "Ce localizare are în mod specific cheilita actinică (leziune premalignă)?",
+    "options": [
+      "Scalpul occipital",
+      "Mucoasa genitală",
+      "Buza inferioară",
+      "Pleoapele"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cheilita actinică afectează buza inferioară, manifestându-se prin variații de culoare, scuame fine, fisuri sau plăci keratotice și asociază risc de carcinom scuamos."
+  },
+  {
+    "id": 175,
+    "category": "tumori_benigne_premaligne",
+    "difficulty": "hard",
+    "question": "Cum este definită clinic leucoplazia?",
+    "options": [
+      "O rețea venoasă vizibilă la nivelul membrelor",
+      "O erupție papulo-pustuloasă pe o bază de eritem tranzitor",
+      "O placă albă la nivelul orofaringelui, care nu poate fi îndepărtată și nu poate fi încadrată în altă categorie, având un diagnostic definitiv histologic",
+      "O ulcerație profundă a mucoasei gastrice"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Leucoplazia este un termen clinic descriptiv pentru o placă/leziune albă orofaringiană care nu se detașează, diagnosticul de certitudine și evaluarea potențialului malign stabilindu-se histologic."
+  },
+  {
+    "id": 176,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care este cea mai frecventă tumoră malignă la populația albă și care sunt celulele din care derivă?",
+    "options": [
+      "Carcinomul spinocelular, derivat din keratinocitele stratului spinos",
+      "Melanomul, derivat din melanocitele stratului bazal",
+      "Carcinomul bazocelular (CBC), derivat din celulele bazale ale epidermului și celulele nediferențiate ale anexelor sale",
+      "Limfomul cutanat cu celule T, derivat din limfocitele rezidente în derm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Carcinomul bazocelular (CBC) este cea mai frecventă tumoră malignă la populația albă și derivă din celulele bazale ale epidermului și anexele sale."
+  },
+  {
+    "id": 177,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce caracteristică evolutivă și de invazie diferențiază Carcinomul Bazocelular (CBC) de alte tumori maligne?",
+    "options": [
+      "Afectează frecvent mucoasele și se diseminează limfatic în 80% din cazuri",
+      "Metastazează extrem de rar, însă are un potențial invaziv local foarte mare (erodând structuri profunde)",
+      "Crește extrem de rapid și regresează spontan în absența tratamentului",
+      "Prezintă diseminare exclusiv hematogenă spre pulmon"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CBC metastazează extrem de rar (în situații excepționale), dar are un potențial invaziv local agresiv, putând eroda structurile mai profunde, chiar osoase. De asemenea, nu afectează mucoasele."
+  },
+  {
+    "id": 178,
+    "category": "tumori_maligne",
+    "difficulty": "easy",
+    "question": "Cum se prezintă clinic o leziune tipică de Carcinom Bazocelular?",
+    "options": [
+      "Placă pruriginoasă care devine conopidiformă",
+      "Maculă asimetrică neagră cu creștere excentrică rapidă",
+      "Formațiune tumorală bine delimitată, cu contur neregulat, cu \"perle epiteliomatoase\" la periferie, telangiectazii și tendință frecventă la ulcerare",
+      "Bule multiple hemoragice dispuse liniar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Aspectul clinic tipic pentru CBC include o formațiune tumorală cu perle epiteliomatoase la periferie, telangiectazii, uneori pigment (melanină) și o tendință frecventă la ulcerare cu prezența crustelor hematice."
+  },
+  {
+    "id": 179,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care este standardul de aur în tratamentul Carcinomului Bazocelular (CBC)?",
+    "options": [
+      "Chimioterapia topică cu 5-fluorouracil",
+      "Excizia chirurgicală cu o margine de siguranță de 3-5 mm",
+      "Terapia fotodinamică în toate stadiile",
+      "Radioterapia exclusivă"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Standardul de aur pentru tratamentul CBC este excizia chirurgicală cu o margine de siguranță de 3-5 mm. (Chirurgia Mohs este rezervată pentru localizări periculoase și anumite forme clinice)."
+  },
+  {
+    "id": 180,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Care este principalul mecanism de acțiune al medicamentului Vismodegib, utilizat în CBC metastazat sau depășit chirurgical?",
+    "options": [
+      "Este un anticorp monoclonal anti-CD20",
+      "Este un inhibitor al kinazei BRAF",
+      "Este un antagonist al căii de semnalizare Hedgehog",
+      "Este un inhibitor al calcineurinei"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Vismodegib este menționat în curs ca tratament pentru CBC metastazat, recurent, depășit chirurgical, fiind un antagonist al căii de semnalizare Hedgehog."
+  },
+  {
+    "id": 181,
+    "category": "tumori_maligne",
+    "difficulty": "easy",
+    "question": "Din ce tip de celule derivă Carcinomul Spinocelular (CSC)?",
+    "options": [
+      "Celulele bazale ale epidermului",
+      "Melanocite",
+      "Keratinocitele stratului spinos",
+      "Celulele Merkel"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Carcinomul spinocelular se dezvoltă din keratinocitele stratului spinos, celulele prezentând diferite grade de keratinizare."
+  },
+  {
+    "id": 182,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care dintre următorii NU este considerat un factor predispozant major pentru apariția Carcinomului Spinocelular (CSC)?",
+    "options": [
+      "Cicatricile post-arsură și inflamațiile cronice (post-ulcere de gambă)",
+      "Alergiile alimentare din copilărie",
+      "Expunerea la arsenic și hidrocarburi aromatice",
+      "Fumatul și infecțiile cu HPV"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Factorii predispozanți pentru CSC includ: leziuni precursoare, radiații UV/ionizante, arsenic, hidrocarburi aromatice, imunosupresie, cicatrici (post-arsură, post-ulcere cronice), factori termici, fumatul și infecțiile cu HPV. Alergiile alimentare nu sunt implicate."
+  },
+  {
+    "id": 183,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Pe ce zonă anatomică se localizează aproximativ o treime (1/3) din cazurile de Carcinom Spinocelular (CSC), având ca factor favorizant fumatul?",
+    "options": [
+      "Dorsul mâinilor",
+      "Semimucoasa buzei inferioare",
+      "Pleoapa superioară",
+      "Zona inghinală"
+    ],
+    "correctAnswer": 1,
+    "explanation": "O treime din cazurile de CSC se localizează pe semimucoasa buzei inferioare, asociindu-se frecvent cu fumatul și expunerea solară (cheilită actinică)."
+  },
+  {
+    "id": 184,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Cum se comportă Carcinomul Spinocelular (CSC) comparativ cu Carcinomul Bazocelular (CBC) în ceea ce privește riscul de metastazare?",
+    "options": [
+      "CSC nu metastazează niciodată, spre deosebire de CBC",
+      "CSC are un potențial metastatic mai ridicat, diseminând pe cale limfatică (și mai rar hematic/perineural), în special pentru formele localizate la nivelul buzelor, limbii și organelor genitale",
+      "Ambele tumori prezintă exclusiv metastazare osoasă masivă",
+      "Riscul metastatic este identic și neglijabil pentru ambele tipuri tumorale"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Spre deosebire de CBC, care metastazează excepțional, CSC prezintă risc real de metastazare (în special limfatică), mai ales pentru localizările agresive (labiale, linguale, peniene, vulvare), unde evoluția este mai rapidă."
+  },
+  {
+    "id": 185,
+    "category": "tumori_maligne",
+    "difficulty": "easy",
+    "question": "Ce procent din tumorile cutanate reprezintă melanomul și care este ponderea sa în mortalitatea cauzată de tumorile cutanate?",
+    "options": [
+      "Reprezintă peste 50% din tumorile cutanate și 10% din decese",
+      "Reprezintă sub 5% din totalul tumorilor cutanate, dar este responsabil pentru peste 90% din decesele cauzate de acestea",
+      "Reprezintă 90% din tumori și 5% din decese",
+      "Este singura tumoră cutanată benignă cu evoluție malignă asimptomatică"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Melanomul reprezintă sub 5% din totalul tumorilor cutanate, dar cauza a peste 90% din decesele dermatologice oncologice, fiind o tumoră extrem de agresivă."
+  },
+  {
+    "id": 186,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care dintre următorii factori este un factor de risc genetic (constituțional) pentru dezvoltarea melanomului?",
+    "options": [
+      "Expunerea solară intermitentă intensă",
+      "Istoric familial de nevi displazici, fototip deschis (ochi albaștri, păr blond/roșcat) și defecte de reparare a ADN-ului (Xeroderma pigmentosum)",
+      "Vârsta sub 18 ani exclusiv",
+      "A locui într-o zonă ecuatorială"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Factorii genetici includ: fototipul deschis, tendința la arsuri solare, istoricul familial de melanom/nevi displazici și defectele de reparare a ADN-ului. (Expunerea solară și rezidența sunt factori de mediu)."
+  },
+  {
+    "id": 187,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce formă de melanom este cel mai frecvent subtip (70%) la persoanele cu fototip deschis și se caracterizează printr-o extindere orizontală urmată de una verticală?",
+    "options": [
+      "Melanomul Nodular (MN)",
+      "Melanomul Lentigo Malign (LMM)",
+      "Melanomul Extensiv în Suprafață (MES)",
+      "Melanomul Lentiginos Acral (ALM)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Melanomul Extensiv în Suprafață (MES) este cel mai frecvent (70%), afectează pacienți de 30-50 ani, localizat tipic pe trunchi la bărbați și membrele inferioare la femei, având o fază de extensie radială urmată de creștere verticală."
+  },
+  {
+    "id": 188,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Ce formă de melanom este excepția clară de la aplicarea regulii ABCDE, crescând vertical rapid și fiind frecvent ulcerată/hemoragică de la debut?",
+    "options": [
+      "Melanomul Extensiv în Suprafață (MES)",
+      "Melanomul Lentigo Malign (LMM)",
+      "Melanomul Nodular (MN)",
+      "Melanomul Lentiginos Acral (ALM)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Melanomul nodular (15-30% din cazuri) nu urmează regula clasică ABCDE, neavând o fază de creștere radială, ci prezentând de la început o creștere verticală rapidă sub forma unui nodul ulcerat/hemoragic."
+  },
+  {
+    "id": 189,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce caracterizează Melanomul Lentiginos Acral (ALM) în mod distinctiv?",
+    "options": [
+      "Este exclusiv ne-pigmentat (amelanotic)",
+      "Apare doar la copii și adolescenți",
+      "Este cea mai frecventă formă la persoanele cu fototip închis (asiatici, pacienți de culoare) și se localizează pe palme, plante și la nivelul matricei unghiale",
+      "Se vindecă spontan la aplicarea fotoprotecției"
+    ],
+    "correctAnswer": 2,
+    "explanation": "ALM (5-10% din total) este forma predominantă la fototipurile închise, localizându-se acral: pe palme, plante și subunghial (melanonichie longitudinală)."
+  },
+  {
+    "id": 190,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Ce semnifică Indicele Breslow (utilizat în stadializarea T a melanomului) și de ce este esențial?",
+    "options": [
+      "Reprezintă diametrul tumoral masurat în centimetri la suprafața pielii",
+      "Măsoară grosimea tumorală pe verticală, în milimetri, fiind un factor de prognostic independent crucial",
+      "Indică numărul de ganglioni limfatici afectați regional",
+      "Estimează cantitatea de melanină produsă de celulele tumorale"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Indicele Breslow reprezintă grosimea tumorii primare măsurată microscopic pe verticală (ex. T1 < 1mm, T4 > 4mm) și este un factor independent de prognostic determinant pentru conduita terapeutică."
+  },
+  {
+    "id": 191,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Când este indicată tehnica „ganglionului santinelă” în stadializarea melanomului?",
+    "options": [
+      "La pacienții cu tumori in situ, grosime <0.1 mm",
+      "Pentru cancerele cutanate non-melanocitare (CBC)",
+      "În general la pacienții cu un Indice Breslow între 1.01 și 4.00 mm (stadii precoce-intermediare) pentru evaluarea invaziei ganglionare",
+      "Doar la pacienții cu metastaze pulmonare și cerebrale confirmate CT"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tehnica ganglionului santinelă este o procedură de diagnostic chirurgical indicată pentru a detecta micro-metastazele ganglionare ascunse, în special pentru tumori cu grosime (Indice Breslow) între 1.01 și 4.00 mm."
+  },
+  {
+    "id": 192,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Ce tratament sistemic se utilizează ca terapie adjuvantă în Stadiul III de melanom (boală regională cu invazie ganglionară) pentru eliminarea micrometastazelor?",
+    "options": [
+      "Radioterapie exclusivă",
+      "Interferon-alfa și inhibitori de puncte de control imun (Ipilimumab, Nivolumab)",
+      "Antibiotice topice (Mupirocină)",
+      "Antagoniști ai căii Hedgehog (Vismodegib)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "În stadiul III (după excizia tumorii și limfadenectomie), terapia adjuvantă recomandată pentru eliminarea metastazelor clinic inaparente constă în administrarea de Interferon-α, Ipilimumab sau Nivolumab (imunoterapie)."
+  },
+  {
+    "id": 193,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce tehnică non-invazivă crește acuratețea diagnostică clinică a melanomului cu 30%, utilizând mărirea optică (10X)?",
+    "options": [
+      "Radiografia de torace",
+      "Ecografia Doppler abdominală",
+      "Dermatoscopia",
+      "Testul alergologic Patch"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dermatoscopia este o tehnică non-invazivă care utilizează mărirea optică (10X) și crește considerabil (cu aproximativ 30%) acuratețea diagnosticului clinic al leziunilor pigmentare suspecte."
   }
   ]
 }

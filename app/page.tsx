@@ -150,7 +150,7 @@ export default function DentalQuiz() {
     if (selectedDifficulty !== "all") {
       filtered = filtered.filter((q) => q.difficulty === selectedDifficulty);
     }
-    return shuffleArray(filtered).slice(0, 20);
+    return shuffleArray(filtered);
   }, [selectedCategory, selectedDifficulty, allQuestions]);
 
   const getCategoryQuestionCount = (catId: string): number => {
