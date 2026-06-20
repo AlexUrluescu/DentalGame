@@ -5,7 +5,7 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const pdf = require('pdf-parse');
 
-const pdfPath = path.join(process.cwd(), 'documentation', 'Odontoterapie.pdf');
+const pdfPath = path.join(process.cwd(), 'documentation', 'boli_buloase_autoimune.pdf');
 const dataBuffer = fs.readFileSync(pdfPath);
 
 pdf(dataBuffer).then(function(data) {

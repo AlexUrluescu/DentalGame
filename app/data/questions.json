@@ -1,602 +1,1255 @@
+
 {
   "metadata": {
-    "title": "Odontoterapie - Capitolul 1",
-    "subtitle": "Țesuturile Dure Dentare - Structură, Implicații Clinice",
-    "author": "Prof. dr. Dana Bodnar - UMF Carol Davila București",
-    "totalQuestions": 60
+    "title": "Dermatologie - Dermatoze Buloase Autoimune",
+    "subtitle": "Pemfigus Vulgar și Pemfigoid Bulos",
+    "author": "Elisabeta Candrea - UMF Cluj-Napoca",
+    "totalQuestions": 63
   },
   "categories": [
     {
-      "id": "smalt",
-      "name": "Smaltul Dentar",
-      "icon": "🦷",
-      "color": "#4FC3F7"
-    },
-    {
-      "id": "dentina",
-      "name": "Dentina",
-      "icon": "🔬",
-      "color": "#FFB74D"
-    },
-    {
-      "id": "cement",
-      "name": "Cementul",
-      "icon": "🧱",
-      "color": "#81C784"
-    },
-    {
-      "id": "complex_pulpo_dentinar",
-      "name": "Complexul Pulpo-Dentinar",
-      "icon": "❤️",
+      "id": "boli_buloase_autoimune",
+      "name": "Boli Buloase Autoimune",
+      "icon": "🫧",
       "color": "#E57373"
     },
     {
-      "id": "reparatie",
-      "name": "Reparația Pulpo-Dentinară",
-      "icon": "🔧",
-      "color": "#BA68C8"
+      "id": "infectii_bacteriene",
+      "name": "Infecții Bacteriene",
+      "icon": "🦠",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "micoze",
+      "name": "Micoze",
+      "icon": "🍄",
+      "color": "#FF9800"
+    },
+    {
+      "id": "parazitoze",
+      "name": "Parazitoze",
+      "icon": "🐛",
+      "color": "#8B5E3C"
     }
   ],
   "questions": [
     {
       "id": 1,
-      "category": "smalt",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Din ce strat embrionar derivă structura minerală a smaltului dentar?",
+      "question": "Care este principala caracteristică imunopatologică ce definește dermatozele buloase autoimune?",
       "options": [
-        "Mezenchimul papilei dentare",
-        "Ectodermul epiteliului oral",
-        "Endodermul arcului branhial",
-        "Mezodermul sacului dentar"
+        "Prezența autoanticorpilor orientați împotriva structurilor cutanate de adeziune",
+        "Infecția cronică cu stafilococ auriu la nivelul leziunilor",
+        "Deficitul ereditar de colagen tip I",
+        "Hiperproliferarea keratinocitelor bazale"
       ],
-      "correctAnswer": 1,
-      "explanation": "Smaltul are origine epitelială (ectodermică), fiind produs de ameloblaste, diferențiate din epiteliul oral. Restul țesuturilor dure derivă din mezenchim."
+      "correctAnswer": 0,
+      "explanation": "Dermatozele buloase autoimune se caracterizează prin leziuni veziculo-buloase cutanate și/sau mucoase, cu autoanticorpi orientați împotriva unor structuri cutanate de adeziune interkeratinocitare sau din membrana bazală."
     },
     {
       "id": 2,
-      "category": "smalt",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Până la ce procentaje variază grosimea smaltului la nivelul coletului incisivilor laterali și cuspizilor molarilor?",
+      "question": "Care variantă clinică este asociată pemfigusului vulgar, conform clasificării grupului pemfigus?",
       "options": [
-        "0,2 mm / 2 mm",
-        "0,5 mm / 3 mm",
-        "0,2 mm / 3 mm",
-        "1,0 mm / 2,5 mm"
+        "Pemfigus vegetant",
+        "Pemfigus eritematos",
+        "Dermatita herpetiformă",
+        "Pemfigoid cicatricial"
       ],
-      "correctAnswer": 2,
-      "explanation": "Grosimea variază între 0,2 mm la coletul incisivilor laterali și 2,5 - 3 mm la nivelul cuspizilor molarilor."
+      "correctAnswer": 0,
+      "explanation": "Pemfigus vegetant reprezintă varianta clinică a pemfigusului vulgar, în timp ce pemfigusul eritematos este varianta pemfigusului foliaceu."
     },
     {
       "id": 3,
-      "category": "smalt",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "În ce proporție smaltul este acoperit de cement la nivelul joncțiunii smalț-cement?",
+      "question": "Ce afecțiune este menționată ca variantă clinică a pemfigusului foliaceu?",
       "options": [
-        "5 - 10%",
-        "30 - 35%",
-        "60 - 65%",
-        "80 - 85%"
+        "Pemfigus vegetant",
+        "Pemfigus eritematos",
+        "Pemfigus indus medicamentos",
+        "Pemfigus paraneoplazic"
       ],
-      "correctAnswer": 2,
-      "explanation": "În 60-65% din cazuri cementul acoperă smaltul. În 30% din cazuri contactul este cap la cap („butt joint”), iar în 5-10% smaltul și cementul nu se ating."
+      "correctAnswer": 1,
+      "explanation": "Pemfigusul foliaceu are ca variantă clinică pemfigusul eritematos."
     },
     {
       "id": 4,
-      "category": "smalt",
-      "difficulty": "hard",
-      "question": "Prin ce se caracterizează componenta anorganică a smaltului uman matur?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Din punct de vedere histopatologic, ce proces caracterizează grupul pemfigus?",
       "options": [
-        "95% hidroxiapatită și 5% fluorapatită",
-        "90% carbonați și 10% fosfați calcici",
-        "95-98% compuși minerali din volum",
-        "80-85% cristale așezate în prisme"
+        "Spongioza",
+        "Acantoliza",
+        "Hiperkeratoza",
+        "Paracheratoza"
       ],
-      "correctAnswer": 2,
-      "explanation": "Substanțele minerale reprezintă 95-98% din volum (hidroxiapatită 90%, fluorapatită 3%)."
+      "correctAnswer": 1,
+      "explanation": "Histopatologic, grupul pemfigus se caracterizează prin acantoliză, cu apariția veziculelor intraepidermice."
     },
     {
       "id": 5,
-      "category": "smalt",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Ce descriu striațiile paralele Retzius?",
+      "question": "Împotriva căror structuri sunt orientați autoanticorpii caracteristici grupului pemfigus?",
       "options": [
-        "Joncțiunea cemento-amelară",
-        "Traiectul oblic al canaliculelor",
-        "Secționarea optică a prismelor",
-        "Depunerea ciclică a matricei"
+        "Hemidesmozomi",
+        "Desmogleine (componente ale desmozomului)",
+        "Colagen tip VII",
+        "Laminina 5"
       ],
-      "correctAnswer": 3,
-      "explanation": "Striile lui Retzius reprezintă liniile de creștere prin depunerea ciclică a matricei smalțului, nu un fenomen pur optic (cum sunt striile Hunter-Schreger)."
+      "correctAnswer": 1,
+      "explanation": "Imunologic, grupul pemfigus se caracterizează prin autoanticorpi antidesmogleine, componente ale desmozomului."
     },
     {
       "id": 6,
-      "category": "smalt",
-      "difficulty": "medium",
-      "question": "Ce defecte de structură determină formarea perikymatiilor?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "hard",
+      "question": "Care este prima etapă din mecanismul patogenetic descris pentru pemfigusul vulgar?",
       "options": [
-        "Ondularea regulată a prismelor în zona cervicală",
-        "Joncțiunea striilor Retzius cu suprafața amelară",
-        "Lipsa de calcificare a substanței interprismatice",
-        "Depunerea de smalt noduros la nivelul cuspizilor"
+        "Activarea celulelor T și B autoreactive",
+        "Legarea autoanticorpilor de desmogleine",
+        "Expunerea unei persoane cu susceptibilitate genetică la un factor declanșator din mediu",
+        "Apoptoza keratinocitelor"
       ],
-      "correctAnswer": 1,
-      "explanation": "Perikymatiile sunt șanțuri circulare paralele ce apar la suprafața smaltului unde se termină striile lui Retzius."
+      "correctAnswer": 2,
+      "explanation": "Mecanismul descris pornește de la expunerea unei persoane cu susceptibilitate genetică la un factor declanșator din mediu, urmată de activarea celulelor T și B, legarea autoanticorpilor de desmogleine și, în final, apoptoza cu acantoliza."
     },
     {
       "id": 7,
-      "category": "smalt",
-      "difficulty": "hard",
-      "question": "Cum se definește smalțul nodos?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Ce eveniment celular final determină formarea bulelor în pemfigusul vulgar, conform mecanismului patogenetic descris?",
       "options": [
-        "Prisme cu traseu rectiliniu la joncțiunea amelo-dentinară",
-        "Zona de maximă rezistență la atacul acid bacterian",
-        "Fascicule cu traiect neregulat ce se întrepătrund",
-        "Smalt aprismatic de la suprafața dintelui erupt"
+        "Necroza directă a keratinocitelor bazale",
+        "Semnalizarea celulară cu apoptoză și acantoliza consecutivă",
+        "Vasodilatația capilarelor dermice",
+        "Degranularea mastocitelor"
       ],
-      "correctAnswer": 2,
-      "explanation": "Smalțul nodos constă în fascicule de prisme cu traiect neregulat (sinuos) care se întrepătrund în apropierea dentinei, oferind rezistență la presiuni masticatorii."
+      "correctAnswer": 1,
+      "explanation": "Legarea autoanticorpilor de desmogleine declanșează mecanisme de semnalizare celulară și apoptoză, cu apariția acantolizei și formarea bulelor."
     },
     {
       "id": 8,
-      "category": "smalt",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Dintr-o perspectivă structurală, câte straturi distincte prezintă smalțul?",
+      "question": "Care dintre următoarele NU face parte din grupul dermatozelor buloase autoimune subepidermice?",
       "options": [
-        "Două: prismatic și aprismatic",
-        "Trei: intern, mijlociu și extern",
-        "Trei: intern aprismatic, prismatic, extern aprismatic",
-        "Patru: incluzând zona smalțului nodos"
+        "Pemfigoid bulos",
+        "Dermatita herpetiformă",
+        "Pemfigus vulgar",
+        "Dermatita cu IgA liniară"
       ],
       "correctAnswer": 2,
-      "explanation": "Smaltul are un strat intern aprismatic, corpul prismatic (prisme + substanță interprismatică) și stratul extern aprismatic."
+      "explanation": "Pemfigus vulgar aparține grupului pemfigus, cu bule intraepidermice, nu grupului subepidermic, care include pemfigoidul bulos, dermatita herpetiformă și dermatita cu IgA liniară."
     },
     {
       "id": 9,
-      "category": "smalt",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Ce procent din greutate reprezintă apa în smalțul matur?",
+      "question": "Pemfigusul foliaceu este considerat, conform cursului, o formă:",
       "options": [
-        "Aproximativ 1%",
-        "Între 3,6 - 4%",
-        "Aproximativ 11%",
-        "Peste 20%"
+        "Profundă, cu afectare predominant osoasă",
+        "Superficială",
+        "Exclusiv mucoasă",
+        "Obligatoriu paraneoplazică"
       ],
-      "correctAnswer": 2,
-      "explanation": "Apa reprezintă 3,6-4% din volum, dar constituie aproximativ 11% din greutatea smalțului."
+      "correctAnswer": 1,
+      "explanation": "Pemfigusul foliaceu este descris ca formă superficială a pemfigusului."
     },
     {
       "id": 10,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Ce diferențiază duritatea dentinei comparativ cu alte țesuturi dure?",
+      "question": "La ce nivel debutează cel mai frecvent leziunile din pemfigusul vulgar?",
       "options": [
-        "Este egală cu 7 pe scara Mohs",
-        "Este inferioară țesutului osos",
-        "Este mai mică de 1,6 ori față de smalț",
-        "Are o valoare de 3 pe scara Mohs"
+        "Cavitatea bucală",
+        "Scalp",
+        "Palme și plante",
+        "Regiunea genitală"
       ],
-      "correctAnswer": 2,
-      "explanation": "Dentina are duritate 5 pe scara Mohs, fiind mai mare ca a osului, dar de 1,6 ori mai mică decât a smalțului (duritate 5-8)."
+      "correctAnswer": 0,
+      "explanation": "Pemfigusul vulgar debutează în cavitatea bucală în aproximativ 50% din cazuri."
     },
     {
       "id": 11,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Care este proporția componentelor în compoziția chimică a dentinei?",
+      "question": "De ce bulele intacte sunt rar observate la nivelul mucoasei bucale în pemfigusul vulgar?",
       "options": [
-        "70% anorganic, 20% organic, 10% apă",
-        "67% anorganic, 20% organic, 13% apă",
-        "50% anorganic, 35% organic, 15% apă",
-        "95% anorganic, 1% organic, 4% apă"
+        "Pentru că mucoasa bucală nu este afectată de obicei",
+        "Pentru că sunt fragile și se sparg ușor",
+        "Pentru că sunt acoperite de cruste groase",
+        "Pentru că au dimensiuni microscopice"
       ],
       "correctAnswer": 1,
-      "explanation": "Dentina conține în medie 67% substanță minerală, 20% substanță organică și 13% apă."
+      "explanation": "Bulele intacte sunt rar observate la nivelul mucoasei bucale întrucât sunt fragile și se sparg ușor."
     },
     {
       "id": 12,
-      "category": "dentina",
-      "difficulty": "hard",
-      "question": "Ce proteina necolagenică specifică se gasește în matricea organică a dentinei?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Ce semn clinic este evocat prin decolarea epidermului la fricțiunea tegumentului aparent indemn din vecinătatea unei bule?",
       "options": [
-        "Colagen tip III",
-        "Keratina dentinară",
-        "Fibronectina serică",
-        "Osteocalcina redusă"
+        "Semnul Darier",
+        "Semnul Nikolsky",
+        "Semnul Auspitz",
+        "Semnul Köbner"
       ],
       "correctAnswer": 1,
-      "explanation": "Fracțiunea proteică insolubilă (10%) este reprezentată de keratina dentinară, cu rol în inițierea mineralizării."
+      "explanation": "Semnul Nikolsky se evidențiază prin decolarea epidermului la o fricțiune realizată în vecinătatea unei bule, pe tegument aparent indemn."
     },
     {
       "id": 13,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Ce particularitate prezintă mantaua dentinară față de restul dentinei?",
+      "question": "Cum se manifestă tipic bulele cutanate în pemfigusul vulgar?",
       "options": [
-        "Conține exclusiv dentină intertubulară",
-        "Are canalicule drepte nedeservite de fluide",
-        "Este complet amorfă și hipermineralizată",
-        "Nu conține canalicule dentinare vizibile"
+        "Bule mari, sub tensiune, pe piele eritematoasă",
+        "Bule flasce diseminate pe tegument indemn",
+        "Vezicule grupate \"în buchet\" pe bază eritematoasă",
+        "Pustule foliculare diseminate"
       ],
-      "correctAnswer": 3,
-      "explanation": "Mantaua dentinară este depusă de odontoblaști nepolarizați inițial, are 7-30 μm grosime, și nu conține canalicule dentinare vizibile."
+      "correctAnswer": 1,
+      "explanation": "Pemfigusul vulgar se manifestă cutanat prin bule flasce diseminate pe piele aparent indemnă, alături de eroziuni la nivelul mucoaselor."
     },
     {
       "id": 14,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Pe parcursul traiectului lor, unde prezintă canaliculele dentinare un curs rectiliniu?",
+      "question": "Ce complicație poate apărea ca urmare a extinderii eroziunilor bucale spre laringe și faringe în pemfigusul vulgar?",
       "options": [
-        "Pe toată lungimea zonei coronare superficiale",
-        "La nivelul dentinei radiculare profunde",
-        "În 1/3 apicală și în dreptul coarnelor pulpare",
-        "La zona joncțiunii smalț-dentină exclusiv"
+        "Disfagie",
+        "Disfonie permanentă ireversibilă",
+        "Trismus",
+        "Hipersalivație reflexă"
       ],
-      "correctAnswer": 2,
-      "explanation": "Traiectul canaliculelor este curb, în formă de S, cu excepția 1/3 apicale a rădăcinii și a dentinei din dreptul coarnelor pulpare unde este rectiliniu."
+      "correctAnswer": 0,
+      "explanation": "Extinderea eroziunilor dureroase spre laringe și faringe determină disfagie secundară."
     },
     {
       "id": 15,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Ce tip de dentină circumscrie procesele odontoblastice?",
+      "question": "Care este vârsta medie de debut a pemfigusului vulgar?",
       "options": [
-        "Dentina secundară",
-        "Dentina pericanaliculară (peritubulară)",
-        "Dentina intercanaliculară",
-        "Predentina necalcificată"
+        "20-30 de ani",
+        "40-60 de ani",
+        "70-80 de ani",
+        "Sub 18 ani"
       ],
       "correctAnswer": 1,
-      "explanation": "Dentina pericanaliculară delimitează peretele canalicular, este puternic mineralizată și circumscrie procesul odontoblastic."
+      "explanation": "Vârsta medie de debut a bolii este între 40 și 60 de ani."
     },
     {
       "id": 16,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Prin ce se caracterizează dentina peritubulară comparativ cu cea intertubulară?",
+      "question": "Ce se întâmplă la nivel cutanat după spargerea bulelor în pemfigusul vulgar?",
       "options": [
-        "Conține mai puțin magneziu și carbonați",
-        "Are o mineralizare mai slabă în zona centrală",
-        "Este dispusă între cele două linii Ebner",
-        "Prezintă cristale de apatită mai fine și dense"
+        "Vindecare spontană rapidă, fără sechele",
+        "Apar eroziuni cu tendință de extindere periferică și cruste fără tendință de vindecare spontană",
+        "Cicatrici atrofice imediate",
+        "Repigmentare imediată a zonei afectate"
       ],
-      "correctAnswer": 3,
-      "explanation": "Dentina peritubulară conține cristale mai fine de hidroxiapatită orientate de-a lungul tubulilor, fiind mai mineralizată și mai bogată în magneziu și carbonați."
+      "correctAnswer": 1,
+      "explanation": "După spargerea bulelor apar eroziuni cu tendință de extindere în periferie, urmate de cruste fără tendință de vindecare spontană."
     },
     {
       "id": 17,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Ce reprezintă predentina din punct de vedere compozițional?",
+      "question": "În afara mucoasei bucale, care alte mucoase pot fi interesate în pemfigusul vulgar?",
       "options": [
-        "Dentină complet mineralizată de tip intertubular",
-        "Matrice alcătuită 97% din colagen de tip V",
-        "Strat superficial de dentină de reparație",
-        "Zonă hipercalcificată a marginii pulpare"
+        "Conjunctivală, genitală și anală",
+        "Numai mucoasa nazală",
+        "Exclusiv mucoasa esofagiană",
+        "Mucoasa gastrică"
       ],
-      "correctAnswer": 1,
-      "explanation": "Predentina este dentina încă nemineralizată (matrice precursoare), compusă în proporție de 97% din colagen de tip V."
+      "correctAnswer": 0,
+      "explanation": "Pe lângă mucoasa bucală, pot fi interesate mucoasa conjunctivală, genitală și anală."
     },
     {
       "id": 18,
-      "category": "dentina",
-      "difficulty": "hard",
-      "question": "Cum evoluează numărul tubulilor dentinari pe măsură ce ne apropiem de pulpă?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Ce modificare histopatologică este caracteristică leziunii din pemfigus, la examenul histopatologic?",
       "options": [
-        "Scade proporțional cu lărgirea lumenului",
-        "Rămâne constant, variază doar diametrul",
-        "Crește, la fel și volumul global pe secțiune",
-        "Scade cu un raport de 4/1 față de periferie"
+        "Bulă subepidermică cu infiltrat eozinofilic",
+        "Bulă suprabazală cu celule acantolitice",
+        "Spongioza marcată a epidermului",
+        "Necroza epidermului în totalitate"
       ],
-      "correctAnswer": 2,
-      "explanation": "Sensul convergenței tubulilor spre pulpă face ca densitatea lor (numărul per mm²) să fie mai mare spre pulpă (profund) decât periferic, crescând și volumul."
+      "correctAnswer": 1,
+      "explanation": "Examenul histopatologic al leziunii evidențiază bula suprabazală, celule acantolitice și infiltrat inflamator dermic."
     },
     {
       "id": 19,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Ce concentrație de tubuli dentinari pe mm² se estimează la nivelul dentinei radiculare?",
+      "question": "Ce evidențiază imunofluorescența directă perilezională în pemfigus și de ce este importantă?",
       "options": [
-        "42.000 tubuli/mm²",
-        "20.000 tubuli/mm²",
-        "65.000 tubuli/mm²",
-        "8.000 tubuli/mm²"
+        "Depozite liniare de IgG de-a lungul membranei bazale; este orientativă",
+        "Depozite în rețea de IgG, IgM, IgA sau C3; este definitorie pentru diagnosticul cert",
+        "Absența completă a depozitelor imune; exclude diagnosticul",
+        "Depozite granulare la vârful papilelor dermice; este nespecifică"
       ],
-      "correctAnswer": 3,
-      "explanation": "Densitatea ajunge la 8.000 canalicule/mm² în dentina radiculară, comparativ cu 42.000 la nivelul coletului."
+      "correctAnswer": 1,
+      "explanation": "Imunofluorescența directă perilezională arată depozite în rețea de IgG, IgM, IgA sau C3, fiind definitorie pentru diagnosticul cert de pemfigus."
     },
     {
       "id": 20,
-      "category": "cement",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Cu ce componentă dentară se continuă fiziologic cementul?",
+      "question": "Care este metoda imunoserologică utilizată pentru cuantificarea anticorpilor în pemfigus?",
       "options": [
-        "Cu osul alveolar adiacent",
-        "Cu dentina prin manta dentinară",
-        "Cu ligamentele desmodontale",
-        "Nu se continuă direct cu niciuna"
+        "Western blot exclusiv",
+        "ELISA pentru anticorpi anti-Dsg1 +/- Dsg3",
+        "Testul Coombs indirect",
+        "Imunoelectroforeza"
       ],
-      "correctAnswer": 2,
-      "explanation": "Cementul este legat intim prin fibrele de colagen extrinseci calcificate de ligamentele desmodontale (parodonțiu)."
+      "correctAnswer": 1,
+      "explanation": "Diagnosticul imunoserologic se face prin ELISA, determinând nivelul de anticorpi anti-Dsg1 +/- Dsg3."
     },
     {
       "id": 21,
-      "category": "cement",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Comparativ cu smalțul și dentina, duritatea cementului radicular este:",
+      "question": "Ce relație există între nivelul anticorpilor anti-desmogleină și evoluția clinică sub tratament?",
       "options": [
-        "Mai redusă de 2,4 ori fță de smalț",
-        "Egală cu 4,2 pe scara Mohs",
-        "Mai ridicată cu 10% față de dentină",
-        "Egală cu cea a dentinei secundare"
+        "Nu există nicio corelație demonstrată",
+        "Scăderea nivelului de anticorpi se corelează pozitiv cu o evoluție favorabilă la terapie",
+        "Creșterea nivelului de anticorpi prezice răspunsul favorabil",
+        "Nivelul de anticorpi rămâne constant indiferent de tratament"
       ],
-      "correctAnswer": 0,
-      "explanation": "Duritatea cementului este mai redusă de 2,4 ori decât a smalțului și de 1,4 ori mai mică decât a dentinei."
+      "correctAnswer": 1,
+      "explanation": "Există o corelație pozitivă între evoluția favorabilă la terapie și scăderea nivelului de anticorpi."
     },
     {
       "id": 22,
-      "category": "cement",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Ce procent din matricea organică a cementului este reprezentat de colagen de tip III?",
+      "question": "Ce tehnică de diagnostic, mai puțin utilizată, presupune examinarea citologică a frotiului de pe baza bulei?",
       "options": [
-        "Aproximativ 90%",
-        "Aproximativ 5%",
-        "Nu conține colagen tip III",
-        "Aproximativ 25%"
+        "Citodiagnosticul Tzanck",
+        "Imunoblot",
+        "Biopsia excizională",
+        "Testul KOH"
       ],
-      "correctAnswer": 1,
-      "explanation": "Matricea organică a cementului are 90% colagen de tip I și doar 5% colagen de tip III alături de alte fibre."
+      "correctAnswer": 0,
+      "explanation": "Citodiagnosticul Tzanck este menționat ca tehnică de diagnostic mai puțin utilizată în pemfigus."
     },
     {
       "id": 23,
-      "category": "cement",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Ce caracteristică structurală lipseste din cementul radicular normal?",
+      "question": "Care a fost evoluția prognosticului pemfigusului odată cu introducerea corticoterapiei?",
       "options": [
-        "Fibrele de reticulină",
-        "Cristalele de hidroxiapatită",
-        "Rețeaua vasculară și inervația",
-        "Celulele (cementoblaste, cementocite)"
+        "Prognosticul nu s-a modificat semnificativ",
+        "Prognosticul s-a îmbunătățit simțitor față de perioada pre-corticosteroizi",
+        "Prognosticul s-a agravat din cauza efectelor adverse",
+        "Mortalitatea a crescut la peste 50%"
       ],
-      "correctAnswer": 2,
-      "explanation": "Spre deosebire de osul alveolar cu care seamănă embriologic, cementul radicular este avascular și neinervat."
+      "correctAnswer": 1,
+      "explanation": "Înainte de corticosteroizi pacienții decedau în 1-3 ani; odată cu corticoterapia și imunosupresoarele, prognosticul s-a îmbunătățit simțitor, deși mortalitatea rămâne semnificativă (aproximativ 10% la 10 ani)."
     },
     {
       "id": 24,
-      "category": "cement",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Care este principala funcție mecanică a cementului?",
+      "question": "Care sunt cauzele majore de deces la pacienții cu pemfigus?",
       "options": [
-        "Scut de uzură la masticație acută",
-        "Substrat de ancorare pentru fibrele parodontale",
-        "Generarea presiunii de erupție activă",
-        "Blocarea microinfiltrațiilor bacteriene"
+        "Suprainfecția leziunilor, tulburările hidroelectrolitice și complicațiile terapiei",
+        "Insuficiența hepatică acută",
+        "Tromboembolismul pulmonar",
+        "Insuficiența renală cronică progresivă"
       ],
-      "correctAnswer": 1,
-      "explanation": "Fixează dintele în alveolă conferind substrat pentru ligamentele dento-alveolare și compensează prin apoziție atriția ocluzală."
+      "correctAnswer": 0,
+      "explanation": "Cauzele majore de deces sunt suprainfecția leziunilor, tulburările hidroelectrolitice și complicațiile produse de terapie."
     },
     {
       "id": 25,
-      "category": "cement",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Ce tip de cement se depune pe suprafața radiculară înainte de erupția dintelui pe arcadă?",
+      "question": "Care este doza inițială standard de Prednison utilizată în tratamentul pemfigusului, conform schemei prezentate?",
       "options": [
-        "Cementul celular scuamos",
-        "Cementul de reparație acut",
-        "Cementul primar acelular",
-        "Cementul secundar celular"
+        "0,1 mg/kgc/zi",
+        "1 mg/kgc/zi, timp de 4-12 săptămâni, apoi scădere treptată",
+        "5 mg/kgc/zi în doză unică",
+        "1 mg/kgc la fiecare 48 de ore"
       ],
-      "correctAnswer": 2,
-      "explanation": "Cementul primar este format înaintea erupției (acelular), iar după ce dintele atinge planul de ocluzie începe depunerea cementului celular (secundar)."
+      "correctAnswer": 1,
+      "explanation": "Corticoterapia sistemică se inițiază cu Prednison 1 mg/kgc/zi timp de 4-12 săptămâni, urmată de scădere treptată."
     },
     {
       "id": 26,
-      "category": "complex_pulpo_dentinar",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Din ce structură embriologică provine pulpa dentară?",
+      "question": "Care este o opțiune terapeutică pentru cazurile refractare de pemfigus, alături de pulsterapie și plasmafereză?",
       "options": [
-        "Ectodermul epiteliului bucal",
-        "Mezenchimul sacului folicular",
-        "Papila dentară mezenchimală",
-        "Celulele crestei neurale strict"
+        "Rituximab (anticorp anti-CD20)",
+        "Izotretinoin",
+        "Metronidazol sistemic",
+        "Colchicina"
       ],
-      "correctAnswer": 2,
-      "explanation": "Pulpa dentară este un țesut conjunctiv lax ce derivă din papila dentară mezenchimală (care la rândul ei are contribuții din crestele neurale)."
+      "correctAnswer": 0,
+      "explanation": "Pentru cazurile refractare se utilizează Rituximab (anti-CD20), pulsterapie cu Metilprednisolon sau Ciclofosfamidă, micofenolat mofetil în doze mari, imunoglobuline iv sau plasmafereză."
     },
     {
       "id": 27,
-      "category": "complex_pulpo_dentinar",
-      "difficulty": "hard",
-      "question": "Ce tip de inervație se regăsește majoritar în interiorul canaliculelor dentinare?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Ce tip de soluții antiseptice se recomandă pentru leziunile mucoase în tratamentul local al pemfigusului?",
       "options": [
-        "Fibre simpatice motorii T2-T4",
-        "Terminații nervoase mielinice groase (A beta)",
-        "Receptorii tactili Ruffini în treimea internă",
-        "Terminații amielinice provenite din plexul Raschkow"
+        "Soluții antiseptice alcoolice concentrate",
+        "Soluții antiseptice non-alcoolice",
+        "Apă oxigenată nediluată",
+        "Alcool iodat"
       ],
-      "correctAnswer": 3,
-      "explanation": "Canaliculele conțin, pe lângă prelungirea odontoblastică și fluid, terminații nervoase amielinice din plexul marginal Raschkow."
+      "correctAnswer": 1,
+      "explanation": "Pentru mucoase se recomandă soluții antiseptice non-alcoolice, pentru a evita iritarea suplimentară a leziunilor erozive."
     },
     {
       "id": 28,
-      "category": "complex_pulpo_dentinar",
-      "difficulty": "hard",
-      "question": "Cum se caracterizează funcțional inervația și circulația complexului pulpo-dentinar?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Care dintre următoarele este o complicație legată de corticoterapia prelungită din tratamentul pemfigusului?",
       "options": [
-        "Circulație terminală și volum incompresibil limitat",
-        "Anastomoze abundente periapicale",
-        "Inervație parasimpatică bogată cu vase de calibru mare",
-        "Rezistență crescută la staza venoasă post-inflamatorie"
+        "Osteoporoza",
+        "Hipotiroidism",
+        "Anemie hemolitică autoimună",
+        "Insuficiență renală acută imediată"
       ],
       "correctAnswer": 0,
-      "explanation": "Pulpa dentară are o circulație de tip terminal și este adăpostită într-o cavitate cu pereți duri inextensibili, favorizând rapid ischemia în caz de inflamație (limitare mecanică)."
+      "explanation": "Complicațiile legate de tratamentul cortizonic prelungit includ HTA, diabet zaharat, osteoporoză, creștere în greutate, infecții (TBC), gastrite, dis-electrolitemii, miopatie, depresie și sepsis."
     },
     {
       "id": 29,
-      "category": "reparatie",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Cum se diferențiază dentina de reacție de dentina de reparație din punct de vedere celular?",
+      "question": "Care este grupa de vârstă cel mai frecvent afectată de pemfigoidul bulos?",
       "options": [
-        "Cea de reactie este produsă de fibroblaști",
-        "Odontoblaștii inițiali produc dentina de reacție",
-        "Cea de reparație conține doar capilare",
-        "Ambele sunt secretate de macrofage activate"
+        "Copii",
+        "Adulți tineri",
+        "Vârstnici",
+        "Nou-născuți"
       ],
-      "correctAnswer": 1,
-      "explanation": "Dentina de reacție este sintetizată de odontoblaștii maturi supraviețuitori; dentina de reparație este secretată de celule nou diferențiate (similar odontoblaștilor) după necroza celor inițiali."
+      "correctAnswer": 2,
+      "explanation": "Pemfigoidul bulos este o afecțiune autoimună întâlnită frecvent la vârstnici și rar la copii."
     },
     {
       "id": 30,
-      "category": "reparatie",
-      "difficulty": "hard",
-      "question": "Ce factor specific acționează ca semnal molecular în formarea dentinei terțiare?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "La ce nivel histologic se localizează bula în pemfigoidul bulos?",
       "options": [
-        "Citokina proinflamatoare IL-1",
-        "Factorii de transformare a creșterii β (TGFβ)",
-        "Amelogenina serică difuzabilă",
-        "Colagenaza matrixială secretată bazal"
+        "Intraepidermic, suprabazal",
+        "Subepidermic",
+        "Intradermic profund",
+        "Subcornos"
       ],
       "correctAnswer": 1,
-      "explanation": "Mecanismele moleculare de neoformare dentinară implică deblocarea unor factori de creștere endogeni fosilizați în matrice, precumpănitor TGFβ."
+      "explanation": "Histologic, pemfigoidul bulos se caracterizează prin localizarea subepidermică a bulei."
     },
     {
       "id": 31,
-      "category": "smalt",
-      "difficulty": "medium",
-      "question": "Ce proprietate fizică permite vizualizarea radiologică distinctă a smalțului?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "hard",
+      "question": "Împotriva căror proteine sunt direcționați autoanticorpii caracteristici pemfigoidului bulos?",
       "options": [
-        "Nivelul redus al absorbției de raze X",
-        "Densitatea mare de apă intercristalină",
-        "Radioopacitatea superioară țesutului osos și dentinei",
-        "Absența colagenului din structura sa matricială"
+        "Desmogleina 1 și 3",
+        "BP180 (180 kDa) și BP230 (230 kDa)",
+        "Colagen tip VII",
+        "Plectina exclusiv"
       ],
-      "correctAnswer": 2,
-      "explanation": "Din cauza gradului său înalt de mineralizare, smalțul este cel mai radioopac țesut, apărând alb, distinct de dentină, pulpă și os."
+      "correctAnswer": 1,
+      "explanation": "Autoanticorpii din pemfigoidul bulos sunt direcționați împotriva a două structuri ale hemidesmozomilor: BP180 (180 kDa) și BP230 (230 kDa)."
     },
     {
       "id": 32,
-      "category": "smalt",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Care este efectul înlocuirii locale a hidroxiapatitei cu fluorapatită la nivelul smalțului?",
+      "question": "Ce rol joacă autoanticorpii anti-BP180 în patogenia pemfigoidului bulos?",
       "options": [
-        "Creșterea diametrului prismelor de 4 la 10 μm",
-        "Scăderea durității Mohs raportată la smalțul tânăr",
-        "Creșterea radiotransparenței în treimea cervicală",
-        "Ameliorarea rezistenței la solubilizare în mediu acid"
+        "Inhibă direct sinteza de colagen",
+        "Recrutează leucocite la nivelul joncțiunii dermo-epidermice și induc separarea epidermului de derm",
+        "Determină proliferarea keratinocitelor bazale",
+        "Blochează receptorii de creștere epidermică"
       ],
-      "correctAnswer": 3,
-      "explanation": "Fluorapatita este net mai rezistentă la acizi organici (mai puțin solubilă) și stabilizează cristalul."
+      "correctAnswer": 1,
+      "explanation": "Autoanticorpii anti-BP180 recrutează leucocite la nivelul joncțiunii dermo-epidermice și induc separarea epidermului de derm."
     },
     {
       "id": 33,
-      "category": "dentina",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Când se consideră clinic că freza a pătruns dincolo de joncțiunea smalț-dentină?",
+      "question": "Ce mecanisme celulare/umorale stau la baza formării bulelor subepidermice în pemfigoidul bulos?",
       "options": [
-        "Când scade percepția durității și apare colorația gălbuie",
-        "La dispariția translucidității și a sângerării punctiforme",
-        "În momentul vizualizării unui praf alb cretos în cavitate",
-        "Dacă jetul de aer rece provoacă vasoconstricție pulpară"
+        "Activarea complementului, degranularea mastocitelor, infiltrare cu neutrofile și/sau eozinofile",
+        "Activare exclusivă a limfocitelor T citotoxice",
+        "Depunere de complexe imune circulante la nivel vascular",
+        "Proliferare anormală a melanocitelor bazale"
       ],
       "correctAnswer": 0,
-      "explanation": "În momentul contactului dintelui cu freza, atingerea dentinei schimbă senzația tactilă (scade rezistența) și modifică nuanța spre mat-gălbui, apărând frecvent durerea."
+      "explanation": "Formarea bulelor subepidermice depinde de activarea complementului, degranularea mastocitelor și infiltrarea cu neutrofile și/sau eozinofile."
     },
     {
       "id": 34,
-      "category": "dentina",
-      "difficulty": "hard",
-      "question": "Ce modificare suferă raportul calciu/fosfor din compoziția dentinară odată cu înaintarea în vârstă?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Care este localizarea tipică a leziunilor cutanate în pemfigoidul bulos?",
       "options": [
-        "Se menține rigid la valoarea 3/1",
-        "Crește rapid în perioada dentiției mixte",
-        "Devine mai mic după vârsta de 30 de ani",
-        "Rămâne constant pe toată durata de retenție"
+        "Zonele flexurale și partea inferioară a trunchiului",
+        "Exclusiv palmele și plantele",
+        "Scalp și față",
+        "Exclusiv mucoasele"
       ],
-      "correctAnswer": 2,
-      "explanation": "Raportul nativ Calciu/Fosfor în dentină este aproximativ 2/1, dar tinde să se modifice, crescând până la circa 30 ani și scăzând ulterior pe măsura îmbătrânirii dintelui."
+      "correctAnswer": 0,
+      "explanation": "Leziunile apar tipic la nivelul zonelor flexurale și al părții inferioare a trunchiului."
     },
     {
       "id": 35,
-      "category": "cement",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "Pe ce fond apare fiziologic procesul de rezorbție cementară extinsă?",
+      "question": "Cum se vindecă, de regulă, leziunile din pemfigoidul bulos?",
       "options": [
-        "În bruxismul nocturn intens nereabilitat",
-        "Secundar utilizării periajului cu pastă abrazivă",
-        "În perioada de rizaliză a erupției permanente",
-        "Pe fondul unui consum ridicat de alimente citrice"
+        "Cu cicatrici hipertrofice",
+        "Cu hiperpigmentație postinflamatorie, dar fără cicatrici",
+        "Cu atrofie cutanată definitivă",
+        "Fără nicio modificare reziduală a pielii"
       ],
-      "correctAnswer": 2,
-      "explanation": "Doar rizaliza (resorbția radiculară a dintelui temporar) permite fiziologic și acompaniat de erupția dintelui permanent, o rezorbție a cementului extinsă."
+      "correctAnswer": 1,
+      "explanation": "Leziunile se vindecă frecvent cu hiperpigmentație postinflamatorie, dar fără cicatrici."
     },
     {
       "id": 36,
-      "category": "cement",
-      "difficulty": "hard",
-      "question": "La care grupe dentare se depistează cel mai frecvent fenomenul de hipercementoză?",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Care formă clinică particulară de pemfigoid apare tipic în trimestrul 2-3 de sarcină?",
       "options": [
-        "Grupul frontal maxilar exclusiv",
-        "Premolarii superiori și caninii inferiori",
-        "Molarii mandibulari și premolarii de pe ambele arcade",
-        "Toți dinții, indiferent de arcadă,"
+        "Pemfigoidul nodular",
+        "Pemfigoidul cicatricial",
+        "Pemfigoidul gestationis",
+        "Pemfigoidul bulos generalizat"
       ],
       "correctAnswer": 2,
-      "explanation": "Hipercementoza afectează mai frecvent molarii și premolarii inferiori (de 4-5 ori mai frecvent la mandibulă)."
+      "explanation": "Pemfigoidul gestationis apare de obicei în trimestrul 2 și 3 de sarcină."
     },
     {
       "id": 37,
-      "category": "complex_pulpo_dentinar",
-      "difficulty": "medium",
-      "question": "Elementul considerat axul structural și de vitalitate ce unifică dentina și pulpa asimilându-le histofiziologic este:",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "hard",
+      "question": "Ce caracterizează pemfigoidul cicatricial spre deosebire de pemfigoidul bulos clasic?",
       "options": [
-        "Capilarul pulpar periferic",
-        "Odontoblastul (corpul și prelungirea)",
-        "Fibra de reticulină Von Korff",
-        "Terminația simpatică vasomotorie"
+        "Leziuni erozive, dureroase, la nivelul mucoaselor, care evoluează cu cicatrici ce afectează funcționalitatea organului lezat",
+        "Absența completă a afectării mucoaselor",
+        "Vindecare constant fără sechele",
+        "Localizare exclusiv pe scalp"
       ],
-      "correctAnswer": 1,
-      "explanation": "Datorită orientării corpului celular în pulpă și prelungirii sale în canaliculul dentinar, odontoblastul este argumentul complexului biologic unitar."
+      "correctAnswer": 0,
+      "explanation": "Pemfigoidul cicatricial este caracterizat prin leziuni erozive, dureroase, la nivelul mucoaselor, care evoluează cu cicatrici ce afectează funcționalitatea organului lezat."
     },
     {
       "id": 38,
-      "category": "complex_pulpo_dentinar",
+      "category": "boli_buloase_autoimune",
       "difficulty": "hard",
-      "question": "Până la ce nivel pătrunde, histologic, prelungirea odontoblastică (fibra Tomes) vizibilă în smalț?",
+      "question": "Care dintre următoarele componente face parte din structura hemidesmozomului, conform schemei joncțiunii dermo-epidermice?",
       "options": [
-        "Nu perforează bariera smalț-dentină niciodată",
-        "Doar în regiunea coletului subiacent ariei retentive",
-        "Traversează joncțiunea și intră incipient în smalț (fusuri)",
-        "Formează o rețea de reticulină printre ameloblaști"
+        "BP230 și plectina",
+        "Desmogleina 3",
+        "Desmocolina 1",
+        "Numai keratina citoplasmatică"
       ],
-      "correctAnswer": 2,
-      "explanation": "Ocazional, capetele terminate ale unor tubuli pot penetra joncțiunea smalț-dentină intrând un scurt traiect în smalț formând fusuri amelodentinare (spindles)."
+      "correctAnswer": 0,
+      "explanation": "BP230 și plectina sunt componente ale hemidesmozomului, situat la nivelul keratinocitului bazal, spre deosebire de desmogleine și desmocoline, care sunt componente ale desmozomului."
     },
     {
       "id": 39,
-      "category": "reparatie",
-      "difficulty": "hard",
-      "question": "Dentina de reacție tip 'tractus mort' sau sclerotică se formează inițial prin:",
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Ce modificări bioumorale sunt frecvent întâlnite în pemfigoidul bulos?",
       "options": [
-        "Apoziție masivă de matrice necalcificabilă în camera pulpară",
-        "Depunere de minerale pe pereții interni ai canaliculelor",
-        "Eliminarea prelungirii odontoblastice și înlocuirea cu colagen III",
-        "Fuzionarea striilor Retzius sub influența inflamației"
+        "Eozinofilie și valori serice crescute ale IgE",
+        "Leucopenie marcată",
+        "Trombocitopenie severă",
+        "Hipogamaglobulinemie"
       ],
-      "correctAnswer": 1,
-      "explanation": "Tractul sclerotic apare ca adaptare blândă; se acumulează minerale pe pereții tubulari interni depuse de fibere până la colmatarea completă a lumenului tubulilor și blocarea invaziei microbiene."
+      "correctAnswer": 0,
+      "explanation": "Bioumoral, pemfigoidul bulos se caracterizează prin eozinofilie și valori serice crescute ale IgE."
     },
     {
       "id": 40,
-      "category": "reparatie",
+      "category": "boli_buloase_autoimune",
       "difficulty": "medium",
-      "question": "În context iatrogen, ce determină grosimea minimă a stratului de pulporotecție față de stratul de dentină preparat?",
+      "question": "Ce evidențiază examenul histopatologic în pemfigoidul bulos, în afară de localizarea subepidermică a bulei?",
       "options": [
-        "Lățimea camerei pulpare raportată clinic",
-        "Distanța de difuziune (grosimea de dentină indemnă rămasă)",
-        "Tipul de acid fosforic utilizat pentru un debridament",
-        "Numărul de cuspizi funcționali neafectați"
+        "Infiltrarea cu eozinofile a dermului papilar și a lichidului bulei",
+        "Acantoliza marcată",
+        "Necroza completă a epidermului",
+        "Absența oricărui infiltrat inflamator"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Examenul histopatologic arată bula la nivelul joncțiunii dermo-epidermice și infiltrarea cu eozinofile a dermului papilar și a lichidului bulei."
+    },
+    {
+      "id": 41,
+      "category": "boli_buloase_autoimune",
+      "difficulty": "hard",
+      "question": "Ce arată imunofluorescența directă efectuată pe pielea perilezională în pemfigoidul bulos?",
+      "options": [
+        "Depozite în rețea intercelulară de IgG",
+        "Depozite liniare de IgG și/sau C3 de-a lungul membranei bazale",
+        "Absența oricărui depozit imun",
+        "Depozite granulare la nivelul dermului papilar"
       ],
       "correctAnswer": 1,
-      "explanation": "Profunzimea cavității este factor major: din distanța de difuziune derivată depinde calitatea dentinei tertiare depuse. O lărgime mai mică va facilita depunerea masivă."
-    }
+      "explanation": "Imunofluorescența directă pe pielea aparent normală, perilezională, arată depozite liniare de IgG și/sau C3 de-a lungul membranei bazale."
+    },
+    {
+      "id": 42,
+      "category": "boli_buloase_autoimune",
+      "difficulty": "hard",
+      "question": "Ce tehnică se utilizează pentru a separa epidermul de derm înaintea efectuării imunofluorescenței indirecte pe piele umană clivată?",
+      "options": [
+        "Incubarea pielii umane în soluție de NaCl 1M, cu separare la nivelul laminei lucida",
+        "Tratarea cu acid acetic glacial",
+        "Congelare rapidă în azot lichid",
+        "Digestie enzimatică cu colagenază"
+      ],
+      "correctAnswer": 0,
+      "explanation": "După incubația pielii umane în soluție de NaCl 1M, epidermul se separă de derm la nivelul laminei lucida."
+    },
+    {
+      "id": 43,
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Pe ce versant se evidențiază depunerea de IgG la imunofluorescența indirectă pe piele clivată, în pemfigoidul bulos?",
+      "options": [
+        "Versantul dermic",
+        "Versantul epidermic",
+        "Ambele versante în mod egal",
+        "La nivelul lichidului bulei exclusiv"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Imunofluorescența indirectă pe piele umană clivată evidențiază depunerea IgG pe versantul epidermic."
+    },
+    {
+      "id": 44,
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Care este evoluția naturală tipică a pemfigoidului bulos, spre deosebire de pemfigus?",
+      "options": [
+        "Evoluează cu remisiuni și recidive spontane, fiind de obicei auto-limitat la 5 ani",
+        "Este invariabil progresiv și fatal fără tratament",
+        "Nu prezintă niciodată recidive",
+        "Are o evoluție identică cu cea a pemfigusului vulgar"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Pemfigoidul bulos evoluează cu remisiuni și recidive spontane, fiind de obicei auto-limitat la aproximativ 5 ani, iar prognosticul este mai bun decât în pemfigus, fiind însă grevat de vârsta înaintată a pacienților."
+    },
+    {
+      "id": 45,
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Ce tratament se recomandă pentru formele localizate de pemfigoid bulos?",
+      "options": [
+        "Corticosteroizi topici cu potență mare (10-30 g de clobetasol propionat)",
+        "Corticoterapie sistemică în doze mari de la debut",
+        "Rituximab de primă linie",
+        "Plasmafereză exclusiv"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Formele localizate pot fi tratate cu corticosteroizi topici cu potență mare, 10-30 g de clobetasol propionat."
+    },
+    {
+      "id": 46,
+      "category": "boli_buloase_autoimune",
+      "difficulty": "hard",
+      "question": "Care este doza recomandată de Prednison pentru formele generalizate de pemfigoid bulos, conform schemei prezentate?",
+      "options": [
+        "2-3 mg/kg/zi",
+        "0,5-1 mg/kg/zi, timp de 2-3 săptămâni, până la epitelizare",
+        "0,1 mg/kg/zi pe termen nelimitat",
+        "Doză unică de 100 mg, fără continuare"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pentru pemfigoidul bulos generalizat se administrează Prednison 0,5-1 mg/kg/zi timp de 2-3 săptămâni, până la epitelizare, urmat de scădere progresivă, de lungă durată."
+    },
+    {
+      "id": 47,
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "De ce este importantă administrarea dozelor minime eficiente, pe durată cât mai scurtă, la pacienții cu pemfigoid bulos?",
+      "options": [
+        "Pentru că majoritatea pacienților sunt vârstnici, iar efectele adverse ale corticoterapiei pot fi grave la această categorie",
+        "Pentru că boala răspunde slab la corticoterapie",
+        "Pentru că dozele mari sunt ineficiente la orice vârstă",
+        "Pentru a reduce costurile tratamentului"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Întrucât majoritatea pacienților cu pemfigoid bulos sunt vârstnici, se administrează dozele minime eficiente pe o durată cât mai scurtă, deoarece efectele adverse ale corticoterapiei sistemice pot fi grave la această categorie."
+    },
+    {
+      "id": 48,
+      "category": "boli_buloase_autoimune",
+      "difficulty": "medium",
+      "question": "Care dintre următoarele asocieri terapeutice este folosită ca alternativă la corticoterapie în pemfigoidul bulos?",
+      "options": [
+        "Asocierea tetraciclină și nicotinamidă",
+        "Asocierea izoniazidă și rifampicină",
+        "Asocierea aciclovir și prednison",
+        "Asocierea metronidazol și amoxicilină"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Printre asocierile sau alternativele la corticoterapie se numără și asocierea tetraciclină și nicotinamidă, alături de azatioprină, ciclofosfamidă, metotrexat, micofenolat mofetil, sulfone, plasmafereză, imunoglobuline iv și rituximab."
+    },
+    {
+      "id": 49,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Care dintre următoarele bacterii face parte din flora rezidentă anaerobă a pielii, întâlnită la nivelul foliculului pilo-sebaceu?",
+      "options": [
+        "Staphylococcus epidermidis",
+        "Propionibacterium",
+        "Streptococcus pyogenes",
+        "Pseudomonas aeruginosa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Propionibacterium este o bacterie anaerobă ce face parte din flora rezidentă a pielii, fiind prezentă la nivelul foliculului pilo-sebaceu, în timp ce Stafilococul epidermidis este un coc gram pozitiv aerob/facultativ anaerob, iar Streptococul și Pseudomonas sunt considerate floră tranzitorie."
+    },
+    {
+      "id": 50,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Care este principalul agent etiologic responsabil pentru impetigo forma buloasă?",
+      "options": [
+        "Streptococcus pyogenes",
+        "Staphylococcus aureus",
+        "Corynebacterium",
+        "Pityrosporum"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Etiologia pentru impetigo forma buloasă este reprezentată de Staphylococcus aureus."
+    },
+    {
+      "id": 51,
+      "category": "infectii_bacteriene",
+      "difficulty": "easy",
+      "question": "Care este elementul clinic caracteristic în evoluția leziunilor de impetigo?",
+      "options": [
+        "Bulele hemoragice profunde",
+        "Crustele galbene (melicerice)",
+        "Cicatricile cheloidiene",
+        "Papulele foliculare diseminate"
+      ],
+      "correctAnswer": 1,
+      "explanation": "În impetigo, bulele cu lichid serocitrin se sparg și lasă eroziuni acoperite de cruste galbene (melicerice), acesta fiind elementul clinic caracteristic."
+    },
+    {
+      "id": 52,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Care este agentul patogen responsabil de apariția erizipelului?",
+      "options": [
+        "Staphylococcus aureus",
+        "Streptococcus pyogenes (beta-hemolitic de grup A)",
+        "Pseudomonas aeruginosa",
+        "Haemophilus influenzae"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Erizipelul este o infecție cutanată acută indusă de Streptococcus pyogenes (beta-hemolitic de grup A)."
+    },
+    {
+      "id": 53,
+      "category": "infectii_bacteriene",
+      "difficulty": "hard",
+      "question": "Cum se prezintă clinic leziunea caracteristică din erizipel?",
+      "options": [
+        "Macule izolate pe care se dezvoltă vezicule",
+        "Placard eritemato-edematos rapid progresiv, bine delimitat (\"burelet\"), cu suprafață lucioasă",
+        "Placard eritemato-edematos difuz, slab delimitat, cu zone profunde de necroză din prima zi",
+        "Nodul fluctuant cu formare de burbion central"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Clinic, erizipelul debutează cu apariția unui placard eritemato-edematos rapid progresiv, bine delimitat (\"burelet\"), cu o suprafață lucioasă sau cu aspect de \"coajă de portocală\"."
+    },
+    {
+      "id": 54,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Care este tratamentul antibiotic sistemic de primă intenție pentru erizipel?",
+      "options": [
+        "Penicilina G (administrată iv)",
+        "Ciprofloxacin (administrat oral)",
+        "Gentamicină (administrată local)",
+        "Metronidazol (administrat iv)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Tratamentul general prompt pentru erizipel constă în antibioterapie sistemică cu Penicilina G (de exemplu, 8 mil UI/zi iv) timp de 10-14 zile."
+    },
+    {
+      "id": 55,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Care este o deosebire clinică descrisă între celulită și erizipel?",
+      "options": [
+        "În celulită, marginea leziunii este net delimitată (\"burelet\")",
+        "În celulită, placardul eritemato-edematos este slab/flu delimitat",
+        "Celulita este indusă exclusiv de virusuri, spre deosebire de erizipel",
+        "Celulita apare exclusiv la nivelul feței"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Celulita se prezintă ca un placard eritemato-edematos care se extinde treptat și este flu (slab) delimitat, comparativ cu erizipelul care este bine delimitat (\"burelet\")."
+    },
+    {
+      "id": 56,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Ce reprezintă angina Ludwig?",
+      "options": [
+        "Celulita periorbitală la copii",
+        "Infectarea foliculului pilosebaceu de la nivelul gâtului",
+        "Celulita spațiului submandibular, submaxilar și sublingual, frecvent de sursă dentară",
+        "Stafilococia malignă a feței cu extindere la amigdale"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Angina Ludwig este celulita spațiului submandibular, submaxilar și sublingual, bilaterală, având în 50% din cazuri ca sursă a infecției o problemă dentară."
+    },
+    {
+      "id": 57,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Ce agent etiologic este frecvent implicat în celulita periorbitală, în special la copii?",
+      "options": [
+        "Haemophilus influenzae",
+        "Propionibacterium acnes",
+        "Enterococcus faecalis",
+        "Corynebacterium"
+      ],
+      "correctAnswer": 0,
+      "explanation": "În cadrul cursului, Haemophilus influenzae este specific menționat ca agent etiologic pentru celulita periorbitală la copii."
+    },
+    {
+      "id": 58,
+      "category": "infectii_bacteriene",
+      "difficulty": "hard",
+      "question": "Ce reprezintă \"sycozis barbae\"?",
+      "options": [
+        "O formă de impetigo bulos la nivelul feței",
+        "O foliculită profundă la nivelul bărbii",
+        "Un furuncul malign al feței",
+        "O infecție streptococică superficială a mucoaselor"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Foliculita bărbii sau \"sycozis barbae\" este o formă de foliculită profundă ce se manifestă prin pustule multiple centrate de firul de păr, însoțite de durere sau prurit, cu potențial de cronicizare."
+    },
+    {
+      "id": 59,
+      "category": "infectii_bacteriene",
+      "difficulty": "easy",
+      "question": "Cum se numește dopul necrotic central caracteristic unui furuncul, care se elimină spontan lăsând o ulcerație?",
+      "options": [
+        "Melicerică",
+        "Burelet",
+        "Burbion",
+        "Placard"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Centrul leziunii se necrozează formând burbionul, care se elimină spontan în următoarele zile, lăsând o ulcerație."
+    },
+    {
+      "id": 60,
+      "category": "infectii_bacteriene",
+      "difficulty": "hard",
+      "question": "Ce complicație redutabilă poate apărea în cazul traumatizării (stoarcerii) unui furuncul localizat pe buza superioară (stafilococia malignă a feței)?",
+      "options": [
+        "Tromboza septică de sinus cavernos",
+        "Limfedemul cronic (sindromul de braț gros)",
+        "Erizipelul bulos generalizat",
+        "Angioedemul ereditar"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Traumatizarea furunculului malign al feței produce tromboza septică de sinus cavernos, infecția diseminând prin sinusurile venoase cu o rată ridicată a mortalității (90%)."
+    },
+    {
+      "id": 61,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Care este atitudinea chirurgicală corectă în cazul stafilocociei maligne a feței?",
+      "options": [
+        "Incizie și drenaj de urgență în primele 24 de ore",
+        "Excizia completă a zonei indurate",
+        "NU se intervine mecanic sub nicio formă",
+        "Drenaj deschis cu montarea unui tub de silicon"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Regula absolută în cazul stafilocociei maligne a feței este că NU se intervine mecanic (nu se traumatizează/stoarce) pentru a evita diseminarea venoasă septică."
+    },
+    {
+      "id": 62,
+      "category": "infectii_bacteriene",
+      "difficulty": "medium",
+      "question": "Ce aspect clinic este caracteristic în momentul eliminării burbionului în cazul unui carbuncul?",
+      "options": [
+        "Aspect de \"coajă de portocală\"",
+        "Aspect de \"stropitoare\", prin eliminarea concomitentă din leziunile multiple",
+        "Vindecare spontană, fără nicio secreție vizibilă",
+        "Eroziuni fine superficiale"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Carbunculul constă în furuncule multiple grupate. Eliminarea burbionului este concomitentă din leziunile multiple, oferind un aspect caracteristic de \"stropitoare\"."
+    },
+    {
+      "id": 63,
+      "category": "infectii_bacteriene",
+      "difficulty": "easy",
+      "question": "Cum se definește cheilita angulară (Angulus streptococic)?",
+      "options": [
+        "Edem inflamator important la nivelul nasului",
+        "Prezența de fisuri dureroase pe un fond eritematos la nivelul comisurilor bucale",
+        "Colecții purulente sublinguale masive",
+        "Prezența foliculitelor pe scalp la copii"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cheilita angulară se caracterizează prin prezența fisurilor dureroase pe un fond eritematos la nivelul comisurilor bucale, putând fi unilaterală sau bilaterală."
+    },
+    {
+    "id": 64,
+    "category": "micoze",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele specii sunt considerate ciuperci filamentoase, pluricelulare și strict keratinofile?",
+    "options": [
+      "Candida albicans",
+      "Epidermophyton, Tricophyton și Microsporum",
+      "Staphylococcus aureus și Streptococcus pyogenes",
+      "Propionibacterium"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Speciile keratinofile, pluricelulare cu multiplicare sexuată (ciuperci filamentoase) includ Epidermophyton, Tricophyton și Microsporum. Candida este o specie parțial keratinofilă și unicelulară."
+  },
+  {
+    "id": 65,
+    "category": "micoze",
+    "difficulty": "easy",
+    "question": "Ce mediu de cultură este recomandat la examenul de laborator pentru izolarea fungilor patogeni?",
+    "options": [
+      "Geloză-sânge",
+      "Mediu Löwenstein-Jensen",
+      "Mediu Sabouraud sau Nicholson",
+      "Bulion nutritiv"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pentru diagnosticul infecțiilor fungice se utilizează examenul micologic direct (cu KOH 20%) și cultura pe mediu Sabouraud sau Nicholson."
+  },
+  {
+    "id": 66,
+    "category": "micoze",
+    "difficulty": "medium",
+    "question": "La nivelul căror spații interdigitale debutează cel mai frecvent tinea pedis?",
+    "options": [
+      "Între haluce și degetul II (spațiul I)",
+      "Spațiile interdigitale IV și III",
+      "Spațiile interdigitale I și II",
+      "Afectează întotdeauna doar planta, nu și spațiile interdigitale"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tinea pedis se localizează frecvent la nivelul spațiilor interdigitale IV și III, prezentând eritem discret, descuamare și depozit alb fetid."
+  },
+  {
+    "id": 67,
+    "category": "micoze",
+    "difficulty": "hard",
+    "question": "Care este consecința aplicării eronate a dermocorticoizilor pe leziunile de tinea inguinalis (cruris)?",
+    "options": [
+      "Vindecare rapidă și definitivă a leziunii",
+      "Nicio modificare a evoluției bolii",
+      "Ameliorare temporară urmată de o recidivă mai extinsă și leziuni micronodulare rezistente la terapia antimicotică",
+      "Apariția imediată a bulelor hemoragice"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tratamentul eronat cu dermocorticoizi produce ameliorări temporare, urmate de extinderea leziunii și dezvoltarea unei rezistențe relative la antimicotice."
+  },
+  {
+    "id": 68,
+    "category": "micoze",
+    "difficulty": "medium",
+    "question": "Ce caracteristică clinică definește cel mai bine sindromul asociat frecvent cu tinea manum?",
+    "options": [
+      "Afectarea bilaterală și simetrică a ambelor mâini",
+      "Afectare unilaterală (mâna dominantă), cunoscută și ca sindromul „o mână, două picioare”",
+      "Afectarea exclusivă a spațiilor interdigitale de la mâini",
+      "Apariția de plăci alopecice la nivelul dosului mâinii"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tinea manum este frecvent unilaterală (afectând mâna dominantă) și se asociază adesea cu tinea pedis bilaterală (sindromul „o mână, două picioare”)."
+  },
+  {
+    "id": 69,
+    "category": "micoze",
+    "difficulty": "easy",
+    "question": "Care este elementul clinic descriptiv caracteristic pentru tinea corporis?",
+    "options": [
+      "Bule de mari dimensiuni localizate pe trunchi",
+      "Leziuni anulare, pruriginoase, cu margini active formate din eritem și scuame, cu tendință de extindere centrifugă",
+      "Noduli subcutanați dureroși",
+      "Depozite albe, cremoase, nepruriginoase"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tinea corporis se prezintă sub forma unor leziuni anulare (mai multe inele concentrice), pruriginoase, situate pe trunchi și membre."
+  },
+  {
+    "id": 70,
+    "category": "micoze",
+    "difficulty": "medium",
+    "question": "Care este evoluția naturală a tricofițiilor non-inflamatorii (microsporia, tricofiția uscată a scalpului) la vârsta pubertății?",
+    "options": [
+      "Se agravează sever și devin inflamatorii",
+      "Produc alopecie cicatricială definitivă",
+      "Se vindecă spontan",
+      "Necesită obligatoriu intervenție chirurgicală"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tricofițiile non-inflamatorii cu tropism pentru keratina pilară imatură au tendința să se vindece spontan odată cu instalarea pubertății."
+  },
+  {
+    "id": 71,
+    "category": "micoze",
+    "difficulty": "hard",
+    "question": "Care dintre următoarele aspecte descrie Kerion Celsi?",
+    "options": [
+      "O placă alopecică uscată, neinflamatorie, cu fire de păr rupte scurt la suprafața scalpului",
+      "O pseudo-tumoră inflamatorie, dureroasă, cu cruste purulente din care se exprimă puroi la presiune",
+      "O distrofie totală a lamei unghiale",
+      "O infecție cu evoluție blândă indusă exclusiv de tulpini antropofile"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kerion Celsi reprezintă forma inflamatorie a tricofiției scalpului la copii (produsă de specii zoofile), caracterizată ca o pseudo-tumoră cu inflamație intensă și puroi la nivelul orificiilor foliculare."
+  },
+  {
+    "id": 72,
+    "category": "micoze",
+    "difficulty": "medium",
+    "question": "Ce modificare a aparatului unghial se caracterizează prin dezlipirea lamei unghiale de patul unghial în cadrul onicomicozelor?",
+    "options": [
+      "Hiperkeratoza subunghială",
+      "Onicogrifoza",
+      "Onicoliza",
+      "Paronichia acută"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Onicoliza reprezintă dezlipirea lamei unghiale de patul unghial. Onicogrifoza este aspectul de „gheară”, iar hiperkeratoza reprezintă îngroșarea subunghială."
+  },
+  {
+    "id": 73,
+    "category": "micoze",
+    "difficulty": "hard",
+    "question": "Care este tratamentul de elecție oral recomandat în cazurile severe și extinse de onicomicoză, și pe ce durată se administrează?",
+    "options": [
+      "Fluconazol timp de 7 zile",
+      "Terbinafină, itraconazol sau fluconazol administrat timp de 3-6 luni",
+      "Penicilina G intravenos",
+      "Corticosteroizi orali timp de 4 săptămâni"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pentru onicomicoze, tratamentul sistemic implică antimicotice (fluconazol, itraconazol, terbinafină) pe o perioadă extinsă, de obicei între 3 și 6 luni."
+  },
+  {
+    "id": 74,
+    "category": "micoze",
+    "difficulty": "medium",
+    "question": "Care dintre următorii NU este un factor favorizant pentru transformarea Candidei albicans din ciupercă saprofită în una patogenă?",
+    "options": [
+      "Tratamentul prelungit cu antibiotice orale",
+      "Diabetul zaharat",
+      "Expunerea prelungită la soare (radiații UV)",
+      "Sarcina și anticoncepționalele orale"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Factorii favorizanți pentru candidoze includ tratamentele cu antibiotice, corticosteroizi, citostatice, anticoncepționale, diabetul zaharat, sarcina și imunodepresia. Expunerea la soare nu este menționată."
+  },
+  {
+    "id": 75,
+    "category": "micoze",
+    "difficulty": "easy",
+    "question": "Care este aspectul clinic caracteristic pentru stomatita candidozică acută?",
+    "options": [
+      "Mucoasă palidă cu ulcerații adânci sângerânde",
+      "Eritem intens al mucoasei („aspect lăcuit”) acoperit de un depozit albicios, detașabil, cremos",
+      "Placard purulent localizat strict sublingual",
+      "Vezicule grupate „în buchet” care se transformă în cruste melicerice"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Stomatita candidozică se manifestă prin arsuri, uscăciune, eritem lăcuit, eroziuni dureroase și un depozit albicios, detașabil și cremos."
+  },
+  {
+    "id": 76,
+    "category": "micoze",
+    "difficulty": "hard",
+    "question": "Ce element clinic diferențiază forma cronică de paronichie candidozică de cea acută?",
+    "options": [
+      "Prezența unei secreții purulente abundente doar în forma cronică",
+      "Afectarea exclusivă a bărbaților",
+      "Dispariția cuticulei, modificarea lamei unghiale (onicodistrofie) pe un fond de tumefacție discretă cu descuamare",
+      "Vindecarea spontană în mai puțin de o săptămână"
+    ],
+    "correctAnswer": 2,
+    "explanation": "În paronichia cronică, inflamația este mai discretă dar marcată de dispariția cuticulei, descuamare și onicodistrofie secundară (afectarea lamei unghiale). Forma acută prezintă secreție purulentă la presiune, eritem intens și tumefacție."
+  },
+  {
+    "id": 77,
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "La nivelul cărui strat cutanat sapă tunelul femela fecundată de Sarcoptes scabiae pentru a depune ouăle?",
+    "options": [
+      "Stratul bazal",
+      "Stratul cornos",
+      "Dermul papilar",
+      "Hipodermul"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ciclul cutanat al scabiei implică femela fecundată care parazitează tegumentul și sapă un tunel unidirecțional în stratul cornos, unde depune ouăle."
+  },
+  {
+    "id": 78,
+    "category": "easy",
+    "difficulty": "easy",
+    "question": "Care este perioada de incubație caracteristică pentru infecția cu Sarcoptes scabiae?",
+    "options": [
+      "3-4 zile",
+      "1-2 săptămâni",
+      "3-4 săptămâni",
+      "2-3 luni"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Conform cursului, incubația pentru scabie este de 3-4 săptămâni."
+  },
+  {
+    "id": 79,
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Care este o caracteristică topografică esențială a leziunilor de scabie la pacientul adult?",
+    "options": [
+      "Afectează predominant fața și scalpul",
+      "Respectă fața",
+      "Apare exclusiv pe palme și plante",
+      "Se localizează strict unilateral"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La adult, scabia se prezintă cu o topografie tipică (interdigital, axile, torace, abdomen, teaca penisului etc.) care respectă fața."
+  },
+  {
+    "id": 80,
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Spre deosebire de adulți, în ce zone se pot localiza frecvent leziunile de scabie la sugari și copii mici?",
+    "options": [
+      "Strict la nivelul tecii penisului și axilelor",
+      "La nivelul palmelor, plantelor, pe față și spate",
+      "Exclusiv la nivelul scalpului (zona occipitală)",
+      "Doar în regiunea subfesieră"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La sugari și copii mici, scabia poate prezenta leziuni palmare, plantare, pe față și spate, zone care la adult sunt de obicei respectate."
+  },
+  {
+    "id": 81,
+    "category": "parazitoze",
+    "difficulty": "easy",
+    "question": "Cum este descris clinic „șanțul acarian” în scabie?",
+    "options": [
+      "Nodul subcutanat dureros de 1-2 cm",
+      "Liniar, de 2-5 mm, terminat cu o veziculă perlată și intens pruriginos",
+      "Maculă eritematoasă gigantă cu descuamare furfuracee",
+      "Ulcerație profundă acoperită de cruste hemoragice"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Șanțul acarian este o leziune liniară de 2-5 mm, având o veziculă perlată și fiind intens pruriginos."
+  },
+  {
+    "id": 82,
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Care sunt caracteristicile „Scabiei norvegiene”?",
+    "options": [
+      "Apare la persoane cu igienă foarte bună, prezintă leziuni minimale și răspunde doar la proba terapeutică",
+      "Este o formă intens contagioasă, apărută la imunodeprimați, caracterizată prin cruste purulente groase și leziuni diseminate",
+      "Este o formă non-contagioasă limitată strict la nivelul membrelor inferioare",
+      "Se caracterizează prin prezența exclusivă de noduli post-scabioși asimptomatici"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Scabia norvegiană este o formă intens contagioasă ce apare la pacienții imunodeprimați, manifestându-se prin cruste purulente groase și leziuni diseminate (acral, scalp, trunchi)."
+  },
+  {
+    "id": 83,
+    "category": "parazitoze",
+    "difficulty": "hard",
+    "question": "Care este mecanismul patogenic de formare a nodulilor post-scabioși?",
+    "options": [
+      "Suprainfecția bacteriană a leziunilor de grataj (impetiginizarea)",
+      "Reacția imunologică la prezența cutanată a parazitului",
+      "Efectul advers al aplicării excesive de unguent cu sulf",
+      "Migrarea parazitului adult în profunzimea hipodermului"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nodulii post-scabioși reprezintă o reacție imunologică la prezența cutanată a parazitului, fiind noduli persistenți, discret pruriginoși, tratați adesea cu dermocorticoizi/antihistaminice."
+  },
+  {
+    "id": 84,
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Pentru ce afecțiune sistemică gravă poate acționa ca vector pediculoza de corp (Pediculus vestimenti)?",
+    "options": [
+      "Tifos exantematic",
+      "Malarie",
+      "Febra galbenă",
+      "Sifilis"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pediculoza de corp poate fi vector pentru alte infecții, în special pentru tifosul exantematic."
+  },
+  {
+    "id": 85,
+    "category": "parazitoze",
+    "difficulty": "easy",
+    "question": "Unde se localizează cel mai frecvent leziunile papulo-veziculoase și de grataj în cazul pediculozei scalpului?",
+    "options": [
+      "Zona frontală și sprâncene",
+      "Zona vertexului",
+      "Zona occipitală",
+      "Zonele temporale bilateral"
+    ],
+    "correctAnswer": 2,
+    "explanation": "În pediculoza scalpului, leziunile papulo-veziculoase eritematoase, intens pruriginoase și impetiginizate se localizează predilect în zona occipitală."
+  },
+  {
+    "id": 86,
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Deși afectează de obicei adulții în zona pubiană, unde se pot localiza paraziții (Phtirius pubis) la copii?",
+    "options": [
+      "Strict în regiunea inghinală",
+      "La nivelul genelor și sprâncenelor",
+      "Pe pielea capului (zona occipitală)",
+      "În spațiile interdigitale de la mâini"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La copii, infestarea cu Phtirius pubis se poate localiza periculos la nivelul genelor și sprâncenelor."
+  },
+  {
+    "id": 87,
+    "category": "parazitoze",
+    "difficulty": "hard",
+    "question": "Care este diferența majoră dintre acțiunea Lindanului și a Permetrinei în tratamentul pediculozei?",
+    "options": [
+      "Lindanul acționează doar pe parazitul adult (nu are efect ovocid), în timp ce Permetrina (sau Malathionul) are și efect ovocid.",
+      "Lindanul distruge exclusiv ouăle (lindinile), iar Permetrina distruge doar adultul.",
+      "Ambele substanțe au un efect ovocid puternic de la prima aplicare.",
+      "Lindanul se administrează exclusiv oral, iar Permetrina se aplică local."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lindanul acționează pe parazitul adult și nu are efect ovocid, necesitând repetare după o săptămână. Permetrina sau Malathionul sunt ovocide, fiind suficientă de obicei o singură aplicație."
+  }
   ]
 }

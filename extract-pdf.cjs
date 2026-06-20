@@ -4,7 +4,7 @@ const path = require('path');
 async function extractText() {
     const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf.mjs');
     
-    const pdfPath = path.join(process.cwd(), 'documentation', 'CAPITOLUL 1 Odontoterapie.pdf');
+    const pdfPath = path.join(process.cwd(), 'documentation', 'CURS PARAZITOZE.pdf');
     const data = new Uint8Array(fs.readFileSync(pdfPath));
     
     const doc = await pdfjsLib.getDocument({ data }).promise;
