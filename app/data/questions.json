@@ -1128,158 +1128,424 @@
     "explanation": "În paronichia cronică, inflamația este mai discretă dar marcată de dispariția cuticulei, descuamare și onicodistrofie secundară (afectarea lamei unghiale). Forma acută prezintă secreție purulentă la presiune, eritem intens și tumefacție."
   },
   {
-    "id": 77,
+    "id": "e4f8d2b1-5a6c-4f9e-8b3d-1c7a9f0e2b4a",
     "category": "parazitoze",
-    "difficulty": "medium",
-    "question": "La nivelul cărui strat cutanat sapă tunelul femela fecundată de Sarcoptes scabiae pentru a depune ouăle?",
+    "difficulty": "easy",
+    "question": "Care este agentul etiologic al scabiei?",
     "options": [
-      "Stratul bazal",
-      "Stratul cornos",
-      "Dermul papilar",
-      "Hipodermul"
+      "Sarcoptes scabiae",
+      "Pediculus hominis",
+      "Demodex folliculorum",
+      "Phtirius pubis"
     ],
-    "correctAnswer": 1,
-    "explanation": "Ciclul cutanat al scabiei implică femela fecundată care parazitează tegumentul și sapă un tunel unidirecțional în stratul cornos, unde depune ouăle."
+    "correctAnswer": 0,
+    "explanation": "Scabia este produsă de Sarcoptes scabiae, un acarian."
   },
   {
-    "id": 78,
-    "category": "easy",
-    "difficulty": "easy",
-    "question": "Care este perioada de incubație caracteristică pentru infecția cu Sarcoptes scabiae?",
+    "id": "7c9b3a5e-2f1d-4b8c-9e0a-3f4b5c6d7e8f",
+    "category": "parazitoze",
+    "difficulty": "hard",
+    "question": "Care dintre următoarele afirmații despre ciclul cutanat al Sarcoptes scabiae sunt corecte?",
     "options": [
-      "3-4 zile",
-      "1-2 săptămâni",
+      "Femela fecundată sapă un tunel unidirecțional în stratul cornos și depune ouăle",
+      "Din ouă rezultă larve și nimfe care migrează spre suprafața tegumentului",
+      "Fecundarea are loc la suprafața tegumentului, după care masculul moare",
+      "Masculul rămâne în tunel toată viața, alături de femelă"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Femela fecundată parazitează tegumentul, sapă tunelul în stratul cornos și depune ouăle; din acestea rezultă larve și nimfe care ajung la suprafața tegumentului, unde are loc fecundarea, după care masculul moare."
+  },
+  {
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Incidența scabiei crește în cicluri de aproximativ:",
+    "options": [
+      "5-10 ani",
+      "10-15 ani",
+      "20-25 ani",
+      "30-35 ani"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Scabia este o afecțiune ubicuitară a cărei incidență crește în cicluri de 20-25 ani, chiar și în condiții de igienă foarte bună."
+  },
+  {
+    "id": "8f7e6d5c-4b3a-2f1e-0d9c-8b7a6f5e4d3c",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele afirmații despre transmiterea scabiei sunt corecte?",
+    "options": [
+      "Se transmite prin contact direct (intim)",
+      "Se transmite indirect, prin obiecte infestate",
+      "Parazitul poate supraviețui pe obiecte 3-4 zile",
+      "Apare exclusiv în condiții de igienă precară"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Scabia se transmite prin contact direct sau indirect (obiecte infestate, pe care parazitul supraviețuiește 3-4 zile); apare la copii și adulți, indiferent de condițiile de igienă, fiind favorizată dar nu condiționată de igiena precară."
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "category": "parazitoze",
+    "difficulty": "easy",
+    "question": "Care este perioada de incubație a scabiei?",
+    "options": [
+      "1-2 zile",
+      "1 săptămână",
       "3-4 săptămâni",
       "2-3 luni"
     ],
     "correctAnswer": 2,
-    "explanation": "Conform cursului, incubația pentru scabie este de 3-4 săptămâni."
+    "explanation": "Incubația scabiei este de 3-4 săptămâni."
   },
   {
-    "id": 79,
+    "id": "f8e7d6c5-b4a3-2f1e-0d9c-8b7a6f5e4d3c",
     "category": "parazitoze",
     "difficulty": "medium",
-    "question": "Care este o caracteristică topografică esențială a leziunilor de scabie la pacientul adult?",
+    "question": "La adult, leziunile de scabie au topografie tipică la nivelul:",
     "options": [
-      "Afectează predominant fața și scalpul",
-      "Respectă fața",
-      "Apare exclusiv pe palme și plante",
-      "Se localizează strict unilateral"
+      "Spațiilor interdigitale",
+      "Axilelor și toracelui",
+      "Feței interne a coapselor și tecii penisului",
+      "Feței"
     ],
-    "correctAnswer": 1,
-    "explanation": "La adult, scabia se prezintă cu o topografie tipică (interdigital, axile, torace, abdomen, teaca penisului etc.) care respectă fața."
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Topografia tipică a scabiei la adult include zona interdigitală, metacarpiană anterioară, axile, torace, abdomen, fața internă a coapselor, zona subfesieră și teaca penisului; fața este respectată."
   },
   {
-    "id": 80,
-    "category": "parazitoze",
-    "difficulty": "medium",
-    "question": "Spre deosebire de adulți, în ce zone se pot localiza frecvent leziunile de scabie la sugari și copii mici?",
-    "options": [
-      "Strict la nivelul tecii penisului și axilelor",
-      "La nivelul palmelor, plantelor, pe față și spate",
-      "Exclusiv la nivelul scalpului (zona occipitală)",
-      "Doar în regiunea subfesieră"
-    ],
-    "correctAnswer": 1,
-    "explanation": "La sugari și copii mici, scabia poate prezenta leziuni palmare, plantare, pe față și spate, zone care la adult sunt de obicei respectate."
-  },
-  {
-    "id": 81,
+    "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
     "category": "parazitoze",
     "difficulty": "easy",
-    "question": "Cum este descris clinic „șanțul acarian” în scabie?",
+    "question": "Care zonă este caracteristic respectată în scabia adultului?",
     "options": [
-      "Nodul subcutanat dureros de 1-2 cm",
-      "Liniar, de 2-5 mm, terminat cu o veziculă perlată și intens pruriginos",
-      "Maculă eritematoasă gigantă cu descuamare furfuracee",
-      "Ulcerație profundă acoperită de cruste hemoragice"
+      "Fața",
+      "Axilele",
+      "Spațiilor interdigitale",
+      "Fața internă a coapselor"
     ],
-    "correctAnswer": 1,
-    "explanation": "Șanțul acarian este o leziune liniară de 2-5 mm, având o veziculă perlată și fiind intens pruriginos."
+    "correctAnswer": 0,
+    "explanation": "În scabia adultului, fața este caracteristic respectată de leziuni."
   },
   {
-    "id": 82,
+    "id": "b7a6f5e4-d3c2-1b0a-9f8e-7d6c5b4a3f2e",
     "category": "parazitoze",
     "difficulty": "medium",
-    "question": "Care sunt caracteristicile „Scabiei norvegiene”?",
+    "question": "Care dintre următoarele caracterizează șanțul acarian din scabie?",
     "options": [
-      "Apare la persoane cu igienă foarte bună, prezintă leziuni minimale și răspunde doar la proba terapeutică",
-      "Este o formă intens contagioasă, apărută la imunodeprimați, caracterizată prin cruste purulente groase și leziuni diseminate",
-      "Este o formă non-contagioasă limitată strict la nivelul membrelor inferioare",
-      "Se caracterizează prin prezența exclusivă de noduli post-scabioși asimptomatici"
+      "Dimensiune de 2-5 mm",
+      "Aspect liniar",
+      "Prezența unei vezicule perlate la una din extremități",
+      "Este complet nepruriginos"
     ],
-    "correctAnswer": 1,
-    "explanation": "Scabia norvegiană este o formă intens contagioasă ce apare la pacienții imunodeprimați, manifestându-se prin cruste purulente groase și leziuni diseminate (acral, scalp, trunchi)."
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Șanțul acarian este o leziune liniară de 2-5 mm, cu o veziculă perlată, intens pruriginoasă."
   },
   {
-    "id": 83,
+    "id": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "La sugari și copii mici, leziunile de scabie pot afecta:",
+    "options": [
+      "Zonele palmare",
+      "Zonele plantare",
+      "Fața și spatele",
+      "Exclusiv zona genitală"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "La sugari și copii mici, scabia poate determina leziuni palmare, plantare, dar și la nivelul feței și spatelui, zone respectate la adult."
+  },
+  {
+    "id": "d3c21b0a-9f8e-7d6c-5b4a-3f2e1d0c9b8a",
+    "category": "parazitoze",
+    "difficulty": "easy",
+    "question": "Care este caracteristica pruritului în scabie?",
+    "options": [
+      "Accentuare matinală",
+      "Accentuare vesperală (nocturnă)",
+      "Apare doar diurn",
+      "Este absent în majoritatea cazurilor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pruritul din scabie este caracteristic cu accentuare vesperală/nocturnă."
+  },
+  {
+    "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Diagnosticul clinic de scabie este susținut, printre altele, de:",
+    "options": [
+      "Biopsie cutanată obligatorie",
+      "Ancheta epidemiologică (apariția pruritului nocturn în familie/colectivitate)",
+      "Hemoleucograma completă",
+      "Examen radiologic"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Diagnosticul clinic al scabiei este susținut de ancheta epidemiologică, urmărind apariția pruritului nocturn la nivelul familiei sau colectivității."
+  },
+  {
+    "id": "9f8e7d6c-5b4a-3f2e-1d0c-9b8a7f6e5d4c",
     "category": "parazitoze",
     "difficulty": "hard",
-    "question": "Care este mecanismul patogenic de formare a nodulilor post-scabioși?",
+    "question": "Scabia incognita apare tipic la:",
     "options": [
-      "Suprainfecția bacteriană a leziunilor de grataj (impetiginizarea)",
-      "Reacția imunologică la prezența cutanată a parazitului",
-      "Efectul advers al aplicării excesive de unguent cu sulf",
-      "Migrarea parazitului adult în profunzimea hipodermului"
+      "Persoane cu igienă foarte bună, cu leziuni minimale, tratate anterior cu dermocorticoizi",
+      "Imunodeprimați, cu cruste purulente groase",
+      "Copii cu leziuni palmoplantare",
+      "Persoane cu transmitere exclusiv sexuală"
     ],
-    "correctAnswer": 1,
-    "explanation": "Nodulii post-scabioși reprezintă o reacție imunologică la prezența cutanată a parazitului, fiind noduli persistenți, discret pruriginoși, tratați adesea cu dermocorticoizi/antihistaminice."
+    "correctAnswer": 0,
+    "explanation": "Scabia incognita apare la persoane cu igienă foarte bună și leziuni minimale, tratate anterior cu dermocorticoizi, necesitând probă terapeutică pentru diagnostic."
   },
   {
-    "id": 84,
+    "id": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+    "category": "parazitoze",
+    "difficulty": "hard",
+    "question": "Care dintre următoarele afirmații despre scabia norvegiană sunt corecte?",
+    "options": [
+      "Este o formă intens contagioasă",
+      "Apare la imunodeprimați",
+      "Se caracterizează prin cruste purulente groase, cu leziuni diseminate acral, scalp, trunchi",
+      "Respectă întotdeauna scalpul și trunchiul"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Scabia norvegiană este o formă intens contagioasă, ce apare la imunodeprimați, cu cruste purulente groase și leziuni diseminate acral, la nivelul scalpului și trunchiului."
+  },
+  {
+    "id": "5b4a3f2e-1d0c-9b8a-7f6e-5d4c3b2a1f0e",
     "category": "parazitoze",
     "difficulty": "medium",
-    "question": "Pentru ce afecțiune sistemică gravă poate acționa ca vector pediculoza de corp (Pediculus vestimenti)?",
+    "question": "Care dintre următoarele afirmații despre nodulii post-scabioși sunt corecte?",
+    "options": [
+      "La adulți apar frecvent la nivelul tecii penisului",
+      "Reprezintă o reacție imunologică la prezența cutanată a parazitului",
+      "Apar și la copii",
+      "Sunt întotdeauna intens dureroși, fără prurit"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Nodulii post-scabioși apar la adulți (teaca penisului) și copii, ca papule/noduli persistenți, discret pruriginoși, reprezentând o reacție imunologică la prezența cutanată a parazitului; se tratează cu dermocorticoizi/antihistaminice."
+  },
+  {
+    "id": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele sunt opțiuni de tratament local pentru scabie menționate în curs?",
+    "options": [
+      "Unguent cu sulf 5-10%",
+      "Lindan 1% (adulți)",
+      "Benzoat de benzil 25% (adulți și copii)",
+      "Aplicații de dermatocorticoizi în cazurile neclare"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Tratamentul local clasic al scabiei include sulf 5-10%, lindan 1% (la adulți) și benzoat de benzil 25%; aplicarea dermatocorticoizilor în cazurile neclare trebuie evitată."
+  },
+  {
+    "id": "1d0c9b8a-7f6e-5d4c-3b2a-1f0e9d8c7b6a",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Permetrina (Elimite 5% cremă) se aplică în tratamentul scabiei:",
+    "options": [
+      "O singură aplicație, seara",
+      "De 3 ori pe zi, timp de 7 zile",
+      "O dată pe lună",
+      "Doar dimineața, timp de 2 săptămâni"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Permetrina 5% (Elimite) se aplică o singură dată, seara."
+  },
+  {
+    "id": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Crotamiton 10% (Eurax) se aplică în tratamentul scabiei:",
+    "options": [
+      "O singură dată",
+      "3 aplicații zilnice consecutive",
+      "O dată pe săptămână",
+      "La interval de 2 zile"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Crotamiton 10% (Eurax) se aplică în 3 aplicații zilnice consecutive."
+  },
+  {
+    "id": "7f6e5d4c-3b2a-1f0e-9d8c-7b6a5f4e3d2c",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Dezinsecția lenjeriei și efectelor personale în scabie presupune:",
+    "options": [
+      "Spălare la 60 de grade",
+      "Aerisire 4-5 zile",
+      "Folosirea lindanului",
+      "Incinerarea obligatorie a hainelor"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Dezinsecția lenjeriei se face prin lindan, spălare la 60 de grade și aerisire 4-5 zile."
+  },
+  {
+    "id": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele variante ale Pediculus hominis sunt menționate în curs?",
+    "options": [
+      "P. capitis",
+      "P. vestimenti",
+      "Phtirius pubis",
+      "P. corporis felin"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Pediculus hominis are variantele P. capitis, P. vestimenti și Phtirius pubis."
+  },
+  {
+    "id": "3b2a1f0e-9d8c-7b6a-5f4e-3d2c1b0a9f8e",
+    "category": "parazitoze",
+    "difficulty": "easy",
+    "question": "Care dintre următoarele caracterizează insectele din genul Pediculus?",
+    "options": [
+      "Sunt hematofage",
+      "Au 1-2 mm lungime",
+      "Au culoare galben-gri și sunt mobile",
+      "Sunt imobile și de culoare neagră"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Pediculus este o insectă hematofagă, de 1-2 mm lungime, culoare galben-gri, mobilă."
+  },
+  {
+    "id": "5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Pediculoza scalpului apare frecvent în:",
+    "options": [
+      "Colectivități de copii (de exemplu, în vacanțe)",
+      "Secții de cardiologie",
+      "Saloane de imunodeprimați",
+      "Mediul marin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pediculoza scalpului se transmite prin contact direct sau indirect, fiind frecventă în colectivitățile de copii, de exemplu în vacanțe."
+  },
+  {
+    "id": "9d8c7b6a-5f4e-3d2c-1b0a-9f8e7d6c5b4a",
+    "category": "parazitoze",
+    "difficulty": "easy",
+    "question": "Ce reprezintă lindinii din pediculoza scalpului?",
+    "options": [
+      "Structuri chitinoase, aderente de firul de păr, ce conțin ouăle parazitului",
+      "Insecte adulte moarte",
+      "Cruste purulente groase",
+      "Vezicule perlate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lindinii sunt structuri chitinoase, aderente de firul de păr, care conțin ouăle parazitului."
+  },
+  {
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele caracterizează pediculoza scalpului?",
+    "options": [
+      "Localizare în zona occipitală",
+      "Papulo-vezicule eritematoase și prurit intens",
+      "Leziuni de grataj impetiginizate",
+      "Respectă întotdeauna scalpul, afectând doar trunchiul"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Pediculoza scalpului afectează zona occipitală, cu papulo-vezicule eritematoase, prurit intens și leziuni de grataj impetiginizate."
+  },
+  {
+    "id": "5f4e3d2c-1b0a-9f8e-7d6c-5b4a3f2e1d0c",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Pediculoza de corp apare tipic la:",
+    "options": [
+      "Adulți, în condiții de viață precare, catastrofe naturale, refugiați",
+      "Copii, în colectivități școlare",
+      "Sugari",
+      "Sportivi de performanță"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pediculoza de corp apare la adulți, în condiții de viață precare, catastrofe naturale sau la refugiați."
+  },
+  {
+    "id": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Pediculoza de corp poate fi vector pentru:",
     "options": [
       "Tifos exantematic",
       "Malarie",
-      "Febra galbenă",
-      "Sifilis"
+      "Tuberculoză",
+      "Hepatită virală"
     ],
     "correctAnswer": 0,
-    "explanation": "Pediculoza de corp poate fi vector pentru alte infecții, în special pentru tifosul exantematic."
+    "explanation": "Pediculoza de corp este vector pentru alte infecții, precum tifosul exantematic."
   },
   {
-    "id": 85,
-    "category": "parazitoze",
-    "difficulty": "easy",
-    "question": "Unde se localizează cel mai frecvent leziunile papulo-veziculoase și de grataj în cazul pediculozei scalpului?",
-    "options": [
-      "Zona frontală și sprâncene",
-      "Zona vertexului",
-      "Zona occipitală",
-      "Zonele temporale bilateral"
-    ],
-    "correctAnswer": 2,
-    "explanation": "În pediculoza scalpului, leziunile papulo-veziculoase eritematoase, intens pruriginoase și impetiginizate se localizează predilect în zona occipitală."
-  },
-  {
-    "id": 86,
+    "id": "7d6c5b4a-3f2e-1d0c-9b8a-7f6e5d4c3b2a",
     "category": "parazitoze",
     "difficulty": "medium",
-    "question": "Deși afectează de obicei adulții în zona pubiană, unde se pot localiza paraziții (Phtirius pubis) la copii?",
+    "question": "Care dintre următoarele afirmații despre pediculoza de corp sunt corecte?",
     "options": [
-      "Strict în regiunea inghinală",
-      "La nivelul genelor și sprâncenelor",
-      "Pe pielea capului (zona occipitală)",
-      "În spațiile interdigitale de la mâini"
+      "Parazitul colonizează hainele și se hrănește temporar pe tegument",
+      "Determină papulo-vezicule pruriginoase gratate la ceafă, umeri și spate",
+      "Se poate complica prin suprainfecție secundară",
+      "Afectează exclusiv scalpul"
     ],
-    "correctAnswer": 1,
-    "explanation": "La copii, infestarea cu Phtirius pubis se poate localiza periculos la nivelul genelor și sprâncenelor."
+    "correctAnswer": [0, 1, 2],
+    "explanation": "În pediculoza de corp, parazitul parazitează hainele și temporar tegumentul, producând papulo-vezicule pruriginoase gratate la ceafă, umeri și spate, cu posibilă suprainfecție secundară."
   },
   {
-    "id": 87,
+    "id": "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
     "category": "parazitoze",
-    "difficulty": "hard",
-    "question": "Care este diferența majoră dintre acțiunea Lindanului și a Permetrinei în tratamentul pediculozei?",
+    "difficulty": "medium",
+    "question": "Pediculoza pubiană se transmite frecvent prin:",
     "options": [
-      "Lindanul acționează doar pe parazitul adult (nu are efect ovocid), în timp ce Permetrina (sau Malathionul) are și efect ovocid.",
-      "Lindanul distruge exclusiv ouăle (lindinile), iar Permetrina distruge doar adultul.",
-      "Ambele substanțe au un efect ovocid puternic de la prima aplicare.",
-      "Lindanul se administrează exclusiv oral, iar Permetrina se aplică local."
+      "Contact sexual",
+      "Apa de baie",
+      "Aer",
+      "Alimente contaminate"
     ],
     "correctAnswer": 0,
-    "explanation": "Lindanul acționează pe parazitul adult și nu are efect ovocid, necesitând repetare după o săptămână. Permetrina sau Malathionul sunt ovocide, fiind suficientă de obicei o singură aplicație."
+    "explanation": "Pediculoza pubiană apare la adulți, fiind transmisă prin contact sexual."
+  },
+  {
+    "id": "7f6e5d4c-3b2a-1f0e-9d8c-7b6a5f4e3d2c",
+    "category": "parazitoze",
+    "difficulty": "hard",
+    "question": "Care dintre următoarele afirmații despre pediculoza pubiană sunt corecte?",
+    "options": [
+      "Fără tratament se poate extinde la zona abdominală, torace, barbă, mustață, gene, sprâncene",
+      "La copii poate afecta genele și sprâncenele",
+      "Se manifestă cu prurit și macule cerulee",
+      "Nu poate afecta niciodată genele sau sprâncenele"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Fără tratament, pediculoza pubiană se poate extinde la abdomen, torace, barbă, mustață, gene, sprâncene; la copii afectarea genelor și sprâncenelor este caracteristică, iar clinic apar prurit, papulo-vezicule gratate și macule cerulee."
+  },
+  {
+    "id": "5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d",
+    "category": "parazitoze",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele sunt principii de tratament în pediculoze?",
+    "options": [
+      "Lindan 1-3%, aplicat 3 zile consecutiv, repetat după o săptămână (fără efect ovocid)",
+      "Permetrine sau malathion, cu o singură aplicație, cu efect ovocid",
+      "Îndepărtarea lindinilor cu apă acidulată cu acid acetic și pieptene des",
+      "Tratamentul nu necesită igienă riguroasă sau schimbarea hainelor"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Tratamentul pediculozelor include lindan (fără efect ovocid, repetat după o săptămână), permetrine/malathion (ovocide, o singură aplicație), îndepărtarea lindinilor cu apă acidulată și pieptene des, alături de igienă riguroasă și schimbarea hainelor."
+  },
+  {
+    "id": "9b8a7f6e-5d4c-3b2a-1f0e-9d8c7b6a5f4e",
+    "category": "parazitoze",
+    "difficulty": "easy",
+    "question": "Care produse sunt menționate ca tratamente ovocide pentru pediculoze?",
+    "options": [
+      "Pedex 3% sau Paraplus",
+      "Lindan 1-3%",
+      "Benzoat de benzil",
+      "Crotamiton 10%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Permetrine sau malathion, sub formă de Pedex 3% sau Paraplus, au efect ovocid, fiind aplicate o singură dată."
   },
   {
     "id": 88,

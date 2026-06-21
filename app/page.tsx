@@ -10,7 +10,7 @@ interface Question {
   difficulty: string;
   question: string;
   options: string[];
-  correctAnswer: number;
+  correctAnswer: number | number[];
   explanation: string;
 }
 
@@ -113,7 +113,8 @@ export default function DentalQuiz() {
   const [selectedDifficulty, setSelectedDifficulty] = useState<Difficulty>("all");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [selectedOptions, setSelectedOptions] = useState<number[]>([]);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
   const [score, setScore] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
@@ -163,7 +164,8 @@ export default function DentalQuiz() {
     if (filtered.length === 0) return;
     setQuestions(filtered);
     setCurrentIndex(0);
-    setSelectedOption(null);
+    setSelectedOptions([]);
+    setIsSubmitted(false);
     setShowExplanation(false);
     setScore(0);
     setWrongCount(0);
@@ -172,12 +174,41 @@ export default function DentalQuiz() {
   };
 
   const handleOptionSelect = (index: number) => {
-    if (selectedOption !== null) return;
-    setSelectedOption(index);
+    if (isSubmitted) return;
+
+    const isMultiple = Array.isArray(questions[currentIndex].correctAnswer);
+
+    if (isMultiple) {
+      if (selectedOptions.includes(index)) {
+        setSelectedOptions(selectedOptions.filter(i => i !== index));
+      } else {
+        setSelectedOptions([...selectedOptions, index]);
+      }
+    } else {
+      setSelectedOptions([index]);
+      setIsSubmitted(true);
+      setShowExplanation(true);
+      if (timerRef.current) clearInterval(timerRef.current);
+
+      if (index === questions[currentIndex].correctAnswer) {
+        setScore((s) => s + 1);
+      } else {
+        setWrongCount((w) => w + 1);
+      }
+    }
+  };
+
+  const handleVerifyMultiple = () => {
+    if (isSubmitted || selectedOptions.length === 0) return;
+
+    setIsSubmitted(true);
     setShowExplanation(true);
     if (timerRef.current) clearInterval(timerRef.current);
 
-    if (index === questions[currentIndex].correctAnswer) {
+    const correctAnswers = questions[currentIndex].correctAnswer as number[];
+    const isCorrect = correctAnswers.length === selectedOptions.length && correctAnswers.every(val => selectedOptions.includes(val));
+
+    if (isCorrect) {
       setScore((s) => s + 1);
     } else {
       setWrongCount((w) => w + 1);
@@ -187,7 +218,8 @@ export default function DentalQuiz() {
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex((i) => i + 1);
-      setSelectedOption(null);
+      setSelectedOptions([]);
+      setIsSubmitted(false);
       setShowExplanation(false);
     } else {
       finishQuiz();
@@ -394,6 +426,11 @@ export default function DentalQuiz() {
               {currentQuestion.difficulty === "medium" && "🟡 Mediu"}
               {currentQuestion.difficulty === "hard" && "🔴 Greu"}
             </div>
+            {Array.isArray(currentQuestion.correctAnswer) && (
+              <div className="question-difficulty" style={{ background: 'rgba(139, 92, 246, 0.1)', color: 'var(--accent-purple)' }}>
+                ☑️ Mai multe răspunsuri corecte
+              </div>
+            )}
             <p className="question-text">{currentQuestion.question}</p>
           </div>
 
@@ -401,20 +438,30 @@ export default function DentalQuiz() {
           <div className="options-container" key={`opts-${currentQuestion.id}`}>
             {currentQuestion.options.map((opt, idx) => {
               let className = "option-btn";
-              if (selectedOption !== null) {
+              const isMultiple = Array.isArray(currentQuestion.correctAnswer);
+              const isSelected = selectedOptions.includes(idx);
+
+              if (isSubmitted) {
                 className += " disabled";
-                if (idx === currentQuestion.correctAnswer) {
+                const isCorrectAns = isMultiple 
+                  ? (currentQuestion.correctAnswer as number[]).includes(idx)
+                  : currentQuestion.correctAnswer === idx;
+                
+                if (isCorrectAns) {
                   className += " correct";
-                } else if (idx === selectedOption) {
+                } else if (isSelected) {
                   className += " wrong";
                 }
+              } else if (isSelected) {
+                className += " selected";
               }
+
               return (
                 <button
                   key={idx}
                   className={className}
                   onClick={() => handleOptionSelect(idx)}
-                  disabled={selectedOption !== null}
+                  disabled={isSubmitted}
                 >
                   <span className="option-letter">
                     {String.fromCharCode(65 + idx)}
@@ -424,6 +471,17 @@ export default function DentalQuiz() {
               );
             })}
           </div>
+
+          {Array.isArray(currentQuestion.correctAnswer) && !isSubmitted && (
+            <button 
+              className="next-btn" 
+              onClick={handleVerifyMultiple}
+              disabled={selectedOptions.length === 0}
+              style={{ marginTop: '10px', background: 'var(--accent-purple)' }}
+            >
+              Verifică Răspunsul ✅
+            </button>
+          )}
 
           {/* Explanation */}
           {showExplanation && (

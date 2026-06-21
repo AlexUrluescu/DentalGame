@@ -616,6 +616,16 @@ body {
   opacity: 1;
 }
 
+.option-btn.selected {
+  border-color: var(--accent-blue);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.option-btn.selected .option-letter {
+  background: var(--accent-blue);
+  color: white;
+}
+
 /* ===== EXPLANATION ===== */
 .explanation-box {
   background: rgba(59, 130, 246, 0.08);
