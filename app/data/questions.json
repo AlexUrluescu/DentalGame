@@ -4000,257 +4000,679 @@
     "correctAnswer": 0,
     "explanation": "Leucoplazia este un termen descriptiv clinic, diagnosticul definitiv fiind histologic, deoarece leziunea poate fi premalignă sau malignă."
   },
+  
   {
-    "id": 176,
-    "category": "tumori_maligne",
-    "difficulty": "medium",
-    "question": "Care este cea mai frecventă tumoră malignă la populația albă și care sunt celulele din care derivă?",
-    "options": [
-      "Carcinomul spinocelular, derivat din keratinocitele stratului spinos",
-      "Melanomul, derivat din melanocitele stratului bazal",
-      "Carcinomul bazocelular (CBC), derivat din celulele bazale ale epidermului și celulele nediferențiate ale anexelor sale",
-      "Limfomul cutanat cu celule T, derivat din limfocitele rezidente în derm"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Carcinomul bazocelular (CBC) este cea mai frecventă tumoră malignă la populația albă și derivă din celulele bazale ale epidermului și anexele sale."
-  },
-  {
-    "id": 177,
-    "category": "tumori_maligne",
-    "difficulty": "medium",
-    "question": "Ce caracteristică evolutivă și de invazie diferențiază Carcinomul Bazocelular (CBC) de alte tumori maligne?",
-    "options": [
-      "Afectează frecvent mucoasele și se diseminează limfatic în 80% din cazuri",
-      "Metastazează extrem de rar, însă are un potențial invaziv local foarte mare (erodând structuri profunde)",
-      "Crește extrem de rapid și regresează spontan în absența tratamentului",
-      "Prezintă diseminare exclusiv hematogenă spre pulmon"
-    ],
-    "correctAnswer": 1,
-    "explanation": "CBC metastazează extrem de rar (în situații excepționale), dar are un potențial invaziv local agresiv, putând eroda structurile mai profunde, chiar osoase. De asemenea, nu afectează mucoasele."
-  },
-  {
-    "id": 178,
+    "id": 4127,
     "category": "tumori_maligne",
     "difficulty": "easy",
-    "question": "Cum se prezintă clinic o leziune tipică de Carcinom Bazocelular?",
+    "question": "Ce caracterizează carcinomul bazocelular (CBC) din punct de vedere epidemiologic?",
     "options": [
-      "Placă pruriginoasă care devine conopidiformă",
-      "Maculă asimetrică neagră cu creștere excentrică rapidă",
-      "Formațiune tumorală bine delimitată, cu contur neregulat, cu \"perle epiteliomatoase\" la periferie, telangiectazii și tendință frecventă la ulcerare",
-      "Bule multiple hemoragice dispuse liniar"
+      "Este cea mai frecventă tumoră malignă la populația albă",
+      "Este cea mai frecventă tumoră malignă la populația de culoare",
+      "Afectează predominant mucoasele",
+      "Metastazează frecvent pe cale hematogenă"
     ],
-    "correctAnswer": 2,
-    "explanation": "Aspectul clinic tipic pentru CBC include o formațiune tumorală cu perle epiteliomatoase la periferie, telangiectazii, uneori pigment (melanină) și o tendință frecventă la ulcerare cu prezența crustelor hematice."
+    "correctAnswer": 0,
+    "explanation": "CBC este cea mai frecventă tumoră malignă la populația albă, nu afectează mucoasele și metastazează extrem de rar."
   },
   {
-    "id": 179,
+    "id": 8932,
     "category": "tumori_maligne",
     "difficulty": "medium",
-    "question": "Care este standardul de aur în tratamentul Carcinomului Bazocelular (CBC)?",
+    "question": "Care este comportamentul metastatic tipic al carcinomului bazocelular?",
     "options": [
-      "Chimioterapia topică cu 5-fluorouracil",
-      "Excizia chirurgicală cu o margine de siguranță de 3-5 mm",
-      "Terapia fotodinamică în toate stadiile",
-      "Radioterapia exclusivă"
+      "Metastazează extrem de rar, dar are potențial invaziv local",
+      "Metastazează frecvent limfatic încă din stadii incipiente",
+      "Metastazează exclusiv pe cale hematogenă",
+      "Nu are niciodată potențial invaziv"
     ],
-    "correctAnswer": 1,
-    "explanation": "Standardul de aur pentru tratamentul CBC este excizia chirurgicală cu o margine de siguranță de 3-5 mm. (Chirurgia Mohs este rezervată pentru localizări periculoase și anumite forme clinice)."
+    "correctAnswer": 0,
+    "explanation": "CBC metastazează extrem de rar, dar are un potențial invaziv local important."
   },
   {
-    "id": 180,
+    "id": 1056,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care sunt factorii de risc/predispozanți pentru apariția carcinomului bazocelular, conform cursului?",
+    "options": [
+      "Sex masculin",
+      "Vârstă înaintată",
+      "Fototip I-II",
+      "Fototip V-VI"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "CBC apare mai frecvent la bărbați, vârstnici, cu fototip deschis (I-II) și pe zone expuse cronic la soare."
+  },
+  {
+    "id": 7344,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Unde se localizează tipic 'perlele epiteliomatoase' în carcinomul bazocelular?",
+    "options": [
+      "La periferia formațiunii tumorale",
+      "În centrul leziunii",
+      "Exclusiv pe mucoase",
+      "La nivelul ganglionilor regionali"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Formațiunea tumorală este bine delimitată, cu contur neregulat și perle epiteliomatoase la periferie."
+  },
+  {
+    "id": 2891,
+    "category": "tumori_maligne",
+    "difficulty": "easy",
+    "question": "Ce culori poate avea formațiunea tumorală în carcinomul bazocelular?",
+    "options": [
+      "De culoarea pielii",
+      "Roz-roșie, datorită telangiectaziilor",
+      "Brună, datorită melaninei",
+      "Albastru-violacee, constant"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "CBC poate avea culoarea pielii, roz-roșie (telangiectazii) sau brună (melanină)."
+  },
+  {
+    "id": 6605,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care sunt localizările tipice ale carcinomului bazocelular menționate în curs?",
+    "options": [
+      "Fața",
+      "Pavilionul auricular",
+      "Toracele (mai rar)",
+      "Mucoasa bucală"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "CBC nu afectează mucoasele; apare frecvent pe față și pavilionul auricular, mai rar pe torace, mâini sau picioare."
+  },
+  {
+    "id": 3478,
     "category": "tumori_maligne",
     "difficulty": "hard",
-    "question": "Care este principalul mecanism de acțiune al medicamentului Vismodegib, utilizat în CBC metastazat sau depășit chirurgical?",
+    "question": "Care dintre următoarele sunt forme clinice ale carcinomului bazocelular descrise în curs?",
     "options": [
-      "Este un anticorp monoclonal anti-CD20",
-      "Este un inhibitor al kinazei BRAF",
-      "Este un antagonist al căii de semnalizare Hedgehog",
-      "Este un inhibitor al calcineurinei"
+      "Nodular-ulcerat",
+      "Sclerodermiform",
+      "Terebrant",
+      "Verucos"
     ],
-    "correctAnswer": 2,
-    "explanation": "Vismodegib este menționat în curs ca tratament pentru CBC metastazat, recurent, depășit chirurgical, fiind un antagonist al căii de semnalizare Hedgehog."
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Formele clinice de CBC includ nodular-ulcerat, chistic, plan cicatricial, terebrant, superficial, sclerodermiform și pigmentat. Forma verucoasă este caracteristică CSC."
   },
   {
-    "id": 181,
+    "id": 9213,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce poate determina caracterul invaziv local al carcinomului bazocelular în evoluție?",
+    "options": [
+      "Erodarea structurilor profunde, inclusiv osoase",
+      "Diseminare hematogenă rapidă în primele luni",
+      "Afectarea sistematică a mucoaselor",
+      "Transformare obligatorie în melanom"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tumora poate avea caracter invaziv local, cu erodarea structurilor mai profunde, chiar osoase."
+  },
+  {
+    "id": 5067,
     "category": "tumori_maligne",
     "difficulty": "easy",
-    "question": "Din ce tip de celule derivă Carcinomul Spinocelular (CSC)?",
+    "question": "Care este standardul de aur în tratamentul carcinomului bazocelular?",
     "options": [
-      "Celulele bazale ale epidermului",
-      "Melanocite",
+      "Excizia chirurgicală",
+      "Chimioterapia sistemică",
+      "Radioterapia exclusivă",
+      "Imiquimod"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Standardul de aur în tratamentul CBC este excizia chirurgicală."
+  },
+  {
+    "id": 8841,
+    "category": "tumori_maligne",
+    "difficulty": "easy",
+    "question": "Care este marginea de siguranță recomandată pentru excizia chirurgicală a CBC?",
+    "options": [
+      "3-5 mm",
+      "10-15 mm",
+      "1 mm",
+      "20 mm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Marginea de siguranță pentru excizia CBC este de 3-5 mm."
+  },
+  {
+    "id": 2356,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "În ce situații este indicată chirurgia Mohs în tratamentul CBC?",
+    "options": [
+      "Localizare nazolabială",
+      "Localizare periorbitală",
+      "Formă clinică sclerodermiformă",
+      "Localizare la nivelul toracelui"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Chirurgia Mohs este indicată în localizări periculoase (nazolabial, periocular, scalp, șanț retroauricular) și în forma sclerodermiformă."
+  },
+  {
+    "id": 7790,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care dintre următoarele sunt opțiuni terapeutice pentru formele superficiale de CBC, situate sub nivelul gâtului?",
+    "options": [
+      "Crioterapie",
+      "Electrocoagulare",
+      "Limfadenectomie totală",
+      "Imiquimod"
+    ],
+    "correctAnswer": [0, 1, 3],
+    "explanation": "Limfadenectomia este o procedură folosită în managementul melanomului, nu este menționată ca tratament pentru CBC."
+  },
+  {
+    "id": 4502,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Care este mecanismul de acțiune al vismodegibului, utilizat în CBC metastazat sau depășit chirurgical?",
+    "options": [
+      "Antagonist al căii de semnalizare Hedgehog",
+      "Inhibitor de tirozin-kinază BRAF",
+      "Anticorp monoclonal anti-PD1",
+      "Agonist al receptorilor de melanocortină"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Vismodegib este un antagonist al căii de semnalizare Hedgehog, folosit în CBC metastazat, recurent sau depășit chirurgical."
+  },
+  {
+    "id": 9988,
+    "category": "tumori_maligne",
+    "difficulty": "easy",
+    "question": "Din ce celule derivă carcinomul spinocelular (CSC)?",
+    "options": [
       "Keratinocitele stratului spinos",
-      "Celulele Merkel"
+      "Melanocitele stratului bazal",
+      "Celulele Langerhans",
+      "Fibroblastele dermice"
     ],
-    "correctAnswer": 2,
-    "explanation": "Carcinomul spinocelular se dezvoltă din keratinocitele stratului spinos, celulele prezentând diferite grade de keratinizare."
+    "correctAnswer": 0,
+    "explanation": "CSC este o tumoră malignă care se dezvoltă din keratinocitele stratului spinos."
   },
   {
-    "id": 182,
+    "id": 1673,
     "category": "tumori_maligne",
     "difficulty": "medium",
-    "question": "Care dintre următorii NU este considerat un factor predispozant major pentru apariția Carcinomului Spinocelular (CSC)?",
+    "question": "Care este grupul demografic cel mai frecvent afectat de CSC, conform cursului?",
     "options": [
-      "Cicatricile post-arsură și inflamațiile cronice (post-ulcere de gambă)",
-      "Alergiile alimentare din copilărie",
-      "Expunerea la arsenic și hidrocarburi aromatice",
-      "Fumatul și infecțiile cu HPV"
+      "Bărbați, 50-70 ani",
+      "Femei, 20-30 ani",
+      "Copii, sub 10 ani",
+      "Ambele sexe în mod egal, sub 40 ani"
     ],
-    "correctAnswer": 1,
-    "explanation": "Factorii predispozanți pentru CSC includ: leziuni precursoare, radiații UV/ionizante, arsenic, hidrocarburi aromatice, imunosupresie, cicatrici (post-arsură, post-ulcere cronice), factori termici, fumatul și infecțiile cu HPV. Alergiile alimentare nu sunt implicate."
+    "correctAnswer": 0,
+    "explanation": "CSC afectează predominant bărbații cu vârste între 50 și 70 de ani."
   },
   {
-    "id": 183,
-    "category": "tumori_maligne",
-    "difficulty": "medium",
-    "question": "Pe ce zonă anatomică se localizează aproximativ o treime (1/3) din cazurile de Carcinom Spinocelular (CSC), având ca factor favorizant fumatul?",
-    "options": [
-      "Dorsul mâinilor",
-      "Semimucoasa buzei inferioare",
-      "Pleoapa superioară",
-      "Zona inghinală"
-    ],
-    "correctAnswer": 1,
-    "explanation": "O treime din cazurile de CSC se localizează pe semimucoasa buzei inferioare, asociindu-se frecvent cu fumatul și expunerea solară (cheilită actinică)."
-  },
-  {
-    "id": 184,
+    "id": 6234,
     "category": "tumori_maligne",
     "difficulty": "hard",
-    "question": "Cum se comportă Carcinomul Spinocelular (CSC) comparativ cu Carcinomul Bazocelular (CBC) în ceea ce privește riscul de metastazare?",
+    "question": "Care dintre următorii sunt factori predispozanți pentru CSC menționați în curs?",
     "options": [
-      "CSC nu metastazează niciodată, spre deosebire de CBC",
-      "CSC are un potențial metastatic mai ridicat, diseminând pe cale limfatică (și mai rar hematic/perineural), în special pentru formele localizate la nivelul buzelor, limbii și organelor genitale",
-      "Ambele tumori prezintă exclusiv metastazare osoasă masivă",
-      "Riscul metastatic este identic și neglijabil pentru ambele tipuri tumorale"
+      "Expunerea la radiații ionizante",
+      "Cicatrici post-arsură",
+      "Imunosupresia",
+      "Expunerea la frig intens"
     ],
-    "correctAnswer": 1,
-    "explanation": "Spre deosebire de CBC, care metastazează excepțional, CSC prezintă risc real de metastazare (în special limfatică), mai ales pentru localizările agresive (labiale, linguale, peniene, vulvare), unde evoluția este mai rapidă."
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Factorii predispozanți includ leziuni precursoare, expunere UV, radiații ionizante, arsenic, hidrocarburi aromatice, imunosupresie, cicatrici post-arsură, ulcere cronice de gambă, inflamații cronice, factori termici și genodermatoze."
   },
   {
-    "id": 185,
+    "id": 3809,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce proporție din cazurile de CSC apare la nivelul semimucoasei buzei inferioare, asociat frecvent cu fumatul?",
+    "options": [
+      "1/3",
+      "1/10",
+      "Aproape toate cazurile",
+      "Mai puțin de 1%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "1/3 dintre cazurile de CSC apar la nivelul semimucoasei buzei inferioare, asociat cu fumatul."
+  },
+  {
+    "id": 8157,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care sunt formele clinice ale CSC descrise în curs?",
+    "options": [
+      "Vegetantă",
+      "Nodulară",
+      "Ulcerată",
+      "Sclerodermiformă"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Formele clinice de CSC sunt vegetantă, nodulară, ulcerată și verucoasă. Forma sclerodermiformă este specifică CBC."
+  },
+  {
+    "id": 2940,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care formă clinică de CSC este descrisă drept cea mai agresivă și invazivă?",
+    "options": [
+      "Forma ulcerată",
+      "Forma vegetantă",
+      "Forma verucoasă",
+      "Forma nodulară"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Forma ulcerată a CSC este mai agresivă și mai invazivă decât celelalte forme clinice."
+  },
+  {
+    "id": 5621,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "În ce localizări apare tipic forma verucoasă a CSC?",
+    "options": [
+      "Genital",
+      "Bucal",
+      "Plantar",
+      "Scalp"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Forma verucoasă a CSC apare tipic genital, bucal și plantar."
+  },
+  {
+    "id": 7488,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Care dintre următorii sunt factori de risc menționați pentru CSC localizat la nivelul limbii?",
+    "options": [
+      "Infecții HPV",
+      "Fumat",
+      "Leziuni precursoare precum leucoplazia",
+      "Expunere acvatică"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "CSC lingual este asociat cu leziuni precursoare (glosită, lichen atrofic bucal, leucoplazie), infecții HPV și fumat."
+  },
+  {
+    "id": 3092,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Care sunt localizările tipice ale CSC la nivel penian?",
+    "options": [
+      "Fața dorsală a glandului",
+      "Șanțul balano-prepuțial",
+      "Rădăcina penisului",
+      "Scrot"
+    ],
+    "correctAnswer": [0, 1],
+    "explanation": "CSC penian apare tipic la nivelul feței dorsale a glandului și a șanțului balano-prepuțial."
+  },
+  {
+    "id": 9456,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care este calea principală de metastazare în CSC?",
+    "options": [
+      "Limfatică",
+      "Hematogenă exclusiv",
+      "Perineural exclusiv",
+      "Nu metastazează niciodată"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Metastazele CSC sunt în principal limfatice, mai rar hematice sau perineurale."
+  },
+  {
+    "id": 1820,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care leziuni de CSC au, conform cursului, o evoluție rapidă?",
+    "options": [
+      "Leziunile genitale",
+      "Leziunile bucale",
+      "Leziunile dorsopalmare",
+      "Leziunile plantare cu evoluție lentă"
+    ],
+    "correctAnswer": [0, 1],
+    "explanation": "Leziunile genitale și bucale au evoluție rapidă; leziunile dorsopalmare au evoluție lentă."
+  },
+  {
+    "id": 6713,
     "category": "tumori_maligne",
     "difficulty": "easy",
-    "question": "Ce procent din tumorile cutanate reprezintă melanomul și care este ponderea sa în mortalitatea cauzată de tumorile cutanate?",
+    "question": "Care este marginea de siguranță pentru excizia chirurgicală standard în CSC?",
     "options": [
-      "Reprezintă peste 50% din tumorile cutanate și 10% din decese",
-      "Reprezintă sub 5% din totalul tumorilor cutanate, dar este responsabil pentru peste 90% din decesele cauzate de acestea",
-      "Reprezintă 90% din tumori și 5% din decese",
-      "Este singura tumoră cutanată benignă cu evoluție malignă asimptomatică"
+      "3-5 mm",
+      "10 mm",
+      "0.5 mm",
+      "15-20 mm"
     ],
-    "correctAnswer": 1,
-    "explanation": "Melanomul reprezintă sub 5% din totalul tumorilor cutanate, dar cauza a peste 90% din decesele dermatologice oncologice, fiind o tumoră extrem de agresivă."
+    "correctAnswer": 0,
+    "explanation": "Standardul de aur în CSC este excizia chirurgicală cu margine de siguranță de 3-5 mm."
   },
   {
-    "id": 186,
+    "id": 4265,
+    "category": "tumori_maligne",
+    "difficulty": "easy",
+    "question": "Din ce celule derivă melanomul?",
+    "options": [
+      "Melanocite",
+      "Keratinocite",
+      "Celule Merkel",
+      "Fibroblaste"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Melanomul este o tumoră malignă derivată din melanocite."
+  },
+  {
+    "id": 8074,
     "category": "tumori_maligne",
     "difficulty": "medium",
-    "question": "Care dintre următorii factori este un factor de risc genetic (constituțional) pentru dezvoltarea melanomului?",
+    "question": "Care sunt căile principale de metastazare ale melanomului?",
     "options": [
-      "Expunerea solară intermitentă intensă",
-      "Istoric familial de nevi displazici, fototip deschis (ochi albaștri, păr blond/roșcat) și defecte de reparare a ADN-ului (Xeroderma pigmentosum)",
-      "Vârsta sub 18 ani exclusiv",
-      "A locui într-o zonă ecuatorială"
+      "Limfatică",
+      "Hematogenă",
+      "Exclusiv prin contact direct",
+      "Aeriană"
     ],
-    "correctAnswer": 1,
-    "explanation": "Factorii genetici includ: fototipul deschis, tendința la arsuri solare, istoricul familial de melanom/nevi displazici și defectele de reparare a ADN-ului. (Expunerea solară și rezidența sunt factori de mediu)."
+    "correctAnswer": [0, 1],
+    "explanation": "Melanomul are o capacitate crescută de metastazare pe cale limfatică și hematogenă."
   },
   {
-    "id": 187,
+    "id": 2589,
     "category": "tumori_maligne",
     "difficulty": "medium",
-    "question": "Ce formă de melanom este cel mai frecvent subtip (70%) la persoanele cu fototip deschis și se caracterizează printr-o extindere orizontală urmată de una verticală?",
+    "question": "Ce procent din decesele cauzate de tumorile cutanate este atribuit melanomului, deși reprezintă sub 5% din totalul acestor tumori?",
     "options": [
-      "Melanomul Nodular (MN)",
-      "Melanomul Lentigo Malign (LMM)",
-      "Melanomul Extensiv în Suprafață (MES)",
-      "Melanomul Lentiginos Acral (ALM)"
+      "Peste 90%",
+      "Aproximativ 10%",
+      "Aproximativ 50%",
+      "Sub 1%"
     ],
-    "correctAnswer": 2,
-    "explanation": "Melanomul Extensiv în Suprafață (MES) este cel mai frecvent (70%), afectează pacienți de 30-50 ani, localizat tipic pe trunchi la bărbați și membrele inferioare la femei, având o fază de extensie radială urmată de creștere verticală."
+    "correctAnswer": 0,
+    "explanation": "Melanomul reprezintă sub 5% din totalul tumorilor cutanate, dar peste 90% din decesele cauzate de acestea."
   },
   {
-    "id": 188,
+    "id": 9301,
     "category": "tumori_maligne",
     "difficulty": "hard",
-    "question": "Ce formă de melanom este excepția clară de la aplicarea regulii ABCDE, crescând vertical rapid și fiind frecvent ulcerată/hemoragică de la debut?",
+    "question": "Conform datelor epidemiologice prezentate, care este riscul de a dezvolta melanom pentru persoanele caucaziene născute în 2014?",
     "options": [
-      "Melanomul Extensiv în Suprafață (MES)",
-      "Melanomul Lentigo Malign (LMM)",
-      "Melanomul Nodular (MN)",
-      "Melanomul Lentiginos Acral (ALM)"
+      "1 din 50 persoane",
+      "1 din 1500 persoane",
+      "1 din 10000 persoane",
+      "1 din 5 persoane"
     ],
-    "correctAnswer": 2,
-    "explanation": "Melanomul nodular (15-30% din cazuri) nu urmează regula clasică ABCDE, neavând o fază de creștere radială, ci prezentând de la început o creștere verticală rapidă sub forma unui nodul ulcerat/hemoragic."
+    "correctAnswer": 0,
+    "explanation": "Riscul a crescut de la 1 din 1500 persoane născute în 1900, la 1 din 50 persoane caucaziene născute în 2014."
   },
   {
-    "id": 189,
+    "id": 5847,
     "category": "tumori_maligne",
     "difficulty": "medium",
-    "question": "Ce caracterizează Melanomul Lentiginos Acral (ALM) în mod distinctiv?",
+    "question": "La ce grupă de vârstă este melanomul cel mai frecvent cancer la femei, conform cursului?",
     "options": [
-      "Este exclusiv ne-pigmentat (amelanotic)",
-      "Apare doar la copii și adolescenți",
-      "Este cea mai frecventă formă la persoanele cu fototip închis (asiatici, pacienți de culoare) și se localizează pe palme, plante și la nivelul matricei unghiale",
-      "Se vindecă spontan la aplicarea fotoprotecției"
+      "25-29 ani",
+      "50-60 ani",
+      "70-80 ani",
+      "Sub 18 ani"
     ],
-    "correctAnswer": 2,
-    "explanation": "ALM (5-10% din total) este forma predominantă la fototipurile închise, localizându-se acral: pe palme, plante și subunghial (melanonichie longitudinală)."
+    "correctAnswer": 0,
+    "explanation": "Melanomul este cel mai frecvent cancer la femeile cu vârste între 25-29 ani (legat de factorul solar)."
   },
   {
-    "id": 190,
+    "id": 1462,
     "category": "tumori_maligne",
     "difficulty": "hard",
-    "question": "Ce semnifică Indicele Breslow (utilizat în stadializarea T a melanomului) și de ce este esențial?",
+    "question": "Care dintre următorii sunt factori de risc genetici pentru melanom?",
     "options": [
-      "Reprezintă diametrul tumoral masurat în centimetri la suprafața pielii",
-      "Măsoară grosimea tumorală pe verticală, în milimetri, fiind un factor de prognostic independent crucial",
-      "Indică numărul de ganglioni limfatici afectați regional",
-      "Estimează cantitatea de melanină produsă de celulele tumorale"
+      "Istoric familial de nevi displazici sau melanom",
+      "Fototip deschis, ochi albaștri",
+      "Defecte de reparare a ADN (xeroderma pigmentosum)",
+      "Rezidența în zone ecuatoriale"
     ],
-    "correctAnswer": 1,
-    "explanation": "Indicele Breslow reprezintă grosimea tumorii primare măsurată microscopic pe verticală (ex. T1 < 1mm, T4 > 4mm) și este un factor independent de prognostic determinant pentru conduita terapeutică."
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Rezidența în zone ecuatoriale este un factor de risc de mediu, nu genetic."
   },
   {
-    "id": 191,
+    "id": 7036,
     "category": "tumori_maligne",
     "difficulty": "medium",
-    "question": "Când este indicată tehnica „ganglionului santinelă” în stadializarea melanomului?",
+    "question": "Care dintre următorii sunt factori de risc de mediu pentru melanom?",
     "options": [
-      "La pacienții cu tumori in situ, grosime <0.1 mm",
-      "Pentru cancerele cutanate non-melanocitare (CBC)",
-      "În general la pacienții cu un Indice Breslow între 1.01 și 4.00 mm (stadii precoce-intermediare) pentru evaluarea invaziei ganglionare",
-      "Doar la pacienții cu metastaze pulmonare și cerebrale confirmate CT"
+      "Expunerea solară intensă, intermitentă",
+      "Utilizarea solarului",
+      "Rezidența în zone ecuatoriale",
+      "Istoricul familial de melanom"
     ],
-    "correctAnswer": 2,
-    "explanation": "Tehnica ganglionului santinelă este o procedură de diagnostic chirurgical indicată pentru a detecta micro-metastazele ganglionare ascunse, în special pentru tumori cu grosime (Indice Breslow) între 1.01 și 4.00 mm."
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Factorii de mediu pot fi influențați și includ expunerea solară intensă/intermitentă, arsurile solare/solarul și rezidența în zone ecuatoriale."
   },
   {
-    "id": 192,
+    "id": 3915,
     "category": "tumori_maligne",
     "difficulty": "hard",
-    "question": "Ce tratament sistemic se utilizează ca terapie adjuvantă în Stadiul III de melanom (boală regională cu invazie ganglionară) pentru eliminarea micrometastazelor?",
+    "question": "Care sunt caracteristicile melanomului extensiv în suprafață (MES)?",
     "options": [
-      "Radioterapie exclusivă",
-      "Interferon-alfa și inhibitori de puncte de control imun (Ipilimumab, Nivolumab)",
-      "Antibiotice topice (Mupirocină)",
-      "Antagoniști ai căii Hedgehog (Vismodegib)"
+      "Este cel mai frecvent subtip la persoanele cu fototip deschis",
+      "Apare tipic între 30-50 ani",
+      "Se extinde inițial orizontal, apoi vertical",
+      "Are întotdeauna debut nodular, fără fază radială"
     ],
-    "correctAnswer": 1,
-    "explanation": "În stadiul III (după excizia tumorii și limfadenectomie), terapia adjuvantă recomandată pentru eliminarea metastazelor clinic inaparente constă în administrarea de Interferon-α, Ipilimumab sau Nivolumab (imunoterapie)."
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Debutul nodular fără fază radială este caracteristic melanomului nodular, nu MES."
   },
   {
-    "id": 193,
+    "id": 8629,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Ce caracterizează melanomul nodular?",
+    "options": [
+      "Creștere rapidă, verticală, fără fază radială",
+      "Diagnostic frecvent în stadii avansate",
+      "Este cea mai frecventă formă la persoanele cu fototip închis",
+      "Reprezintă 15-30% dintre melanoame"
+    ],
+    "correctAnswer": [0, 1, 3],
+    "explanation": "Forma cea mai frecventă la persoanele cu fototip închis/asiatici este melanomul lentiginos acral, nu cel nodular."
+  },
+  {
+    "id": 2174,
     "category": "tumori_maligne",
     "difficulty": "medium",
-    "question": "Ce tehnică non-invazivă crește acuratețea diagnostică clinică a melanomului cu 30%, utilizând mărirea optică (10X)?",
+    "question": "Care este leziunea precursoare a melanomului lentigo malign (LMM)?",
     "options": [
-      "Radiografia de torace",
-      "Ecografia Doppler abdominală",
+      "Lentigo maligna (in situ)",
+      "Nevul displazic",
+      "Cheilita actinică",
+      "Leucoplazia"
+    ],
+    "correctAnswer": 0,
+    "explanation": "LMM apare, în 5% din cazuri, pe o leziune precursoare numită lentigo maligna (in situ)."
+  },
+  {
+    "id": 6580,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Care sunt caracteristicile melanomului lentiginos acral (ALM)?",
+    "options": [
+      "Este cea mai frecventă formă la persoanele cu fototip închis/asiatici",
+      "Apare tipic pe palme și plante",
+      "Poate afecta matricea unghială, cu melanonichie longitudinală",
+      "Este diagnosticat de obicei precoce"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "ALM are, conform cursului, un diagnostic tardiv, nu precoce."
+  },
+  {
+    "id": 4891,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Care este indiciul diagnostic principal pentru melanomul amelanotic, descris ca 'marele imitator'?",
+    "options": [
+      "Evoluția leziunii (criteriul E din ABCDE)",
+      "Culoarea brună intensă",
+      "Diametrul sub 6 mm constant",
+      "Simetria perfectă a leziunii"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Melanomul amelanotic este lipsit clinic de pigment, fiind numit 'marele imitator'; indiciul diagnostic principal este evoluția (E)."
+  },
+  {
+    "id": 1037,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Pentru care forme de melanom regula ABCDE NU se aplică în mod fiabil, conform cursului?",
+    "options": [
+      "Melanomul nodular",
+      "Melanomul amelanotic",
+      "Melanomul extensiv în suprafață",
+      "Lentigo malign melanomul"
+    ],
+    "correctAnswer": [0, 1],
+    "explanation": "Regula ABCDE pentru tumora primară nu se aplică pentru melanomul nodular (MN) și amelanotic (AM)."
+  },
+  {
+    "id": 6748,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Cu cât crește dermatoscopia acuratețea diagnostică a leziunilor pigmentare, conform cursului?",
+    "options": [
+      "30%",
+      "5%",
+      "70%",
+      "Nu influențează acuratețea diagnostică"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dermatoscopia crește acuratețea diagnostică cu 30%."
+  },
+  {
+    "id": 2603,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care sunt tipurile de biopsie/excizie menționate pentru abordarea leziunii suspecte de melanom?",
+    "options": [
+      "Biopsia excizională",
+      "Biopsia incizională",
+      "Shave-excizia",
+      "Biopsia cu ac fin (FNA), ca primă intenție"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Abordarea terapeutică include biopsia excizională, biopsia incizională (pentru arii anatomice particulare sau leziuni mari) și shave-excizia (pentru suspiciune scăzută)."
+  },
+  {
+    "id": 9165,
+    "category": "tumori_maligne",
+    "difficulty": "easy",
+    "question": "Care este standardul de aur pentru diagnosticul de certitudine al melanomului?",
+    "options": [
+      "Examenul histopatologic",
       "Dermatoscopia",
-      "Testul alergologic Patch"
+      "Examenul clinic izolat",
+      "Ecografia cutanată"
     ],
-    "correctAnswer": 2,
-    "explanation": "Dermatoscopia este o tehnică non-invazivă care utilizează mărirea optică (10X) și crește considerabil (cu aproximativ 30%) acuratețea diagnosticului clinic al leziunilor pigmentare suspecte."
+    "correctAnswer": 0,
+    "explanation": "Examenul histopatologic este standardul de aur în diagnosticul melanomului."
+  },
+  {
+    "id": 3520,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce interval de grosime Breslow corespunde stadiului T2 în melanom?",
+    "options": [
+      "1.01-2.0 mm",
+      "<1mm",
+      "2.01-4.0 mm",
+      ">4mm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "T2 corespunde unei grosimi Breslow între 1.01-2.0 mm."
+  },
+  {
+    "id": 8842,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce reprezintă categoria N3 în stadializarea melanomului?",
+    "options": [
+      "4 sau mai mulți ganglioni metastatici, sau metastaze în tranzit/satelite",
+      "Absența afectării ganglionare",
+      "Exact 1 ganglion afectat",
+      "2-3 ganglioni afectați"
+    ],
+    "correctAnswer": 0,
+    "explanation": "N3 reprezintă 4 sau mai mulți ganglioni metastatici, sau metastaze în tranzit/satelite."
+  },
+  {
+    "id": 5096,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Pentru ce interval al indicelui Breslow este indicată tehnica ganglionului santinelă?",
+    "options": [
+      "1.01-4.00 mm",
+      "<0.5 mm",
+      ">10 mm",
+      "Nu există un prag specific menționat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tehnica ganglionului santinelă este indicată pentru indicele Breslow între 1.01-4.00 mm."
+  },
+  {
+    "id": 1374,
+    "category": "tumori_maligne",
+    "difficulty": "hard",
+    "question": "Care dintre următoarele afirmații despre stadializarea M (metastaze la distanță) sunt corecte?",
+    "options": [
+      "M1b corespunde metastazelor pulmonare cu LDH normal",
+      "M1c poate include orice metastază la distanță cu LDH ridicat",
+      "M1a presupune metastaze cutanate, subcutanate sau ganglionare la distanță cu LDH normal",
+      "M1a presupune întotdeauna metastaze cerebrale"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "M1a = metastaze cutanate/subcutanate/ganglionare la distanță + LDH normal; M1b = metastaze pulmonare + LDH normal; M1c = alte metastaze viscerale + LDH normal sau orice metastază la distanță + LDH ridicat."
+  },
+  {
+    "id": 7261,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care dintre următorii sunt factori de prognostic independenți în melanom, conform cursului?",
+    "options": [
+      "Indicele Breslow",
+      "Ulcerația",
+      "Indicele mitotic",
+      "Grupa sanguină"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Factorii de prognostic independenți includ indicele Breslow, ulcerația, indicele mitotic, vârsta, sexul, localizarea, afectarea ganglionară și metastazele la distanță."
+  },
+  {
+    "id": 4980,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Care sunt markerii serici menționați pentru evaluarea/urmărirea melanomului?",
+    "options": [
+      "LDH",
+      "S-100",
+      "MIA",
+      "CA 19-9"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Markerii serici menționați sunt LDH, proteina S-100 și MIA. CA 19-9 nu este menționat în curs."
+  },
+  {
+    "id": 2718,
+    "category": "tumori_maligne",
+    "difficulty": "medium",
+    "question": "Ce include tratamentul bolii regionale (stadiul III) în melanom?",
+    "options": [
+      "Excizia tumorii primare",
+      "Limfadenectomia",
+      "Terapie adjuvantă cu interferon-alfa sau ipilimumab/nivolumab",
+      "Chimioterapie paleativă exclusivă"
+    ],
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Tratamentul stadiului III include excizia tumorii primare, limfadenectomia și terapia adjuvantă (interferon-alfa, ipilimumab/nivolumab) pentru eliminarea metastazelor clinic inaparente."
   }
+
   ]
 }
