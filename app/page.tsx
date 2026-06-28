@@ -5,7 +5,7 @@ import quizData from "./data/questions.json";
 
 /* ============ TYPES ============ */
 interface Question {
-  id: number;
+  id: number | string;
   category: string;
   difficulty: string;
   question: string;
