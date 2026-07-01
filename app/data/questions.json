@@ -7,812 +7,925 @@
   },
   "categories": [
     {
-      "id": "protetica",
-      "name": "Protetica",
-      "icon": "🦷",
+      "id": "calculatoare_programare",
+      "name": "calculatoare programare",
+      "icon": "💻",
       "color": "#9D8DBB"
     }
   ],
   "questions": [
     {
-      "id": "a4f2e9c1-3b7d-48a4-f2e9-c13b7d6a4f2e",
-      "category": "protetica",
-      "difficulty": "easy",
-      "question": "Cum este definită edentația totală (ET)?",
+      "id": "e1f4b8c2-7a3d-41e1-f4b8-c27a3d9e1f4b",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce caracterizează algoritmul A* față de Greedy Best-First Search?",
       "options": [
-        "Absența tuturor unităților odonto-parodontale de pe unul ori ambele maxilare",
-        "Pierderea a cel puțin jumătate din dinții de pe o arcadă",
-        "Absența exclusivă a dinților frontali superiori",
-        "Afectarea parodontală generalizată fără pierderea dinților"
+        "A* folosește o funcție de cost total = costul real de la sursă la nodul curent + estimarea până la destinație",
+        "Dacă euristica este admisibilă (nu supraestimează) și consistentă, A* garantează soluția optimă",
+        "A* poate fi văzut ca o combinație între BFS și căutare euristică",
+        "A* ignoră costul de la start la nodul curent, folosind doar estimarea până la final"
+      ],
+      "correctAnswer": [
+        0,
+        1
+      ],
+      "explanation": "Ignorarea costului de la start la nodul curent este caracteristica Greedy Best-First Search, nu A*. A* ia în calcul AMBELE componente: costul real parcurs și estimarea până la destinație."
+    },
+    {
+      "id": "1a7f4d2c-8e9b-41a7-f4d2-c8e9b5a7f4d2",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt proprietățile unui pointer în C/C++?",
+      "options": [
+        "Stochează adrese de memorie; permite accesul indirect la date prin dereferențiere",
+        "Accesarea memoriei nealocate este sigură dacă pointerul este inițializat cu NULL",
+        "Permit scăderea a doi pointeri care indică în același tablou (pentru a determina numărul de elemente)",
+        "Suportă operații de incrementare/decrementare și adunarea cu o valoare întreagă"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Accesarea memoriei nealocate sau eliberate duce la ERORI, nu este sigură. NULL indică că pointerul nu indică nicio adresă validă, iar accesarea lui duce la eroare de segmentare."
+    },
+    {
+      "id": "6c3e8b1f-9a4d-46c3-e8b1-f9a4d2c3e8b1",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt diferențele dintre fișierele text și fișierele binare?",
+      "options": [
+        "Fișierele text sunt portabile între sisteme; cele binare nu sunt portabile între arhitecturi diferite",
+        "Fișierele binare pot fi deschise și înțelese cu orice editor de text",
+        "Fișierele binare sunt mai rapide la citit/scris (fără conversii) și mai eficiente în stocare",
+        "Fișierele text stochează date sub formă de caractere lizibile (ASCII); cele binare – în format brut, ca în memorie"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Fișierele binare NU pot fi deschise și înțelese cu un editor de text – necesită programe speciale sau aplicații dedicate. Aceasta este un dezavantaj al fișierelor binare față de cele text."
+    },
+    {
+      "id": "a5d9c3f7-2b6e-4a5d-9c3f-72b6e8a5d9c3",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt caracteristicile unui algoritm Greedy?",
+      "options": [
+        "Algoritmul lui Dijkstra este un exemplu de algoritm greedy",
+        "Nu revine asupra deciziilor făcute (fără backtracking)",
+        "Garantează întotdeauna soluția globală optimă",
+        "Alege cea mai bună opțiune disponibilă la fiecare pas (optimum local)"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Greedy POATE să nu ofere întotdeauna soluția globală optimă, ci doar o aproximare bună. Algoritmul Dijkstra este un exemplu clasic de greedy care, în acest caz particular, găsește soluția optimă."
+    },
+    {
+      "id": "7b3e6c1f-4a9d-47b3-e6c1-f4a9d2b3e6c1",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care este diferența dintre instrucțiunile while și do-while în C/C++?",
+      "options": [
+        "do-while are test final – instrucțiunea se execută cel puțin o singură dată, chiar dacă condiția este falsă",
+        "while are test inițial – se evaluează condiția înainte de execuția instrucțiunii",
+        "while garantează cel puțin o execuție a corpului buclei",
+        "for este echivalent cu while, cu condiție că numărul de pași este cunoscut"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "while NU garantează cel puțin o execuție – dacă condiția este falsă de la început, corpul nu se execută deloc. Aceasta este tocmai diferența față de do-while care execută corpul cel puțin o dată."
+    },
+    {
+      "id": "7e2d5a8f-4c9b-47e2-d5a8-f4c9b1e2d5a8",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este un Bufferul de Reordonare (ROB) și care este rolul său?",
+      "options": [
+        "ROB elimină complet necesitatea mecanismului de redenumire a registrelor",
+        "Commit-ul se face în ordinea din codul sursă (in-order), chiar dacă execuția a fost out-of-order",
+        "Este organizat ca o coadă FIFO; când instrucțiunea ajunge în prima poziție și și-a încheiat execuția, rezultatul este scris în registru",
+        "Permite executarea instrucțiunilor Out-of-Order și asigură tratarea precisă a excepțiilor"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "ROB lucrează împreună cu bufferul de redenumire (RenB) – nu îl elimină. Redenumirea registrelor este necesară pentru a gestiona hazardurile WAW și WAR în execuția out-of-order."
+    },
+    {
+      "id": "a3f7c2e1-9b4d-48a3-f7c2-e19b4d6a3f7c",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt categoriile de operatori în C/C++?",
+      "options": [
+        "Aritmetici (+, -, /, %, *) și de atribuire (=, +=, -=, *=)",
+        "Relaționali (==, !=, <, >, <=, >=) și logici (&&, ||, !)",
+        "Operatorul de concatenare de șiruri (+++) și de multiplicare logică (**)",
+        "De incrementare/decrementare (++, --) și condițional (? :)"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "În C/C++ există operatori aritmetici, de atribuire, relaționali, logici, logici la nivel de bit, de incrementare/decrementare, condițional, virgulă, acces membru, sizeof, referențiere, dereferențiere, cast, apel funcție, indexare și rezoluție. Operatorul +++ sau ** nu există în C/C++."
+    },
+    {
+      "id": "f3b8d5c1-9e2a-4f3b-8d5c-19e2a6f3b8d5",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt diferențele principale dintre procese și fire de execuție (threads)?",
+      "options": [
+        "Procesele sunt independente; thread-urile fac parte din procese și partajează memoria și resursele",
+        "Thread-urile dintr-un proces partajează stiva",
+        "Schimbarea de la un thread la altul este mai rapidă decât comutarea între procese",
+        "Fiecare proces are propriul spațiu de adrese; thread-urile dintr-un proces împart același spațiu de adrese"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Thread-urile dintr-un proces NU partajează stiva – fiecare thread are propria stivă. Partajează memoria, resursele și spațiul de adrese, dar au stive individuale."
+    },
+    {
+      "id": "3f6d1b8e-9c2a-43f6-d1b8-e9c2a5f6d1b8",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce structuri de date oferă operații mai eficiente: stivă, arbore sau tabelă de dispersie?",
+      "options": [
+        "Arborele neechilibrat poate ajunge la O(1) pentru căutare",
+        "Stiva: push, pop, top → O(1) timp constant",
+        "Arbore binar echilibrat: inserare, căutare, ștergere → O(log₂n)",
+        "Tabela de dispersie: inserare, căutare, ștergere → O(1) în medie (pe baza indexului hash)"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Arborele neechilibrat poate ajunge la O(n) pentru operații, similar cu o listă înlănțuită (în cel mai rău caz). Tabela de dispersie în cel mai rău caz devine O(n) prin coliziuni."
+    },
+    {
+      "id": "9b4c7f2e-5a1d-49b4-c7f2-e5a1d8b4c7f2",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care este rolul nivelului transport în modelul OSI și ce protocoale folosește?",
+      "options": [
+        "TCP oferă conexiuni fiabile cu controlul erorilor și al fluxului; UDP oferă transmisie rapidă fără verificări",
+        "Asigură comunicarea fiabilă end-to-end între două calculatoare gazdă (hosts)",
+        "Nivelul transport determină ruta optimă de la sursă la destinație prin routere",
+        "Fragmentează datele la sursă și le reasamblează la destinație"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Determinarea rutei optime prin routere este responsabilitatea NIVELULUI REȚEA (nivel 3), nu a nivelului transport (nivel 4). Nivelul rețea folosește adrese IP și algoritmi de rutare."
+    },
+    {
+      "id": "8a2e5f4c-1d7b-48a2-e5f4-c1d7b9a2e5f4",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt asemănările și deosebirile dintre o clasă abstractă și o interfață?",
+      "options": [
+        "Interfața are membrii implicit publici; clasa abstractă poate avea orice nivel de acces",
+        "O clasă poate moșteni mai multe clase abstracte; dar poate implementa mai multe interfețe",
+        "Ambele nu pot fi instanțiate și ambele definesc un comportament general",
+        "Clasa abstractă poate conține metode implementate, variabile membre și constructor; interfața nu"
+      ],
+      "correctAnswer": [
+        0,
+        3
+      ],
+      "explanation": "Ambele afirmații 0 și 2 sunt parțial incorecte. (0) este adevărată parțial. (2) O clasă NU poate moșteni mai multe clase abstracte (limitare C++/Java), dar POATE implementa mai multe interfețe."
+    },
+    {
+      "id": "5a4c9f1e-7d2b-45a4-c9f1-e7d2b6a4c9f1",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care este diferența dintre overloading și overriding?",
+      "options": [
+        "Overloading = mai multe funcții cu același nume dar semnături diferite (nr. diferit sau tipuri diferite de parametri), în aceeași clasă",
+        "Compilatorul face distincție între funcții supraîncărcate exclusiv pe baza tipului returnat",
+        "Overriding = clasa derivată suprascrie o metodă virtuală moștenită de la clasa de bază, oferind propria implementare",
+        "Overloading are loc la compilare (legare statică); overriding la runtime (legare dinamică)"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Compilatorul NU face distincție între funcții pe baza tipului returnat. Supraîncărcarea se bazează pe numărul și tipurile parametrilor, nu pe tipul returnat."
+    },
+    {
+      "id": "6d4a7f9c-2b1e-46d4-a7f9-c2b1e8d4a7f9",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este partiționarea unui HDD și ce scopuri îndeplinește?",
+      "options": [
+        "Procesul de împărțire a unui disc fizic în mai multe unități logice (partiții), fiecare funcționând ca un disc separat",
+        "Dacă o partiție este coruptă, celelalte pot rămâne intacte, facilitând recuperarea parțială",
+        "Permite instalarea mai multor sisteme de operare, fiecare pe partiție separată",
+        "Conform modelului MBR, pot exista maximum 8 partiții primare"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Conform modelului MBR, pot exista maximum 4 partiții primare (sau 3 primare + 1 extinsă care conține partiții logice). Nu 8."
+    },
+    {
+      "id": "2a6c1e9f-4d8b-42a6-c1e9-f4d8b5a6c1e9",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este preemptivitatea în planificarea unității centrale a unui sistem de operare?",
+      "options": [
+        "Planificarea preemptivă necesită mecanisme de sincronizare pentru resurse partajate",
+        "Capacitatea SO de a întrerupe execuția unui proces în favoarea altuia cu prioritate mai mare",
+        "Procesul întrerupt este trecut în starea 'ready' și va aștepta să fie replanificat",
+        "Un sistem nepreemptiv permite procesului să fie întrerupt oricând de SO"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Într-un sistem NEPREEMPTIV, procesul NU poate fi întrerupt – el își păstrează controlul asupra procesorului până când se termină sau intră în stare de așteptare. Planificarea preemptivă permite exact opusul."
+    },
+    {
+      "id": "9c4f8a2e-1d6b-49c4-f8a2-e1d6b3c4f8a2",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce funcții specifice sunt disponibile pentru lucrul cu șiruri de caractere în C/C++?",
+      "options": [
+        "strrev() – inversează șirul în mod standard în orice compilator",
+        "strcpy() – copiază șirul sursă peste șirul destinație",
+        "strcmp() – compară lexicografic 2 șiruri",
+        "strlen() – returnează lungimea șirului"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "strrev() nu este o funcție standard în C/C++. Funcțiile standard menționate în curs includ strlen(), strcpy(), strcat(), strcmp(), strchr() și strstr()."
+    },
+    {
+      "id": "7d5f2e4a-8c9b-47d5-f2e4-a8c9b1d5f2e4",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt caracteristicile arhitecturii RISC față de CISC?",
+      "options": [
+        "RISC: număr mare de registre pentru a minimiza accesul la memorie; optimizat pentru pipeline",
+        "CISC: instrucțiuni cu lungime variabilă, mai multe moduri de adresare, fiecare instrucțiune poate înlocui mai multe instrucțiuni simple",
+        "RISC: set redus de instrucțiuni, format fix, execuție în un singur ciclu, acces la memorie doar prin Load/Store",
+        "CISC: viteză de procesare ridicată datorită simplității arhitecturii"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Viteza de procesare ridicată datorită simplității arhitecturii este avantajul RISC, nu CISC. CISC are execuție mai lentă, deoarece unele instrucțiuni sunt complexe și necesită mai multe cicluri."
+    },
+    {
+      "id": "2f4a9c7e-5d1b-42f4-a9c7-e5d1b8f4a9c7",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este backtracking-ul și care sunt caracteristicile sale principale?",
+      "options": [
+        "Garantează găsirea soluției în timp polinomial indiferent de problemă",
+        "Dacă o alegere nu duce la soluție validă, algoritmul revine la pasul anterior și încearcă altă opțiune",
+        "Tehnică de rezolvare prin explorarea controlată a spațiului de soluții, construind soluția pas cu pas",
+        "La fiecare pas se verifică dacă decizia curentă poate conduce la o soluție validă"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Backtracking-ul nu garantează timp polinomial – în cel mai rău caz are complexitate exponențială. Este utilizat pentru obținerea tuturor soluțiilor prin explorare sistematică."
+    },
+    {
+      "id": "4b8e2d6f-3c1a-44b8-e2d6-f3c1a9b8e2d6",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce se întâmplă la derivarea publică, protejată și privată a unei clase?",
+      "options": [
+        "Derivare publică: membrii privați din CB rămân inaccesibili; ceilalți își păstrează tipul",
+        "Derivare privată: membrii privați din CB sunt inaccesibili; ceilalți devin private",
+        "Derivare protected: membrii privați din CB sunt inaccesibili în CD; ceilalți devin protected",
+        "La orice tip de derivare, membrii privați ai CB devin accesibili în CD"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "La NICIUN tip de derivare membrii privați ai CB nu devin accesibili în CD – ei rămân întotdeauna inaccesibili. Diferența constă în ce se întâmplă cu membrii non-privați."
+    },
+    {
+      "id": "c4f7a9b2-3e1d-44c4-f7a9-b23e1d8c4f7a",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Ce este memoria virtuală și care este rolul TLB?",
+      "options": [
+        "TLB hit = translatarea se face rapid; TLB miss = se consultă tabela de pagini din MP și rezultatul se adaugă în TLB",
+        "TLB (Translation Lookaside Buffer) este un cache specializat care stochează cele mai recente traduceri dintre adrese virtuale și adrese fizice",
+        "Memoria virtuală face ca întreaga memorie (MP și AMS) să pară, din perspectiva programelor, ca o singură memorie principală continuă și extinsă",
+        "Tabela de pagini este stocată exclusiv în TLB și nu în memoria principală"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tabela de pagini este stocată în MEMORIA PRINCIPALĂ (MP), nu exclusiv în TLB. TLB este un cache mic și rapid care stochează cele mai recente traduceri pentru a accelera accesul."
+    },
+    {
+      "id": "3b7f4e2a-1c9d-43b7-f4e2-a1c9d6b7f4e2",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Ce sunt use case-urile în ingineria software și unde sunt întâlnite?",
+      "options": [
+        "Fiecare use case include pașii urmați, actorii implicați și scenarii alternative",
+        "Descrieri detaliate ale modului în care un utilizator (actor) interacționează cu sistemul pentru a atinge un obiectiv",
+        "Pot fi reprezentate grafic în diagrame de cazuri de utilizare în UML",
+        "Use case-urile descriu cum este implementat tehnic un comportament, nu ce face sistemul"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Use case-urile descriu CE face sistemul din perspectiva utilizatorului, NU CUM este implementat tehnic acel comportament. Implementarea tehnică este subiectul fazei de proiectare, nu al analizei."
+    },
+    {
+      "id": "c8a3f1e7-9d4b-4c8a-3f1e-79d4b2c8a3f1",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "De ce procesoarele superscalare au succes comercial superior față de VLIW?",
+      "options": [
+        "Codul mașină superscalar este independent de paralelism și poate fi rulat pe procesoare viitoare fără recompilare",
+        "VLIW necesită recompilare la schimbarea arhitecturii (număr/tip unități funcționale)",
+        "La superscalare, hardware-ul detectează instrucțiunile independente și le lansează în execuție automat",
+        "VLIW are performanțe mai bune decât superscalare în toate situațiile practice"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "VLIW nu are performanțe mai bune în toate situațiile – are avantaje teoretice, dar dezavantajul major al dependenței de compilatoare specializate și incompatibilității binare între versiuni. Superscalarele sunt mai flexibile în practică."
+    },
+    {
+      "id": "8f2d5b9c-4e7a-48f2-d5b9-c4e7a1f2d5b9",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care este legătura dintre moștenire și abstractizare în OOP?",
+      "options": [
+        "Clasele abstracte pot fi instanțiate direct, dar numai prin pointeri la clasa de bază",
+        "Compilatorul nu permite instanțierea unei clase abstracte",
+        "Abstractizarea se face folosind clase abstracte care conțin cel puțin o metodă virtuală pură",
+        "O metodă virtuală pură este o funcție fără implementare declarată cu corpul egal cu 0"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Compilatorul NU permite instanțierea unei clase abstracte, nici prin pointeri. Pointerul la clasa de bază poate stoca adresa unei instanțe ale clasei DERIVATE care implementează toate metodele pure."
+    },
+    {
+      "id": "d2f6c4a8-3b9e-42d2-f6c4-a83b9e1d2f6c",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Ce principiu SOLID afirmă că o clasă ar trebui să aibă un singur motiv de a se schimba?",
+      "options": [
+        "Single Responsibility Principle (SRP)",
+        "Open/Closed Principle (OCP)",
+        "Interface Segregation Principle (ISP)",
+        "Liskov Substitution Principle (LSP)"
       ],
       "correctAnswer": 0,
-      "explanation": "Edentația totală este definită ca absența tuturor unităților odonto-parodontale de pe unul ori ambele maxilare, cu dispariția arcadelor dentare și a apofizelor alveolare."
+      "explanation": "Single Responsibility Principle (SRP) afirmă că o clasă ar trebui să aibă un singur motiv de schimbare, adică o singură responsabilitate sau scop."
     },
     {
-      "id": "c7b3d1f8-5e9a-47c7-b3d1-f85e9a2c7b3d",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care sunt caracteristicile definitorii ale edentației totale?",
-      "options": [
-        "Morfologică: dispariția arcadelor dentare și a apofizelor alveolare",
-        "Diagnostică: pre-existența dinților în cavitatea bucală și îndepărtarea lor ulterioară",
-        "Funcțională: perturbarea masticației, fonației, fizionomiei, auto-menținerii, apărării și stimulării",
-        "Terapeutică: necesitatea protezării unilaterale"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Caracteristica morfologică este dispariția arcadelor dentare și apofizelor alveolare cu necesitatea dublei protezări; cea funcțională este perturbarea funcțiilor esențiale; cea diagnostică presupune pre-existența dinților și îndepărtarea lor ulterioară."
-    },
-    {
-      "id": "e1c8a5f3-9d2b-41e1-c8a5-f39d2b7e1c8a",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care sunt cauzele extracțiilor care duc la edentația totală?",
-      "options": [
-        "Complicațiile cariei dentare și parodontopatiile",
-        "Traumatisme dento-maxilare și iatrogenii protetice",
-        "Absența congenitală a dinților (anodontia)",
-        "Procese tumorale și extractii nejustificate"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "Cauzele menționate în curs sunt: complicațiile cariei, parodontopatii, traumatisme dento-maxilare, iatrogenii protetice, procese tumorale, extracții nejustificate și procese inflamatorii extinse. Anodontia nu este menționată."
-    },
-    {
-      "id": "2f9d4b7c-6a1e-42f9-d4b7-c6a1e8f9d4b7",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Cum influențează diabetul zaharat edentația totală?",
-      "options": [
-        "Favorizează apariția, evoluția și agravarea parodontopatiilor",
-        "Influențează calitatea substratului muco-osos",
-        "Produce tulburări de debit și compoziție a salivei (hiposialie, pH mai acid)",
-        "Determină creșterea rezistenței locale și generale"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Diabetul zaharat influențează calitatea substratului muco-osos, favorizează parodontopatiile și produce tulburări salivare. Nu crește, ci SCADE rezistența locală și generală."
-    },
-    {
-      "id": "8b5e3a9f-4c7d-48b5-e3a9-f4c7d1b5e3a9",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care sunt tulburările masticatorii din edentația totală?",
-      "options": [
-        "Sindroame de malnutriție și depresie imunitară",
-        "Insalivare insuficientă și înghițirea bolurilor alimentare mari",
-        "Incapacitatea de a realiza secționarea și triturarea alimentelor",
-        "Ameliorarea eficienței masticatorii față de pacientul dentat"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Edentația totală produce incapacitatea prelucrării mecanice a alimentelor, insalivare insuficientă, înghițirea bolurilor mari, malnutriție și depresie imunitară (cheilite angulare, glosite, leziuni herpetice). Nu ameliorează masticația."
-    },
-    {
-      "id": "5d1f7c4a-8e9b-45d1-f7c4-a8e9b2d1f7c4",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care este aspectul fizionomic patognomonic al edentației totale?",
-      "options": [
-        "Profil convex cu proeminența bărbiei",
-        "Hipertrofia mușchilor masticatori",
-        "Facies edentat cu profil concav și prăbușirea etajului inferior al feței",
-        "Asimetrie facială evidentă cu deviere laterală a mandibulei"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Prăbușirea etajului inferior al feței prin dispariția ultimilor dinți care mențineau DVO determină faciesul edentat cu profil concav patognomonic și accentuarea 'liniilor de caracter'."
-    },
-    {
-      "id": "3a8c6e2f-1d9b-43a8-c6e2-f1d9b5a8c6e2",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care foneme sunt afectate în edentația totală și de ce?",
-      "options": [
-        "Dentalele D, T – limba nu are suport dentar",
-        "Vocalele A, O – afectate de absența dinților frontali",
-        "Siflantele S – modificat culoarul pentru aer",
-        "Labialele V, F – afectate în edentația totală"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Vocalele nu necesită suport dentar și nu sunt menționate ca afectate. Dentalele D, T sunt perturbate deoarece limba nu are suport dentar; siflantele S prin modificarea culoarului pentru aer; labialele V, F prin afectarea conformării canalului fonetic."
-    },
-    {
-      "id": "f6e4b9c2-7a3d-46f6-e4b9-c27a3d8f6e4b",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care este cronologia fenomenelor de atrofie și resorbție osoasă în edentația totală?",
-      "options": [
-        "Atrofia apare prima, resorbția a doua",
-        "Resorbția apare exclusiv la mandibulă, atrofia exclusiv la maxilar",
-        "Resorbția osoasă apare prima, atrofia a doua",
-        "Ambele fenomene apar simultan, fără ordine determinată"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Conform cursului, cronologia fenomenelor este: resorbția osoasă apare prima, atrofia apare a doua."
-    },
-    {
-      "id": "9c2f5a1e-4b8d-49c2-f5a1-e4b8d7c2f5a1",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care sunt factorii locali ai atrofiei și resorbției osoase în edentația totală?",
-      "options": [
-        "Cauza instalării ET și modul efectuării extracțiilor",
-        "Arcada antagonistă",
-        "Sexul și vârsta pacientului",
-        "Timpul scurs de la extracție și prezența sau absența protezării"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "Sexul și vârsta sunt factori generali, nu locali. Factorii locali includ: cauza instalării ET, modul efectuării extracțiilor, timpul scurs, protezarea sau absența acesteia și arcada antagonistă."
-    },
-    {
-      "id": "7e3b8f4c-2a6d-47e3-b8f4-c2a6d9e3b8f4",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Ce se întâmplă cu musculatura în edentația totală?",
-      "options": [
-        "Mușchii ridicători (temporal, maseter, pterigoidian medial) se scurtează",
-        "Mușchii mimicii devin hipertoni și cresc în masă",
-        "Mușchii coborâtori (genio-, milohioidian, pântecele anterior al digastricului) se alungesc",
-        "Limba crește în volum prin hipertrofie musculară și imbibție tisulară"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Mușchii mimicii devin HIPOtoni și scad în masă și contractilitate. Mușchii ridicători se scurtează, coborâtorii se alungesc, iar limba crește în volum ocupând spațiul protetic."
-    },
-    {
-      "id": "1d4c9f6a-8e2b-41d4-c9f6-a8e2b3d4c9f6",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care este definitia câmpului protetic edentat total?",
-      "options": [
-        "Zona osoasă reziduală după resorbția alveolară",
-        "Totalitatea formațiunilor anatomice care vin în contact direct sau indirect cu piesele protetice și care contribuie la menținere, sprijin și stabilizare",
-        "Exclusiv suprafața mucoasă pe care se sprijină proteza",
-        "Suprafața totală a cavității bucale la pacientul edentat"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Câmpul protetic edentat total este definit ca totalitatea formațiunilor anatomice care vin în contact direct sau indirect cu piesele protetice și care contribuie la menținere, sprijin și stabilizare."
-    },
-    {
-      "id": "6f8a2d5e-9c1b-46f8-a2d5-e9c1b4f8a2d5",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care este suprafața zonei de sprijin la maxilar și ce rezistență la presiune are?",
-      "options": [
-        "15 cm² constant; rezistență de 3 kg/cm²",
-        "50 cm² inițial, reducându-se la 25 cm²; rezistență de 0,8 kg/cm²",
-        "10 cm² constant; rezistență de 2 kg/cm²",
-        "25 cm² inițial, reducându-se la 10-15 cm²; rezistență de 1,6 kg/cm²"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Suprafața zonei de sprijin la maxilar este de la 25 cm² reducându-se la 10-15 cm², cu rezistență la presiune de 1,6 kg/cm²."
-    },
-    {
-      "id": "4b7e1c9f-3a5d-44b7-e1c9-f3a5d8b7e1c9",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care sunt caracteristicile câmpului protetic mandibular față de cel maxilar?",
-      "options": [
-        "Atrofia și resorbția de patru ori mai rapidă cu pierderea mai precoce a DVO",
-        "Mușchi cu inserție paralelă cu periferia câmpului protetic, favorizând menținerea",
-        "Redus ca întindere – 15 cm²",
-        "Vascularizație mai redusă și aspect de 'progenie patognomonică'"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Mușchii la mandibulă au inserție PERPENDICULARĂ pe periferia câmpului protetic, influențând NEGATIV menținerea și stabilitatea, nu paralelă. Celelalte trei caracteristici sunt corecte."
-    },
-    {
-      "id": "9a3f6d2c-1e8b-49a3-f6d2-c1e8b5a3f6d2",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Ce este torusul palatin și care este importanța sa protetică?",
-      "options": [
-        "Proeminență osoasă situată pe sutura medio-sagitală, cu formă și mărime variată",
-        "Torusul palatin este întotdeauna indicație pentru corecție chirurgicală obligatorie",
-        "Determină dificultăți în realizarea închiderii marginale și în cicatrizarea leziunilor",
-        "Prezența torusului fără foliere produce leziuni de decubit și basculări ale protezei"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Corecția chirurgicală nu este obligatorie – se poate recurge și la folierea modelului. Torusul palatin este o proeminență osoasă pe sutura medio-sagitală care creează dificultăți de închidere marginală; prezența sa fără foliere produce leziuni și basculări."
-    },
-    {
-      "id": "2c5e8a4f-7d9b-42c5-e8a4-f7d9b1c5e8a4",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Ce tip de boltă palatină este cel mai favorabil protezării și de ce?",
-      "options": [
-        "Bolta medie (adâncime = 15-17 mm)",
-        "Bolta adâncă, deoarece permite cea mai bună închidere marginală distală",
-        "Se opune rezistența forțelor dislocante și permite apariția fenomenului adeziunii",
-        "Asigură sprijin muco-osos și stabilizare orizontală"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Bolta adâncă are efect NEFAVORABIL: dificultăți la amprentare, împiedică închiderea marginală distală și nu favorizează adeziunea. Bolta medie este cea mai favorabilă protezării."
-    },
-    {
-      "id": "f4d1b8e6-3c9a-47f4-d1b8-e63c9a2f4d1b",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care sunt tipurile de fibromucoasă și caracteristicile rezilienței în câmpul protetic?",
-      "options": [
-        "În zona rafeului median și versantul palatinal = 0,1 mm (zona fibroasă) – mucoasă subțire, sensibilă",
-        "Pe coama crestei reziduale reziliența este cea mai mare din câmpul protetic",
-        "La nivelul crestelor reziduale reziliența este de 0,2 mm – fibromucoasă groasă, vascularizată, aderentă",
-        "În 1/3 distală a palatului (zonele lui Schröeder) – reziliență crescută datorită țesutului glandular și adipos"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Pe coama crestei reziduale reziliența este MAI MICĂ (grad de reziliență scăzut). Cea mai mare reziliență o au zonele lui Schröeder din 1/3 distală a palatului datorită țesutului glandular și adipos."
-    },
-    {
-      "id": "7e9c2f5a-1b4d-47e9-c2f5-a1b4d8e9c2f5",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Ce este reziliența mucoasei și care este valoarea medie?",
-      "options": [
-        "Capacitatea mucoasei de a ceda la presiuni exercitate în sens vertical, cu deformare verticală și revenire; valoare medie = 0,2 mm",
-        "Rigiditatea mucoasei față de presiunile ocluzale; valoare medie = 0,5 mm",
-        "Proprietatea mucoasei de a se regenera după lezare; valoare medie = 5 mm",
-        "Capacitatea mucoasei de a rezista la presiuni orizontale; valoare medie = 1 mm"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Reziliența este capacitatea mucoasei de a ceda la presiuni exercitate în sens vertical, cu deformare verticală și revenire. Valoarea medie este de 0,2 mm."
-    },
-    {
-      "id": "3b6f9c4e-8a2d-43b6-f9c4-e8a2d1b6f9c4",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care sunt complicațiile articulare ale edentației totale?",
-      "options": [
-        "Disfuncție temporo-mandibulară cu zgomote articulare, subluxație sau luxație condilo-discală",
-        "Blocaje la închiderea gurii și asimetrie în deplasarea condililor mandibulari",
-        "Anchiloza articulației temporo-mandibulare ca principală complicație",
-        "Modificări ale discului articular – mobilitate crescută și degenerescență fibro-cartilaginoasă"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "Anchiloza ATM nu este menționată ca complicație a ET. Complicațiile articulare includ DTM cu zgomote articulare, subluxații/luxații, blocaje, dureri la palpare și modificări degenerative ale discului și capsulei articulare."
-    },
-    {
-      "id": "5a1e7f3c-9d6b-45a1-e7f3-c9d6b2a1e7f3",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care sunt complicațiile digestive ale edentației totale și mecanismul lor?",
-      "options": [
-        "Complicații digestive apar exclusiv la pacienții cu ET protezată incorect",
-        "Mecanism: scurtarea etapei bucale de digestie, înghițirea fragmentelor mari și traumatizarea mucoasei gastrice",
-        "Tulburări de secreție gastrică și motilitate intestinală",
-        "Gastrite, duodenite, colite și ulcere"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Complicațiile digestive (gastrite, duodenite, colite, ulcere) apar și la pacienții neprotezați prin scurtarea etapei bucale de digestie, înghițirea fragmentelor mari și traumatizarea mucoasei gastrice."
-    },
-    {
-      "id": "8d4c1f9a-6e3b-48d4-c1f9-a6e3b7d4c1f9",
-      "category": "protetica",
+      "id": "e5c1a8f6-2b4d-45e5-c1a8-f62b4d9e5c1a",
+      "category": "calculatoare_programare",
       "difficulty": "easy",
-      "question": "Care sunt cerințele esențiale ale materialelor de amprentă?",
+      "question": "De ce se spune că moștenirea multiplă creează un graf orientat aciclic (DAG)?",
       "options": [
-        "Compatibilitate cu gipsurile și inertie față de substanțele dezinfectante",
-        "Miros plăcut și preț de cost avantajos (condiții secundare)",
-        "Plasticitate, timp de priză adecvat, fidelitate și elasticitate",
-        "Rezistență mecanică și stabilitate dimensională"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Mirosul plăcut și prețul avantajos sunt condiții SECUNDARE, nu esențiale. Condițiile esențiale sunt: plasticitate, timp de priză adecvat, fidelitate, elasticitate, rezistență mecanică, stabilitate dimensională, compatibilitate cu gipsurile și lipsa de toxicitate."
-    },
-    {
-      "id": "c6f2a8d4-1b9e-46c6-f2a8-d41b9e3c6f2a",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Ce caracterizează pastele zinc oxid-eugenol (ZOE) ca material de amprentă?",
-      "options": [
-        "Timp de lucru = 8-10 minute și timp de priză = 15-20 minute",
-        "Indicații: material unic în amprenta funcțională, amprentă de spălare, rebazări în edentația totală",
-        "Stabilitate dimensională: contracție 0,1% la 3 minute",
-        "Fidelitate foarte bună și compatibilitate cu gipsul"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Pastele ZOE au timp de lucru = 2-4 minute și timp de priză = 3-10 minute, nu 8-10 și 15-20 minute. Celelalte caracteristici sunt corecte."
-    },
-    {
-      "id": "e9b5d3f7-4c8a-49e9-b5d3-f74c8a1e9b5d",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care este diferența dintre compounduri Stents și materialele bucoplastice?",
-      "options": [
-        "Materialele bucoplastice (Adheseal): plasticitate nelimitată la temperatura CB (34°C), posibilitate de corectare prin completări repetate",
-        "Ambele materiale sunt elastice ireversibile cu stabilitate dimensională slabă",
-        "Materialele bucoplastice sunt indicate pentru extinderea marginilor PAI, rebazare și amprenta finală",
-        "Stents: consistență crescută, fidelitate medie, priză prin răcire la 2 min; indicat pentru amprentarea arcadei antagoniste și amprenta preliminară la câmpuri dure"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Atât Stents cât și materialele bucoplastice sunt materiale RIGIDE REVERSIBILE (termoplastice), nu elastice ireversibile."
-    },
-    {
-      "id": "1f3c7a5e-9d2b-41f3-c7a5-e9d2b6f3c7a5",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Ce caracterizează siliconii de adiție față de siliconii de condensare?",
-      "options": [
-        "Siliconii de condensare au stabilitate mai bună deoarece nu eliberează alcool etilic în priză",
-        "Siliconii de adiție au stabilitate dimensională foarte bună: coeficient de contracție = 0,14-0,17% la 24 h",
-        "Reacția de priză fără produse de eliminare, rezultând un produs deosebit de stabil",
-        "Durata de depozitare mai mare: 24 luni față de 12 luni la siliconii de condensare"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Siliconii de CONDENSARE eliberează alcool etilic în priză, ceea ce duce la contracție și turnare imediată obligatorie. Siliconii de adiție nu au produse de eliminare, sunt mai stabili dimensional și au durată de depozitare de 24 luni."
-    },
-    {
-      "id": "4d8f2c6a-3e1b-44d8-f2c6-a3e1b9d8f2c6",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care sunt obiectivele generale ale amprentării câmpului protetic edentat total?",
-      "options": [
-        "Asigurarea menținerii prin modelarea corectă a marginilor pentru succiune și adeziune",
-        "Asigurarea sprijinului protezei prin amprentarea întregii suprafețe a zonei de sprijin",
-        "Asigurarea stabilității prin amprentarea retentivităților anatomice",
-        "Eliminarea completă a salivei din câmpul protetic în timpul amprentării"
+        "Graful este aciclic deoarece o clasă nu poate moșteni direct sau indirect de la ea însăși",
+        "Nodurile reprezintă clasele, iar arcele reprezintă relațiile de moștenire (clasa derivată → clasa de bază)",
+        "Graful este orientat deoarece moștenirea are un sens clar (derivată → bază)",
+        "În moștenirea simplă structura este un graf, nu un arbore"
       ],
       "correctAnswer": [
         0,
         1,
         2
       ],
-      "explanation": "Eliminarea completă a salivei nu este un obiectiv al amprentării – filmul salivar subțire contribuie la adeziunea protezei. Obiectivele includ asigurarea sprijinului, menținerii, stabilității, funcției fizionomice, fonetice și de deglutiție."
+      "explanation": "În moștenirea simplă structura este un ARBORE (nu un graf general). Moștenirea multiplă transformă structura dintr-un arbore într-un graf orientat aciclic (DAG)."
     },
     {
-      "id": "7c1e4a9f-5b3d-47c1-e4a9-f5b3d2c1e4a9",
-      "category": "protetica",
+      "id": "7d1f5c3a-9e8b-47d1-f5c3-a9e8b4d1f5c3",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt drepturile de acces în C++ și ce pot accesa?",
+      "options": [
+        "public: accesibil din interiorul clasei, exteriorul clasei și clasele derivate",
+        "private: accesibil doar din interiorul clasei",
+        "internal: accesibil doar în fișierul curent (specific C++)",
+        "protected: accesibil din interiorul clasei și din clasele derivate"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "internal nu există în C++ – acesta este specific C# (.NET). În C++ există public, private și protected ca modificatori de acces."
+    },
+    {
+      "id": "3d9b6e4f-1c8a-43d9-b6e4-f1c8a7d9b6e4",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt diferențele dintre malloc/calloc/realloc și operatorul new în C++?",
+      "options": [
+        "new nu poate arunca excepție dacă alocarea eșuează, spre deosebire de malloc",
+        "new returnează un pointer de tipul specificat și apelează automat constructorul clasei",
+        "Toate (malloc, calloc, realloc) returnează un pointer void* la zona de memorie alocată sau NULL",
+        "malloc() alocă memorie fără inițializare; calloc() alocă și inițializează cu 0"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "new ARUNCĂ o excepție dacă alocarea nu are succes, spre deosebire de malloc care returnează NULL. Aceasta este o diferență importantă între cele două mecanisme de alocare dinamică."
+    },
+    {
+      "id": "6e1b3c7f-9d5a-46e1-b3c7-f9d5a4e1b3c7",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce principii SOLID sunt descrise corect mai jos?",
+      "options": [
+        "LSP: obiectele de tip derivat trebuie să poată înlocui obiectele de tip bază fără a modifica corectitudinea",
+        "ISP: mai bine mai multe interfețe mici decât o interfață mare; clienții nu implementează metode inutile",
+        "OCP: software-ul ar trebui să fie deschis pentru extindere, dar închis pentru modificare",
+        "DIP: modulele de nivel înalt ar trebui să depindă direct de module de nivel jos pentru eficiență"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "DIP afirmă exact OPUSUL – modulele de nivel înalt NU ar trebui să depindă de module de nivel jos; ambele ar trebui să depindă de abstracții (interfețe sau clase abstracte)."
+    },
+    {
+      "id": "f2c9a5e8-3b7d-42f2-c9a5-e83b7d1f2c9a",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce caracterizează variabilele locale statice în C/C++?",
+      "options": [
+        "Sunt alocate pe stivă și sunt vizibile din orice funcție",
+        "Își păstrează valoarea între apelurile funcției",
+        "Sunt declarate cu keyword-ul static",
+        "Dacă nu sunt inițializate explicit, sunt inițializate implicit cu valori nule"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Variabilele locale statice sunt alocate în SEGMENTUL DE DATE al programului (nu pe stivă) și sunt vizibile și accesibile DOAR în funcția unde au fost declarate, deși au durată de viață pe tot parcursul programului."
+    },
+    {
+      "id": "4f6b1d9c-3e8a-44f6-b1d9-c3e8a2f6b1d9",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce sunt bazele de date distribuite și care sunt avantajele lor?",
+      "options": [
+        "Bazele de date distribuite nu permit operații concurente între noduri diferite",
+        "Pot fi mărite în dimensiune fără a afecta performanța globală; timp de răspuns mai mic prin localizarea datelor",
+        "Baze de date logic integrate, dar fizic distribuite pe mai multe sisteme de calcul interconectate",
+        "Fragmentele pot fi replicate pe mai multe noduri pentru fiabilitate, disponibilitate și performanță"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Bazele de date distribuite PERMIT și gestionează operații concurente între noduri – tocmai acesta este unul dintre avantajele lor principale. Concurența este gestionată de SGBDD."
+    },
+    {
+      "id": "1c9e5d3f-4b7a-41c9-e5d3-f4b7a8c9e5d3",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care este rolul hardware-ului și al SO în tratarea unei excepții page fault?",
+      "options": [
+        "SO: determină cauza page fault; dacă pagina e validă dar absentă din RAM, o încarcă de pe disc",
+        "Hardware: procesorul generează excepția page fault când pagina este invalidă/absentă și salvează contextul procesului",
+        "SO actualizează tabela de pagini și TLB-ul, apoi reia procesul exact de unde s-a întrerupt",
+        "Hardware-ul încarcă singur pagina de pe disc fără intervenția SO"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Hardware-ul NU poate încărca pagina de pe disc singur – el doar detectează page fault-ul, salvează contextul și trimite controlul SISTEMULUI DE OPERARE. SO este cel care gestionează transferul de date din memoria secundară."
+    },
+    {
+      "id": "d8e4b1c9-5f2a-47d8-e4b1-c95f2a6d8e4b",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt diferențele esențiale dintre variabilele locale și variabilele globale în C/C++?",
+      "options": [
+        "Variabilele locale sunt alocate pe stivă (LIFO); cele globale în segmentul de date",
+        "Variabilele globale sunt inițializate automat cu valori nule; cele locale cu valori reziduale",
+        "Variabilele globale au durată de viață limitată la funcția în care sunt declarate",
+        "Variabilele locale sunt declarate în interiorul unei funcții/bloc și sunt vizibile doar acolo"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Variabilele globale au durată de viață pe tot parcursul programului (de la declarare până la sfârșitul programului), nu limitată la o funcție. Celelalte trei afirmații sunt corecte."
+    },
+    {
+      "id": "8f5b3c1e-7a4d-48f5-b3c1-e7a4d9f5b3c1",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este Trace Cache-ul și cum diferă de un cache clasic?",
+      "options": [
+        "Adresele de start ale traseelor sunt indexate după PC și istoricul de ramificare",
+        "Permite procesorului să aducă instrucțiunile în ordinea în care sunt probabil să apară din nou",
+        "Trace Cache stochează trasee reale de execuție (secvențe de instrucțiuni deja decodate), nu instrucțiuni în ordine secvențială",
+        "Trace Cache elimină complet necesitatea predicției branch-urilor în procesoarele moderne"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Trace Cache nu elimină predicția branch-urilor – aceasta rămâne necesară pentru a decide ce trasee să fie aduse din Trace Cache. Cele două tehnici se completează reciproc."
+    },
+    {
+      "id": "5f9e7b4d-2c8a-45f9-e7b4-d2c8a3f9e7b4",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este Singleton-ul și cum se implementează?",
+      "options": [
+        "Șablon creațional care asigură că o clasă are o singură instanță și oferă un punct global de acces la ea",
+        "O variabilă statică în clasă stochează instanța unică; o metodă statică o returnează sau o creează la primul apel",
+        "Singleton permite crearea de multiple instanțe pentru a crește performanța",
+        "Constructorul clasei este privat pentru a preveni instanțierea din exterior"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Singleton asigură că există O SINGURĂ instanță, nu multiple. Dacă ar permite mai multe instanțe, nu ar mai fi Singleton."
+    },
+    {
+      "id": "3c5e1f9a-8d2b-43c5-e1f9-a8d2b7c5e1f9",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este algoritmul Minimax și ce adaugă Alpha-Beta Pruning?",
+      "options": [
+        "Minimax alternează între niveluri MAX (maximizează scorul) și niveluri MIN (minimizează scorul adversarului)",
+        "Alpha-Beta poate produce un rezultat diferit față de Minimax standard",
+        "Alpha-Beta elimină ramurile care nu pot influența decizia finală, fără a afecta rezultatul",
+        "La fiecare nod MAX se alege scorul maxim; la fiecare nod MIN se alege scorul minim"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Alpha-Beta Pruning este o optimizare a Minimax care REDUCE numărul de noduri evaluate, dar produce ACELAȘI rezultat ca Minimax. Nu schimbă decizia finală, ci reduce timpul de calcul."
+    },
+    {
+      "id": "2c8f1e5a-9d3b-42c8-f1e5-a9d3b7c8f1e5",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt diferențele dintre transferul prin valoare, prin adresă și prin referință?",
+      "options": [
+        "Transfer prin adresă (pointer): se salvează pe stivă adresa variabilei; permite modificarea originalului",
+        "Transfer prin valoare: se transmite pe stivă valoarea variabilei; nu permite modificarea originalului",
+        "Transfer prin valoare pentru obiecte instanțiază un obiect temporar folosind constructorul de copiere",
+        "Transfer prin referință: se salvează pe stivă adresa variabilei; sintaxă simplificată față de pointer"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Toate cele patru afirmații sunt corecte conform cursului. La transferul prin valoare al obiectelor se instanțiază un obiect temporar folosind constructorul de copiere, care este distrus la ieșirea din funcție."
+    },
+    {
+      "id": "2a1f9e4c-6d8b-42a1-f9e4-c6d8b3a1f9e4",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt tehnicile de învățare în inteligența artificială menționate în curs?",
+      "options": [
+        "Învățarea prin exemple: formă inductivă – din exemple concrete se deduc reguli generale",
+        "Învățarea pe de rost: memorarea exactă a cunoștințelor pentru reutilizare fără recalcul",
+        "Învățarea prin primire de sfaturi: agentul solicită sfaturi din 5 faze (cerere, interpretare, operaționalizare, integrare, evaluare)",
+        "Învățarea prin primire de sfaturi garantează generalizarea comportamentului la contexte noi"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Capacitatea de generalizare la contexte noi este caracteristica ÎNVĂȚĂRII PRIN EXEMPLE (inductivă), nu a celei prin primire de sfaturi sau pe de rost. Învățarea pe de rost este considerată lipsită de capacitatea de generalizare."
+    },
+    {
+      "id": "5e9c2b6f-8a3d-45e9-c2b6-f8a3d1e9c2b6",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt tipurile de predictoare de valori ale instrucțiunilor și ce secvențe prezic?",
+      "options": [
+        "Hibrid: combină două modele; complet eficient pentru orice secvență, inclusiv cele aleatorii",
+        "Incremental: prezice că valoarea următoare = valoarea anterioară + increment constant (eficient pentru secvențe liniare: 1,4,7,10)",
+        "Contextual (PPM): analizează un șir de valori din trecut pentru a estima valoarea următoare",
+        "Last Value: prezice că valoarea următoare este aceeași ca ultima (eficient pentru secvențe constante: 2,2,2,2)"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Predictorii hibrizi nu sunt eficienți pentru orice secvență – secvențele complet aleatorii, fără regularitate în timp sau context, sunt impredictibile indiferent de predictor."
+    },
+    {
+      "id": "4e7a2c9f-1d6b-44e7-a2c9-f1d6b8e7a2c9",
+      "category": "calculatoare_programare",
       "difficulty": "easy",
-      "question": "Care este definiția amprentei preliminare?",
+      "question": "Ce proprietăți ACID trebuie să respecte o tranzacție în baze de date?",
       "options": [
-        "Amprenta realizată exclusiv de laborator fără participarea medicului",
-        "Replica negativă realizată în lingura individuală cu material fluid pentru obținerea succiunii",
-        "Replica negativă a câmpului protetic înregistrată în portamprentă standard, cu mișcări efectuate de medic și pacient",
-        "Amprenta cu gura închisă realizată cu materiale bucoplastice"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Amprenta preliminară (anatomică, statică, de orientare) este replica negativă a câmpului protetic înregistrată în portamprentă standard (universală), cu mișcări efectuate de medic și pacient."
-    },
-    {
-      "id": "b9e6c3f1-7a4d-49b9-e6c3-f17a4d5b9e6c",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care dintre condițiile de repetare a amprentei preliminare sunt menționate în curs?",
-      "options": [
-        "Nu a cuprins în totalitate suprafața de sprijin",
-        "Marginile amprentei sunt prea groase față de fundul de sac vestibular",
-        "Lipsa unor fragmente mari sau erori de centrare a lingurii",
-        "Bule de aer în zonele importante sau gipsul spălat de pe zone întinse"
+        "Consistență – tranzacțiile aduc baza de date dintr-o stare validă în alta",
+        "Durabilitate – odată confirmată, tranzacția poate fi pierdută în caz de cădere hardware",
+        "Izolare – tranzacțiile par să se execute una după alta, chiar dacă sunt simultane",
+        "Atomicitate – tranzacția se execută complet sau deloc (rollback în caz de eroare)"
       ],
       "correctAnswer": [
         0,
         2,
         3
       ],
-      "explanation": "Marginile prea groase față de fundul de sac este un criteriu de adaptare a lingurii individuale, nu de repetare a amprentei. Repetarea se face când: nu a cuprins suprafața de sprijin, lipsesc fragmente mari, există erori de centrare, bule de aer sau gips spălat."
+      "explanation": "Durabilitatea înseamnă că odată confirmată (commit), o tranzacție NU poate fi pierdută, nici în caz de defecțiune. SGBD-urile folosesc jurnale de tranzacții pentru restaurarea datelor."
     },
     {
-      "id": "2e7a1c5f-8d4b-42e7-a1c5-f8d4b9e7a1c5",
-      "category": "protetica",
+      "id": "1d3a8e5c-6f2b-41d3-a8e5-c6f2b9d3a8e5",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt etapele de proiectare a unei baze de date?",
+      "options": [
+        "Analiza cerințelor → proiectarea conceptuală → proiectarea logică → proiectarea fizică",
+        "Faza de exploatare precede faza de proiectare fizică",
+        "Proiectarea conceptuală produce un model independent de SGBD; proiectarea logică îl transpune în tabele relaționale",
+        "Implementarea (SQL) → încărcarea datelor → exploatarea și întreținerea"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Faza de exploatare vine DUPĂ proiectarea fizică și implementare, nu înainte. Ordinea corectă este: analiză → proiectare (conceptuală, logică, fizică) → implementare → încărcare → exploatare."
+    },
+    {
+      "id": "7f4d8b2e-5c1a-47f4-d8b2-e5c1a9f4d8b2",
+      "category": "calculatoare_programare",
       "difficulty": "medium",
-      "question": "Ce este sinereza alginatului și ce efecte produce?",
+      "question": "Care sunt protocoalele de acces la mediu menționate în curs și ce le caracterizează?",
       "options": [
-        "Sinereza crește stabilitatea dimensională a alginatului pe termen lung",
-        "Exudat pe suprafața amprentei cu pH alcalin sau acid prin pierderea apei",
-        "Determină întârzierea prizei gipsului și produce suprafață rugoasă a modelului",
-        "Se combate cu soluție de sulfat de potasiu 2% pentru a contracara efectul inhibitor asupra prizei gipsului"
+        "TOKEN RING: fiecare stație poate transmite oricând deține o copie a jetonului",
+        "CSMA/CD: ascultă canalul, transmite dacă e liber, detectează coliziunile în timp real",
+        "ALOHA pur: transmiterea se face liber, în orice moment, fără verificarea canalului",
+        "CSMA/CA: utilizat în rețele wireless, evită coliziunile în loc să le detecteze"
       ],
       "correctAnswer": [
         1,
         2,
         3
       ],
-      "explanation": "Sinereza SCADE stabilitatea dimensională prin contracția amprentei. Sinereza este un exudat pe suprafața alginatului care întârzie priza gipsului și produce suprafață rugoasă; se combate cu sulfat de potasiu 2%."
+      "explanation": "În TOKEN RING, fiecare stație poate transmite DOAR când deține jetonul (nu 'o copie'), iar după terminarea transmisiei eliberează jetonul și îl trimite mai departe. Jetonul este unic în rețea."
     },
     {
-      "id": "6f3d8b1e-9c2a-46f3-d8b1-e9c2a4f3d8b1",
-      "category": "protetica",
+      "id": "9f1e6b4c-7a3d-49f1-e6b4-c7a3d2f1e6b4",
+      "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Care sunt testele Herbst utilizate pentru adaptarea dinamică a lingurii individuale MAXILARE?",
+      "question": "Care sunt mecanismele de sincronizare a proceselor/firelor menționate în curs?",
       "options": [
-        "Gura ușor deschisă – zona PM2 și M1; gura larg deschisă – spațiul retrozigomatic și retrotuberozitar",
-        "Fluierat, sugere – spațiul vestibular labial, brida",
-        "Pronunțarea fonemei 'A' – zona distală",
-        "Surâs forțat – spațiul vestibular lateral, brida laterală"
+        "Monitor: accesul la resursă se face exclusiv prin procedurile sale; utilizează variabile condiționale cu wait() și signal()",
+        "Dezactivarea întreruperilor funcționează identic pe sisteme cu mai multe procesoare",
+        "Mutex: permite accesul exclusiv; lock() blochează, unlock() eliberează",
+        "Semaforul: wait() decrementează semaforul și blochează procesul dacă devine negativ; signal() eliberează resursa"
       ],
       "correctAnswer": [
         0,
-        1,
         2,
         3
       ],
-      "explanation": "Toate cele patru teste sunt menționate pentru adaptarea dinamică a lingurii individuale maxilare: 1-gura deschisă, 2-surâs forțat, 3-fluierat/sugere, 4-pronunțarea fonemei 'A' pentru zona distală."
+      "explanation": "Dezactivarea întreruperilor NU funcționează corect pe sisteme multiprocesor – dacă un procesor dezactivează întreruperile, celelalte 3 pot continua să ruleze și să acceseze variabila partajată."
     },
     {
-      "id": "0c4f9a2e-7b6d-40c4-f9a2-e7b6d3c4f9a2",
-      "category": "protetica",
+      "id": "9e3c7a1f-5d4b-49e3-c7a1-f5d4b8e3c7a1",
+      "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Care sunt principiile metodei amprentelor mucostatice (Page, Granger)?",
+      "question": "Ce este Tabela Metodelor Virtuale (VMT) și cum funcționează?",
       "options": [
-        "Nu se exercită presiune asupra amprentei și nu se efectuează mișcări funcționale",
-        "Adeziunea este singurul mijloc de menținere",
-        "Țesuturile trebuie să fie în repaus complet",
-        "Se utilizează materiale cu vâscozitate mare și presiune selectivă"
+        "La compilare se construiește o tabelă cu adresele metodelor virtuale pentru fiecare clasă (nu obiect)",
+        "VMT este stocată pe stivă și este specifică fiecărui apel de funcție",
+        "Fiecare instanță a clasei include un pointer ascuns spre tabela VMT asociată clasei",
+        "Dacă o metodă virtuală din CB este suprascrisă în CD, în VMT se salvează adresa metodei din CD"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "VMT este stocată în SEGMENTUL DE DATE al programului (sau o zonă specială), nu pe stivă. Este asociată clasei (nu instanței) și există pe toată durata de viață a programului."
+    },
+    {
+      "id": "b6c3f8a1-2e9d-46b6-c3f8-a12e9d5b6c3f",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt nivelele modelului ISO-OSI și care este ordinea lor?",
+      "options": [
+        "Nivelul fizic → legătură de date → rețea → transport → sesiune → prezentare → aplicație",
+        "Nivelul prezentare asigură criptarea/decriptarea și compatibilitatea formatului datelor",
+        "Nivelul rețea folosește adrese IP unice; nivelul transport asigură comunicarea end-to-end",
+        "Nivelul aplicație este cel mai de jos din modelul OSI"
       ],
       "correctAnswer": [
         0,
         1,
         2
       ],
-      "explanation": "Materialele cu vâscozitate mare și presiunea selectivă sunt principiile amprentelor compresive, nu mucostatice. Metoda mucostatică presupune absența presiunii, absența mișcărilor, repausul complet al țesuturilor și adeziunea ca unic mijloc de menținere."
+      "explanation": "Nivelul aplicație este cel mai DE SUS (nivelul 7) din modelul OSI, nu cel mai de jos. Nivelul fizic (nivel 1) este la baza ierarhiei."
     },
     {
-      "id": "9a5d2e7c-4f1b-49a5-d2e7-c4f1b8a5d2e7",
-      "category": "protetica",
+      "id": "b8d5c2f9-6e1a-48b8-d5c2-f96e1a3b8d5c",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "De ce funcțiile recursive sunt, în general, mai lente decât variantele iterative?",
+      "options": [
+        "Complexitatea este mai mare decât în cazul algoritmilor iterativi",
+        "Nu pot fi folosite pentru structuri de date de tip arbore",
+        "La fiecare apel se salvează pe stivă parametrii și adresa de revenire",
+        "Există redundanță a calculului – aceleași subprobleme sunt rezolvate de mai multe ori"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Recursivitatea POATE fi utilizată pentru structuri de arbori (ex: parcurgere arbore binar) – aceasta este de fapt una dintre utilizările sale principale. Motivele pentru care sunt mai lente sunt: overhead-ul stivei, complexitatea mai mare și redundanța calculului."
+    },
+    {
+      "id": "1e8c3d6f-7a4b-41e8-c3d6-f7a4b2e8c3d6",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt avantajele și dezavantajele celor 3 arhitecturi de cache?",
+      "options": [
+        "Cache complet asociativ: minimizează conflictele, rată de hit ridicată; dezavantaj: complex, costisitor",
+        "Cache cu mapare directă permite oricărui bloc din MP să fie mapat în orice locație din cache",
+        "Cache cu mapare directă: implementare simplă și rapidă, cost redus, nu necesită algoritm de înlocuire; dezavantaj: rată de conflict ridicată",
+        "Cache semi-asociativ: echilibru între mapare directă și complet asociativă; reduce conflictele dar are miss de capacitate"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Cache-ul cu mapare directă NU permite maparea în orice locație – fiecare bloc din MP are un singur bloc specific (unic) în cache. Posibilitatea de a fi mapat oriunde este caracteristica cache-ului COMPLET ASOCIATIV."
+    },
+    {
+      "id": "4e1b7f3c-8a2d-44e1-b7f3-c8a2d9e1b7f3",
+      "category": "calculatoare_programare",
       "difficulty": "easy",
-      "question": "Cum se definesc menținerea și stabilitatea protezelor totale?",
+      "question": "Ce este un prototip de funcție în C/C++ și ce informații conține?",
       "options": [
-        "Menținerea = împiedicarea deplasării orizontale; stabilitatea = împiedicarea desprinderii verticale",
-        "Stabilitatea = împiedicarea deplasării orizontale a protezei în timpul funcțiilor",
-        "Ambii termeni descriu același fenomen, fără diferențe clinice",
-        "Menținerea = împiedicarea desprinderii protezei de pe câmpul protetic în repaus"
-      ],
-      "correctAnswer": [
-        1,
-        3
-      ],
-      "explanation": "Menținerea și stabilitatea sunt fenomene distincte: menținerea împiedică desprinderea verticală în repaus prin conceperea corectă a bazei protezei; stabilitatea împiedică deplasarea orizontală în timpul funcțiilor."
-    },
-    {
-      "id": "3e8b5f2d-1c7a-43e8-b5f2-d1c7a9e8b5f2",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care sunt forțele fizice care contribuie la menținerea protezelor totale?",
-      "options": [
-        "Gravitația – principala forță de menținere la maxilar",
-        "Adeziunea (aderența, coeziunea, tensiunea superficială, capilaritatea)",
-        "Succiunea și presiunea atmosferică",
-        "Deglutiția și tonicitatea musculară"
+        "Conține și corpul funcției (implementarea completă)",
+        "O declarație care îi spune compilatorului numele funcției și tipul valorii returnate",
+        "Permite apelarea funcției înainte de definirea ei completă",
+        "Conține tipurile și numărul parametrilor, dar nu neapărat numele lor"
       ],
       "correctAnswer": [
         1,
         2,
         3
       ],
-      "explanation": "Gravitația este o forță DISLOCANTĂ la maxilar (desprinde proteza), nu de menținere. Forțele concurente la menținere sunt: adeziunea, succiunea și presiunea atmosferică, deglutiția și tonicitatea musculară."
+      "explanation": "Un prototip NU conține corpul funcției – acesta este inclus în DEFINIȚIA funcției. Prototipul conține antetul (nume, tip returnat, tipuri parametri) fără corpul funcției."
     },
     {
-      "id": "f1c6d4a8-2e9b-41f1-c6d4-a82e9b7f1c6d",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Ce este succiunea în contextul protezelor totale?",
-      "options": [
-        "Închiderea ermetică de la conturul periferic al protezelor, generată de scăderea presiunii din interiorul filmului salivar dintre placă și mucoasă",
-        "Succiunea externă este realizată de grosimea și modelarea versantelor protezei",
-        "Succiunea apare exclusiv la mandibulă datorită presiunii atmosferice mai mari",
-        "Succiunea internă este realizată de extinderea marginilor protezei pe zona de mucoasă pasiv-mobilă"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "Succiunea nu apare exclusiv la mandibulă – este prezentă la ambele arcade, cu mecanisme ușor diferite. Succiunea este închiderea ermetică periferică datorată scăderii presiunii interne față de presiunea atmosferică."
-    },
-    {
-      "id": "4a9e7c3f-6b1d-44a9-e7c3-f6b1d2a9e7c3",
-      "category": "protetica",
+      "id": "f6a2d4c8-7e9b-46f6-a2d4-c87e9b1f6a2d",
+      "category": "calculatoare_programare",
       "difficulty": "medium",
-      "question": "Care este definiția relației centrice și de ce este esențială în edentația totală?",
+      "question": "Ce este mecanismul de tratare a excepțiilor în C++ și cum funcționează?",
       "options": [
-        "Este singurul raport constant între mandibulă și maxilar în edentația totală",
-        "Raport osos între condili și cavitatea glenoidă în care condilii sunt în poziția cea mai înaltă, neforțată și mediană",
-        "Este singura poziție repetabilă și reproductibilă a mandibulei față de maxilar, indiferent de prezența sau absența dinților",
-        "Relația centrică coincide obligatoriu cu intercuspidarea maximă la pacientul edentat"
+        "throw – este folosit pentru a arunca/semnala o excepție",
+        "try – delimitează un bloc care ar putea genera excepții",
+        "Blocurile catch sunt evaluate de la cel mai general la cel mai specific tip de excepție",
+        "catch – delimitează un bloc care se execută când e prinsă o excepție de tipul specificat"
       ],
       "correctAnswer": [
         0,
         1,
-        2
+        3
       ],
-      "explanation": "La edentatul total IM nu există (nu sunt dinți), deci RC NU coincide cu IM – tocmai de aceea determinarea RC este obiectivul principal al înregistrării RIM. RC este singura poziție repetabilă a mandibulei."
+      "explanation": "Este recomandat să fie puse ÎNTÂI blocuri catch pentru tipuri specifice, APOI pentru tipuri mai generale – ordinea inversă față de ce spune opțiunea 3. Excepția se propagă la funcția apelantă dacă nu este prinsă."
     },
     {
-      "id": "8d2f5b9c-3a7e-48d2-f5b9-c3a7e1d2f5b9",
-      "category": "protetica",
+      "id": "c2e7a3f8-1d9b-42c2-e7a3-f81d9b5c2e7a",
+      "category": "calculatoare_programare",
       "difficulty": "medium",
-      "question": "Care sunt metodele de determinare a relației centrice menționate în curs?",
+      "question": "Care sunt diferențele dintre o clasă și o structură în C++?",
       "options": [
-        "Instruirea pacientului să-și împingă înainte maxilarul superior",
-        "Conducerea manuală a mandibulei (unimanuală și bimanuală) și deglutiția",
-        "Utilizarea arcului facial ca metodă principală de determinare a RC",
-        "Oboseala pterigoidienilor externi și reflexul molar"
+        "Membrii unei clase sunt implicit privați; membrii unei structuri sunt implicit publici",
+        "O clasă conține constructori, destructori, metode și variabile membre",
+        "Structurile nu pot fi moștenite și nu pot conține metode în C++",
+        "Clasele pot conține variabile și funcții statice, comune tuturor obiectelor"
       ],
       "correctAnswer": [
         0,
         1,
         3
       ],
-      "explanation": "Arcul facial este un instrument de TRANSFER al RC, nu o metodă de determinare. Metodele de determinare a RC sunt: conducerea manuală, deglutiția, oboseala pterigoidienilor, reflexul molar și instruirea pacientului să-și împingă maxilarul superior."
+      "explanation": "În C++, structurile POT fi moștenite și POT conține metode – singura diferență față de clase este că membrii sunt implicit publici (față de privați la clase)."
     },
     {
-      "id": "5b1c8e4f-7a9d-45b1-c8e4-f7a9d3b1c8e4",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Cum se determină DVO plecând de la DVR și care este principiul metodei?",
+      "id": "8a9d4f6c-1e3b-48a9-d4f6-c1e3b2a9d4f6",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce sunt rețelele semantice în inteligența artificială și care sunt avantajele lor?",
       "options": [
-        "Se urmăresc armonia trăsăturilor feței, refacerea conturului părților moi și existența SIF între sabloane",
-        "DVO = DVR – 3mm (SIF normal = 2-3 mm la pacientul dentat)",
-        "DVR este variabilă și depinde de prezența sau absența dinților, neputând fi folosită ca referință la edentat",
-        "Se măsoară distanța Sn-Gn în repaus fără sablon, apoi cu sabloanele în gură"
+        "Permit moștenirea de proprietăți – dacă 'mamiferul are sânge cald', toate mamiferele moștenesc automat această informație",
+        "Sistemul poate construi concluzii simple din relații existente (ex: leul este mamifer + mamiferele sunt animale → leul este animal)",
+        "Pot reprezenta cunoștințe incerte sau contradictorii și condiții temporale",
+        "Formă de reprezentare declarativă – noduri (concepte) + arce (relații) între concepte"
       ],
       "correctAnswer": [
         0,
         1,
         3
       ],
-      "explanation": "DVR este INDEPENDENTĂ de prezența sau absența dinților – depinde de funcția neuromusculară și rămâne constantă, motiv pentru care poate fi folosită ca referință la edentat. DVO = DVR – 3mm (valoarea SIF)."
+      "explanation": "O limitare a rețelelor semantice este că NU pot reprezenta cunoștințe incerte sau contradictorii și nu pot exprima condiții sau raționamente temporale. Relațiile sunt fixe și simple."
     },
     {
-      "id": "c7f4a2e8-1d6b-47c7-f4a2-e81d6b3c7f4a",
-      "category": "protetica",
+      "id": "6b3a7e9d-4f1c-46b3-a7e9-d4f1c2b3a7e9",
+      "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Care sunt consecințele DVO incorect determinate?",
+      "question": "Care sunt condițiile în care se aplică programarea dinamică?",
       "options": [
-        "DVO prea mică: aspect îmbătrânit, bărbia proeminentă, buzele invaginate, comisurile căzute",
-        "DVO prea mică favorizează menținerea și stabilitatea protezelor prin reducerea forțelor ocluzale",
-        "DVO prea mare: vizibilitate exagerată a dinților frontali și lovirea dinților artificiali",
-        "DVO prea mare: instabilitate proteică, oboseală musculară, aspect crispat al feței, traumatizarea țesuturilor de sprijin"
+        "Structură optimă – soluția problemei mari se construiește din soluțiile optime ale subproblemelor",
+        "Programarea dinamică este aplicabilă doar problemelor cu structură liniară",
+        "Subprobleme suprapuse – se rezolvă aceleași subprobleme de mai multe ori",
+        "Top-down (memoizare) și bottom-up (iterativ) sunt cele două tehnici de aplicare"
       ],
       "correctAnswer": [
         0,
         2,
         3
       ],
-      "explanation": "DVO prea mică NU favorizează menținerea – dimpotrivă produce aspect imbătrânit și disfuncții. DVO prea mare produce instabilitate, oboseală musculară, aspect crispat și traumatizare; DVO prea mică produce aspect îmbătrânit, barbă proeminentă, buze invaginate."
+      "explanation": "Programarea dinamică se aplică problemelor cu subprobleme suprapuse și structură optimă. Nu este limitată la probleme cu structură liniară – problema rucsacului, de exemplu, are o structură mai complexă."
     },
     {
-      "id": "1e5c9f7a-4b3d-41e5-c9f7-a4b3d8e5c9f7",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care este planul de referință principal pentru stabilirea planului de orientare protetică și ce paralelism se urmărește?",
-      "options": [
-        "Planul Camper (centrul condusului auditiv extern – spina nazală anterioară) este planul de referință",
-        "Planul Camper și planul Frankfurt sunt identice",
-        "Se urmărește paralelismul dintre planul Camper și marginea inferioară a bordurii sablonului maxilar",
-        "Planul Frankfurt (orbitale – porion) este planul de referință principal menționat pentru zona laterală"
-      ],
-      "correctAnswer": [
-        0,
-        2
-      ],
-      "explanation": "Planul Camper și planul Frankfurt sunt DIFERITE. Planul Camper (centrul conductului auditiv extern – spina nazală anterioară) este planul de referință principal, cu paralelism față de bordura sablonului maxilar în zona laterală. Planul Frankfurt este menționat ca reper secundar."
-    },
-    {
-      "id": "7d3a1f6c-9e4b-47d3-a1f6-c9e4b2d3a1f6",
-      "category": "protetica",
+      "id": "5c9a4f8d-2b3e-45c9-a4f8-d2b3e7c9a4f8",
+      "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Care sunt regulile generale de montare a dinților laterali menționați în curs?",
+      "question": "Ce este Branch Target Buffer (BTB) și cum funcționează?",
       "options": [
-        "Dinții laterali se montează pe mijlocul crestei; axul longitudinal plasat în axul liniei interalveolare",
-        "Fața orală a dinților laterali să nu depășească verticala ridicată de pe linia oblică internă",
-        "Șanțul mezio-distal al dinților inferiori să coincidă cu mijlocul crestei",
-        "Regula Pound: fața orală să nu depășească linia trasată de la fața mezială a caninului la fața linguală a tuberculului piriform"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "explanation": "Toate cele patru reguli sunt menționate explicit în curs pentru montarea dinților laterali mandibulari."
-    },
-    {
-      "id": "a8b4e6f2-3c9d-48a8-b4e6-f23c9d1a8b4e",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Ce evidențiază testul Buchmann-Ismail și cum se interpretează?",
-      "options": [
-        "Se aplică ceară moale buco-plastică pe fețele ocluzale ale dinților laterali și pacientul citește un text",
-        "Ceara cu urmele dinților antagoniști = DVO corect determinată",
-        "Ceara fără urmele dinților antagoniști = DVO prea mică (spațiu de inocluzie prea mare)",
-        "Ceara ștearsă = DVO corectă deoarece există SIF"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Ceara ștearsă înseamnă că SIF este INEXISTENT, deci DVO este prea MARE, nu corectă. Interpretarea: ceara fără urme = DVO prea mică; ceara cu urme = DVO corectă; ceara ștearsă = DVO prea mare."
-    },
-    {
-      "id": "6f2c9d4a-1e7b-46f2-c9d4-a1e7b8f2c9d4",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care sunt formulele de șlefuire selectivă pentru corectarea contactelor premature în relație centrică?",
-      "options": [
-        "Devierea spre limbă (dreapta): LUBL/LSVI (Lingual Superior, Vestibular Inferior)",
-        "Se șlefuiesc întotdeauna cuspizii de sprijin pentru a elimina contactele premature",
-        "Devierea sagital anterior: MUDL/MSDI (Mezial Superior, Distal Inferior)",
-        "Devierea spre obraz (stânga): BULL/VSLI (Vestibular Superior, Lingual Inferior)"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Cuspizii de sprijin NU se șlefuiesc – au efect stabilizant, oferă eficiență masticatorie și mențin DVO. Șlefuirea se face la nivelul versantelor, în șanțuri și fosete, niciodată din cuspizii de sprijin."
-    },
-    {
-      "id": "4c7e2b9f-5a1d-44c7-e2b9-f5a1d3c7e2b9",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care sunt indicațiile alegerii dinților acrilici față de cei ceramici pentru dinții frontali?",
-      "options": [
-        "Dinții acrilici: ușor de modificat și individualizat, aderă chimic la baza protezei",
-        "Dinții acrilici sunt preferați când spațiul dintre creste este redus",
-        "Dinții ceramici: adaptare dificilă la cavitățile diatorice și fixare mecanică prin 4 pinioane",
-        "Dinții ceramici sunt indicați în toate situațiile clinice datorită estetică superioară"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Dinții ceramici NU sunt indicați în toate situațiile – pentru dinții laterali, dinții acrilici sunt indicați în spațiu redus între creste, câmpuri protetice nefavorabile cu creste atrofiate, mucoasă mobilă pe planul osos și la echilibrări ocluzale repetate."
-    },
-    {
-      "id": "9e1a6c4f-7d3b-49e1-a6c4-f7d3b2e1a6c4",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Ce se verifică în controlul extrabucal al machetelor cu ocluzorul ÎNCHIS?",
-      "options": [
-        "Înălțimea dinților frontali superiori cuprinsă între planul de ocluzie și linia surâsului",
-        "Curbura vestibulară simetrică față de linia mediană și forma dinților frontali conform fișei",
-        "Gradul de supraacoperire frontală și gradul de cuspidare al dinților laterali",
-        "Linia mediană, linia caninilor și linia surâsului trecute pe soclul modelelor"
+        "Salturile care nu se fac nu ar trebui introduse în BTB deoarece nu îmbunătățesc performanța",
+        "La IF, se caută asociativ în BTB după PC-ul instrucțiunii; la hit, se obține în avans PC-ul următor",
+        "BTB este o extensie a memoriei RAM principale, fără niciun element de cache",
+        "BTB stochează PC-ul instrucțiunii de branch, adresa țintă și biții de predicție (numărător saturat)"
       ],
       "correctAnswer": [
         0,
         1,
         3
       ],
-      "explanation": "Gradul de supraacoperire frontală și gradul de cuspidare al dinților laterali se verifică cu ocluzorul DESCHIS (faza a doua de control extrabucal), nu cu ocluzorul închis."
-    },
-    {
-      "id": "2b8f4c1e-6a9d-42b8-f4c1-e6a9d5b8f4c1",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care sunt deficiențele care NU se pot remedia în cabinet la proba machetelor?",
-      "options": [
-        "Montarea dinților laterali în afara crestei și proba spatulei pozitivă",
-        "Culoarea dinților frontali necorespunzătoare",
-        "Relația centrică determinată incorect",
-        "Dimensiunea verticală de ocluzie greșită"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Culoarea dinților se poate corecta prin alegerea altor dinți și remontare – este o deficiență remediabilă. Deficiențele neremediabile în cabinet sunt: DVO greșită, RC incorectă, montarea dinților laterali în afara crestei și proba spatulei pozitivă."
-    },
-    {
-      "id": "5c9d3f7a-2e1b-45c9-d3f7-a2e1b8c9d3f7",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Care este formula pentru armonia dentofacială conform lui Williams?",
-      "options": [
-        "Forma IC = conturul răsturnat al feței: pătrat, oval, triunghiular",
-        "Înălțimea IC = 1/20 din înălțimea feței",
-        "Forma IC se stabilește exclusiv după sexul și vârsta pacientului",
-        "Latimea IC = 1/16 din lățimea feței; IL = 1/22; C = 1/19"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "Forma IC se corelează cu multiple trăsături (forma feței, profilul, tipul constituțional, sexul, vârsta, personalitatea), nu exclusiv după sex și vârstă. Armonia dento-facială Williams include forma IC = conturul răsturnat al feței și proporțiile menționate."
-    },
-    {
-      "id": "8f1a7d5c-4b2e-48f1-a7d5-c4b2e9f1a7d5",
-      "category": "protetica",
-      "difficulty": "hard",
-      "question": "Care sunt caracteristicile specifice ale câmpului protetic mandibular față de maxilar în zona de închidere marginală?",
-      "options": [
-        "Mucoasa pasiv-mobilă mandibulară este mai lată decât cea maxilară, facilitând închiderea marginală",
-        "Delimitare mai dificilă – mucoasa fixă se continuă direct cu cea mobilă",
-        "Erorile de delimitare: lungime excesivă produce mobilizare; lungime insuficientă produce absența succiunii",
-        "Mucoasa pasiv-mobilă (zona neutră) poate fi evidențiată doar în zona vestibulară, foarte estompată lingual"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Mucoasa pasiv-mobilă mandibulară este mai dificil de depistat și mai estompată (mai îngustă), nu mai lată – ceea ce face câmpul protetic mandibular mai dificil de protezat față de maxilar."
-    },
-    {
-      "id": "3d6b2e8f-9c1a-43d6-b2e8-f9c1a7d6b2e8",
-      "category": "protetica",
-      "difficulty": "medium",
-      "question": "Ce este lingura individuală (portamprenta individuală) și care sunt cerințele sale?",
-      "options": [
-        "Rigidă, rezistentă, nedeformabilă și intim adaptată la nivelul zonei de sprijin",
-        "Suport rigid pentru materialul de amprentă finală, conform particularităților individuale ale câmpului protetic",
-        "Margini cu grosime de 1,5-2 mm",
-        "Poate fi confecționată din orice material moale, deformabil, pentru a se adapta câmpului protetic"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Lingura individuală NU poate fi moale și deformabilă – trebuie să fie rigidă, rezistentă și nedeformabilă. Este confecționată din plăci de bază sau rășini acrilice autopolimerizabile."
+      "explanation": "BTB este un buffer/cache specializat asociat procesorului (similar TLB pentru adrese), NU o extensie a RAM. Este o memorie asociativă de mică dimensiune integrată în procesor."
     }
   ]
 }
