@@ -13,186 +13,24 @@
       "color": "#9D8DBB"
     }
   ],
-  
   "questions": [
     {
-      "id": "e1f4b8c2-7a3d-41e1-f4b8-c27a3d9e1f4b",
+      "id": "f5c8a1e3-9b6d-4f5c-8a1e-39b6d2f5c8a1",
       "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Ce caracterizează algoritmul A* față de Greedy Best-First Search?",
+      "question": "Care este relația dintre coada cu priorități, lista sortată și min/max heap?",
       "options": [
-        "A* folosește o funcție de cost total = costul real de la sursă la nodul curent + estimarea până la destinație",
-        "Dacă euristica este admisibilă (nu supraestimează) și consistentă, A* garantează soluția optimă",
-        "A* poate fi văzut ca o combinație între BFS și căutare euristică",
-        "A* ignoră costul de la start la nodul curent, folosind doar estimarea până la final"
-      ],
-      "correctAnswer": [
-        0,
-        1
-      ],
-      "explanation": "Ignorarea costului de la start la nodul curent este caracteristica Greedy Best-First Search, nu A*. A* ia în calcul AMBELE componente: costul real parcurs și estimarea până la destinație."
-    },
-    {
-      "id": "1a7f4d2c-8e9b-41a7-f4d2-c8e9b5a7f4d2",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Care sunt proprietățile unui pointer în C/C++?",
-      "options": [
-        "Stochează adrese de memorie; permite accesul indirect la date prin dereferențiere",
-        "Accesarea memoriei nealocate este sigură dacă pointerul este inițializat cu NULL",
-        "Permit scăderea a doi pointeri care indică în același tablou (pentru a determina numărul de elemente)",
-        "Suportă operații de incrementare/decrementare și adunarea cu o valoare întreagă"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Accesarea memoriei nealocate sau eliberate duce la ERORI, nu este sigură. NULL indică că pointerul nu indică nicio adresă validă, iar accesarea lui duce la eroare de segmentare."
-    },
-    {
-      "id": "6c3e8b1f-9a4d-46c3-e8b1-f9a4d2c3e8b1",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care sunt diferențele dintre fișierele text și fișierele binare?",
-      "options": [
-        "Fișierele text sunt portabile între sisteme; cele binare nu sunt portabile între arhitecturi diferite",
-        "Fișierele binare pot fi deschise și înțelese cu orice editor de text",
-        "Fișierele binare sunt mai rapide la citit/scris (fără conversii) și mai eficiente în stocare",
-        "Fișierele text stochează date sub formă de caractere lizibile (ASCII); cele binare – în format brut, ca în memorie"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Fișierele binare NU pot fi deschise și înțelese cu un editor de text – necesită programe speciale sau aplicații dedicate. Aceasta este un dezavantaj al fișierelor binare față de cele text."
-    },
-    {
-      "id": "a5d9c3f7-2b6e-4a5d-9c3f-72b6e8a5d9c3",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care sunt caracteristicile unui algoritm Greedy?",
-      "options": [
-        "Algoritmul lui Dijkstra este un exemplu de algoritm greedy",
-        "Nu revine asupra deciziilor făcute (fără backtracking)",
-        "Garantează întotdeauna soluția globală optimă",
-        "Alege cea mai bună opțiune disponibilă la fiecare pas (optimum local)"
+        "Lista sortată: inserare O(n), extragere element minim/maxim O(1)",
+        "Coada cu priorități poate fi implementată atât printr-o listă sortată cât și printr-un heap",
+        "Heap: inserare O(log n), extragerea rădăcinii O(log n)",
+        "Heap-ul nu poate implementa o coadă cu priorități deoarece nu menține ordinea sortată completă"
       ],
       "correctAnswer": [
         0,
         1,
-        3
+        2
       ],
-      "explanation": "Greedy POATE să nu ofere întotdeauna soluția globală optimă, ci doar o aproximare bună. Algoritmul Dijkstra este un exemplu clasic de greedy care, în acest caz particular, găsește soluția optimă."
-    },
-    {
-      "id": "7b3e6c1f-4a9d-47b3-e6c1-f4a9d2b3e6c1",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care este diferența dintre instrucțiunile while și do-while în C/C++?",
-      "options": [
-        "do-while are test final – instrucțiunea se execută cel puțin o singură dată, chiar dacă condiția este falsă",
-        "while are test inițial – se evaluează condiția înainte de execuția instrucțiunii",
-        "while garantează cel puțin o execuție a corpului buclei",
-        "for este echivalent cu while, cu condiție că numărul de pași este cunoscut"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "while NU garantează cel puțin o execuție – dacă condiția este falsă de la început, corpul nu se execută deloc. Aceasta este tocmai diferența față de do-while care execută corpul cel puțin o dată."
-    },
-    {
-      "id": "7e2d5a8f-4c9b-47e2-d5a8-f4c9b1e2d5a8",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Ce este un Bufferul de Reordonare (ROB) și care este rolul său?",
-      "options": [
-        "ROB elimină complet necesitatea mecanismului de redenumire a registrelor",
-        "Commit-ul se face în ordinea din codul sursă (in-order), chiar dacă execuția a fost out-of-order",
-        "Este organizat ca o coadă FIFO; când instrucțiunea ajunge în prima poziție și și-a încheiat execuția, rezultatul este scris în registru",
-        "Permite executarea instrucțiunilor Out-of-Order și asigură tratarea precisă a excepțiilor"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "ROB lucrează împreună cu bufferul de redenumire (RenB) – nu îl elimină. Redenumirea registrelor este necesară pentru a gestiona hazardurile WAW și WAR în execuția out-of-order."
-    },
-    {
-      "id": "a3f7c2e1-9b4d-48a3-f7c2-e19b4d6a3f7c",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care sunt categoriile de operatori în C/C++?",
-      "options": [
-        "Aritmetici (+, -, /, %, *) și de atribuire (=, +=, -=, *=)",
-        "Relaționali (==, !=, <, >, <=, >=) și logici (&&, ||, !)",
-        "Operatorul de concatenare de șiruri (+++) și de multiplicare logică (**)",
-        "De incrementare/decrementare (++, --) și condițional (? :)"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "În C/C++ există operatori aritmetici, de atribuire, relaționali, logici, logici la nivel de bit, de incrementare/decrementare, condițional, virgulă, acces membru, sizeof, referențiere, dereferențiere, cast, apel funcție, indexare și rezoluție. Operatorul +++ sau ** nu există în C/C++."
-    },
-    {
-      "id": "f3b8d5c1-9e2a-4f3b-8d5c-19e2a6f3b8d5",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care sunt diferențele principale dintre procese și fire de execuție (threads)?",
-      "options": [
-        "Procesele sunt independente; thread-urile fac parte din procese și partajează memoria și resursele",
-        "Thread-urile dintr-un proces partajează stiva",
-        "Schimbarea de la un thread la altul este mai rapidă decât comutarea între procese",
-        "Fiecare proces are propriul spațiu de adrese; thread-urile dintr-un proces împart același spațiu de adrese"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Thread-urile dintr-un proces NU partajează stiva – fiecare thread are propria stivă. Partajează memoria, resursele și spațiul de adrese, dar au stive individuale."
-    },
-    {
-      "id": "3f6d1b8e-9c2a-43f6-d1b8-e9c2a5f6d1b8",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Ce structuri de date oferă operații mai eficiente: stivă, arbore sau tabelă de dispersie?",
-      "options": [
-        "Arborele neechilibrat poate ajunge la O(1) pentru căutare",
-        "Stiva: push, pop, top → O(1) timp constant",
-        "Arbore binar echilibrat: inserare, căutare, ștergere → O(log₂n)",
-        "Tabela de dispersie: inserare, căutare, ștergere → O(1) în medie (pe baza indexului hash)"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Arborele neechilibrat poate ajunge la O(n) pentru operații, similar cu o listă înlănțuită (în cel mai rău caz). Tabela de dispersie în cel mai rău caz devine O(n) prin coliziuni."
-    },
-    {
-      "id": "9b4c7f2e-5a1d-49b4-c7f2-e5a1d8b4c7f2",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care este rolul nivelului transport în modelul OSI și ce protocoale folosește?",
-      "options": [
-        "TCP oferă conexiuni fiabile cu controlul erorilor și al fluxului; UDP oferă transmisie rapidă fără verificări",
-        "Asigură comunicarea fiabilă end-to-end între două calculatoare gazdă (hosts)",
-        "Nivelul transport determină ruta optimă de la sursă la destinație prin routere",
-        "Fragmentează datele la sursă și le reasamblează la destinație"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "Determinarea rutei optime prin routere este responsabilitatea NIVELULUI REȚEA (nivel 3), nu a nivelului transport (nivel 4). Nivelul rețea folosește adrese IP și algoritmi de rutare."
+      "explanation": "Heap-ul POATE implementa o coadă cu priorități – elementul cu prioritatea cea mai mare/mică este mereu rădăcina. Nu este nevoie de sortare completă pentru aceasta."
     },
     {
       "id": "8a2e5f4c-1d7b-48a2-e5f4-c1d7b9a2e5f4",
@@ -212,76 +50,76 @@
       "explanation": "Ambele afirmații 0 și 2 sunt parțial incorecte. (0) este adevărată parțial. (2) O clasă NU poate moșteni mai multe clase abstracte (limitare C++/Java), dar POATE implementa mai multe interfețe."
     },
     {
-      "id": "5a4c9f1e-7d2b-45a4-c9f1-e7d2b6a4c9f1",
+      "id": "e7f2c4b9-6d1a-4e7f-2c4b-96d1a3e7f2c4",
       "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Care este diferența dintre overloading și overriding?",
+      "question": "Ce reprezintă reutilizarea dinamică a instrucțiunilor (DIR) și care sunt avantajele sale?",
       "options": [
-        "Overloading = mai multe funcții cu același nume dar semnături diferite (nr. diferit sau tipuri diferite de parametri), în aceeași clasă",
-        "Compilatorul face distincție între funcții supraîncărcate exclusiv pe baza tipului returnat",
-        "Overriding = clasa derivată suprascrie o metodă virtuală moștenită de la clasa de bază, oferind propria implementare",
-        "Overloading are loc la compilare (legare statică); overriding la runtime (legare dinamică)"
+        "Permite reutilizarea rezultatelor unor instrucțiuni deja executate anterior când sunt reîntâlnite cu aceiași operanzi",
+        "DIR poate fi aplicat trivial la nivel de funcție HLL deoarece hardware-ul înțelege semantica funcțiilor",
+        "Reduce penaltizările cauzate de predicții eronate în cazul instrucțiunilor de ramificare",
+        "Reduce latențele cauzate de dependențele de date și scurtcircuitează etape din pipeline"
       ],
       "correctAnswer": [
         0,
         2,
         3
       ],
-      "explanation": "Compilatorul NU face distincție între funcții pe baza tipului returnat. Supraîncărcarea se bazează pe numărul și tipurile parametrilor, nu pe tipul returnat."
+      "explanation": "DIR este DIFICIL de aplicat la nivel de funcție HLL deoarece hardware-ul nu are acces la structura semantică a programului sursă, nu știe că o secvență corespunde unei funcții și nu poate verifica absența efectelor secundare."
     },
     {
-      "id": "6d4a7f9c-2b1e-46d4-a7f9-c2b1e8d4a7f9",
+      "id": "1e8c3d6f-7a4b-41e8-c3d6-f7a4b2e8c3d6",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt avantajele și dezavantajele celor 3 arhitecturi de cache?",
+      "options": [
+        "Cache cu mapare directă: implementare simplă și rapidă, cost redus, nu necesită algoritm de înlocuire; dezavantaj: rată de conflict ridicată",
+        "Cache complet asociativ: minimizează conflictele, rată de hit ridicată; dezavantaj: complex, costisitor",
+        "Cache cu mapare directă permite oricărui bloc din MP să fie mapat în orice locație din cache",
+        "Cache semi-asociativ: echilibru între mapare directă și complet asociativă; reduce conflictele dar are miss de capacitate"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Cache-ul cu mapare directă NU permite maparea în orice locație – fiecare bloc din MP are un singur bloc specific (unic) în cache. Posibilitatea de a fi mapat oriunde este caracteristica cache-ului COMPLET ASOCIATIV."
+    },
+    {
+      "id": "4d8e3c7f-2b1a-44d8-e3c7-f2b1a9d8e3c7",
       "category": "calculatoare_programare",
       "difficulty": "medium",
-      "question": "Ce este partiționarea unui HDD și ce scopuri îndeplinește?",
+      "question": "Ce sunt cadrele (frames) și scenariile în inteligența artificială?",
       "options": [
-        "Procesul de împărțire a unui disc fizic în mai multe unități logice (partiții), fiecare funcționând ca un disc separat",
-        "Dacă o partiție este coruptă, celelalte pot rămâne intacte, facilitând recuperarea parțială",
-        "Permite instalarea mai multor sisteme de operare, fiecare pe partiție separată",
-        "Conform modelului MBR, pot exista maximum 8 partiții primare"
+        "Scenariile sunt utile pentru anticiparea pașilor următori și reacții automate la evenimente previzibile",
+        "Scenariul: modalitate de reprezentare care descrie o succesiune tipică de evenimente într-un anumit context cu relații cauzale",
+        "Cadrul: șablon general de cunoaștere în care noile informații sunt interpretate în funcție de experiențele anterioare; favorizează procesarea bazată pe așteptări",
+        "Cadrele și scenariile nu pot fi folosite pentru a reprezenta situații cu structură repetitivă"
       ],
       "correctAnswer": [
         0,
         1,
         2
       ],
-      "explanation": "Conform modelului MBR, pot exista maximum 4 partiții primare (sau 3 primare + 1 extinsă care conține partiții logice). Nu 8."
+      "explanation": "Cadrele și scenariile sunt concepute SPECIAL pentru situații cu structură repetitivă sau stereotipică. Scenariul 'a merge la restaurant' descrie tocmai o secvență repetitivă de evenimente."
     },
     {
-      "id": "2a6c1e9f-4d8b-42a6-c1e9-f4d8b5a6c1e9",
+      "id": "8b2e5d9f-6c3a-48b2-e5d9-f6c3a1b2e5d9",
       "category": "calculatoare_programare",
       "difficulty": "medium",
-      "question": "Ce este preemptivitatea în planificarea unității centrale a unui sistem de operare?",
+      "question": "Ce structuri de date sunt utilizate la execuția unei funcții și la execuția unei metode virtuale?",
       "options": [
-        "Planificarea preemptivă necesită mecanisme de sincronizare pentru resurse partajate",
-        "Capacitatea SO de a întrerupe execuția unui proces în favoarea altuia cu prioritate mai mare",
-        "Procesul întrerupt este trecut în starea 'ready' și va aștepta să fie replanificat",
-        "Un sistem nepreemptiv permite procesului să fie întrerupt oricând de SO"
+        "La metode virtuale: stivă + this + VMT (Virtual Method Table)",
+        "La obiecte alocate dinamic: stiva (prin operatorul new)",
+        "La funcții: stivă – cu parametrii reali (valoare sau adresă), adresa de revenire și variabilele locale",
+        "La metode non-virtuale: stivă + pointer ascuns 'this' care indică obiectul pentru care s-a apelat metoda"
       ],
       "correctAnswer": [
         0,
-        1,
-        2
-      ],
-      "explanation": "Într-un sistem NEPREEMPTIV, procesul NU poate fi întrerupt – el își păstrează controlul asupra procesorului până când se termină sau intră în stare de așteptare. Planificarea preemptivă permite exact opusul."
-    },
-    {
-      "id": "9c4f8a2e-1d6b-49c4-f8a2-e1d6b3c4f8a2",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Ce funcții specifice sunt disponibile pentru lucrul cu șiruri de caractere în C/C++?",
-      "options": [
-        "strrev() – inversează șirul în mod standard în orice compilator",
-        "strcpy() – copiază șirul sursă peste șirul destinație",
-        "strcmp() – compară lexicografic 2 șiruri",
-        "strlen() – returnează lungimea șirului"
-      ],
-      "correctAnswer": [
-        1,
         2,
         3
       ],
-      "explanation": "strrev() nu este o funcție standard în C/C++. Funcțiile standard menționate în curs includ strlen(), strcpy(), strcat(), strcmp(), strchr() și strstr()."
+      "explanation": "Obiectele alocate dinamic (cu new) sunt stocate pe HEAP, nu pe stivă. Stiva este folosită pentru variabilele locale și parametrii. Heap-ul este zona de memorie pentru alocarea dinamică gestionată manual."
     },
     {
       "id": "7d5f2e4a-8c9b-47d5-f2e4-a8c9b1d5f2e4",
@@ -289,107 +127,214 @@
       "difficulty": "hard",
       "question": "Care sunt caracteristicile arhitecturii RISC față de CISC?",
       "options": [
-        "RISC: număr mare de registre pentru a minimiza accesul la memorie; optimizat pentru pipeline",
         "CISC: instrucțiuni cu lungime variabilă, mai multe moduri de adresare, fiecare instrucțiune poate înlocui mai multe instrucțiuni simple",
+        "CISC: viteză de procesare ridicată datorită simplității arhitecturii",
         "RISC: set redus de instrucțiuni, format fix, execuție în un singur ciclu, acces la memorie doar prin Load/Store",
-        "CISC: viteză de procesare ridicată datorită simplității arhitecturii"
+        "RISC: număr mare de registre pentru a minimiza accesul la memorie; optimizat pentru pipeline"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Viteza de procesare ridicată datorită simplității arhitecturii este avantajul RISC, nu CISC. CISC are execuție mai lentă, deoarece unele instrucțiuni sunt complexe și necesită mai multe cicluri."
+    },
+    {
+      "id": "1b5e8f3c-7d9a-41b5-e8f3-c7d9a4b5e8f3",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt caracteristicile modelului relațional pentru baze de date?",
+      "options": [
+        "Manipularea datelor se realizează prin operatorii algebrei relaționale: selecție, proiecție, reuniune, diferență, produs cartezian, join",
+        "Câmpurile (atributele) au o ordine semnificativă, iar înregistrările sunt ordonate implicit",
+        "Fiecare câmp trebuie să conțină o valoare atomică (indivizibilă) și fiecare tuplu să fie identificat unic printr-o cheie primară",
+        "Informațiile sunt organizate sub formă de tabele; o linie = tuplu/înregistrare; o coloană = atribut"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Într-un model relațional câmpurile NU au ordine semnificativă și înregistrările NU sunt ordonate implicit. Aceasta este una din regulile fundamentale ale modelului relațional."
+    },
+    {
+      "id": "3e6a1c8f-5d9b-43e6-a1c8-f5d9b7e6a1c8",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt tipurile de algoritmi de căutare în spațiul stărilor menționate în curs?",
+      "options": [
+        "Căutare oarbă (BFS, DFS): nu folosesc informații din domeniu; explorarea este arbitrară; garantează găsirea soluției dacă există",
+        "Căutare euristică: folosește funcția euristică pentru a alege mai eficient; A* și Greedy Best-First Search",
+        "Căutarea euristică garantează întotdeauna găsirea soluției optime indiferent de calitatea euristicii",
+        "Căutare oarbă în grafuri AND/OR: noduri AND (toate subproblemele trebuie rezolvate); noduri OR (e suficientă orice subproblemă)"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Căutarea euristică garantează soluția optimă DOAR dacă euristica este admisibilă (nu supraestimează) și consistentă (A*). O euristică slabă sau inadmisibilă poate duce la soluții suboptime sau imposibilitate de găsire."
+    },
+    {
+      "id": "7d4a8f2e-5b9c-47d4-a8f2-e5b9c1d4a8f2",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt diferențele dintre predicția statică și dinamică a branch-urilor?",
+      "options": [
+        "Predicția dinamică se bazează pe comportamentul trecut al branch-urilor și se actualizează la fiecare execuție",
+        "Predicția dinamică oferă acuratețe mare, dar necesită hardware suplimentar (tabele de predicție, registre de istorie)",
+        "Predicția statică se realizează la compilare, fără a se adapta la istoricul execuțiilor; predicția pentru o ramură este fixă",
+        "Predicția statică este mai precisă decât cea dinamică deoarece compilatorul cunoaște întreg programul"
       ],
       "correctAnswer": [
         0,
         1,
         2
       ],
-      "explanation": "Viteza de procesare ridicată datorită simplității arhitecturii este avantajul RISC, nu CISC. CISC are execuție mai lentă, deoarece unele instrucțiuni sunt complexe și necesită mai multe cicluri."
+      "explanation": "Predicția statică este mai SIMPLĂ, nu mai precisă. Predicția dinamică este mai precisă deoarece se adaptează la comportamentul real al branch-urilor în timpul execuției, un avantaj major față de predicția statică fixă."
     },
     {
-      "id": "2f4a9c7e-5d1b-42f4-a9c7-e5d1b8f4a9c7",
+      "id": "8a9d4f6c-1e3b-48a9-d4f6-c1e3b2a9d4f6",
       "category": "calculatoare_programare",
       "difficulty": "medium",
-      "question": "Ce este backtracking-ul și care sunt caracteristicile sale principale?",
+      "question": "Ce sunt rețelele semantice în inteligența artificială și care sunt avantajele lor?",
       "options": [
-        "Garantează găsirea soluției în timp polinomial indiferent de problemă",
-        "Dacă o alegere nu duce la soluție validă, algoritmul revine la pasul anterior și încearcă altă opțiune",
-        "Tehnică de rezolvare prin explorarea controlată a spațiului de soluții, construind soluția pas cu pas",
-        "La fiecare pas se verifică dacă decizia curentă poate conduce la o soluție validă"
+        "Formă de reprezentare declarativă – noduri (concepte) + arce (relații) între concepte",
+        "Permit moștenirea de proprietăți – dacă 'mamiferul are sânge cald', toate mamiferele moștenesc automat această informație",
+        "Pot reprezenta cunoștințe incerte sau contradictorii și condiții temporale",
+        "Sistemul poate construi concluzii simple din relații existente (ex: leul este mamifer + mamiferele sunt animale → leul este animal)"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "O limitare a rețelelor semantice este că NU pot reprezenta cunoștințe incerte sau contradictorii și nu pot exprima condiții sau raționamente temporale. Relațiile sunt fixe și simple."
+    },
+    {
+      "id": "3f8b1d5c-6a2e-43f8-b1d5-c6a2e9f8b1d5",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt caracteristicile unui microcontroler și componentele sale principale?",
+      "options": [
+        "Include porturi digitale I/O, convertor ADC/DAC, Timer/Counter și poate utiliza seturi de instrucțiuni RISC sau CISC",
+        "Microcontrolerele nu pot include periferice pe cip și necesită componente externe pentru orice funcție I/O",
+        "Conține ROM/Flash pentru software-ul de bază și rutinele de tratare a întreruperilor; RAM pentru date temporare",
+        "Sistem complet pe un singur cip: CPU, memorie, periferice integrate"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Microcontrolerele INCLUD periferice pe cip (porturi I/O, ADC, DAC, timere) – aceasta este definiția lor ca sisteme complete pe un singur cip, spre deosebire de microprocesoare care necesită componente externe."
+    },
+    {
+      "id": "9d4b7e2f-5c1a-49d4-b7e2-f5c1a6d4b7e2",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este polimorfismul și care este condiția esențială pentru funcționarea sa în C++?",
+      "options": [
+        "Funcționează prin pointeri la clase de bază care pot stoca adrese ale instanțelor claselor derivate",
+        "Polimorfismul funcționează independent de moștenire, fără a necesita clase de bază",
+        "Polimorfismul permite unui obiect să aibă comportamente diferite în funcție de tipul concret la rulare",
+        "Apelul metodei virtuale se face conform tipului REAL al obiectului, nu al pointerului"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "În C++, polimorfismul funcționează DOAR atunci când există moștenire. Fără relație de moștenire între clase, polimorfismul nu este posibil."
+    },
+    {
+      "id": "6c3e8b1f-9a4d-46c3-e8b1-f9a4d2c3e8b1",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt diferențele dintre fișierele text și fișierele binare?",
+      "options": [
+        "Fișierele text stochează date sub formă de caractere lizibile (ASCII); cele binare – în format brut, ca în memorie",
+        "Fișierele binare sunt mai rapide la citit/scris (fără conversii) și mai eficiente în stocare",
+        "Fișierele text sunt portabile între sisteme; cele binare nu sunt portabile între arhitecturi diferite",
+        "Fișierele binare pot fi deschise și înțelese cu orice editor de text"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Fișierele binare NU pot fi deschise și înțelese cu un editor de text – necesită programe speciale sau aplicații dedicate. Aceasta este un dezavantaj al fișierelor binare față de cele text."
+    },
+    {
+      "id": "2a6c1e9f-4d8b-42a6-c1e9-f4d8b5a6c1e9",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este preemptivitatea în planificarea unității centrale a unui sistem de operare?",
+      "options": [
+        "Capacitatea SO de a întrerupe execuția unui proces în favoarea altuia cu prioritate mai mare",
+        "Procesul întrerupt este trecut în starea 'ready' și va aștepta să fie replanificat",
+        "Un sistem nepreemptiv permite procesului să fie întrerupt oricând de SO",
+        "Planificarea preemptivă necesită mecanisme de sincronizare pentru resurse partajate"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Într-un sistem NEPREEMPTIV, procesul NU poate fi întrerupt – el își păstrează controlul asupra procesorului până când se termină sau intră în stare de așteptare. Planificarea preemptivă permite exact opusul."
+    },
+    {
+      "id": "6e4c1f7a-9b2d-46e4-c1f7-a9b2d3e4c1f7",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Cum gestionează un SGBD relațional concurența accesului la date?",
+      "options": [
+        "SGBD-ul nu poate gestiona accesul concurent și permite coruperea datelor în cazul scrierilor simultane",
+        "Acces concurent pentru citire: mai mulți utilizatori citesc fără conflicte; nu necesită intervenție suplimentară",
+        "Acces concurent pentru scriere: primul utilizator obține un lock; ceilalți așteaptă eliberarea lui",
+        "Acces mixt (citire + scriere): se garantează că cititorii nu văd datele în stare intermediară (control versiuni sau blocări temporare)"
       ],
       "correctAnswer": [
         1,
         2,
         3
       ],
-      "explanation": "Backtracking-ul nu garantează timp polinomial – în cel mai rău caz are complexitate exponențială. Este utilizat pentru obținerea tuturor soluțiilor prin explorare sistematică."
+      "explanation": "SGBD-ul POATE și TREBUIE să gestioneze accesul concurent prin mecanisme de locking și tranzacții ACID. Scopul principal al unui SGBD este tocmai asigurarea corectitudinii și integrității în condiții de acces concurent."
     },
     {
-      "id": "4b8e2d6f-3c1a-44b8-e2d6-f3c1a9b8e2d6",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Ce se întâmplă la derivarea publică, protejată și privată a unei clase?",
-      "options": [
-        "Derivare publică: membrii privați din CB rămân inaccesibili; ceilalți își păstrează tipul",
-        "Derivare privată: membrii privați din CB sunt inaccesibili; ceilalți devin private",
-        "Derivare protected: membrii privați din CB sunt inaccesibili în CD; ceilalți devin protected",
-        "La orice tip de derivare, membrii privați ai CB devin accesibili în CD"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "La NICIUN tip de derivare membrii privați ai CB nu devin accesibili în CD – ei rămân întotdeauna inaccesibili. Diferența constă în ce se întâmplă cu membrii non-privați."
-    },
-    {
-      "id": "c4f7a9b2-3e1d-44c4-f7a9-b23e1d8c4f7a",
-      "category": "calculatoare_programare",
-      "difficulty": "easy",
-      "question": "Ce este memoria virtuală și care este rolul TLB?",
-      "options": [
-        "TLB hit = translatarea se face rapid; TLB miss = se consultă tabela de pagini din MP și rezultatul se adaugă în TLB",
-        "TLB (Translation Lookaside Buffer) este un cache specializat care stochează cele mai recente traduceri dintre adrese virtuale și adrese fizice",
-        "Memoria virtuală face ca întreaga memorie (MP și AMS) să pară, din perspectiva programelor, ca o singură memorie principală continuă și extinsă",
-        "Tabela de pagini este stocată exclusiv în TLB și nu în memoria principală"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Tabela de pagini este stocată în MEMORIA PRINCIPALĂ (MP), nu exclusiv în TLB. TLB este un cache mic și rapid care stochează cele mai recente traduceri pentru a accelera accesul."
-    },
-    {
-      "id": "3b7f4e2a-1c9d-43b7-f4e2-a1c9d6b7f4e2",
-      "category": "calculatoare_programare",
-      "difficulty": "easy",
-      "question": "Ce sunt use case-urile în ingineria software și unde sunt întâlnite?",
-      "options": [
-        "Fiecare use case include pașii urmați, actorii implicați și scenarii alternative",
-        "Descrieri detaliate ale modului în care un utilizator (actor) interacționează cu sistemul pentru a atinge un obiectiv",
-        "Pot fi reprezentate grafic în diagrame de cazuri de utilizare în UML",
-        "Use case-urile descriu cum este implementat tehnic un comportament, nu ce face sistemul"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Use case-urile descriu CE face sistemul din perspectiva utilizatorului, NU CUM este implementat tehnic acel comportament. Implementarea tehnică este subiectul fazei de proiectare, nu al analizei."
-    },
-    {
-      "id": "c8a3f1e7-9d4b-4c8a-3f1e-79d4b2c8a3f1",
+      "id": "7b4f1e6c-9a2d-47b4-f1e6-c9a2d5b4f1e6",
       "category": "calculatoare_programare",
       "difficulty": "medium",
-      "question": "De ce procesoarele superscalare au succes comercial superior față de VLIW?",
+      "question": "Ce este căutarea euristică în inteligența artificială?",
       "options": [
-        "Codul mașină superscalar este independent de paralelism și poate fi rulat pe procesoare viitoare fără recompilare",
-        "VLIW necesită recompilare la schimbarea arhitecturii (număr/tip unități funcționale)",
-        "La superscalare, hardware-ul detectează instrucțiunile independente și le lansează în execuție automat",
-        "VLIW are performanțe mai bune decât superscalare în toate situațiile practice"
+        "Folosește o funcție euristică pentru a estima cât de aproape este un nod de starea finală, reducând explorarea inutilă",
+        "Funcția de cost total = costul de la start până la nodul curent + estimarea până la final",
+        "Greedy Best-First Search explorează în funcție de cât de aproape pare nodul de scop, ignorând costul de la start",
+        "Căutarea euristică explorează TOȚI nodurile din spațiul de stări fără excepție"
       ],
       "correctAnswer": [
         0,
         1,
         2
       ],
-      "explanation": "VLIW nu are performanțe mai bune în toate situațiile – are avantaje teoretice, dar dezavantajul major al dependenței de compilatoare specializate și incompatibilității binare între versiuni. Superscalarele sunt mai flexibile în practică."
+      "explanation": "Scopul căutării euristice este tocmai EVITAREA explorării tuturor nodurilor. Euristica ghidează căutarea spre soluții mai bune, reducând semnificativ numărul de noduri explorate față de căutarea oarbă."
+    },
+    {
+      "id": "e3b7f1c4-9a2d-43e3-b7f1-c49a2d8e3b7f",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Cum funcționează instrucțiunea switch-case în C/C++?",
+      "options": [
+        "Opțiunea default este obligatorie și se execută mereu indiferent de valorile din case",
+        "Instrucțiunea switch poate compara variabila cu expresii variabile (non-constante)",
+        "Dacă se găsește o egalitate, se execută blocul asociat acelui case; break oprește execuția și iese din switch",
+        "Se evaluează expresia din switch și se compară, pe rând, cu valorile constante din fiecare case"
+      ],
+      "correctAnswer": [
+        2,
+        3
+      ],
+      "explanation": "Opțiunea default este OPȚIONALĂ și se execută DOAR dacă nicio valoare constantă nu corespunde expresiei evaluate. Switch compară cu valori sau expresii CONSTANTE, nu variabile."
     },
     {
       "id": "8f2d5b9c-4e7a-48f2-d5b9-c4e7a1f2d5b9",
@@ -397,31 +342,35 @@
       "difficulty": "medium",
       "question": "Care este legătura dintre moștenire și abstractizare în OOP?",
       "options": [
-        "Clasele abstracte pot fi instanțiate direct, dar numai prin pointeri la clasa de bază",
-        "Compilatorul nu permite instanțierea unei clase abstracte",
         "Abstractizarea se face folosind clase abstracte care conțin cel puțin o metodă virtuală pură",
-        "O metodă virtuală pură este o funcție fără implementare declarată cu corpul egal cu 0"
+        "Clasele abstracte pot fi instanțiate direct, dar numai prin pointeri la clasa de bază",
+        "O metodă virtuală pură este o funcție fără implementare declarată cu corpul egal cu 0",
+        "Compilatorul nu permite instanțierea unei clase abstracte"
       ],
       "correctAnswer": [
-        1,
+        0,
         2,
         3
       ],
       "explanation": "Compilatorul NU permite instanțierea unei clase abstracte, nici prin pointeri. Pointerul la clasa de bază poate stoca adresa unei instanțe ale clasei DERIVATE care implementează toate metodele pure."
     },
     {
-      "id": "d2f6c4a8-3b9e-42d2-f6c4-a83b9e1d2f6c",
+      "id": "9a3e7b5c-1f4d-49a3-e7b5-c1f4d8a3e7b5",
       "category": "calculatoare_programare",
-      "difficulty": "easy",
-      "question": "Ce principiu SOLID afirmă că o clasă ar trebui să aibă un singur motiv de a se schimba?",
+      "difficulty": "hard",
+      "question": "Ce este Fetch Bottleneck și Dataflow Bottleneck în procesoarele superscalare?",
       "options": [
-        "Single Responsibility Principle (SRP)",
-        "Open/Closed Principle (OCP)",
-        "Interface Segregation Principle (ISP)",
-        "Liskov Substitution Principle (LSP)"
+        "Dataflow Bottleneck poate fi eliminat complet prin simpla creștere a numărului de unități funcționale",
+        "Fetch Bottleneck: imposibilitatea de a aduce suficiente instrucțiuni pe ciclu din cauza instrucțiunilor de salt; rata de lansare nu poate depăși rata de fetch (IR ≤ FR)",
+        "Soluție pentru Fetch: predicția simultană a mai multor branch-uri, cache multiport, trace-cache",
+        "Dataflow Bottleneck: imposibilitatea de a lansa numărul maxim de instrucțiuni din cauza dependențelor de date (RAW) – calea critică"
       ],
-      "correctAnswer": 0,
-      "explanation": "Single Responsibility Principle (SRP) afirmă că o clasă ar trebui să aibă un singur motiv de schimbare, adică o singură responsabilitate sau scop."
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Creșterea unităților funcționale NU elimină Dataflow Bottleneck – problema este calea critică (lanțul de instrucțiuni dependente RAW) care limitează paralelismul indiferent de câte unități funcționale există."
     },
     {
       "id": "e5c1a8f6-2b4d-45e5-c1a8-f62b4d9e5c1a",
@@ -429,89 +378,17 @@
       "difficulty": "easy",
       "question": "De ce se spune că moștenirea multiplă creează un graf orientat aciclic (DAG)?",
       "options": [
-        "Graful este aciclic deoarece o clasă nu poate moșteni direct sau indirect de la ea însăși",
         "Nodurile reprezintă clasele, iar arcele reprezintă relațiile de moștenire (clasa derivată → clasa de bază)",
+        "În moștenirea simplă structura este un graf, nu un arbore",
         "Graful este orientat deoarece moștenirea are un sens clar (derivată → bază)",
-        "În moștenirea simplă structura este un graf, nu un arbore"
+        "Graful este aciclic deoarece o clasă nu poate moșteni direct sau indirect de la ea însăși"
       ],
       "correctAnswer": [
         0,
-        1,
-        2
+        2,
+        3
       ],
       "explanation": "În moștenirea simplă structura este un ARBORE (nu un graf general). Moștenirea multiplă transformă structura dintr-un arbore într-un graf orientat aciclic (DAG)."
-    },
-    {
-      "id": "7d1f5c3a-9e8b-47d1-f5c3-a9e8b4d1f5c3",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care sunt drepturile de acces în C++ și ce pot accesa?",
-      "options": [
-        "public: accesibil din interiorul clasei, exteriorul clasei și clasele derivate",
-        "private: accesibil doar din interiorul clasei",
-        "internal: accesibil doar în fișierul curent (specific C++)",
-        "protected: accesibil din interiorul clasei și din clasele derivate"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "internal nu există în C++ – acesta este specific C# (.NET). În C++ există public, private și protected ca modificatori de acces."
-    },
-    {
-      "id": "3d9b6e4f-1c8a-43d9-b6e4-f1c8a7d9b6e4",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Care sunt diferențele dintre malloc/calloc/realloc și operatorul new în C++?",
-      "options": [
-        "new nu poate arunca excepție dacă alocarea eșuează, spre deosebire de malloc",
-        "new returnează un pointer de tipul specificat și apelează automat constructorul clasei",
-        "Toate (malloc, calloc, realloc) returnează un pointer void* la zona de memorie alocată sau NULL",
-        "malloc() alocă memorie fără inițializare; calloc() alocă și inițializează cu 0"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "new ARUNCĂ o excepție dacă alocarea nu are succes, spre deosebire de malloc care returnează NULL. Aceasta este o diferență importantă între cele două mecanisme de alocare dinamică."
-    },
-    {
-      "id": "6e1b3c7f-9d5a-46e1-b3c7-f9d5a4e1b3c7",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Ce principii SOLID sunt descrise corect mai jos?",
-      "options": [
-        "LSP: obiectele de tip derivat trebuie să poată înlocui obiectele de tip bază fără a modifica corectitudinea",
-        "ISP: mai bine mai multe interfețe mici decât o interfață mare; clienții nu implementează metode inutile",
-        "OCP: software-ul ar trebui să fie deschis pentru extindere, dar închis pentru modificare",
-        "DIP: modulele de nivel înalt ar trebui să depindă direct de module de nivel jos pentru eficiență"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "DIP afirmă exact OPUSUL – modulele de nivel înalt NU ar trebui să depindă de module de nivel jos; ambele ar trebui să depindă de abstracții (interfețe sau clase abstracte)."
-    },
-    {
-      "id": "f2c9a5e8-3b7d-42f2-c9a5-e83b7d1f2c9a",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Ce caracterizează variabilele locale statice în C/C++?",
-      "options": [
-        "Sunt alocate pe stivă și sunt vizibile din orice funcție",
-        "Își păstrează valoarea între apelurile funcției",
-        "Sunt declarate cu keyword-ul static",
-        "Dacă nu sunt inițializate explicit, sunt inițializate implicit cu valori nule"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Variabilele locale statice sunt alocate în SEGMENTUL DE DATE al programului (nu pe stivă) și sunt vizibile și accesibile DOAR în funcția unde au fost declarate, deși au durată de viață pe tot parcursul programului."
     },
     {
       "id": "4f6b1d9c-3e8a-44f6-b1d9-c3e8a2f6b1d9",
@@ -519,13 +396,13 @@
       "difficulty": "medium",
       "question": "Ce sunt bazele de date distribuite și care sunt avantajele lor?",
       "options": [
-        "Bazele de date distribuite nu permit operații concurente între noduri diferite",
         "Pot fi mărite în dimensiune fără a afecta performanța globală; timp de răspuns mai mic prin localizarea datelor",
+        "Bazele de date distribuite nu permit operații concurente între noduri diferite",
         "Baze de date logic integrate, dar fizic distribuite pe mai multe sisteme de calcul interconectate",
         "Fragmentele pot fi replicate pe mai multe noduri pentru fiabilitate, disponibilitate și performanță"
       ],
       "correctAnswer": [
-        1,
+        0,
         2,
         3
       ],
@@ -537,9 +414,9 @@
       "difficulty": "hard",
       "question": "Care este rolul hardware-ului și al SO în tratarea unei excepții page fault?",
       "options": [
+        "SO actualizează tabela de pagini și TLB-ul, apoi reia procesul exact de unde s-a întrerupt",
         "SO: determină cauza page fault; dacă pagina e validă dar absentă din RAM, o încarcă de pe disc",
         "Hardware: procesorul generează excepția page fault când pagina este invalidă/absentă și salvează contextul procesului",
-        "SO actualizează tabela de pagini și TLB-ul, apoi reia procesul exact de unde s-a întrerupt",
         "Hardware-ul încarcă singur pagina de pe disc fără intervenția SO"
       ],
       "correctAnswer": [
@@ -550,167 +427,58 @@
       "explanation": "Hardware-ul NU poate încărca pagina de pe disc singur – el doar detectează page fault-ul, salvează contextul și trimite controlul SISTEMULUI DE OPERARE. SO este cel care gestionează transferul de date din memoria secundară."
     },
     {
-      "id": "d8e4b1c9-5f2a-47d8-e4b1-c95f2a6d8e4b",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care sunt diferențele esențiale dintre variabilele locale și variabilele globale în C/C++?",
-      "options": [
-        "Variabilele locale sunt alocate pe stivă (LIFO); cele globale în segmentul de date",
-        "Variabilele globale sunt inițializate automat cu valori nule; cele locale cu valori reziduale",
-        "Variabilele globale au durată de viață limitată la funcția în care sunt declarate",
-        "Variabilele locale sunt declarate în interiorul unei funcții/bloc și sunt vizibile doar acolo"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "Variabilele globale au durată de viață pe tot parcursul programului (de la declarare până la sfârșitul programului), nu limitată la o funcție. Celelalte trei afirmații sunt corecte."
-    },
-    {
-      "id": "8f5b3c1e-7a4d-48f5-b3c1-e7a4d9f5b3c1",
+      "id": "f2c9a5e8-3b7d-42f2-c9a5-e83b7d1f2c9a",
       "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Ce este Trace Cache-ul și cum diferă de un cache clasic?",
+      "question": "Ce caracterizează variabilele locale statice în C/C++?",
       "options": [
-        "Adresele de start ale traseelor sunt indexate după PC și istoricul de ramificare",
-        "Permite procesorului să aducă instrucțiunile în ordinea în care sunt probabil să apară din nou",
-        "Trace Cache stochează trasee reale de execuție (secvențe de instrucțiuni deja decodate), nu instrucțiuni în ordine secvențială",
-        "Trace Cache elimină complet necesitatea predicției branch-urilor în procesoarele moderne"
+        "Dacă nu sunt inițializate explicit, sunt inițializate implicit cu valori nule",
+        "Sunt declarate cu keyword-ul static",
+        "Își păstrează valoarea între apelurile funcției",
+        "Sunt alocate pe stivă și sunt vizibile din orice funcție"
       ],
       "correctAnswer": [
         0,
         1,
         2
       ],
-      "explanation": "Trace Cache nu elimină predicția branch-urilor – aceasta rămâne necesară pentru a decide ce trasee să fie aduse din Trace Cache. Cele două tehnici se completează reciproc."
+      "explanation": "Variabilele locale statice sunt alocate în SEGMENTUL DE DATE al programului (nu pe stivă) și sunt vizibile și accesibile DOAR în funcția unde au fost declarate, deși au durată de viață pe tot parcursul programului."
     },
     {
-      "id": "5f9e7b4d-2c8a-45f9-e7b4-d2c8a3f9e7b4",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Ce este Singleton-ul și cum se implementează?",
-      "options": [
-        "Șablon creațional care asigură că o clasă are o singură instanță și oferă un punct global de acces la ea",
-        "O variabilă statică în clasă stochează instanța unică; o metodă statică o returnează sau o creează la primul apel",
-        "Singleton permite crearea de multiple instanțe pentru a crește performanța",
-        "Constructorul clasei este privat pentru a preveni instanțierea din exterior"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        3
-      ],
-      "explanation": "Singleton asigură că există O SINGURĂ instanță, nu multiple. Dacă ar permite mai multe instanțe, nu ar mai fi Singleton."
-    },
-    {
-      "id": "3c5e1f9a-8d2b-43c5-e1f9-a8d2b7c5e1f9",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Ce este algoritmul Minimax și ce adaugă Alpha-Beta Pruning?",
-      "options": [
-        "Minimax alternează între niveluri MAX (maximizează scorul) și niveluri MIN (minimizează scorul adversarului)",
-        "Alpha-Beta poate produce un rezultat diferit față de Minimax standard",
-        "Alpha-Beta elimină ramurile care nu pot influența decizia finală, fără a afecta rezultatul",
-        "La fiecare nod MAX se alege scorul maxim; la fiecare nod MIN se alege scorul minim"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Alpha-Beta Pruning este o optimizare a Minimax care REDUCE numărul de noduri evaluate, dar produce ACELAȘI rezultat ca Minimax. Nu schimbă decizia finală, ci reduce timpul de calcul."
-    },
-    {
-      "id": "2c8f1e5a-9d3b-42c8-f1e5-a9d3b7c8f1e5",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Care sunt diferențele dintre transferul prin valoare, prin adresă și prin referință?",
-      "options": [
-        "Transfer prin adresă (pointer): se salvează pe stivă adresa variabilei; permite modificarea originalului",
-        "Transfer prin valoare: se transmite pe stivă valoarea variabilei; nu permite modificarea originalului",
-        "Transfer prin valoare pentru obiecte instanțiază un obiect temporar folosind constructorul de copiere",
-        "Transfer prin referință: se salvează pe stivă adresa variabilei; sintaxă simplificată față de pointer"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "explanation": "Toate cele patru afirmații sunt corecte conform cursului. La transferul prin valoare al obiectelor se instanțiază un obiect temporar folosind constructorul de copiere, care este distrus la ieșirea din funcție."
-    },
-    {
-      "id": "2a1f9e4c-6d8b-42a1-f9e4-c6d8b3a1f9e4",
-      "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care sunt tehnicile de învățare în inteligența artificială menționate în curs?",
-      "options": [
-        "Învățarea prin exemple: formă inductivă – din exemple concrete se deduc reguli generale",
-        "Învățarea pe de rost: memorarea exactă a cunoștințelor pentru reutilizare fără recalcul",
-        "Învățarea prin primire de sfaturi: agentul solicită sfaturi din 5 faze (cerere, interpretare, operaționalizare, integrare, evaluare)",
-        "Învățarea prin primire de sfaturi garantează generalizarea comportamentului la contexte noi"
-      ],
-      "correctAnswer": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Capacitatea de generalizare la contexte noi este caracteristica ÎNVĂȚĂRII PRIN EXEMPLE (inductivă), nu a celei prin primire de sfaturi sau pe de rost. Învățarea pe de rost este considerată lipsită de capacitatea de generalizare."
-    },
-    {
-      "id": "5e9c2b6f-8a3d-45e9-c2b6-f8a3d1e9c2b6",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Care sunt tipurile de predictoare de valori ale instrucțiunilor și ce secvențe prezic?",
-      "options": [
-        "Hibrid: combină două modele; complet eficient pentru orice secvență, inclusiv cele aleatorii",
-        "Incremental: prezice că valoarea următoare = valoarea anterioară + increment constant (eficient pentru secvențe liniare: 1,4,7,10)",
-        "Contextual (PPM): analizează un șir de valori din trecut pentru a estima valoarea următoare",
-        "Last Value: prezice că valoarea următoare este aceeași ca ultima (eficient pentru secvențe constante: 2,2,2,2)"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Predictorii hibrizi nu sunt eficienți pentru orice secvență – secvențele complet aleatorii, fără regularitate în timp sau context, sunt impredictibile indiferent de predictor."
-    },
-    {
-      "id": "4e7a2c9f-1d6b-44e7-a2c9-f1d6b8e7a2c9",
+      "id": "4e1b7f3c-8a2d-44e1-b7f3-c8a2d9e1b7f3",
       "category": "calculatoare_programare",
       "difficulty": "easy",
-      "question": "Ce proprietăți ACID trebuie să respecte o tranzacție în baze de date?",
+      "question": "Ce este un prototip de funcție în C/C++ și ce informații conține?",
       "options": [
-        "Consistență – tranzacțiile aduc baza de date dintr-o stare validă în alta",
-        "Durabilitate – odată confirmată, tranzacția poate fi pierdută în caz de cădere hardware",
-        "Izolare – tranzacțiile par să se execute una după alta, chiar dacă sunt simultane",
-        "Atomicitate – tranzacția se execută complet sau deloc (rollback în caz de eroare)"
+        "Permite apelarea funcției înainte de definirea ei completă",
+        "Conține și corpul funcției (implementarea completă)",
+        "Conține tipurile și numărul parametrilor, dar nu neapărat numele lor",
+        "O declarație care îi spune compilatorului numele funcției și tipul valorii returnate"
       ],
       "correctAnswer": [
         0,
         2,
         3
       ],
-      "explanation": "Durabilitatea înseamnă că odată confirmată (commit), o tranzacție NU poate fi pierdută, nici în caz de defecțiune. SGBD-urile folosesc jurnale de tranzacții pentru restaurarea datelor."
+      "explanation": "Un prototip NU conține corpul funcției – acesta este inclus în DEFINIȚIA funcției. Prototipul conține antetul (nume, tip returnat, tipuri parametri) fără corpul funcției."
     },
     {
-      "id": "1d3a8e5c-6f2b-41d3-a8e5-c6f2b9d3a8e5",
+      "id": "7c1f4a9e-3b8d-47c1-f4a9-e3b8d2c1f4a9",
       "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Care sunt etapele de proiectare a unei baze de date?",
+      "difficulty": "medium",
+      "question": "Ce reprezintă encapsularea în OOP și cum se implementează?",
       "options": [
-        "Analiza cerințelor → proiectarea conceptuală → proiectarea logică → proiectarea fizică",
-        "Faza de exploatare precede faza de proiectare fizică",
-        "Proiectarea conceptuală produce un model independent de SGBD; proiectarea logică îl transpune în tabele relaționale",
-        "Implementarea (SQL) → încărcarea datelor → exploatarea și întreținerea"
+        "Ascunderea detaliilor interne ale implementării unui obiect și expunerea doar a unei interfețe publice",
+        "Gruparea datelor (variabile) și a metodelor (funcții) într-o singură unitate – clasa, cu control strict al accesului",
+        "Se declară variabilele membre private și se implementează metode publice pentru manipularea lor (set, get)",
+        "Encapsularea presupune că toate variabilele membre ale clasei trebuie să fie publice"
       ],
       "correctAnswer": [
         0,
-        2,
-        3
+        1,
+        2
       ],
-      "explanation": "Faza de exploatare vine DUPĂ proiectarea fizică și implementare, nu înainte. Ordinea corectă este: analiză → proiectare (conceptuală, logică, fizică) → implementare → încărcare → exploatare."
+      "explanation": "Encapsularea înseamnă exact OPUSUL opțiunii 3 – variabilele membre se declară PRIVATE (ascunse) și accesul se face prin metode publice controlate (getteri și setteri)."
     },
     {
       "id": "7f4d8b2e-5c1a-47f4-d8b2-e5c1a9f4d8b2",
@@ -718,35 +486,215 @@
       "difficulty": "medium",
       "question": "Care sunt protocoalele de acces la mediu menționate în curs și ce le caracterizează?",
       "options": [
-        "TOKEN RING: fiecare stație poate transmite oricând deține o copie a jetonului",
-        "CSMA/CD: ascultă canalul, transmite dacă e liber, detectează coliziunile în timp real",
         "ALOHA pur: transmiterea se face liber, în orice moment, fără verificarea canalului",
-        "CSMA/CA: utilizat în rețele wireless, evită coliziunile în loc să le detecteze"
+        "CSMA/CA: utilizat în rețele wireless, evită coliziunile în loc să le detecteze",
+        "TOKEN RING: fiecare stație poate transmite oricând deține o copie a jetonului",
+        "CSMA/CD: ascultă canalul, transmite dacă e liber, detectează coliziunile în timp real"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "În TOKEN RING, fiecare stație poate transmite DOAR când deține jetonul (nu 'o copie'), iar după terminarea transmisiei eliberează jetonul și îl trimite mai departe. Jetonul este unic în rețea."
+    },
+    {
+      "id": "f6a2d4c8-7e9b-46f6-a2d4-c87e9b1f6a2d",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este mecanismul de tratare a excepțiilor în C++ și cum funcționează?",
+      "options": [
+        "Blocurile catch sunt evaluate de la cel mai general la cel mai specific tip de excepție",
+        "try – delimitează un bloc care ar putea genera excepții",
+        "throw – este folosit pentru a arunca/semnala o excepție",
+        "catch – delimitează un bloc care se execută când e prinsă o excepție de tipul specificat"
       ],
       "correctAnswer": [
         1,
         2,
         3
       ],
-      "explanation": "În TOKEN RING, fiecare stație poate transmite DOAR când deține jetonul (nu 'o copie'), iar după terminarea transmisiei eliberează jetonul și îl trimite mai departe. Jetonul este unic în rețea."
+      "explanation": "Este recomandat să fie puse ÎNTÂI blocuri catch pentru tipuri specifice, APOI pentru tipuri mai generale – ordinea inversă față de ce spune opțiunea 3. Excepția se propagă la funcția apelantă dacă nu este prinsă."
     },
     {
-      "id": "9f1e6b4c-7a3d-49f1-e6b4-c7a3d2f1e6b4",
+      "id": "5e9c2b6f-8a3d-45e9-c2b6-f8a3d1e9c2b6",
       "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Care sunt mecanismele de sincronizare a proceselor/firelor menționate în curs?",
+      "question": "Care sunt tipurile de predictoare de valori ale instrucțiunilor și ce secvențe prezic?",
       "options": [
-        "Monitor: accesul la resursă se face exclusiv prin procedurile sale; utilizează variabile condiționale cu wait() și signal()",
-        "Dezactivarea întreruperilor funcționează identic pe sisteme cu mai multe procesoare",
-        "Mutex: permite accesul exclusiv; lock() blochează, unlock() eliberează",
-        "Semaforul: wait() decrementează semaforul și blochează procesul dacă devine negativ; signal() eliberează resursa"
+        "Contextual (PPM): analizează un șir de valori din trecut pentru a estima valoarea următoare",
+        "Last Value: prezice că valoarea următoare este aceeași ca ultima (eficient pentru secvențe constante: 2,2,2,2)",
+        "Incremental: prezice că valoarea următoare = valoarea anterioară + increment constant (eficient pentru secvențe liniare: 1,4,7,10)",
+        "Hibrid: combină două modele; complet eficient pentru orice secvență, inclusiv cele aleatorii"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Predictorii hibrizi nu sunt eficienți pentru orice secvență – secvențele complet aleatorii, fără regularitate în timp sau context, sunt impredictibile indiferent de predictor."
+    },
+    {
+      "id": "c8a3f1e7-9d4b-4c8a-3f1e-79d4b2c8a3f1",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "De ce procesoarele superscalare au succes comercial superior față de VLIW?",
+      "options": [
+        "VLIW necesită recompilare la schimbarea arhitecturii (număr/tip unități funcționale)",
+        "La superscalare, hardware-ul detectează instrucțiunile independente și le lansează în execuție automat",
+        "Codul mașină superscalar este independent de paralelism și poate fi rulat pe procesoare viitoare fără recompilare",
+        "VLIW are performanțe mai bune decât superscalare în toate situațiile practice"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "VLIW nu are performanțe mai bune în toate situațiile – are avantaje teoretice, dar dezavantajul major al dependenței de compilatoare specializate și incompatibilității binare între versiuni. Superscalarele sunt mai flexibile în practică."
+    },
+    {
+      "id": "7e2d5a8f-4c9b-47e2-d5a8-f4c9b1e2d5a8",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este un Bufferul de Reordonare (ROB) și care este rolul său?",
+      "options": [
+        "ROB elimină complet necesitatea mecanismului de redenumire a registrelor",
+        "Permite executarea instrucțiunilor Out-of-Order și asigură tratarea precisă a excepțiilor",
+        "Commit-ul se face în ordinea din codul sursă (in-order), chiar dacă execuția a fost out-of-order",
+        "Este organizat ca o coadă FIFO; când instrucțiunea ajunge în prima poziție și și-a încheiat execuția, rezultatul este scris în registru"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "ROB lucrează împreună cu bufferul de redenumire (RenB) – nu îl elimină. Redenumirea registrelor este necesară pentru a gestiona hazardurile WAW și WAR în execuția out-of-order."
+    },
+    {
+      "id": "6e3b7f1a-8c2d-46e3-b7f1-a8c2d5e3b7f1",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este encapsularea la nivel de modul/pachet în Java și care sunt modificatorii de acces?",
+      "options": [
+        "Modificatorul default (package-private) face ca membrii să fie accesibili în orice subclasă, chiar din alt pachet",
+        "Modificatorul default (package-private) face ca membrii să fie accesibili doar în interiorul pachetului",
+        "Modificatorul private – accesibil doar în clasa unde e declarat",
+        "protected – accesibil în clasa unde e declarat și în subclase indiferent de pachet"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Modificatorul default (package-private) face membrii accesibili DOAR în interiorul pachetului – o subclasă din ALT pachet NU poate accesa membrii cu vizibilitate default, chiar dacă este subclasă."
+    },
+    {
+      "id": "4a9d6c2f-7e1b-44a9-d6c2-f7e1b5a9d6c2",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este redefinirea operatorilor în C++ și care sunt limitările sale?",
+      "options": [
+        "La operatorii binari putem redefini ambii operanzi indiferent de tip, inclusiv tipuri de bază ca primul operand",
+        "Permite programatorului să atribuie sensuri noi operatorilor existenți pentru tipuri definite de utilizator",
+        "Nu putem schimba comportamentul operatorilor pentru tipurile predefinite (ex: int + int)",
+        "Nu putem defini operatori noi, nu putem schimba aritatea și prioritatea operatorilor existenți"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "La operatorii binari, PRIMUL operand trebuie să fie de tipul clasei pentru care redefinim operatorul. Nu putem face ca primul operand să fie un tip de bază (ex: int) dacă redefinim operatorul pentru o clasă proprie."
+    },
+    {
+      "id": "5e1c9f7b-3a4d-45e1-c9f7-b3a4d8e1c9f7",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce sunt schemele de predicție adaptivă corelate pe 2 niveluri (GAg și PAg)?",
+      "options": [
+        "GAg: registru de istorie global + tabelă PHT globală; tabela PHT indexată cu concatenarea PClow și istoricul global",
+        "GAg și PAg garantează 100% acuratețe a predicției branch-urilor la orice tip de program",
+        "PAg: tabel de istorie local pentru fiecare instrucțiune de salt + PHT global; reduce conflictele față de GAg",
+        "Ambele scheme folosesc numărătoare saturate pentru a stoca scorul de încredere al predicției"
       ],
       "correctAnswer": [
         0,
         2,
         3
       ],
-      "explanation": "Dezactivarea întreruperilor NU funcționează corect pe sisteme multiprocesor – dacă un procesor dezactivează întreruperile, celelalte 3 pot continua să ruleze și să acceseze variabila partajată."
+      "explanation": "Nicio schemă de predicție nu garantează 100% acuratețe. Pot apărea interferențe în PHT (mai multe PC-uri pot indexa aceeași intrare) și există branch-uri cu comportament impredictibil."
+    },
+    {
+      "id": "2c6f9a4d-8e1b-42c6-f9a4-d8e1b7c6f9a4",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este arhitectura HSA și ce reprezintă HLL?",
+      "options": [
+        "HSA exploatează paralelismul la nivel de instrucțiune prin scheduling agresiv aplicat codului sursă la compilare",
+        "HSA (Hatfield Superscalar Architecture) combină cele mai bune caracteristici ale procesoarelor VLIW și superscalare",
+        "HSA utilizează exclusiv hardware pentru detectarea dependențelor, fără nicio contribuție a compilatorului",
+        "HLL (High Level Language) este un limbaj de programare aproape de limbajul uman, portabil și care ascunde detalii hardware"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "HSA combină avantajele VLIW și superscalare – HSS (Hatfield Superscalar Scheduler) este integrat în HSA și rearanjează codul la COMPILARE, deci contribuția compilatorului este esențială (nu exclusiv hardware)."
+    },
+    {
+      "id": "3f6d1b8e-9c2a-43f6-d1b8-e9c2a5f6d1b8",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce structuri de date oferă operații mai eficiente: stivă, arbore sau tabelă de dispersie?",
+      "options": [
+        "Arbore binar echilibrat: inserare, căutare, ștergere → O(log₂n)",
+        "Arborele neechilibrat poate ajunge la O(1) pentru căutare",
+        "Tabela de dispersie: inserare, căutare, ștergere → O(1) în medie (pe baza indexului hash)",
+        "Stiva: push, pop, top → O(1) timp constant"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Arborele neechilibrat poate ajunge la O(n) pentru operații, similar cu o listă înlănțuită (în cel mai rău caz). Tabela de dispersie în cel mai rău caz devine O(n) prin coliziuni."
+    },
+    {
+      "id": "4e7a2c9f-1d6b-44e7-a2c9-f1d6b8e7a2c9",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Ce proprietăți ACID trebuie să respecte o tranzacție în baze de date?",
+      "options": [
+        "Durabilitate – odată confirmată, tranzacția poate fi pierdută în caz de cădere hardware",
+        "Consistență – tranzacțiile aduc baza de date dintr-o stare validă în alta",
+        "Atomicitate – tranzacția se execută complet sau deloc (rollback în caz de eroare)",
+        "Izolare – tranzacțiile par să se execute una după alta, chiar dacă sunt simultane"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Durabilitatea înseamnă că odată confirmată (commit), o tranzacție NU poate fi pierdută, nici în caz de defecțiune. SGBD-urile folosesc jurnale de tranzacții pentru restaurarea datelor."
+    },
+    {
+      "id": "9c2e6a4f-1d8b-49c2-e6a4-f1d8b5c2e6a4",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Cum implementează sistemul de operare memoria virtuală (structuri de tabele de pagini și Demand Paging)?",
+      "options": [
+        "Tabela inversată: o singură tabelă globală pentru toate procesele; ocupă mai puțin spațiu, dar căutarea e mai lentă",
+        "Tabela simplă: o singură tabelă cu intrare pentru fiecare pagină virtuală; simplă dar poate ocupa mult spațiu",
+        "Tabela ierarhică (2+ nivele) este mai lentă decât tabela simplă în toate situațiile",
+        "Demand Paging: paginile nu sunt încărcate de la început, ci doar când sunt accesate; la page fault SO suspendă procesul, încarcă pagina și reia execuția"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Tabela ierarhică este un COMPROMIS între spațiu și viteză – nu este mai lentă în toate situațiile. Pentru adrese de 64 biți, tabela simplă ar necesita miliarde de intrări, deci ierarhică este PREFERATĂ pentru spațiu."
     },
     {
       "id": "9e3c7a1f-5d4b-49e3-c7a1-f5d4b8e3c7a1",
@@ -767,22 +715,400 @@
       "explanation": "VMT este stocată în SEGMENTUL DE DATE al programului (sau o zonă specială), nu pe stivă. Este asociată clasei (nu instanței) și există pe toată durata de viață a programului."
     },
     {
-      "id": "b6c3f8a1-2e9d-46b6-c3f8-a12e9d5b6c3f",
+      "id": "1a7f4d2c-8e9b-41a7-f4d2-c8e9b5a7f4d2",
       "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Care sunt nivelele modelului ISO-OSI și care este ordinea lor?",
+      "difficulty": "hard",
+      "question": "Care sunt proprietățile unui pointer în C/C++?",
       "options": [
-        "Nivelul fizic → legătură de date → rețea → transport → sesiune → prezentare → aplicație",
-        "Nivelul prezentare asigură criptarea/decriptarea și compatibilitatea formatului datelor",
-        "Nivelul rețea folosește adrese IP unice; nivelul transport asigură comunicarea end-to-end",
-        "Nivelul aplicație este cel mai de jos din modelul OSI"
+        "Stochează adrese de memorie; permite accesul indirect la date prin dereferențiere",
+        "Suportă operații de incrementare/decrementare și adunarea cu o valoare întreagă",
+        "Permit scăderea a doi pointeri care indică în același tablou (pentru a determina numărul de elemente)",
+        "Accesarea memoriei nealocate este sigură dacă pointerul este inițializat cu NULL"
       ],
       "correctAnswer": [
         0,
         1,
         2
       ],
-      "explanation": "Nivelul aplicație este cel mai DE SUS (nivelul 7) din modelul OSI, nu cel mai de jos. Nivelul fizic (nivel 1) este la baza ierarhiei."
+      "explanation": "Accesarea memoriei nealocate sau eliberate duce la ERORI, nu este sigură. NULL indică că pointerul nu indică nicio adresă validă, iar accesarea lui duce la eroare de segmentare."
+    },
+    {
+      "id": "3c5e1f9a-8d2b-43c5-e1f9-a8d2b7c5e1f9",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este algoritmul Minimax și ce adaugă Alpha-Beta Pruning?",
+      "options": [
+        "La fiecare nod MAX se alege scorul maxim; la fiecare nod MIN se alege scorul minim",
+        "Alpha-Beta elimină ramurile care nu pot influența decizia finală, fără a afecta rezultatul",
+        "Minimax alternează între niveluri MAX (maximizează scorul) și niveluri MIN (minimizează scorul adversarului)",
+        "Alpha-Beta poate produce un rezultat diferit față de Minimax standard"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Alpha-Beta Pruning este o optimizare a Minimax care REDUCE numărul de noduri evaluate, dar produce ACELAȘI rezultat ca Minimax. Nu schimbă decizia finală, ci reduce timpul de calcul."
+    },
+    {
+      "id": "d8e4b1c9-5f2a-47d8-e4b1-c95f2a6d8e4b",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt diferențele esențiale dintre variabilele locale și variabilele globale în C/C++?",
+      "options": [
+        "Variabilele globale au durată de viață limitată la funcția în care sunt declarate",
+        "Variabilele locale sunt alocate pe stivă (LIFO); cele globale în segmentul de date",
+        "Variabilele globale sunt inițializate automat cu valori nule; cele locale cu valori reziduale",
+        "Variabilele locale sunt declarate în interiorul unei funcții/bloc și sunt vizibile doar acolo"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Variabilele globale au durată de viață pe tot parcursul programului (de la declarare până la sfârșitul programului), nu limitată la o funcție. Celelalte trei afirmații sunt corecte."
+    },
+    {
+      "id": "3b5e8d1f-7c9a-43b5-e8d1-f7c9a4b5e8d1",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este șablonul Adapter și cum se implementează?",
+      "options": [
+        "Metodele interfaței clientului din Adapter apelează metoda corespunzătoare din clasa veche și transformă datele dacă e necesar",
+        "Șablonul Adapter modifică direct codul clasei existente pentru a o face compatibilă",
+        "Șablon structural care permite colaborarea între două obiecte cu interfețe incompatibile",
+        "Se creează o clasă Adapter care stochează o referință la clasa veche și implementează metodele interfaței clientului"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Adapter NU modifică direct clasa existentă – creează o clasă INTERMEDIARĂ (Adapter) care face conversia. Modificarea clasei existente ar fi necesară în abordarea fără șablon, ceea ce Adapter încearcă să evite."
+    },
+    {
+      "id": "2a1f9e4c-6d8b-42a1-f9e4-c6d8b3a1f9e4",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt tehnicile de învățare în inteligența artificială menționate în curs?",
+      "options": [
+        "Învățarea pe de rost: memorarea exactă a cunoștințelor pentru reutilizare fără recalcul",
+        "Învățarea prin primire de sfaturi garantează generalizarea comportamentului la contexte noi",
+        "Învățarea prin primire de sfaturi: agentul solicită sfaturi din 5 faze (cerere, interpretare, operaționalizare, integrare, evaluare)",
+        "Învățarea prin exemple: formă inductivă – din exemple concrete se deduc reguli generale"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Capacitatea de generalizare la contexte noi este caracteristica ÎNVĂȚĂRII PRIN EXEMPLE (inductivă), nu a celei prin primire de sfaturi sau pe de rost. Învățarea pe de rost este considerată lipsită de capacitatea de generalizare."
+    },
+    {
+      "id": "9b4c7f2e-5a1d-49b4-c7f2-e5a1d8b4c7f2",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care este rolul nivelului transport în modelul OSI și ce protocoale folosește?",
+      "options": [
+        "TCP oferă conexiuni fiabile cu controlul erorilor și al fluxului; UDP oferă transmisie rapidă fără verificări",
+        "Fragmentează datele la sursă și le reasamblează la destinație",
+        "Nivelul transport determină ruta optimă de la sursă la destinație prin routere",
+        "Asigură comunicarea fiabilă end-to-end între două calculatoare gazdă (hosts)"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Determinarea rutei optime prin routere este responsabilitatea NIVELULUI REȚEA (nivel 3), nu a nivelului transport (nivel 4). Nivelul rețea folosește adrese IP și algoritmi de rutare."
+    },
+    {
+      "id": "3c8b6f2e-7a4d-43c8-b6f2-e7a4d1c8b6f2",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt cele trei modele de procesoare superscalare și ce le diferențiază?",
+      "options": [
+        "IN-IN (In Order Issue In Order Completion): execuția și scrierea rezultatelor se fac în ordinea din program",
+        "Toate cele trei modele garantează că instrucțiunile sunt decodificate strict în ordinea din program fără excepție",
+        "OUT-OUT (Out of Order Issue Out of Order Completion): instrucțiunile sunt aduse, decodificate și executate în paralel dintr-un buffer intermediar",
+        "IN-OUT (In Order Issue Out of Order Completion): execuția propriu-zisă se face în ordine; scrierea rezultatelor imediat ce instrucțiunea s-a terminat"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Modelul OUT-OUT presupune tocmai executarea instrucțiunilor OUT OF ORDER – instrucțiunile sunt decodificate și executate în paralel, fără a respecta strict ordinea din program."
+    },
+    {
+      "id": "5c9a4f8d-2b3e-45c9-a4f8-d2b3e7c9a4f8",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este Branch Target Buffer (BTB) și cum funcționează?",
+      "options": [
+        "BTB stochează PC-ul instrucțiunii de branch, adresa țintă și biții de predicție (numărător saturat)",
+        "Salturile care nu se fac nu ar trebui introduse în BTB deoarece nu îmbunătățesc performanța",
+        "La IF, se caută asociativ în BTB după PC-ul instrucțiunii; la hit, se obține în avans PC-ul următor",
+        "BTB este o extensie a memoriei RAM principale, fără niciun element de cache"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "BTB este un buffer/cache specializat asociat procesorului (similar TLB pentru adrese), NU o extensie a RAM. Este o memorie asociativă de mică dimensiune integrată în procesor."
+    },
+    {
+      "id": "5d9a1e4c-8f2b-45d9-a1e4-c8f2b3d9a1e4",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt avantajele și dezavantajele cache-ului adresat cu adrese REALE?",
+      "options": [
+        "Dezavantaj: datele din cache nu pot fi accesate până nu se obține adresa reală prin TLB → întârzieri",
+        "Avantaj: nu apar erori din cauza sinonimelor (mai multe adrese virtuale → aceeași adresă fizică sunt unice în cache)",
+        "Avantaj: dacă câmpul index coincide cu offset-ul în pagină, selecția blocului din cache se poate face în paralel cu translația TLB",
+        "Dezavantaj: nu este necesară nicio translație de adrese, ceea ce reduce complexitatea"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "La cache-ul cu adrese reale, translația prin TLB este ÎNTOTDEAUNA necesară (nu este un avantaj că nu e necesară). Dezavantajul principal este tocmai dependența de translația TLB înainte de accesul la cache."
+    },
+    {
+      "id": "1f6d3c8a-2e9b-41f6-d3c8-a2e9b5f6d3c8",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt avantajele și dezavantajele cache-ului adresat cu adrese VIRTUALE?",
+      "options": [
+        "Dezavantaj: cache-ul cu adrese virtuale este complet imun la problemele de coerență a proceselor",
+        "Dezavantaj: pot apărea sinonime – două adrese virtuale diferite pot indica aceeași locație fizică",
+        "Avantaj: accesul la date se poate face imediat, fără a aștepta translația prin TLB; la hit nu e necesar TLB-ul",
+        "Avantaj: nu mai e nevoie ca operațiile TLB și cache să se suprapună; cele două pot fi proiectate independent"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Cache-ul cu adrese virtuale NU este imun la probleme de coerență – dimpotrivă, sinonimele pot duce la copii multiple ale acelorași date în cache, necesitând mecanisme speciale (identificatori de proces, RTB)."
+    },
+    {
+      "id": "9c4f8a2e-1d6b-49c4-f8a2-e1d6b3c4f8a2",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce funcții specifice sunt disponibile pentru lucrul cu șiruri de caractere în C/C++?",
+      "options": [
+        "strcmp() – compară lexicografic 2 șiruri",
+        "strlen() – returnează lungimea șirului",
+        "strrev() – inversează șirul în mod standard în orice compilator",
+        "strcpy() – copiază șirul sursă peste șirul destinație"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "strrev() nu este o funcție standard în C/C++. Funcțiile standard menționate în curs includ strlen(), strcpy(), strcat(), strcmp(), strchr() și strstr()."
+    },
+    {
+      "id": "1d3a8e5c-6f2b-41d3-a8e5-c6f2b9d3a8e5",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt etapele de proiectare a unei baze de date?",
+      "options": [
+        "Analiza cerințelor → proiectarea conceptuală → proiectarea logică → proiectarea fizică",
+        "Implementarea (SQL) → încărcarea datelor → exploatarea și întreținerea",
+        "Proiectarea conceptuală produce un model independent de SGBD; proiectarea logică îl transpune în tabele relaționale",
+        "Faza de exploatare precede faza de proiectare fizică"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Faza de exploatare vine DUPĂ proiectarea fizică și implementare, nu înainte. Ordinea corectă este: analiză → proiectare (conceptuală, logică, fizică) → implementare → încărcare → exploatare."
+    },
+    {
+      "id": "7b3e6c1f-4a9d-47b3-e6c1-f4a9d2b3e6c1",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care este diferența dintre instrucțiunile while și do-while în C/C++?",
+      "options": [
+        "do-while are test final – instrucțiunea se execută cel puțin o singură dată, chiar dacă condiția este falsă",
+        "while garantează cel puțin o execuție a corpului buclei",
+        "for este echivalent cu while, cu condiție că numărul de pași este cunoscut",
+        "while are test inițial – se evaluează condiția înainte de execuția instrucțiunii"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "while NU garantează cel puțin o execuție – dacă condiția este falsă de la început, corpul nu se execută deloc. Aceasta este tocmai diferența față de do-while care execută corpul cel puțin o dată."
+    },
+    {
+      "id": "e1f4b8c2-7a3d-41e1-f4b8-c27a3d9e1f4b",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce caracterizează algoritmul A* față de Greedy Best-First Search?",
+      "options": [
+        "A* folosește o funcție de cost total = costul real de la sursă la nodul curent + estimarea până la destinație",
+        "A* poate fi văzut ca o combinație între BFS și căutare euristică",
+        "Dacă euristica este admisibilă (nu supraestimează) și consistentă, A* garantează soluția optimă",
+        "A* ignoră costul de la start la nodul curent, folosind doar estimarea până la final"
+      ],
+      "correctAnswer": [
+        0,
+        2
+      ],
+      "explanation": "Ignorarea costului de la start la nodul curent este caracteristica Greedy Best-First Search, nu A*. A* ia în calcul AMBELE componente: costul real parcurs și estimarea până la destinație."
+    },
+    {
+      "id": "8e2f5a7d-4c1b-48e2-f5a7-d4c1b9e2f5a7",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt algoritmii de înlocuire pentru memoria cache, memoria virtuală și TLB?",
+      "options": [
+        "LRU (Least Recently Used): se înlocuiește linia/pagina cel mai puțin recent utilizată; implementat prin numărătoare sau stivă de registre",
+        "Înlocuire aleatoare: selecție aleatoare a paginii/liniei de evacuat; poate fi aproximată printr-un numărător",
+        "FIFO First-in-not-used: variantă FIFO cu un bit suplimentar care evită evacuarea paginilor utilizate recent",
+        "FIFO: se înlocuiește linia/pagina aflată de cel mai mult timp în cache/MP; implementat cu o coadă circulară"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Toți cei patru algoritmi sunt menționați în curs: înlocuire aleatoare, FIFO, First-in-not-used (FIFO modificat) și LRU, aplicabili atât pentru cache, memorie virtuală cât și TLB."
+    },
+    {
+      "id": "a5d9c3f7-2b6e-4a5d-9c3f-72b6e8a5d9c3",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt caracteristicile unui algoritm Greedy?",
+      "options": [
+        "Nu revine asupra deciziilor făcute (fără backtracking)",
+        "Algoritmul lui Dijkstra este un exemplu de algoritm greedy",
+        "Garantează întotdeauna soluția globală optimă",
+        "Alege cea mai bună opțiune disponibilă la fiecare pas (optimum local)"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Greedy POATE să nu ofere întotdeauna soluția globală optimă, ci doar o aproximare bună. Algoritmul Dijkstra este un exemplu clasic de greedy care, în acest caz particular, găsește soluția optimă."
+    },
+    {
+      "id": "2d1f9c5e-4a8b-42d1-f9c5-e4a8b7d1f9c5",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt diferențele în gestiunea memoriei între C, C++ și Java?",
+      "options": [
+        "În C: malloc/calloc/realloc/free pentru alocare manuală; pot apărea scurgeri de memorie dacă free() nu e apelat",
+        "În Java, programatorul trebuie să apeleze manual delete() pentru fiecare obiect alocat",
+        "În C++: new și delete; destructorul eliberează memoria suplimentară alocată de constructor",
+        "În Java: Garbage Collector detectează automat obiectele nereferențiate și le distruge; rulează periodic în fundal"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "În Java NU există delete() – memoria este gestionată AUTOMAT de Garbage Collector. Programatorul poate dereferenția obiecte (atribuind null), dar GC se ocupă de eliberarea memoriei."
+    },
+    {
+      "id": "1c7f3b8e-2a9d-41c7-f3b8-e2a9d6c7f3b8",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Ce reprezintă cele trei caracteristici fundamentale ale unui obiect în OOP?",
+      "options": [
+        "Comportament – metodele/funcțiile pe care obiectul le poate executa",
+        "Două obiecte cu aceleași atribute sunt considerați entități identice în program",
+        "Stare – valorile atributelor (variabilelor membre) ale obiectului în momentul curent",
+        "Identitate – fiecare obiect este unic, dată de referința (adresa) din memorie"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Două obiecte diferite pot avea aceeași valoare a atributelor (stare), dar vor fi considerate entități SEPARATE în program – identitatea este dată de adresa din memorie, nu de valorile atributelor."
+    },
+    {
+      "id": "f3b8d5c1-9e2a-4f3b-8d5c-19e2a6f3b8d5",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt diferențele principale dintre procese și fire de execuție (threads)?",
+      "options": [
+        "Thread-urile dintr-un proces partajează stiva",
+        "Procesele sunt independente; thread-urile fac parte din procese și partajează memoria și resursele",
+        "Fiecare proces are propriul spațiu de adrese; thread-urile dintr-un proces împart același spațiu de adrese",
+        "Schimbarea de la un thread la altul este mai rapidă decât comutarea între procese"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Thread-urile dintr-un proces NU partajează stiva – fiecare thread are propria stivă. Partajează memoria, resursele și spațiul de adrese, dar au stive individuale."
+    },
+    {
+      "id": "a3f7c2e1-9b4d-48a3-f7c2-e19b4d6a3f7c",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt categoriile de operatori în C/C++?",
+      "options": [
+        "Operatorul de concatenare de șiruri (+++) și de multiplicare logică (**)",
+        "De incrementare/decrementare (++, --) și condițional (? :)",
+        "Aritmetici (+, -, /, %, *) și de atribuire (=, +=, -=, *=)",
+        "Relaționali (==, !=, <, >, <=, >=) și logici (&&, ||, !)"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "În C/C++ există operatori aritmetici, de atribuire, relaționali, logici, logici la nivel de bit, de incrementare/decrementare, condițional, virgulă, acces membru, sizeof, referențiere, dereferențiere, cast, apel funcție, indexare și rezoluție. Operatorul +++ sau ** nu există în C/C++."
+    },
+    {
+      "id": "2f4a9c7e-5d1b-42f4-a9c7-e5d1b8f4a9c7",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este backtracking-ul și care sunt caracteristicile sale principale?",
+      "options": [
+        "Tehnică de rezolvare prin explorarea controlată a spațiului de soluții, construind soluția pas cu pas",
+        "Garantează găsirea soluției în timp polinomial indiferent de problemă",
+        "La fiecare pas se verifică dacă decizia curentă poate conduce la o soluție validă",
+        "Dacă o alegere nu duce la soluție validă, algoritmul revine la pasul anterior și încearcă altă opțiune"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Backtracking-ul nu garantează timp polinomial – în cel mai rău caz are complexitate exponențială. Este utilizat pentru obținerea tuturor soluțiilor prin explorare sistematică."
+    },
+    {
+      "id": "7a2c5f9e-3d1b-47a2-c5f9-e3d1b8a2c5f9",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce desemnează faza de analiză în ingineria software și ce urmează după ea?",
+      "options": [
+        "Faza de analiză include și scrierea codului sursă și unit tests",
+        "Urmează: proiectare, implementare, testare, documentare și livrare",
+        "Include definirea cerințelor funcționale și nefuncționale, a actorilor și a use case-urilor",
+        "Faza de analiză identifică, colectează și documentează cerințele sistemului; răspunde la 'Ce trebuie să facă sistemul?'"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Scrierea codului sursă și unit tests face parte din faza de IMPLEMENTARE, nu din faza de analiză. Analiza se concentrează pe 'ce trebuie să facă sistemul', nu pe 'cum se implementează'."
     },
     {
       "id": "b8d5c2f9-6e1a-48b8-d5c2-f96e1a3b8d5c",
@@ -790,71 +1116,446 @@
       "difficulty": "hard",
       "question": "De ce funcțiile recursive sunt, în general, mai lente decât variantele iterative?",
       "options": [
+        "Există redundanță a calculului – aceleași subprobleme sunt rezolvate de mai multe ori",
         "Complexitatea este mai mare decât în cazul algoritmilor iterativi",
-        "Nu pot fi folosite pentru structuri de date de tip arbore",
         "La fiecare apel se salvează pe stivă parametrii și adresa de revenire",
-        "Există redundanță a calculului – aceleași subprobleme sunt rezolvate de mai multe ori"
+        "Nu pot fi folosite pentru structuri de date de tip arbore"
       ],
       "correctAnswer": [
         0,
-        2,
-        3
+        1,
+        2
       ],
       "explanation": "Recursivitatea POATE fi utilizată pentru structuri de arbori (ex: parcurgere arbore binar) – aceasta este de fapt una dintre utilizările sale principale. Motivele pentru care sunt mai lente sunt: overhead-ul stivei, complexitatea mai mare și redundanța calculului."
     },
     {
-      "id": "1e8c3d6f-7a4b-41e8-c3d6-f7a4b2e8c3d6",
-      "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Care sunt avantajele și dezavantajele celor 3 arhitecturi de cache?",
-      "options": [
-        "Cache complet asociativ: minimizează conflictele, rată de hit ridicată; dezavantaj: complex, costisitor",
-        "Cache cu mapare directă permite oricărui bloc din MP să fie mapat în orice locație din cache",
-        "Cache cu mapare directă: implementare simplă și rapidă, cost redus, nu necesită algoritm de înlocuire; dezavantaj: rată de conflict ridicată",
-        "Cache semi-asociativ: echilibru între mapare directă și complet asociativă; reduce conflictele dar are miss de capacitate"
-      ],
-      "correctAnswer": [
-        0,
-        2,
-        3
-      ],
-      "explanation": "Cache-ul cu mapare directă NU permite maparea în orice locație – fiecare bloc din MP are un singur bloc specific (unic) în cache. Posibilitatea de a fi mapat oriunde este caracteristica cache-ului COMPLET ASOCIATIV."
-    },
-    {
-      "id": "4e1b7f3c-8a2d-44e1-b7f3-c8a2d9e1b7f3",
-      "category": "calculatoare_programare",
-      "difficulty": "easy",
-      "question": "Ce este un prototip de funcție în C/C++ și ce informații conține?",
-      "options": [
-        "Conține și corpul funcției (implementarea completă)",
-        "O declarație care îi spune compilatorului numele funcției și tipul valorii returnate",
-        "Permite apelarea funcției înainte de definirea ei completă",
-        "Conține tipurile și numărul parametrilor, dar nu neapărat numele lor"
-      ],
-      "correctAnswer": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Un prototip NU conține corpul funcției – acesta este inclus în DEFINIȚIA funcției. Prototipul conține antetul (nume, tip returnat, tipuri parametri) fără corpul funcției."
-    },
-    {
-      "id": "f6a2d4c8-7e9b-46f6-a2d4-c87e9b1f6a2d",
+      "id": "6e1b3c7f-9d5a-46e1-b3c7-f9d5a4e1b3c7",
       "category": "calculatoare_programare",
       "difficulty": "medium",
-      "question": "Ce este mecanismul de tratare a excepțiilor în C++ și cum funcționează?",
+      "question": "Ce principii SOLID sunt descrise corect mai jos?",
       "options": [
-        "throw – este folosit pentru a arunca/semnala o excepție",
-        "try – delimitează un bloc care ar putea genera excepții",
-        "Blocurile catch sunt evaluate de la cel mai general la cel mai specific tip de excepție",
-        "catch – delimitează un bloc care se execută când e prinsă o excepție de tipul specificat"
+        "LSP: obiectele de tip derivat trebuie să poată înlocui obiectele de tip bază fără a modifica corectitudinea",
+        "ISP: mai bine mai multe interfețe mici decât o interfață mare; clienții nu implementează metode inutile",
+        "OCP: software-ul ar trebui să fie deschis pentru extindere, dar închis pentru modificare",
+        "DIP: modulele de nivel înalt ar trebui să depindă direct de module de nivel jos pentru eficiență"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "DIP afirmă exact OPUSUL – modulele de nivel înalt NU ar trebui să depindă de module de nivel jos; ambele ar trebui să depindă de abstracții (interfețe sau clase abstracte)."
+    },
+    {
+      "id": "9f4c2a6e-1d8b-49f4-c2a6-e1d8b3f4c2a6",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este 'dynamic dispatch' în contextul apelului unei metode?",
+      "options": [
+        "Mecanism prin care sistemul decide la RULARE (nu la compilare) care implementare a unei metode să fie apelată",
+        "Apare când există un obiect de tipul unei clase de bază, dar aparținând de fapt unei clase derivate",
+        "Dynamic dispatch este identic cu legarea statică și produce același comportament la compilare",
+        "Metoda apelată este aleasă în funcție de tipul REAL al obiectului la rulare, nu de tipul variabilei la compilare"
       ],
       "correctAnswer": [
         0,
         1,
         3
       ],
-      "explanation": "Este recomandat să fie puse ÎNTÂI blocuri catch pentru tipuri specifice, APOI pentru tipuri mai generale – ordinea inversă față de ce spune opțiunea 3. Excepția se propagă la funcția apelantă dacă nu este prinsă."
+      "explanation": "Dynamic dispatch este exact opusul legării statice – decizia se amână până la RULARE și depinde de tipul real al obiectului, nu de tipul declarat al variabilei la compilare."
+    },
+    {
+      "id": "9d3c7a5f-4e1b-49d3-c7a5-f4e1b2d3c7a5",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt subdomeniile principale ale inteligenței artificiale?",
+      "options": [
+        "Cognitive Computing: urmărește să creeze sisteme capabile să simuleze modul în care oamenii gândesc și iau decizii",
+        "Computer Vision: prelucrarea și înțelegerea imaginilor sau videoclipurilor de către un calculator",
+        "Înțelegerea limbajului natural: traduceri automate, chatboturi, analiza sentimentelor",
+        "Învățarea automată (ML) și Învățarea profundă (Deep Learning) – bazată pe rețele neuronale cu mai multe straturi"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Toate cele patru opțiuni sunt subdomenii ale IA menționate explicit în curs: NLP, Machine Learning/Deep Learning, Computer Vision și Cognitive Computing."
+    },
+    {
+      "id": "2e7f4c8a-1d3b-42e7-f4c8-a1d3b9e7f4c8",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt serviciile și protocoalele nivelului aplicație din modelul OSI?",
+      "options": [
+        "HTTP/HTTPS – pentru accesarea paginilor web; SMTP – pentru trimiterea email-urilor; FTP – pentru transfer fișiere",
+        "Funcționarea DNS: utilizatorul introduce URL → se caută în cache local → dacă nu → server DNS recursiv → root → TLD → server autoritar",
+        "DNS și DHCP funcționează la nivelul transport (nivel 4) și nu la nivelul aplicație",
+        "DNS – traduce un nume de domeniu în adresă IP; DHCP – alocă dinamic adrese IP host-urilor"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "DNS și DHCP funcționează la NIVELUL APLICAȚIE (nivel 7), nu la nivelul transport. Ele sunt servicii de rețea accesate de aplicații prin protocoale definite la nivelul aplicație."
+    },
+    {
+      "id": "c4f7a9b2-3e1d-44c4-f7a9-b23e1d8c4f7a",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Ce este memoria virtuală și care este rolul TLB?",
+      "options": [
+        "Memoria virtuală face ca întreaga memorie (MP și AMS) să pară, din perspectiva programelor, ca o singură memorie principală continuă și extinsă",
+        "Tabela de pagini este stocată exclusiv în TLB și nu în memoria principală",
+        "TLB (Translation Lookaside Buffer) este un cache specializat care stochează cele mai recente traduceri dintre adrese virtuale și adrese fizice",
+        "TLB hit = translatarea se face rapid; TLB miss = se consultă tabela de pagini din MP și rezultatul se adaugă în TLB"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Tabela de pagini este stocată în MEMORIA PRINCIPALĂ (MP), nu exclusiv în TLB. TLB este un cache mic și rapid care stochează cele mai recente traduceri pentru a accelera accesul."
+    },
+    {
+      "id": "7d1f5c3a-9e8b-47d1-f5c3-a9e8b4d1f5c3",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt drepturile de acces în C++ și ce pot accesa?",
+      "options": [
+        "public: accesibil din interiorul clasei, exteriorul clasei și clasele derivate",
+        "private: accesibil doar din interiorul clasei",
+        "internal: accesibil doar în fișierul curent (specific C++)",
+        "protected: accesibil din interiorul clasei și din clasele derivate"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "internal nu există în C++ – acesta este specific C# (.NET). În C++ există public, private și protected ca modificatori de acces."
+    },
+    {
+      "id": "2a5d8f3c-1e6b-42a5-d8f3-c1e6b9a5d8f3",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt instrucțiunile de control al fluxului în C/C++ și rolul lor?",
+      "options": [
+        "goto – trecerea fluxului de execuție la o poziție oarecare identificată printr-o etichetă",
+        "break – folosit pentru ieșirea din cadrul buclei curente sau din switch",
+        "continue – se întrerupe execuția iterației curente, dar se revine la condiția de oprire din bucla curentă",
+        "continue – termină execuția completă a programului"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "continue NU termină execuția programului – el întrerupe ITERAȚIA CURENTĂ și revine la condiția de oprire a buclei curente. Terminarea programului se face cu return din main sau exit()."
+    },
+    {
+      "id": "b6c3f8a1-2e9d-46b6-c3f8-a12e9d5b6c3f",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt nivelele modelului ISO-OSI și care este ordinea lor?",
+      "options": [
+        "Nivelul rețea folosește adrese IP unice; nivelul transport asigură comunicarea end-to-end",
+        "Nivelul aplicație este cel mai de jos din modelul OSI",
+        "Nivelul prezentare asigură criptarea/decriptarea și compatibilitatea formatului datelor",
+        "Nivelul fizic → legătură de date → rețea → transport → sesiune → prezentare → aplicație"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Nivelul aplicație este cel mai DE SUS (nivelul 7) din modelul OSI, nu cel mai de jos. Nivelul fizic (nivel 1) este la baza ierarhiei."
+    },
+    {
+      "id": "3b7f4e2a-1c9d-43b7-f4e2-a1c9d6b7f4e2",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Ce sunt use case-urile în ingineria software și unde sunt întâlnite?",
+      "options": [
+        "Pot fi reprezentate grafic în diagrame de cazuri de utilizare în UML",
+        "Fiecare use case include pașii urmați, actorii implicați și scenarii alternative",
+        "Use case-urile descriu cum este implementat tehnic un comportament, nu ce face sistemul",
+        "Descrieri detaliate ale modului în care un utilizator (actor) interacționează cu sistemul pentru a atinge un obiectiv"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Use case-urile descriu CE face sistemul din perspectiva utilizatorului, NU CUM este implementat tehnic acel comportament. Implementarea tehnică este subiectul fazei de proiectare, nu al analizei."
+    },
+    {
+      "id": "4f7c3b9e-2a1d-44f7-c3b9-e2a1d6f7c3b9",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care este rolul sistemului de operare și care sunt resursele hardware și software pe care le gestionează?",
+      "options": [
+        "Resursele software gestionate includ: procese și fire, fișiere, tabele de pagini și tabele de procese",
+        "SO gestionează CPU (planificarea proceselor), RAM (alocarea și protecția memoriei), memoria secundară și rețeaua",
+        "SO trebuie să încarce programele în memorie, să le ruleze și să asigure detectarea și corectarea erorilor",
+        "SO rulează independent de hardware și nu are nevoie de resurse hardware pentru funcționare"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "SO are nevoie de RESURSE HARDWARE pentru a funcționa (CPU pentru execuție, RAM pentru stocarea structurilor proprii etc.). Nu poate funcționa independent de hardware – gestionează hardware-ul DAR depinde de el."
+    },
+    {
+      "id": "8f5b3c1e-7a4d-48f5-b3c1-e7a4d9f5b3c1",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este Trace Cache-ul și cum diferă de un cache clasic?",
+      "options": [
+        "Trace Cache stochează trasee reale de execuție (secvențe de instrucțiuni deja decodate), nu instrucțiuni în ordine secvențială",
+        "Adresele de start ale traseelor sunt indexate după PC și istoricul de ramificare",
+        "Trace Cache elimină complet necesitatea predicției branch-urilor în procesoarele moderne",
+        "Permite procesorului să aducă instrucțiunile în ordinea în care sunt probabil să apară din nou"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Trace Cache nu elimină predicția branch-urilor – aceasta rămâne necesară pentru a decide ce trasee să fie aduse din Trace Cache. Cele două tehnici se completează reciproc."
+    },
+    {
+      "id": "5b7f2a9d-8e4c-45b7-f2a9-d8e4c6b7f2a9",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt abordările de reprezentare a cunoștințelor în IA?",
+      "options": [
+        "Reprezentările procedurale sunt mai ușor de modificat și extins decât cele declarative",
+        "Reprezentări declarative: cunoștințele sunt exprimate prin descriere directă (IF-THEN, logică, rețele semantice); flexibile și ușor de extins",
+        "Reprezentări mixte (hibrid): combină avantajele declarative și procedurale; bazate pe obiecte, cadre, scheme",
+        "Reprezentări procedurale: cunoștințele sunt integrate direct în metodele de control; permite descompunerea problemei în pași"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Reprezentările procedurale sunt mai GREU de modificat și extins – informațiile sunt strâns legate de modul de utilizare. Reprezentările DECLARATIVE sunt mai flexibile și ușor de extins (modifici o regulă fără a afecta restul)."
+    },
+    {
+      "id": "4b7e1f8c-3a6d-44b7-e1f8-c3a6d9b7e1f8",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt protocoalele pentru menținerea coerenței în cache la sisteme multiprocesor?",
+      "options": [
+        "Write-broadcast: procesorul care modifică o locație transmite valoarea actualizată tuturor celorlalte cache-uri",
+        "Write-invalidate: procesorul care modifică o locație invalidează copiile din cache-urile celorlalte procesoare înainte de actualizare",
+        "Write-invalidate este cel mai frecvent utilizat",
+        "Ambele protocoale permit existența simultană a unor copii diferite ale acelorași date în cache-urile multiple"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Scopul ambelor protocoale este tocmai PREVENIREA existenței simultane a unor copii diferite (incoerente). Write-invalidate elimină copiile vechi; write-broadcast actualizează toate copiile cu aceeași valoare."
+    },
+    {
+      "id": "1a4e9c6f-7d2b-41a4-e9c6-f7d2b8a4e9c6",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Care sunt aplicațiile principale ale inteligenței artificiale menționate în curs?",
+      "options": [
+        "Recunoaștere vizuală: recunoașterea fețelor, detecția obiectelor, diagnostic medical pe imagini",
+        "Procesarea limbajului natural: traduceri automate, chatboturi și asistenți virtuali, analiza sentimentelor",
+        "IA poate înlocui complet judecata umană în toate domeniile fără nicio limitare",
+        "Sisteme expert: sisteme care iau decizii similare unui expert uman în medicină, finanțe, drept"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "IA nu poate înlocui complet judecata umană în toate domeniile – sistemele expert sunt instrumente de asistență, nu înlocuitori universali. Există limitări semnificative în raționamentul comun, creativitate și înțelegerea contextului."
+    },
+    {
+      "id": "4b8e2d6f-3c1a-44b8-e2d6-f3c1a9b8e2d6",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce se întâmplă la derivarea publică, protejată și privată a unei clase?",
+      "options": [
+        "Derivare privată: membrii privați din CB sunt inaccesibili; ceilalți devin private",
+        "Derivare protected: membrii privați din CB sunt inaccesibili în CD; ceilalți devin protected",
+        "La orice tip de derivare, membrii privați ai CB devin accesibili în CD",
+        "Derivare publică: membrii privați din CB rămân inaccesibili; ceilalți își păstrează tipul"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "La NICIUN tip de derivare membrii privați ai CB nu devin accesibili în CD – ei rămân întotdeauna inaccesibili. Diferența constă în ce se întâmplă cu membrii non-privați."
+    },
+    {
+      "id": "8a3f6d2c-4e9b-48a3-f6d2-c4e9b1a3f6d2",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care sunt mediile de comunicație și topologiile de rețea principale?",
+      "options": [
+        "Topologie stea: toate calculatoarele legate la un nod central (switch); dacă nodul central se defectează, întreaga rețea este afectată",
+        "Topologie magistrală (bus): defectarea unui singur calculator duce la căderea întregii rețele",
+        "Cablu torsadat (UTP/STP): răsucirea firelor reduce interferențele electromagnetice",
+        "Fibră optică: transmitere rapidă și fiabilă; Single-Mode pentru distanțe lungi, Multi-Mode pentru distanțe mai scurte"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "La topologia magistrală (bus), defectarea unui calculator NU afectează rețeaua – calculatoarele sunt legate la un cablu coaxial comun. Doar defectarea cablului comun afectează rețeaua, nu a unui singur calculator."
+    },
+    {
+      "id": "5c9d2e1f-8b4a-45c9-d2e1-f8b4a7c9d2e1",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Care este rolul nivelului rețea și ce protocoale folosește?",
+      "options": [
+        "Protocolul IP (IPv4: 32 biți, IPv6: 128 biți) atribuie fiecărui dispozitiv o adresă logică unică",
+        "Nivelul rețea asigură comunicarea fiabilă end-to-end cu controlul erorilor și al fluxului (TCP)",
+        "Asigură rutarea pachetelor de date între nodul sursă și cel de destinație, inclusiv prin noduri intermediare",
+        "Folosește adrese IP unice ale dispozitivelor; evită congestionarea rețelei"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Comunicarea fiabilă end-to-end cu controlul erorilor și al fluxului (TCP) este responsabilitatea NIVELULUI TRANSPORT (nivel 4), nu a nivelului rețea (nivel 3). Nivelul rețea se ocupă de rutare, nu de fiabilitate."
+    },
+    {
+      "id": "9f1e6b4c-7a3d-49f1-e6b4-c7a3d2f1e6b4",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt mecanismele de sincronizare a proceselor/firelor menționate în curs?",
+      "options": [
+        "Monitor: accesul la resursă se face exclusiv prin procedurile sale; utilizează variabile condiționale cu wait() și signal()",
+        "Dezactivarea întreruperilor funcționează identic pe sisteme cu mai multe procesoare",
+        "Semaforul: wait() decrementează semaforul și blochează procesul dacă devine negativ; signal() eliberează resursa",
+        "Mutex: permite accesul exclusiv; lock() blochează, unlock() eliberează"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Dezactivarea întreruperilor NU funcționează corect pe sisteme multiprocesor – dacă un procesor dezactivează întreruperile, celelalte 3 pot continua să ruleze și să acceseze variabila partajată."
+    },
+    {
+      "id": "3e6a9f1c-4b7d-43e6-a9f1-c4b7d8e6a9f1",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt diferențele dintre legarea statică și legarea dinamică la apelul funcțiilor?",
+      "options": [
+        "Legarea statică se face la compilare; compilatorul asociază definitiv numele metodei cu adresa sa",
+        "Legarea dinamică este mai rapidă decât cea statică deoarece evită accesul la tabela VMT",
+        "Legarea statică este folosită pentru funcțiile non-virtuale; legarea dinamică pentru metodele virtuale",
+        "La legarea statică contează tipul pointerului; la legarea dinamică contează tipul obiectului a cărui adresă o reține pointerul"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Legarea dinamică este mai LENTĂ decât cea statică deoarece necesită accesul la tabela VMT (Virtual Method Table) pentru a determina adresa corectă a metodei la rulare."
+    },
+    {
+      "id": "5f8c2e6a-9d1b-45f8-c2e6-a9d1b4f8c2e6",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt caracteristicile constructorilor și destructorilor în C++?",
+      "options": [
+        "La instanțierea unui obiect dintr-o clasă derivată, se execută ÎNTÂI constructorul clasei de bază, APOI al celei derivate",
+        "La distrugerea unui obiect dintr-o clasă derivată, se execută ÎNTÂI destructorul clasei de bază, APOI al celei derivate",
+        "Constructorul are același nume cu clasa, nu are tip returnat și poate fi supraîncărcat",
+        "Destructorul are același nume cu clasa precedat de ~, nu are parametri și nu poate fi supraîncărcat"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "La distrugere ordinea este INVERSĂ față de construire: se execută ÎNTÂI destructorul clasei DERIVATE, APOI al clasei de bază. Construire: bază → derivată; Distrugere: derivată → bază."
+    },
+    {
+      "id": "6b3a7e9d-4f1c-46b3-a7e9-d4f1c2b3a7e9",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt condițiile în care se aplică programarea dinamică?",
+      "options": [
+        "Programarea dinamică este aplicabilă doar problemelor cu structură liniară",
+        "Structură optimă – soluția problemei mari se construiește din soluțiile optime ale subproblemelor",
+        "Subprobleme suprapuse – se rezolvă aceleași subprobleme de mai multe ori",
+        "Top-down (memoizare) și bottom-up (iterativ) sunt cele două tehnici de aplicare"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Programarea dinamică se aplică problemelor cu subprobleme suprapuse și structură optimă. Nu este limitată la probleme cu structură liniară – problema rucsacului, de exemplu, are o structură mai complexă."
+    },
+    {
+      "id": "5f9e7b4d-2c8a-45f9-e7b4-d2c8a3f9e7b4",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este Singleton-ul și cum se implementează?",
+      "options": [
+        "O variabilă statică în clasă stochează instanța unică; o metodă statică o returnează sau o creează la primul apel",
+        "Singleton permite crearea de multiple instanțe pentru a crește performanța",
+        "Constructorul clasei este privat pentru a preveni instanțierea din exterior",
+        "Șablon creațional care asigură că o clasă are o singură instanță și oferă un punct global de acces la ea"
+      ],
+      "correctAnswer": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Singleton asigură că există O SINGURĂ instanță, nu multiple. Dacă ar permite mai multe instanțe, nu ar mai fi Singleton."
+    },
+    {
+      "id": "d2f6c4a8-3b9e-42d2-f6c4-a83b9e1d2f6c",
+      "category": "calculatoare_programare",
+      "difficulty": "easy",
+      "question": "Ce principiu SOLID afirmă că o clasă ar trebui să aibă un singur motiv de a se schimba?",
+      "options": [
+        "Liskov Substitution Principle (LSP)",
+        "Interface Segregation Principle (ISP)",
+        "Single Responsibility Principle (SRP)",
+        "Open/Closed Principle (OCP)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Single Responsibility Principle (SRP) afirmă că o clasă ar trebui să aibă un singur motiv de schimbare, adică o singură responsabilitate sau scop."
+    },
+    {
+      "id": "3d9b6e4f-1c8a-43d9-b6e4-f1c8a7d9b6e4",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt diferențele dintre malloc/calloc/realloc și operatorul new în C++?",
+      "options": [
+        "new nu poate arunca excepție dacă alocarea eșuează, spre deosebire de malloc",
+        "malloc() alocă memorie fără inițializare; calloc() alocă și inițializează cu 0",
+        "Toate (malloc, calloc, realloc) returnează un pointer void* la zona de memorie alocată sau NULL",
+        "new returnează un pointer de tipul specificat și apelează automat constructorul clasei"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "new ARUNCĂ o excepție dacă alocarea nu are succes, spre deosebire de malloc care returnează NULL. Aceasta este o diferență importantă între cele două mecanisme de alocare dinamică."
     },
     {
       "id": "c2e7a3f8-1d9b-42c2-e7a3-f81d9b5c2e7a",
@@ -863,9 +1564,9 @@
       "question": "Care sunt diferențele dintre o clasă și o structură în C++?",
       "options": [
         "Membrii unei clase sunt implicit privați; membrii unei structuri sunt implicit publici",
-        "O clasă conține constructori, destructori, metode și variabile membre",
+        "Clasele pot conține variabile și funcții statice, comune tuturor obiectelor",
         "Structurile nu pot fi moștenite și nu pot conține metode în C++",
-        "Clasele pot conține variabile și funcții statice, comune tuturor obiectelor"
+        "O clasă conține constructori, destructori, metode și variabile membre"
       ],
       "correctAnswer": [
         0,
@@ -875,58 +1576,113 @@
       "explanation": "În C++, structurile POT fi moștenite și POT conține metode – singura diferență față de clase este că membrii sunt implicit publici (față de privați la clase)."
     },
     {
-      "id": "8a9d4f6c-1e3b-48a9-d4f6-c1e3b2a9d4f6",
+      "id": "2c8f1e5a-9d3b-42c8-f1e5-a9d3b7c8f1e5",
       "category": "calculatoare_programare",
-      "difficulty": "medium",
-      "question": "Ce sunt rețelele semantice în inteligența artificială și care sunt avantajele lor?",
+      "difficulty": "hard",
+      "question": "Care sunt diferențele dintre transferul prin valoare, prin adresă și prin referință?",
       "options": [
-        "Permit moștenirea de proprietăți – dacă 'mamiferul are sânge cald', toate mamiferele moștenesc automat această informație",
-        "Sistemul poate construi concluzii simple din relații existente (ex: leul este mamifer + mamiferele sunt animale → leul este animal)",
-        "Pot reprezenta cunoștințe incerte sau contradictorii și condiții temporale",
-        "Formă de reprezentare declarativă – noduri (concepte) + arce (relații) între concepte"
+        "Transfer prin valoare pentru obiecte instanțiază un obiect temporar folosind constructorul de copiere",
+        "Transfer prin valoare: se transmite pe stivă valoarea variabilei; nu permite modificarea originalului",
+        "Transfer prin referință: se salvează pe stivă adresa variabilei; sintaxă simplificată față de pointer",
+        "Transfer prin adresă (pointer): se salvează pe stivă adresa variabilei; permite modificarea originalului"
       ],
       "correctAnswer": [
         0,
         1,
+        2,
         3
       ],
-      "explanation": "O limitare a rețelelor semantice este că NU pot reprezenta cunoștințe incerte sau contradictorii și nu pot exprima condiții sau raționamente temporale. Relațiile sunt fixe și simple."
+      "explanation": "Toate cele patru afirmații sunt corecte conform cursului. La transferul prin valoare al obiectelor se instanțiază un obiect temporar folosind constructorul de copiere, care este distrus la ieșirea din funcție."
     },
     {
-      "id": "6b3a7e9d-4f1c-46b3-a7e9-d4f1c2b3a7e9",
+      "id": "6d4a7f9c-2b1e-46d4-a7f9-c2b1e8d4a7f9",
       "category": "calculatoare_programare",
-      "difficulty": "hard",
-      "question": "Care sunt condițiile în care se aplică programarea dinamică?",
+      "difficulty": "medium",
+      "question": "Ce este partiționarea unui HDD și ce scopuri îndeplinește?",
       "options": [
-        "Structură optimă – soluția problemei mari se construiește din soluțiile optime ale subproblemelor",
-        "Programarea dinamică este aplicabilă doar problemelor cu structură liniară",
-        "Subprobleme suprapuse – se rezolvă aceleași subprobleme de mai multe ori",
-        "Top-down (memoizare) și bottom-up (iterativ) sunt cele două tehnici de aplicare"
+        "Procesul de împărțire a unui disc fizic în mai multe unități logice (partiții), fiecare funcționând ca un disc separat",
+        "Conform modelului MBR, pot exista maximum 8 partiții primare",
+        "Dacă o partiție este coruptă, celelalte pot rămâne intacte, facilitând recuperarea parțială",
+        "Permite instalarea mai multor sisteme de operare, fiecare pe partiție separată"
       ],
       "correctAnswer": [
         0,
         2,
         3
       ],
-      "explanation": "Programarea dinamică se aplică problemelor cu subprobleme suprapuse și structură optimă. Nu este limitată la probleme cu structură liniară – problema rucsacului, de exemplu, are o structură mai complexă."
+      "explanation": "Conform modelului MBR, pot exista maximum 4 partiții primare (sau 3 primare + 1 extinsă care conține partiții logice). Nu 8."
     },
     {
-      "id": "5c9a4f8d-2b3e-45c9-a4f8-d2b3e7c9a4f8",
+      "id": "5a4c9f1e-7d2b-45a4-c9f1-e7d2b6a4c9f1",
       "category": "calculatoare_programare",
       "difficulty": "hard",
-      "question": "Ce este Branch Target Buffer (BTB) și cum funcționează?",
+      "question": "Care este diferența dintre overloading și overriding?",
       "options": [
-        "Salturile care nu se fac nu ar trebui introduse în BTB deoarece nu îmbunătățesc performanța",
-        "La IF, se caută asociativ în BTB după PC-ul instrucțiunii; la hit, se obține în avans PC-ul următor",
-        "BTB este o extensie a memoriei RAM principale, fără niciun element de cache",
-        "BTB stochează PC-ul instrucțiunii de branch, adresa țintă și biții de predicție (numărător saturat)"
+        "Overloading = mai multe funcții cu același nume dar semnături diferite (nr. diferit sau tipuri diferite de parametri), în aceeași clasă",
+        "Overloading are loc la compilare (legare statică); overriding la runtime (legare dinamică)",
+        "Compilatorul face distincție între funcții supraîncărcate exclusiv pe baza tipului returnat",
+        "Overriding = clasa derivată suprascrie o metodă virtuală moștenită de la clasa de bază, oferind propria implementare"
       ],
       "correctAnswer": [
         0,
         1,
         3
       ],
-      "explanation": "BTB este un buffer/cache specializat asociat procesorului (similar TLB pentru adrese), NU o extensie a RAM. Este o memorie asociativă de mică dimensiune integrată în procesor."
+      "explanation": "Compilatorul NU face distincție între funcții pe baza tipului returnat. Supraîncărcarea se bazează pe numărul și tipurile parametrilor, nu pe tipul returnat."
+    },
+    {
+      "id": "6f2b5d8e-3c7a-46f2-b5d8-e3c7a1f2b5d8",
+      "category": "calculatoare_programare",
+      "difficulty": "medium",
+      "question": "Ce este un arbore de joc și care sunt caracteristicile sale?",
+      "options": [
+        "Poate fi reprezentat ca arbore AND/OR: noduri OR (alegerea jucătorului curent), noduri AND (răspunsurile adversarului – toate trebuie luate în calcul)",
+        "Diagrama care arată toate mutările posibile dintr-un joc; starea inițială = nodul rădăcină; nodurile terminale = finaluri posibile",
+        "Se aplică jocurilor cu 2 jucători care muta pe rând și cunosc la fiecare mutare pozițiile și alegerile adversarului",
+        "Arborii de joc se aplică jocurilor cu informație incompletă unde jucătorii nu știu mutările adversarului"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Arborii de joc se aplică jocurilor unde ambii jucători CUNOSC la fiecare mutare pozițiile și alegerile posibile ale adversarului (informație completă). Jocurile cu informație incompletă necesită abordări diferite."
+    },
+    {
+      "id": "c4e7b3f8-1a9d-4c4e-7b3f-81a9d6c4e7b3",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Ce este combinația memorie cache – memorie virtuală și care sunt cele două soluții posibile?",
+      "options": [
+        "Avantajul cache-ului cu adrese reale: nu apar erori dacă două adrese virtuale duc la aceeași adresă fizică",
+        "Cache după TLB (adresat cu adrese REALE): tag-urile din cache rezultă din adrese fizice; comparația se face cu adresa reală",
+        "Cache-ul cu adrese virtuale elimină complet problemele de sinonime și nu necesită mecanism suplimentar",
+        "Cache înainte de TLB (adresat cu adrese VIRTUALE): accesul la date se poate face fără a aștepta translația"
+      ],
+      "correctAnswer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Cache-ul cu adrese virtuale generează problema SINONIMELOR – două adrese virtuale diferite pot indica aceeași locație fizică, necesitând mecanisme speciale (identificatori de proces, RTB) pentru rezolvare."
+    },
+    {
+      "id": "6f1d4c9a-2b8e-46f1-d4c9-a2b8e5f1d4c9",
+      "category": "calculatoare_programare",
+      "difficulty": "hard",
+      "question": "Care sunt caracteristicile principale ale arhitecturii Tomasulo?",
+      "options": [
+        "Stațiile de rezervare nu folosesc TAG-uri, instrucțiunile dependente stagnând până la scrierea rezultatului în registru",
+        "Folosește mecanismul de forwarding prin magistrala comună CDB (Common Data Bus) pentru rezolvarea dependențelor RAW",
+        "Hazardurile WAW și WAR sunt gestionate printr-un mecanism hardware de redenumire a registrelor",
+        "Este un model superscalar cu mai multe unități de execuție care pot fi utilizate în paralel"
+      ],
+      "correctAnswer": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Stațiile de rezervare FOLOSESC TAG-uri pentru a ține evidența valorilor care urmează să fie livrate. Dacă un operand nu e disponibil, instrucțiunea așteaptă rezultatul pe CDB prin TAG – fără TAG, ar stagna până la WB."
     }
   ]
 }
